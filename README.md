@@ -92,8 +92,3 @@ withdrawn by the later ones.
 - **No secrets in this repository** — no passwords, tokens, API keys, or 2FA recovery codes.
 - **Never rewrite git history.**
 - **Never edit `archive/raw-migration-source/` or the recovered historical documents.**
-
----
-
-*`CONNECTION_TEST.md` is a leftover from verifying GitHub write access. It serves no ongoing purpose and can
-be deleted once the founders confirm — it is kept for now rather than removed unilaterally.*

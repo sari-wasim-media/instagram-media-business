@@ -111,7 +111,6 @@ them → launch.
 - **Any monetization, pricing or advertiser contact.**
 - **Building automation, dashboards or tracking software.**
 - **Renaming `sneakerbong`** — deferred until after revival evidence.
-- **Removing `CONNECTION_TEST.md`** — a leftover connectivity-test file, safe to delete but not without a nod.
 
 When in doubt: this project's default is to **document and ask**, not to execute.
 
