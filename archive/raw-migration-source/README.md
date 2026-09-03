@@ -7,6 +7,11 @@ has been edited, renamed, trimmed, reordered, or deduplicated.
 under `strategy/`, `experiment/` or `evidence/` instead. This directory is the fallback of record: if any
 organized copy is ever wrong, these files settle it.
 
+**Line endings are protected.** The repository's `.gitattributes` marks everything under this directory
+`-text`, so Git performs no line-ending conversion on checkout. Without that rule, a clone on a machine with
+`core.autocrlf` enabled would rewrite these files to CRLF and the checksum verification below would fail.
+**Do not remove those rules.**
+
 ---
 
 ## Contents

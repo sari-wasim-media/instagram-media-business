@@ -1,0 +1,38 @@
+# ─────────────────────────────────────────────────────────────
+# Line-ending protection for preserved source material.
+#
+# core.autocrlf is enabled on at least one founder machine. Without
+# these rules, Git would check preserved files out with CRLF endings,
+# which would:
+#   - break byte-for-byte fidelity with the delivered packages, and
+#   - make `sha256sum -c SHA256SUMS.txt` FAIL inside
+#     archive/raw-migration-source/instagram_media_supplemental_artifacts/
+#
+# `-text` disables all line-ending conversion, so these files are
+# stored and checked out exactly as delivered on every platform.
+#
+# DO NOT REMOVE. The archive's provenance guarantee depends on it.
+# ─────────────────────────────────────────────────────────────
+
+# Pristine migration source — everything, unconditionally
+archive/raw-migration-source/** -text
+
+# Recovered historical documents, preserved verbatim elsewhere in the tree.
+# These are byte-identical copies of the archived originals; they must stay
+# that way so `diff` against the archive keeps passing.
+strategy/research/INITIAL_STRATEGIC_AUDIT.md                             -text
+strategy/research/PHASE_1_PHASE_2_REPORT.md                              -text
+strategy/historical/STRATEGY_EVOLUTION.md                                -text
+strategy/historical/HISTORICAL_PRICE_MENU.md                             -text
+experiment/historical-48-post-design/REVIVAL_EXPERIMENT_FINAL_LOCK.md    -text
+experiment/historical-48-post-design/PATCH_AND_FREEZE_48_POST_MATRIX.md  -text
+experiment/historical-48-post-design/FINAL_METHODOLOGY_PATCH_MATRIX_FROZEN.md -text
+
+# Evidence screenshots — binary, never converted or diffed as text
+*.jpeg binary
+*.jpg  binary
+*.zip  binary
+
+# Note: authored documents (README, PROJECT_STATE, DECISIONS, HANDOFF,
+# ROADMAP, CLAUDE.md, and the directory index files) are deliberately NOT
+# listed. They are ordinary project docs and may follow platform defaults.
