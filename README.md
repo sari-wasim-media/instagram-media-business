@@ -47,8 +47,9 @@ increased cadence. It is preserved as historical methodology and must not be exe
 | File | What it is |
 |---|---|
 | **`HANDOFF.md`** | **Start here if you are a fresh Claude Code session** |
-| `PROJECT_STATE.md` | Current state as of 2026-09-02 — the operational source of truth |
+| `PROJECT_STATE.md` | Current state as of 2026-09-04 — the operational source of truth |
 | `DECISIONS.md` | Decision register: ACTIVE / SUPERSEDED / DEFERRED / HISTORICAL |
+| `WORKFLOW.md` | Workflow V1 — how the founders and Claude Code work: autonomy, escalation, Git flow |
 | `ROADMAP.md` | Completed · Current · Next · Later |
 
 ## Directory map
@@ -75,6 +76,8 @@ adjacent README files and in `strategy/historical/CORRECTIONS_LEDGER.md`.
 
 **Continuing the work?** → `HANDOFF.md`
 
+**About to do work in this repository?** → `WORKFLOW.md`
+
 **Want the current state?** → `PROJECT_STATE.md`
 
 **Wondering whether something was decided?** → `DECISIONS.md`
@@ -87,8 +90,10 @@ withdrawn by the later ones.
 
 ## Working rules
 
+The full working workflow is `WORKFLOW.md`. The rules that never move:
+
 - **Nothing is published** to either Instagram account without founder approval.
-- **Nothing is pushed** to `origin` without founder approval.
+- **Nothing is committed, pushed or merged** without the active founder's explicit approval of finalization.
 - **No secrets in this repository** — no passwords, tokens, API keys, or 2FA recovery codes.
-- **Never rewrite git history.**
+- **Never rewrite git history** without explicit founder approval for that specific operation.
 - **Never edit `archive/raw-migration-source/` or the recovered historical documents.**

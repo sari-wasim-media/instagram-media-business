@@ -10,10 +10,12 @@ This repository is self-contained. You do not need any Claude.ai conversation to
 
 1. **`PROJECT_STATE.md`** — what is true right now. The single most important file.
 2. **`DECISIONS.md`** — what was decided, and what is still open.
-3. **`experiment/README.md`** — experiment status at a glance.
-4. **`strategy/historical/CORRECTIONS_LEDGER.md`** — **read before citing anything historical.**
+3. **`WORKFLOW.md`** — how work is done here: autonomy, escalation, and the Git flow.
+4. **`experiment/README.md`** — experiment status at a glance.
+5. **`strategy/historical/CORRECTIONS_LEDGER.md`** — **read before citing anything historical.**
 
-That is enough to work. Everything else is depth.
+That is enough to work. Everything else is depth — and this is a sensible default, not a mandatory checklist:
+read whatever else the task needs.
 
 ---
 
@@ -111,24 +113,34 @@ them → launch.
 - **Any monetization, pricing or advertiser contact.**
 - **Building automation, dashboards or tracking software.**
 - **Renaming `sneakerbong`** — deferred until after revival evidence.
+- **Git finalization of any task** — add / commit / push / PR / merge. See `WORKFLOW.md` §4.
 
-When in doubt: this project's default is to **document and ask**, not to execute.
+When in doubt about anything **outside this repository**, this project's default is to **document and ask**,
+not to execute. Inside an approved task, in this repository, Claude executes and reports afterwards.
 
 ---
 
-## 8. Git safety rules
+## 8. Working workflow and Git safety
 
-- **Never rewrite history.** No force-push, no rebase of pushed commits, no amending published commits.
-- **Never push without explicit founder approval.** Confirm before `git push origin main`.
+**`WORKFLOW.md` is canonical** on how work is done here — founder roles, Claude's autonomy, the escalation
+rule, the branch-per-task Git flow, and the guardrails. The short version:
+
+- **Work on a task branch** cut from an up-to-date `main`; `main` is shared between two founders.
+- **Stop before Git finalization.** Summarize the work, then wait for the active founder's explicit approval
+  before add / commit / push / PR / merge.
+- **Never rewrite history** — no force-push, rebase of pushed commits or amending published commits — without
+  explicit founder approval for that specific operation.
 - **Never commit secrets** — no passwords, tokens, API keys, session cookies, or **2FA recovery codes**.
   `.gitignore` covers common patterns, but the rule is yours to enforce.
+
+Repository-specific preservation rules:
+
 - **Never modify `archive/raw-migration-source/`.** It is the pristine record. If an organized copy is wrong,
   fix the copy.
 - **Never edit recovered historical documents.** They are preserved verbatim. Corrections belong in
   `strategy/historical/CORRECTIONS_LEDGER.md` and adjacent README files.
 - `_migration_inbox/` is gitignored because `archive/raw-migration-source/` preserves it byte-for-byte.
   Do not delete it without founder approval.
-- Work on a branch for anything substantial; `main` is shared between two founders.
 
 ---
 
@@ -137,6 +149,7 @@ When in doubt: this project's default is to **document and ask**, not to execute
 ```
 PROJECT_STATE.md    current truth          DECISIONS.md     what was decided
 ROADMAP.md          phases                 HANDOFF.md       this file
+WORKFLOW.md         how we work            CLAUDE.md        Claude Code entry point
 strategy/           context + research     experiment/      methodology + plans
 evidence/           organized screenshots  archive/         pristine originals
 ```

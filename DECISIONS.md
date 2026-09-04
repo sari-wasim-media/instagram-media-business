@@ -228,3 +228,21 @@ write access verified by a test commit.
 ### This repository is the canonical source of truth — **ACTIVE**
 Project state no longer depends on Claude.ai chat history. Any future session — any account, any machine —
 starts from `HANDOFF.md`.
+
+### Workflow V1 — the canonical working workflow — **ACTIVE**
+How the founders and Claude Code work in this repository is codified in **`WORKFLOW.md`**. In summary: Sari
+and Wasim are equal founders and a task handed to Claude is already agreed between them; one founder normally
+works at a time; each task gets its own branch from an up-to-date `main`; Auto Mode is the default; Claude has
+broad execution autonomy **inside** an approved task and escalates anything that changes scope, contradicts a
+locked decision, creates significant risk, requires an irreversible external action, or is otherwise a
+founder-level call; and **Claude stops before Git finalization**, gives the active founder a review summary,
+and waits for explicit approval before add / commit / push / PR / merge — with merge to `main` as the default
+after approval.
+
+**Scope limit.** Workflow V1 governs work *inside this repository only*. It does not authorise publishing,
+automation, monetization or any other action restricted by an ACTIVE decision above, and it does not change
+any business, experiment or platform decision in this register.
+
+⚠ **Clarified, not changed:** `CLAUDE.md`'s "documents and asks — it does not execute" always meant execution
+*outside* the repository — publishing, automation, monetization. It was reworded to say so explicitly, because
+Workflow V1 makes Claude's in-repository execution autonomy explicit.

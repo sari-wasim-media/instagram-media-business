@@ -21,6 +21,8 @@ The GitHub migration is infrastructure. It is not the business.
 - **Week 0 profile edit** — a deliberately minimal change: the follower-goal line removed from each bio, the
   rest kept substantially unchanged, then frozen. The proposed full bio rewrite was **not** applied
 - **Repository migration** — this repository became the canonical source of truth
+- **Workflow V1** — the canonical working workflow codified in `WORKFLOW.md`: founder roles, Claude's
+  execution autonomy, the escalation rule, the branch-per-task Git flow and its finalization gate
 
 ## Current
 
