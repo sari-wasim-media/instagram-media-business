@@ -1,7 +1,12 @@
-# Project State — as of 2026-09-02
+# Project State — as of 2026-09-04
 
 The operational source of truth. If another document disagrees with this one, this one wins — except
-`DECISIONS.md`, which is authoritative on what was decided.
+`DECISIONS.md`, which is authoritative on what was decided, and `WORKFLOW.md`, which is canonical on how work
+is done in this repository.
+
+⚠ **Business and experiment state is unchanged since 2026-09-02.** The only change on 2026-09-04 was
+governance: Workflow V1 was adopted. Nothing about the accounts, the evidence, the methodology or the
+experiment moved.
 
 ---
 
@@ -89,6 +94,7 @@ The 2.6M Reel is **ceiling evidence only** and predates current originality enfo
 | Profile baseline capture (pre-change) | **Complete** | `evidence/profile-baseline/` |
 | Minimal bio edit — follower-goal line removed on both accounts | **Complete** — founder-confirmed | Pre-change state: `evidence/profile-baseline/` |
 | GitHub repository migration | **Complete** — this repository | — |
+| **Workflow V1 — canonical working workflow adopted** | **Complete** (2026-09-04) | `WORKFLOW.md` |
 
 ### Legacy cleanup — precise scope
 
