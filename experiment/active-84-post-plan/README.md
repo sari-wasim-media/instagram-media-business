@@ -1,97 +1,82 @@
-# Active 84-Post Plan
+# Active 84-Post Plan — FOUNDER-LOCKED
 
-# ⚠ THE 84-POST MATRIX HAS NOT BEEN DESIGNED YET.
+# ✅ THE 84-POST MATRIX IS DESIGNED, VALIDATED AND FOUNDER-LOCKED.
 
-This directory holds the **active cadence decision** and the requirements any 84-post matrix must satisfy.
-It does **not** contain a matrix. Designing and locking one is the next experiment task.
+Approved jointly by Sari and Wasim. This directory holds the active, locked execution design for the
+controlled revival experiment.
+
+⚠ **Locked is not launched. Publishing is NOT authorized.** Both gates in `GATES.md` must pass first, and
+zero revival posts have been published.
 
 ---
 
-## The active decision — ACTIVE
+## What is here
 
-Made by the founders **after** the 48-post design was locked, and **before** any revival post was published.
+| File | What it is | Status |
+|---|---|---|
+| **`matrix_84.csv`** | **The canonical machine-readable matrix. The single source of truth.** 84 rows, one per feed post | **LOCKED** |
+| `MATRIX_84.md` | The same 84 rows, human-readable, plus the full balance audit. Derived from the CSV | **LOCKED** |
+| `LOCK_SPECIFICATION.md` | Exactly what is frozen and what is deliberately late-bound; timing definition; statistical honesty | **LOCKED** |
+| `AI_IMAGERY_SUBTEST.md` | The six-slot nested AI-imagery sub-test: scope, prohibitions, disclosure, analysis rule | **LOCKED** |
+| `ANTI_DUPLICATION_AND_TOPIC_SELECTION.md` | Contamination rules and the blind-to-performance topic check-out queue | **LOCKED** |
+| `EXCEPTION_PROTOCOL.md` | Pre-declared failure, recovery and hard-stop handling | **LOCKED** |
+| `GATES.md` | **The Sourcing Gate and the two-layer Week-1 Gate. Launch is gated here** | **BINDING — NOT PASSED** |
+
+Validate the matrix at any time with `python3 tools/validate_matrix.py` from the repository root.
+
+---
+
+## The locked design in one table
 
 | | |
 |---|---|
-| Accounts | 2 — `thestreetwearofficial` and `sneakerbong`, tested concurrently |
-| Cadence | **At least 1 feed post per day per account** |
-| Per account per week | 7 feed posts |
-| Combined per week | 14 feed posts |
-| Duration | 6 posting weeks |
-| **Total planned** | **84 feed posts** (42 per account) |
-| Working format mix | ~4 Reels + 2 Carousels + 1 Static per account per week — **intended, not locked** |
-| Stories | Supplemental / diagnostic. Volume not yet decided at this cadence |
-
-This supersedes the 48-post execution matrix. See `../historical-48-post-design/`.
-
----
-
-## What has not been done
-
-- [ ] **Design and lock the balanced 84-post matrix** ← the next task
-- [ ] Build the tracking sheet from that matrix (`../tracking/`)
-- [ ] Build the topic backlog with the 14-day check-out lock
-- [ ] Produce all 14 Week-1 pieces and schedule them **before** Post #1, plus Week-2 outlines
-- [ ] Confirm the weekly format mix as locked rather than intended
-- [ ] Decide Story cadence at daily feed posting
-
-**Nothing may be published until the matrix is locked and Week 1 is produced.**
+| Accounts | 2 — `thestreetwearofficial` (A) and `sneakerbong` (B), tested concurrently, identical structure |
+| Cadence | **1 feed post/day/account** · 7/week/account · 14 combined/week |
+| Duration | **6 posting weeks** + measurement tail |
+| Total | **84 feed posts — 42 per account** |
+| Format mix | **4 Reels + 2 Carousels + 1 Static** per account per week — **LOCKED** |
+| Engines | C1 Release & Verdict · C2 Rankings & Tier Lists · C3 Market & Price Intelligence · C4 Original Meme & Commentary |
+| Publish instant | **16:00 UTC**, both accounts, all 84 posts (= 19:00 at UTC+3). Held fixed, not tested |
+| Blocks | W1–2 warm-up · **W3–6 primary analysis window** |
+| Stories | **1/day/account** — 42/account, 84 combined. Diagnostic only, outside the matrix |
+| AI imagery | **Exactly 6 posts, C4 only**, 3 per account, 1 Reel + 1 Carousel + 1 Static each |
+| Voiceover | **None** for the duration of the test |
+| Link in bio | **None** for the duration of the test |
+| Start date | **Not chosen.** The first Monday after both gates pass |
 
 ---
 
-## What the matrix must satisfy
+## Why this design
 
-Carried from the historical design's own standards. These are **requirements, not a design**.
+**The primary analysis window is balanced in itself, not merely as part of a balanced whole.** Weeks 3–6 give
+28 posts per account: 28 ÷ 4 engines = 7 exactly, and 4R/2C/1S per week × 4 weeks = 16R/8C/4S, which divides
+by 4 engines into exactly **4 Reels + 2 Carousels + 1 Static per engine per account.** Zero residual anywhere
+in the window that decides go/no-go.
 
-**Balance**
-1. Both accounts publish an identical structure — same cells, same format totals, same slot totals. Cadence
-   asymmetry destroys the account comparison.
-2. Format must be balanced across cells so "this engine won" and "this engine got more Reels" are separable.
-   The historical design achieved perfect pooled balance per cell and declared its per-account integer
-   residual openly — match that standard or declare the residual.
-3. Posting slot must be counterbalanced against account, cell and format. Neither account may own a slot.
-4. Every effect the experiment claims to estimate must be stated with how it is estimated, and every residual
-   confound declared — as the historical design did for its account × cell interaction.
+**The unavoidable imbalance is quarantined.** 42 ÷ 4 = 10.5, so exact per-account engine equality is
+impossible. The residual is one post per engine, it is **complementary across accounts** (pooled totals are
+exactly 21 each), it lives **only in the Static format**, and it lives **only in the warm-up block**.
 
-**Frozen once started**
-5. The full matrix is frozen for all six posting weeks. **No performance-based adaptation at any point.**
-6. Topics and assets differ across accounts; anti-duplication rules apply (no shared file; no shared subject
-   within 14 days; topic check-out lock; distinct source imagery).
+**Format is exactly orthogonal to engine.** Pooled, every engine carries 12 Reels, 6 Carousels and 3 Statics.
+Per account, every engine carries exactly 6 Reels and 3 Carousels. "This engine won" and "this engine got more
+Reels" are separable.
 
-**Honest limits**
-7. State the sample size per cell and what magnitude of difference is actually readable at that n. The design
-   removes confounds; it does not manufacture power.
+**Reels cadence sits at market norm.** 4 Reels/week/account ≈ 17/month, inside the 17–20/month tier band. The
+superseded 48-post design ran ~8.7/month and openly accepted that "insufficient Reels volume" would remain a
+live alternative explanation for a negative result. **That hole is closed.**
 
 ---
 
-## Inputs to use — and what not to reuse
+## What still blocks launch
 
-**Use:** `../methodology/MEASUREMENT_AND_RULES.md` (all of it — cadence-independent) and
-`../methodology/CADENCE_DEPENDENCY_MAP.md` (**read this first**).
-
-**Model to follow:** the 48-post matrix in
-`../historical-48-post-design/PATCH_AND_FREEZE_48_POST_MATRIX.md` §2 is the best worked example of how to
-construct and verify a balanced matrix — including its balance-verification table and its declared residual
-limitations. **Copy the method. Do not copy the numbers.**
-
-**Do not reuse without re-deriving:** per-cell format allocations · slot counts · posts-per-cell · the ≥2x
-comparative rule · analysis windows · Scenario A–H sample sizes · Week-1 piece counts. All are sized to 4
-posts/week/account.
-
-**Open design questions** are listed at the end of `../methodology/CADENCE_DEPENDENCY_MAP.md` — including
-whether four cells still divides sensibly into a 7-post week, and whether a two-slot counterbalance still
-makes sense under daily posting.
+1. **Sourcing Gate** — including the AI arm. See `GATES.md` §1.
+2. **Week-1 Gate** — 11 non-C1 Week-1 pieces finished and scheduled, the D2 C1 topic locked, templates, Story
+   readiness, reserve, backlog, tracking sheet. See `GATES.md` §2.
+3. Then, and only then, the start date is instantiated as the **first Monday** after both gates pass.
 
 ---
 
-## Preserved warning on production load
+## Superseded
 
-The historical design named its own binding risk as *"48 original pieces in six weeks from a team that has
-never produced original content at volume"*, and set a go/no-go: if Week 1's pieces are not produced and
-scheduled before Week 1 begins, cut cadence rather than start and slip.
-
-The active decision raises that to **84 pieces**, and Week 1 from 8 pieces to **14**.
-
-This is recorded because it was the design's own stated largest risk, and because the Week-1 production gate
-is the one checkpoint that has to be honoured before Post #1. **The cadence decision is the founders' and it
-stands** — this is a note for the production plan, not a challenge to the decision.
+The 48-post execution matrix is **historical methodology only** and must never be executed. See
+`../historical-48-post-design/`. Every count in it is sized to 4 posts/week/account.

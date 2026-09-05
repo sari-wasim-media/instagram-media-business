@@ -20,7 +20,8 @@ Reading this as a flat to-do list would manufacture false tasks and quietly reac
 | **NOT DONE** | Genuinely outstanding |
 | **UNVERIFIED** | May be complete; no evidence either way in the source packages |
 | **SUPERSEDED BY LATER DECISION** | A later founder decision removed or replaced the requirement |
-| **NOT YET APPLICABLE** | Depends on the 84-post matrix, which is not designed |
+| **NOT YET APPLICABLE** | Depended on the 84-post matrix — now unblocked; see the note below |
+| **DECIDED BY FOUNDER LOCK** | Settled by the 2026-09-05 Founder Lock |
 
 ---
 
@@ -58,7 +59,7 @@ Reading this as a flat to-do list would manufacture false tasks and quietly reac
 |---|---|---|---|
 | 14 | Set the display name on both accounts | **SUPERSEDED BY LATER DECISION** | **Founder-confirmed: neither display name was changed.** They remain "streetwear life" and "Sneakerbong". The founders chose a minimal edit over a rewrite. Not an outstanding task — display names are now a frozen variable |
 | 15 | Rewrite the bio on both accounts | **SUPERSEDED BY LATER DECISION** — a minimal edit was made instead | **The founders deliberately did not rewrite the bios.** They removed the follower-goal line from each and kept the rest substantially unchanged. Founder-confirmed; not separately screenshot-verified after the edit |
-| 16 | Set one link in bio on each account | **SUPERSEDED BY LATER DECISION** | See below |
+| 16 | Set one link in bio on each account | **DECIDED BY FOUNDER LOCK — no link** | Sari and Wasim decided jointly: **no link in bio for the duration of the controlled test.** No longer deferred, no longer an open question. See `../DECISIONS.md` |
 | 17 | Unpin all pinned posts on both accounts | **UNVERIFIED** | No evidence either way |
 | 18 | Screenshot the final Week 0 profile state of both accounts | **NOT DONE — optional, not blocking** | The packages hold only pre-change screenshots. Because the actual edit was minimal (one line removed per bio), those screenshots still document the surrounding state; a post-change capture would upgrade the removal from founder-confirmed to screenshot-evidenced |
 
@@ -84,10 +85,10 @@ Post #1, never mid-experiment.
 
 | # | Item | Status | Notes |
 |---|---|---|---|
-| 19 | Build the tracking sheet | **NOT YET APPLICABLE** | Built from the matrix. See `../experiment/tracking/` |
-| 20 | Adopt the post ID convention `A-W3-C2-CAR-01` | **NOT YET APPLICABLE** | Convention preserved; depends on matrix structure |
-| 21 | Second tab account-weekly, third tab Stories log | **NOT YET APPLICABLE** | Part of the tracking sheet |
-| 22 | Build the shared topic backlog with the 14-day check-out lock | **NOT DONE** | Genuinely outstanding, and does not strictly require the matrix — but listed as a pre-launch task in `../experiment/active-84-post-plan/` |
+| 19 | Build the tracking sheet | **NOT DONE — unblocked** | The matrix is locked. Import `../experiment/active-84-post-plan/matrix_84.csv`; do not retype it. Week-1 Gate item |
+| 20 | Adopt the post ID convention `A-W3-C2-CAR-01` | **DONE** | All 84 IDs are assigned in `matrix_84.csv` |
+| 21 | Second tab account-weekly, third tab Stories log | **NOT DONE — unblocked** | Stories log is now **84 rows** (1/day/account). Part of the tracking sheet |
+| 22 | Build the shared topic backlog with the 14-day check-out lock | **NOT DONE** | Genuinely outstanding. The blind-to-performance queue rule is specified in `../experiment/active-84-post-plan/ANTI_DUPLICATION_AND_TOPIC_SELECTION.md` §5. Week-1 Gate item |
 
 ## Content readiness
 
@@ -102,22 +103,32 @@ Post #1, never mid-experiment.
 
 ## Summary
 
-**Genuinely outstanding (3):** item 22 (topic backlog) · item 25 (imagery sourcing) · item 26 (write down the
-originality rule). **None blocks the migration.**
+**Genuinely outstanding (7), all now launch-gating:** item 19 (tracking sheet) · item 21 (sheet tabs) ·
+item 22 (topic backlog) · item 23 (Week-1 production) · item 24 (templates — **do this first**) ·
+item 25 (imagery sourcing — **the binding constraint**) · item 26 (write down the originality rule).
+
+**New pre-launch items not in the historical 26**, created by the Founder Lock: declare the 7-day Story
+rotation and fix the sticker weekday · write the fixed AI disclosure wording · verify the AI tool's
+commercial-use licence · build the 7-piece evergreen reserve · capture the Week-0 baselines. All are in
+`../experiment/active-84-post-plan/GATES.md`.
 
 **Optional evidence improvement (1):** item 18 — a post-change profile capture. Not blocking.
 
 **Unverified (4):** items 1, 2 (code storage), 13 (bio link destination), 17 · plus partials at 8 and 9.
 
-**Superseded by later decision (3):** items 14 and 15 — the founders chose a **minimal bio edit** (removing
-the follower-goal line) over the proposed rewrite — and item 16, plus the piece-count inside item 23.
+**Superseded or decided (3):** items 14 and 15 — the founders chose a **minimal bio edit** (removing the
+follower-goal line) over the proposed rewrite — and item 16, now **decided by Founder Lock: no link in bio**.
+The piece-count inside item 23 is superseded by the locked cadence.
 
 ⚠ **Do not reopen items 14 or 15 as work.** The proposed bio rewrite was deliberately not applied. Listing it
 as outstanding would push the founders toward a change they decided against, and toward altering a **frozen**
 profile variable.
 
-**Not yet applicable (6):** items 19, 20, 21, 23, 24 — all blocked on the 84-post matrix.
+**No longer "not yet applicable".** The 84-post matrix is locked, so items 19–24 are unblocked and are now
+ordinary pre-launch work.
 
-**The go/no-go that still binds:** item 23's principle survives its arithmetic. Week 1's pieces — now 14, not
-8 — must be produced and scheduled **before** Week 1 begins. The historical design was explicit that starting
-and slipping produces a false negative on assets that may not be testable twice.
+**The go/no-go that still binds:** item 23's principle survives its arithmetic. Week 1's pieces must be
+produced and scheduled **before** Week 1 begins. The historical design was explicit that starting and slipping
+produces a false negative on assets that may not be testable twice. The current form of that gate is the
+two-layer Week-1 Gate in `../experiment/active-84-post-plan/GATES.md` §2 — and the correct response to a
+failed gate is to **delay launch**, never to alter the locked matrix.

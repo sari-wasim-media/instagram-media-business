@@ -1,27 +1,30 @@
-# Project State — as of 2026-09-04
+# Project State — as of 2026-09-05
 
 The operational source of truth. If another document disagrees with this one, this one wins — except
 `DECISIONS.md`, which is authoritative on what was decided, and `WORKFLOW.md`, which is canonical on how work
 is done in this repository.
 
-⚠ **Business and experiment state is unchanged since 2026-09-02.** The only change on 2026-09-04 was
-governance: Workflow V1 was adopted. Nothing about the accounts, the evidence, the methodology or the
-experiment moved.
+⚠ **2026-09-05: the 84-post controlled revival design is FOUNDER-LOCKED.** Sari and Wasim jointly approved the
+matrix, the format mix, the AI-imagery sub-test, daily Stories, the no-voiceover and no-link-in-bio
+restrictions, and the start rule. Nothing about the accounts or the evidence changed. **Zero posts published;
+launch remains gated.**
 
 ---
 
 ## The headline
 
-> The original 48-post revival experiment was fully designed and methodologically locked, but it was
-> superseded before launch after the founders increased cadence to one feed post per day per account. No new
-> revival-experiment posts have been published yet. The next experiment-design task is to create and lock a
-> balanced 84-post matrix.
+> The balanced 84-post controlled revival matrix is **designed, validated and founder-locked**. It supersedes
+> the 48-post design, which was locked and then superseded before launch when the founders moved to one feed
+> post per day per account. **Zero revival-experiment posts have been published.** Launch is blocked on two
+> operational gates — the Sourcing Gate and the two-layer Week-1 Gate — not on design.
 
 ## Current phase
 
-**Pre-launch.** Week 0 setup is substantially complete; the controlled revival experiment has **not started**.
+**Pre-launch, design complete.** Week 0 setup is substantially complete and the matrix is locked; the
+controlled revival experiment has **not started**.
 
-The immediate blocker is design, not execution: there is no matrix at the active cadence.
+**The blocker is now execution, not design.** The binding items are imagery rights at volume for C2, Week-1
+production, and the AI-route and Story readiness checks. See `experiment/active-84-post-plan/GATES.md`.
 
 ---
 
@@ -153,10 +156,17 @@ decision changes that.
 
 | | |
 |---|---|
-| Launched? | **No.** Zero revival-experiment posts published |
-| **Active cadence** | 1 feed post/day/account · 7/week/account · 14 combined/week · 6 posting weeks · **84 planned feed posts** |
-| **Active matrix** | **None — not yet designed** |
-| Working format mix | ~4 Reels + 2 Carousels + 1 Static per account per week (intended, not locked) |
+| Launched? | **No.** Zero revival-experiment posts published. **Launch is gated and not authorized** |
+| **Active cadence** | 1 feed post/day/account · 7/week/account · 14 combined/week · 6 posting weeks · **84 feed posts** |
+| **Active matrix** | ✅ **FOUNDER-LOCKED** — `experiment/active-84-post-plan/matrix_84.csv` (84 rows) |
+| **Format mix** | **4 Reels + 2 Carousels + 1 Static** per account per week — **LOCKED** |
+| **Publish instant** | **16:00 UTC**, both accounts, all 84 posts (= 19:00 at UTC+3). Held fixed, not tested |
+| **Blocks** | W1–2 warm-up · **W3–6 primary analysis window**, internally balanced with zero residual |
+| **Stories** | **1/day/account** — 42/account, 84 combined. Diagnostic only, outside the matrix |
+| **AI imagery** | **Exactly 6 posts, C4 only**, 3 per account, 1 Reel + 1 Carousel + 1 Static each |
+| **Voiceover** | **None** for the duration of the test (test-specific, not a permanent ban) |
+| **Link in bio** | **None** for the duration of the test |
+| **Start date** | **Not chosen.** First Monday after both gates pass |
 | 48-post matrix | **SUPERSEDED BEFORE LAUNCH** — preserved as historical methodology |
 
 ### The 48-post history
@@ -169,16 +179,23 @@ posts/week/account, so the execution matrix does not transfer.
 The **methodology** largely does. See `experiment/methodology/CADENCE_DEPENDENCY_MAP.md` for exactly what
 carries forward and what must be re-derived.
 
-### Methodology that remains active
+### Locked methodology
 
-Both accounts tested concurrently · faceless content system · original-content-first · **zero reposts during
-the controlled experiment** · no paid promotion, giveaways, Collabs or advertiser outreach · weekly Account
-Status checks · **Views separated from Reach, with Reach as the denominator for every rate metric** · medians
-as the principal decision statistic · T+7 feed-post snapshots and T+14 Reel tail snapshots · viral outliers
-recorded as breakout/ceiling evidence only · **no performance-driven mid-test changes** · matrix frozen once
-started · design isolates account effect, format effect and content-engine effect.
+Both accounts tested concurrently on an identical structure · faceless content system · original-content-first
+· **zero reposts during the controlled experiment** · no paid promotion, giveaways, Collabs or advertiser
+outreach · weekly Account Status checks · **Views separated from Reach, with Reach as the denominator for
+every rate metric** · medians as the principal decision statistic · T+7 feed-post snapshots, T+14 Reel tail
+snapshots, T+2 Story snapshots · viral outliers recorded as breakout/ceiling evidence only · **no
+performance-driven mid-test changes** · matrix frozen for all six weeks · design isolates account effect,
+format effect and content-engine effect, plus the account × engine interaction.
 
-Full detail: `experiment/methodology/MEASUREMENT_AND_RULES.md`.
+**Decision authority:** the per-post, Reach-denominated median read on weeks 3–6, and nothing else. A declared
+engine win needs **≥2×** the next-best engine **and** the same direction on both accounts; there is **no
+sub-2× cutoff**. A "secondary safeguard" using weekly account-level Reach was designed during review and
+**removed before lock** — daily Stories make account-level Reach non-attributable to the feed.
+
+Full detail: `experiment/methodology/MEASUREMENT_AND_RULES.md` · `experiment/methodology/STORY_PROTOCOL.md` ·
+`experiment/active-84-post-plan/LOCK_SPECIFICATION.md`.
 
 ### Originality standard — stated precisely
 
@@ -196,19 +213,25 @@ project document states this incorrectly; see `strategy/historical/CORRECTIONS_L
 ### Content engines
 
 C1 Release & Verdict Desk · C2 Rankings & Tier Lists · C3 Market & Price Intelligence · C4 Original Meme &
-Commentary. Current candidate cells; no topics designed. See `experiment/content/`.
+Commentary. **Locked, 21 posts each pooled** (12 Reels / 6 Carousels / 3 Statics). No topics designed. See
+`experiment/content/`.
 
 ---
 
-## Not yet done
+## Not yet done — all of it operational, none of it design
 
-1. **Design and lock the balanced 84-post matrix** ← the next task
-2. Build the tracking sheet from that matrix
-3. Build the topic backlog with the 14-day check-out lock
-4. Resolve imagery sourcing for C2 and C3
-5. Produce all 14 Week-1 pieces and schedule them **before** Post #1, plus Week-2 outlines
-6. Write the originality rule somewhere both founders see it
-7. Launch — only after 1–5 are complete
+1. **Pass the Sourcing Gate**, including the AI arm — imagery rights for C2 at volume is the binding constraint
+2. Build the four house templates and fix the C2 ranked-item count
+3. Build the tracking sheet by importing `experiment/active-84-post-plan/matrix_84.csv`
+4. Build the topic backlog and start the blind-to-performance check-out queue
+5. Declare the 7-day Story rotation and fix the interactive-sticker weekday
+6. Write the fixed AI disclosure wording
+7. Produce and schedule all 11 non-C1 Week-1 feed pieces, the 14 Week-1 Stories, and the 7-piece reserve;
+   execute the Day-2 C1 topic lock; complete Week-2 outlines
+8. **Pass the Week-1 Gate**, then instantiate the start date as the first Monday after both gates pass
+9. Launch — only after 1–8 are complete
+
+Details and exact pass criteria: `experiment/active-84-post-plan/GATES.md`.
 
 *Optional, not blocking:* capture post-change profile screenshots to convert the founder-confirmed bio edit
 into screenshot evidence. **This is not a task to rewrite the bios** — the minimal edit is complete.
@@ -221,21 +244,23 @@ checklist items a later decision superseded.
 
 ## Immediate next task
 
-> **Create and lock a balanced 84-post matrix** at 7 feed posts/week/account across 6 posting weeks, 42 per
-> account, controlling account × format × content-cell × posting-slot as far as integer constraints allow.
+> **Pass the Sourcing Gate**, starting with imagery rights for C2 — roughly 85–170 distinct rights-clean
+> product images across its 21 posts, because a C2 ranking needs one image per ranked item in every format.
 
-Requirements and inputs: `experiment/active-84-post-plan/README.md`. Read
-`experiment/methodology/CADENCE_DEPENDENCY_MAP.md` first.
+Then the Week-1 Gate. Exact criteria: `experiment/active-84-post-plan/GATES.md`.
 
-⚠ **Do not begin this without founder approval.** This migration deliberately did not design it.
+⚠ **The design is locked; do not redesign it.** If the Sourcing Gate cannot be passed, the correct response is
+to **delay launch** — not to relax the originality rule and not to alter the matrix. Changing the format mix
+would not reduce the rights burden, because a C2 ranking needs the same per-item assets whether it ships as a
+carousel or a Reel.
 
 ---
 
 ## Standing constraints
 
 **Faceless** — neither founder appears on camera, in photographs, in video, or as the public personality
-behind either account. *Voiceover is not prohibited by this constraint but has not been separately locked as a
-founder decision — treat it as requiring sign-off.*
+behind either account. **Voiceover is prohibited for the duration of the controlled test** by founder decision
+— test-specific, not a permanent business ban.
 
 **Replica/counterfeit advertisers permanently excluded**, along with bot/proxy vendors, follower-growth
 services, crypto/NFT-adjacent, gambling and dropship arbitrage.

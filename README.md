@@ -28,14 +28,24 @@ question:
 
 A controlled revival experiment is designed to answer that before any monetization decision is made.
 
-## Current phase — pre-launch
+## Current phase — pre-launch, design complete and locked
 
-**The experiment has not started. Zero revival posts published.**
+**The experiment has not started. Zero revival posts published. Launch is gated and not authorized.**
 
-The active cadence decision is **1 feed post per day per account** — 7/week/account, 14 combined/week, over 6
-posting weeks: **84 planned feed posts**.
+✅ **The balanced 84-post matrix is designed, validated and FOUNDER-LOCKED** —
+`experiment/active-84-post-plan/matrix_84.csv`.
 
-**The balanced 84-post matrix has not been designed. Creating and locking it is the immediate next task.**
+| | |
+|---|---|
+| Cadence | 1 feed post/day/account · 7/week/account · 14 combined/week · 6 weeks · **84 feed posts** |
+| Format mix | **4 Reels + 2 Carousels + 1 Static** per account per week |
+| Publish instant | **16:00 UTC**, both accounts, all 84 posts. Held fixed, not tested |
+| Stories | **1/day/account** — 84 combined. Diagnostic only, outside the matrix |
+| AI imagery | **Exactly 6 posts, C4 only** — a logged nested sub-test |
+| Start date | **Not chosen.** The first Monday after both launch gates pass |
+
+**What still blocks launch:** the Sourcing Gate (imagery rights for C2 at volume, plus the AI arm) and the
+two-layer Week-1 Gate. See `experiment/active-84-post-plan/GATES.md`.
 
 An earlier 48-post matrix was fully designed and locked, then **superseded before launch** when the founders
 increased cadence. It is preserved as historical methodology and must not be executed.
@@ -47,7 +57,8 @@ increased cadence. It is preserved as historical methodology and must not be exe
 | File | What it is |
 |---|---|
 | **`HANDOFF.md`** | **Start here if you are a fresh Claude Code session** |
-| `PROJECT_STATE.md` | Current state as of 2026-09-04 — the operational source of truth |
+| **`experiment/active-84-post-plan/`** | **The founder-locked 84-post design, and the gates that block launch** |
+| `PROJECT_STATE.md` | Current state as of 2026-09-05 — the operational source of truth |
 | `DECISIONS.md` | Decision register: ACTIVE / SUPERSEDED / DEFERRED / HISTORICAL |
 | `WORKFLOW.md` | Workflow V1 — how the founders and Claude Code work: autonomy, escalation, Git flow |
 | `ROADMAP.md` | Completed · Current · Next · Later |
@@ -56,7 +67,9 @@ increased cadence. It is preserved as historical methodology and must not be exe
 
 | Path | What it holds |
 |---|---|
-| `experiment/` | Active plan, methodology, and the superseded 48-post design |
+| `experiment/active-84-post-plan/` | **The locked matrix (`matrix_84.csv`), lock spec, AI sub-test, gates** |
+| `experiment/` | Methodology, content engines, tracking, and the superseded 48-post design |
+| `tools/` | `validate_matrix.py` — re-derives every locked balance property from the matrix |
 | `strategy/` | Business context and the recovered research chain |
 | `evidence/` | 42 organized screenshots — account status, demographics, performance, cleanup, profiles |
 | `archive/raw-migration-source/` | Both migration packages, pristine and unmodified |
@@ -92,7 +105,8 @@ withdrawn by the later ones.
 
 The full working workflow is `WORKFLOW.md`. The rules that never move:
 
-- **Nothing is published** to either Instagram account without founder approval.
+- **Nothing is published** to either Instagram account without founder approval. Launch is gated.
+- **The locked matrix and methodology do not move.** Only the founders can change a founder-locked decision.
 - **Nothing is committed, pushed or merged** without the active founder's explicit approval of finalization.
 - **No secrets in this repository** — no passwords, tokens, API keys, or 2FA recovery codes.
 - **Never rewrite git history** without explicit founder approval for that specific operation.
