@@ -1,9 +1,10 @@
 # Content Engines
 
-**Status: reference. No Week-1 topics, no content, no backlog has been designed.**
+**Status: the four engines are FOUNDER-LOCKED. No Week-1 topics, no content and no backlog has been designed.**
 
-These are the four faceless content engines from the latest locked methodology. They remain the **current
-candidate cells** unless the 84-post matrix design explicitly redesigns them.
+These are the four faceless content engines carried unchanged into the locked 84-post matrix. Each receives
+**exactly 21 posts pooled — 12 Reels, 6 Carousels, 3 Statics** — see `../active-84-post-plan/MATRIX_84.md`.
+Adding or dropping an engine is prohibited for the duration of the controlled test.
 
 ---
 
@@ -67,14 +68,37 @@ the older naming, it is the earlier generation. See `../../strategy/historical/C
 All four engines are faceless-compatible, which is why they were chosen. **Neither founder appears on camera,
 in photographs, in video, or as the public personality behind either account.**
 
-**On voiceover:** prior analysis considered voiceover, text-on-screen narration and a named editorial persona
-to be compatible with the faceless constraint and to count as authorship. **That is analysis, not a founder
-decision.** Voiceover is not prohibited by the current constraint, but it has not been separately locked.
-Treat it as an open question requiring founder sign-off before any piece relies on it. See `../../DECISIONS.md`.
+**On voiceover — DECIDED.** ⚠ **No voiceover during the six-week controlled test.** Founder-locked by Sari and
+Wasim. All 48 Reels use a uniform non-voiceover production method: text-on-screen with licensed or
+royalty-free audio. This is **test-specific, not a permanent business prohibition** — it holds production
+method constant across the experiment rather than settling voiceover as a business question. See
+`../../DECISIONS.md`.
 
 ---
 
+## AI-generated imagery — permitted in C4 only, six slots
+
+Founder-locked. AI-generated imagery appears in **exactly six of the 84 feed posts, all in C4**, three per
+account, one Reel + one Carousel + one Static each, as a **logged nested sub-test**.
+
+**Prohibited in C1, C2 and C3** — those engines cover real, specific products and factual claims, and
+generated imagery there would misrepresent a real product. C4 is the only engine whose visuals are inherently
+stylized and not factually load-bearing.
+
+Full specification, including what qualifies as AI-generated imagery, the prohibited-use list, disclosure and
+the analysis rule: **`../active-84-post-plan/AI_IMAGERY_SUBTEST.md`**. Using AI imagery in any other slot is a
+protocol violation.
+
+## Imagery rights — the binding operational constraint
+
+⚠ **C2 is the constraint, and it is different in kind from C3.** C2's canonical format needs one rights-clean
+image **per ranked item, per piece, in every format** — roughly 85–170 distinct images across its 21 posts.
+C3's visuals are **self-generated charts**; its constraints are research time and data-source terms of
+service, not image licensing. Older checklists bundle these as "C2 and C3" sourcing; they are not the same
+problem. See `../active-84-post-plan/GATES.md` §1.
+
 ## Not done
 
-No topics, no Week-1 pieces, no templates, no topic backlog, no imagery-sourcing plan. All of it depends on the
-84-post matrix, which does not exist yet. See `../active-84-post-plan/`.
+No topics, no Week-1 pieces, no templates, no topic backlog and no resolved imagery-sourcing plan. The matrix
+is locked, so all of this is now **Week-1 Gate and Sourcing Gate work** rather than blocked design work. See
+`../active-84-post-plan/GATES.md`.

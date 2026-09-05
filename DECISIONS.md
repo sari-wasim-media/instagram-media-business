@@ -27,16 +27,19 @@ faceless media brand.
 **Scope limit — read this before extending the rule.** The constraint covers visual appearance and
 public-personality positioning. It does **not** by itself prohibit voiceover. See the separate entry below.
 
-### Voiceover — **DEFERRED**
-**Not decided.** Voiceover, text-on-screen narration and a named editorial persona are **not prohibited by the
-faceless constraint**, but they have **not been separately locked as a founder decision**.
+### No voiceover during the controlled experiment — **ACTIVE** (Founder Lock)
+**Decided jointly by Sari and Wasim.** No content piece in the 84-post experiment uses voiceover. All 48 Reels
+run a uniform non-voiceover production method: text-on-screen with licensed or royalty-free audio. AI-generated
+voice is prohibited for the same reason and separately by the AI sub-test rules.
 
-**Rationale / provenance:** prior Claude analysis (`strategy/research/PHASE_1_PHASE_2_REPORT.md` §9 and
-`experiment/historical-48-post-design/REVIVAL_EXPERIMENT_FINAL_LOCK.md` §5) considered them viable and
-authorship-qualifying — *"faceless does not mean voiceless."* That is analysis, cited here as having been
-considered. It is not policy.
+**Rationale:** holds production method constant across all 48 Reels. A mixed method would be an uncontrolled
+variable correlated with whoever produced the piece.
 
-**Required before use:** explicit founder sign-off before any content piece relies on voiceover.
+⚠ **Test-specific, not a permanent business prohibition.** This settles the experiment, not the business
+question. Voiceover, text-on-screen narration and a named editorial persona remain compatible with the faceless
+constraint, and voiceover may be revisited after the decision point. Prior analysis
+(`strategy/research/PHASE_1_PHASE_2_REPORT.md` §9, `experiment/historical-48-post-design/REVIVAL_EXPERIMENT_FINAL_LOCK.md` §5)
+considered it viable — *"faceless does not mean voiceless"* — and that analysis is unaffected.
 
 ### Replica / counterfeit / UA advertisers permanently excluded — **ACTIVE** · FIXED CONSTRAINT
 A standing exclusion, not a per-deal judgement. Extended by research to also exclude bot and proxy vendors for
@@ -120,17 +123,19 @@ the duration of the controlled experiment.
 penalises either name.
 
 ### Profile variables frozen during the controlled experiment — **ACTIVE**
-Username, display name, bio, profile photo, link in bio, pinned posts, highlights, posting times,
+Username, display name, bio, profile photo, link in bio (**none**), pinned posts, highlights, publish instant,
 comment-reply policy and follow/unfollow activity are all frozen for the duration.
 
 **Rationale:** every one of them is an unmeasured variable that would contaminate the profile-visit → follow
 read. Any change belongs before Post #1 or after the decision point, never mid-measurement.
 
-### Link in bio — **DEFERRED** (was a historical recommendation; profile freeze took precedence)
-The historical Week 0 checklist called for setting one simple link. The stated bios route business contact
-through DM instead, and the profile freeze settled the profile state. Recorded as superseded-by-decision
-rather than as an outstanding task — but worth a founder yes/no. **If a link is wanted, it must be set before
-Post #1, never mid-experiment.** See `evidence/WEEK_0_CHECKLIST_STATUS.md`.
+### No link in bio during the controlled experiment — **ACTIVE** (Founder Lock)
+**Decided jointly by Sari and Wasim: no link in bio for the duration of the test.** Both bios already route
+business contact through DM; bio link taps read zero across the 90-day dormant baseline; and adding one would
+change a frozen profile variable and introduce a metric outside the primary read.
+
+This closes the historical Week 0 checklist item, which is now **decided, not deferred**. See
+`evidence/WEEK_0_CHECKLIST_STATUS.md`. Revisit after the decision point if wanted.
 
 ### `sneakerbong` rename — **DEFERRED**
 Not renaming before revival evidence exists.
@@ -158,17 +163,84 @@ account, 48 total). **Never launched. Zero posts published under it.**
 `experiment/historical-48-post-design/`.
 
 ### Current cadence: 1 feed post/day/account — **ACTIVE**
-7 feed posts/week/account · 14 combined/week · 6 posting weeks · **84 planned feed posts total** (42 per
-account). Working format mix ~4 Reels + 2 Carousels + 1 Static per account per week — **intended, not yet
-locked.**
+7 feed posts/week/account · 14 combined/week · 6 posting weeks · **84 feed posts total** (42 per account).
 
 **This is the decision that superseded the 48-post matrix**, taken after that design was locked and before any
 post was published.
 
-### The balanced 84-post matrix — **NOT YET CREATED**
-The next experiment-design task. Requirements: `experiment/active-84-post-plan/README.md`.
+### Weekly feed-format mix: 4 Reels + 2 Carousels + 1 Static — **ACTIVE** (Founder Lock)
+Per account per week. 24 Reels / 12 Carousels / 6 Statics per account; 48 / 24 / 12 pooled. **Locked**, no
+longer "intended".
 
-⚠ **Nothing may be published until it is locked and Week 1 is produced.**
+**Rationale:** it is the only mix that keeps Reels and Carousels exactly divisible per engine per account, so
+the unavoidable integer residual falls on Static — the smallest, cheapest, least distribution-relevant arm. It
+also puts Reels cadence at ~17/month, inside the market band for this tier, which closes the "insufficient
+Reels volume" alternative explanation that the 48-post design openly accepted.
+
+### The balanced 84-post matrix — **ACTIVE · FOUNDER-LOCKED**
+Designed, validated and locked jointly by Sari and Wasim. **Canonical source of truth:
+`experiment/active-84-post-plan/matrix_84.csv`** (84 rows). Human-readable form and full balance audit:
+`experiment/active-84-post-plan/MATRIX_84.md`. Validate with `python3 tools/validate_matrix.py`.
+
+Key locked properties: 42 posts/account · 21 pooled per engine · 24R/12C/6S per account · pooled engine ×
+format exactly 12R/6C/3S · **weeks 3–6 exactly 7 posts per account per engine at exactly 4R/2C/1S** · every
+engine exactly once per weekday per account in weeks 3–6 · A and B never publish the same engine on the same
+date. The full frozen surface is `experiment/active-84-post-plan/LOCK_SPECIFICATION.md`.
+
+⚠ **Locked is not launched.** Nothing may be published until both gates in
+`experiment/active-84-post-plan/GATES.md` pass.
+
+### Fixed publish instant: 16:00 UTC — **ACTIVE** (Founder Lock)
+All 84 feed posts, both accounts, one absolute instant (= 19:00 at UTC+3). Posting time is a **held-fixed
+control, not an experimental factor**; "best posting time" is not tested here.
+
+**Rationale:** a constant cannot confound anything, which fixes the historical account/slot welding more
+completely than the superseded two-slot Early/Late scheme did. Anchored to UTC rather than local wall-clock so
+the frozen variable stays frozen across any daylight-saving transition. **Early/Late is not part of this
+design.**
+
+### Start rule: no arbitrary calendar date — **ACTIVE** (Founder Lock)
+The experiment starts on the **first Monday after all required Week-1 and Sourcing Gates have passed**. No
+start date is chosen in advance, and none is recorded anywhere in this repository.
+
+**Rationale:** a date chosen before the gates invites starting and slipping, which the design's own analysis
+identified as producing a false negative on assets that may not be testable twice.
+
+### AI-generated imagery: permitted in exactly six C4 slots — **ACTIVE** (Founder Lock)
+AI-generated imagery is **not categorically prohibited**. The founders want long-term evidence about it. It is
+permitted **only** through a predeclared, counterbalanced, logged nested sub-test:
+
+**exactly 6 of the 84 feed posts · C4 only · 3 per account · 1 Reel + 1 Carousel + 1 Static per account.**
+The six slot IDs are frozen in `matrix_84.csv` and may not be swapped after Day 1. **Prohibited in C1, C2 and
+C3** — those engines cover real, specific products and factual claims.
+
+Binding safety rules, prohibited-use list, disclosure and provenance requirements, the mandatory sensitivity
+analysis and the flip rule: **`experiment/active-84-post-plan/AI_IMAGERY_SUBTEST.md`**. AI results are
+exploratory and directional; **the sub-test is not independently powered** and may not declare that AI imagery
+works or does not work. Using AI imagery in any other slot is a protocol violation.
+
+### Daily Stories — **ACTIVE** (Founder Lock)
+**1 Story per day per account** — 7/week/account, 42/account, **84 combined** over six weeks. Identical
+cadence, timing and structure on both accounts; frozen for the whole test; **diagnostic and supporting only**;
+outside the 84-post feed matrix; never performance-adaptive. Protocol:
+`experiment/methodology/STORY_PROTOCOL.md`.
+
+This supersedes the historical 3-Stories-per-week figure, which came from the superseded 48-post design and was
+never a founder decision.
+
+### The weekly account-level Reach safeguard — **SUPERSEDED before it was ever used**
+A "secondary safeguard" comparing weekly account-level Reach and non-follower Reach against a Week-0 dormant
+baseline was designed during review and **removed before lock**. With daily Stories, weekly account-level Reach
+aggregates 42 Stories and 42 feed posts per account against a baseline containing neither, so the increase is
+not attributable to the feed. **It has no decision authority.** The per-post read is the sole decision
+authority. See Rule S in `experiment/methodology/MEASUREMENT_AND_RULES.md` §4.
+
+### Engine-win rule: ≥2×, with no sub-2× cutoff — **ACTIVE**
+A declared engine win requires a pooled median **≥2× the next-best engine** in weeks 3–6 **and** the same
+direction on both accounts. Sub-2× separations are reported descriptively with **no cutoff of any kind**.
+
+⚠ **A proposed 1.7× "suggestive" band was removed before lock** as false precision — √n scaling governs the
+standard error of a mean, not the median of a heavy-tailed distribution.
 
 ### No performance-based adaptation mid-test — **ACTIVE**
 The full matrix is frozen for all posting weeks. No extra slots for a leading cell, no dropping a cell for

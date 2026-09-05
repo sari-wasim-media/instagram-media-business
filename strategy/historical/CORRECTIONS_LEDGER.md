@@ -23,8 +23,9 @@ ledger is where they live.
 | **G4** | Patch and Freeze (contains the 48-post matrix) | `experiment/historical-48-post-design/PATCH_AND_FREEZE_48_POST_MATRIX.md` |
 | **G5** | Final Methodology Patch — Matrix Frozen | `experiment/historical-48-post-design/FINAL_METHODOLOGY_PATCH_MATRIX_FROZEN.md` |
 | **G6** | **Founder cadence decision** — 1 feed post/day/account, 84 planned posts | `DECISIONS.md` · `PROJECT_STATE.md` |
+| **G7** | **FOUNDER LOCK (2026-09-05)** — the balanced 84-post matrix, the locked format mix, daily Stories, the AI-imagery sub-test, no voiceover, no link in bio, the start rule | `DECISIONS.md` · `experiment/active-84-post-plan/` |
 
-**Later beats earlier. G6 is a founder decision and beats all of G1–G5.**
+**Later beats earlier. G7 is the current locked state and beats everything before it.**
 
 G1–G5 are AI analysis. Where they state a *recommendation*, it is a recommendation — it became project policy
 only where the founders adopted it into `DECISIONS.md`.
@@ -144,8 +145,22 @@ changing an account's editorial role, or chasing a breakout post.
 
 | What G5 closed | Superseded by | Current position |
 |---|---|---|
-| The 48-post execution matrix, at 4 feed posts/week/account (24/account, 48 total), across 6 posting weeks | **G6** | **SUPERSEDED BEFORE LAUNCH.** The founders decided on 1 feed post/day/account — 7/week/account, 14 combined/week, 6 posting weeks, **84 planned feed posts total**. No revival-experiment post had been published. The balanced 84-post matrix is **not yet designed** |
-| G5's gate: *"REVIVAL EXPERIMENT FULLY LOCKED — PROCEED TO WEEK 0"* | **G6** | That gate applied to the 48-post design. It does not authorise launch today — there is no locked matrix at the active cadence |
+| The 48-post execution matrix, at 4 feed posts/week/account (24/account, 48 total), across 6 posting weeks | **G6**, then **G7** | **SUPERSEDED BEFORE LAUNCH.** The founders decided on 1 feed post/day/account — 7/week/account, 14 combined/week, 6 posting weeks, **84 feed posts total**. No revival-experiment post had been published. **The balanced 84-post matrix is now designed, validated and founder-locked (G7)** — `experiment/active-84-post-plan/matrix_84.csv` |
+| G5's gate: *"REVIVAL EXPERIMENT FULLY LOCKED — PROCEED TO WEEK 0"* | **G6**, then **G7** | That gate applied to the 48-post design and does not authorise launch today. There **is** now a locked matrix at the active cadence (G7), but launch is separately gated — see `experiment/active-84-post-plan/GATES.md` |
+
+### G1–G6 → superseded by G7 (the Founder Lock, 2026-09-05)
+
+| What G7 changed | Current position |
+|---|---|
+| **Weekly format mix** — G3 ran 2R/1C/1S; G6 left ~4R/2C/1S as working intent, not locked | **LOCKED at 4 Reels + 2 Carousels + 1 Static per account per week.** 24R/12C/6S per account, 48/24/12 pooled |
+| **Story volume** — G3/G4 ran 3 per week per account (18 over six weeks); G6 left it undecided at the new cadence | **LOCKED at 1 Story per day per account** — 42/account, **84 combined**. Diagnostic only, outside the matrix, never performance-adaptive |
+| **Posting slots** — G3 welded slots to accounts; G4 replaced that with two counterbalanced clock times (19:00 / 19:45 "Early/Late") | **Replaced by ONE fixed instant: 16:00 UTC, both accounts, all 84 posts.** A constant cannot confound anything. **Early/Late is not part of the active design** |
+| **Voiceover** — G2/G3 analysis judged it viable; never a founder decision | **PROHIBITED for the duration of the controlled test** (founder decision). Test-specific, not a permanent business ban |
+| **Link in bio** — G3's Week 0 checklist called for one; later deferred | **DECIDED: no link in bio** during the controlled test |
+| **AI-generated imagery** — addressed by no prior generation | **PERMITTED in exactly six C4 slots** as a predeclared, counterbalanced, logged nested sub-test. Prohibited in C1, C2, C3 and every other slot |
+| **The ≥2× comparative rule**, built at n=12 per cell | **Retained unchanged** at n=21 pooled. A proposed 1.7× "suggestive" band was **removed before lock** as false precision; there is **no sub-2× cutoff of any kind** |
+| **Scenario H handling** | A weekly account-level Reach "secondary safeguard" was designed during review and **removed before lock** — daily Stories make account-level Reach non-attributable to the feed. The per-post read is the sole decision authority. Scenario H is already cadence-robust because its non-follower-share condition is Reach-denominated |
+| **Imagery sourcing framed as "C2 and C3"** across several checklists | **They are different constraints.** C2 is image rights at volume (one rights-clean image per ranked item, in every format). C3's visuals are self-generated charts; its constraint is research time and data-source terms of service |
 
 ---
 

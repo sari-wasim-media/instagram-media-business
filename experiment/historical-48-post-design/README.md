@@ -8,8 +8,8 @@ account — 7/week/account, 14 combined/week, 6 posting weeks, **84 planned feed
 
 **No revival-experiment post was ever published under this design.**
 
-The active cadence decision and the state of the not-yet-designed 84-post matrix are in
-`../active-84-post-plan/README.md`. What survives methodologically is in `../methodology/`.
+**The active, founder-locked 84-post design is in `../active-84-post-plan/`** — the matrix itself is
+`../active-84-post-plan/matrix_84.csv`. What survives methodologically is in `../methodology/`.
 
 These documents are preserved because the **methodology** is valuable and much of it carries forward. The
 **execution matrix** does not.
@@ -75,7 +75,8 @@ the early-stop, disruption and protocol-violation rules.
 **Where this document and Generation 4 disagree, this one wins.**
 
 Its own closing gate — *"REVIVAL EXPERIMENT FULLY LOCKED — PROCEED TO WEEK 0"* — applied to the 48-post design
-at that time. **It does not authorise launch today.** There is no locked matrix at the active cadence.
+at that time. **It does not authorise launch today**, and it refers to a matrix that is no longer active. The
+active matrix is the founder-locked 84-post design in `../active-84-post-plan/`.
 
 **Provenance note:** this file is a **reconstruction**, not a byte-exact export. Per the supplemental
 package's own README it was rebuilt from the founder-supplied final methodology-patch transcript, with a
@@ -89,7 +90,8 @@ Generation 3's closing gate named the binding risk plainly: *"48 original pieces
 has never produced original content at volume."* Its Week 0 item 23 set an explicit go/no-go — if week 1's
 pieces are not produced and scheduled before week 1 begins, cut cadence rather than start and slip.
 
-The active decision raises that load from 48 pieces to 84, and week 1 from 8 pieces to 14.
+The active locked design raises that load from 48 pieces to 84, and week 1 from 8 pieces to 14 — plus 84
+Stories. The warning survives as the two binding launch gates in `../active-84-post-plan/GATES.md`.
 
 **This is recorded as a preserved analyst warning alongside a founder decision that postdates it.** The
 cadence decision is the founders' to make and stands. The warning is kept because it was the design's own

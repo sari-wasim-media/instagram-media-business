@@ -4,8 +4,9 @@
 active decision is **7/week/account** (42/account, 84 total). This file records which parts transfer unchanged
 and which are arithmetically tied to the old cadence and must be re-derived.
 
-**This is documentation of existing material, not a new design.** No replacement numbers are proposed here —
-deriving them is the 84-post matrix task.
+**STATUS: the re-derivation is COMPLETE and FOUNDER-LOCKED.** This file is retained as the record of what
+transferred and what had to be rebuilt. The rebuilt design lives in `../active-84-post-plan/` — the matrix
+itself in `matrix_84.csv`. Every open question at the bottom of this file is now answered; see §Resolutions.
 
 ---
 
@@ -47,31 +48,37 @@ forward as-is.**
 |---|---|---|
 | **The matrix itself** | 4 matched publishing events/week (Day 1–4), 24 rows per account | 7 posts/week/account means 7 events; the whole row structure is rebuilt |
 | **Per-cell format allocation** | Pooled 6R / 3C / 3S per cell; 3 Reels per cell per account | Derived from 12 posts/cell pooled. At 84 the per-cell totals change |
-| **Slot counterbalancing** | 12 Early / 12 Late per account; 3E/3L in every cell | Derived from 24 posts/account. Needs rebuilding for 42, and daily posting may not support two evening slots the same way |
+| **Slot counterbalancing** | 12 Early / 12 Late per account; 3E/3L in every cell | ✅ **RESOLVED — Early/Late removed.** One fixed instant, **16:00 UTC**, both accounts, all 84 posts |
 | **Posts per cell / statistical power** | 12 pooled per cell; 6 per account; 3 per account×cell×Reels | The **≥2x readability rule** exists *because* n was this small. New n → re-examine, do not assume the rule transfers unchanged |
 | **Analysis windows** | Go/no-go on median of weeks 3–6 = 16 posts/account | Post counts per window change |
 | **Scenario A–H thresholds** | Calibrated against the old n and the old weeks-3–6 window | The tree's logic may survive; its sample sizes do not |
-| **Weekly format mix** | 2 Reels + 1 Carousel + 1 Static per account | Working intent at 84 is ~4 Reels + 2 Carousels + 1 Static — **not yet locked** |
-| **Week-1 production gate** | 8 pieces (4/account) before week 1 begins | Becomes **14 pieces** (7/account) |
-| **Story volume** | 3/week/account (18 over 6 weeks) | Not yet decided at the new cadence |
+| **Weekly format mix** | 2 Reels + 1 Carousel + 1 Static per account | ✅ **RESOLVED — LOCKED at 4 Reels + 2 Carousels + 1 Static** per account per week |
+| **Week-1 production gate** | 8 pieces (4/account) before week 1 begins | ✅ **RESOLVED — a two-layer gate:** 11 non-C1 feed pieces finished and scheduled before Day 1, plus 14 Week-1 Stories; the 3 C1 slots run a T−48h / T−24h / T−12h deadline ladder. See `../active-84-post-plan/GATES.md` |
+| **Story volume** | 3/week/account (18 over 6 weeks) | ✅ **RESOLVED — LOCKED at 1/day/account**, 42/account, 84 combined. See `STORY_PROTOCOL.md` |
 | **Week 4 checkpoint counts** | "16 posts each by end of Week 4"; "12 Stories per account" | Arithmetic of the old cadence |
-| **Total production load** | 8 feed posts + 6 Stories/week combined | Becomes 14 feed posts/week combined |
+| **Total production load** | 8 feed posts + 6 Stories/week combined | ✅ **RESOLVED — 14 feed posts + 14 Stories per week combined** |
 
 ---
 
-## Open design questions the 84-post matrix must answer
+## Resolutions — all six questions answered at Founder Lock
 
-Recorded as questions, not answered here.
+Recorded as questions in the original file; answered here. Authority: `../active-84-post-plan/`.
 
-1. Can perfect pooled format balance per cell be achieved at 42 posts/account with the intended 4/2/1 weekly
-   mix, or does an integer residual have to be declared as a limitation the way G4 declared its own?
-2. With daily posting, is the Early/Late two-slot counterbalance still the right instrument, or does one fixed
-   daily slot per account better control time?
-3. Does the cell count stay at four? The 4/2/1 weekly mix gives 7 posts across 4 cells — which does not divide
-   evenly within a week.
-4. What is the new n per cell, and does the ≥2x comparative rule still hold at that n?
-5. Do the Scenario A–H thresholds need recalibration, and does the weeks-3–6 analysis window still apply?
-6. Story cadence at daily feed posting.
+| # | Question | Resolution |
+|---|---|---|
+| 1 | Can perfect pooled format balance per cell be achieved at 42 posts/account, or must a residual be declared? | **Achieved, and better than the 48-post design.** Pooled: exactly 12R/6C/3S per engine. Per account: exactly 6 Reels and 3 Carousels per engine. The residual is one post per engine, **confined to Static and to the warm-up block**, complementary across accounts. In weeks 3–6 there is **no residual at all** |
+| 2 | Is the Early/Late two-slot counterbalance still right, or does one fixed daily slot better control time? | **One fixed instant: 16:00 UTC, both accounts, all 84 posts.** Early/Late is removed. A single identical instant makes slot a constant, so it cannot confound anything — which fixes the original account/slot welding more completely than two slots did. The competition rationale for two slots was already withdrawn as unevidenced |
+| 3 | Does the cell count stay at four, given 7 posts across 4 cells does not divide evenly within a week? | **Yes, four engines, unchanged.** The week carries an engine multiset of {2,2,2,1}; over six weeks each account lands on 11/11/10/10 and the pooled total is exactly 21 each |
+| 4 | What is the new n per cell, and does the ≥2× comparative rule still hold? | **21 pooled per engine (14 in the primary window); 7 per account per engine in weeks 3–6.** The **≥2× rule is retained unchanged**. A proposed 1.7× "suggestive" band was **removed before lock** as false precision — see `MEASUREMENT_AND_RULES.md` §3 |
+| 5 | Do the threshold bands and the weeks-3–6 analysis window still apply? | **The weeks-3–6 window applies and is now internally balanced.** The absolute per-post reach-rate bands are retained unchanged but carry a **pre-declared cadence caveat**: they were built at 4 posts/week/account and bias toward a false negative at 7/week. Scenario H is nonetheless cadence-robust because its non-follower-share condition is Reach-denominated — `MEASUREMENT_AND_RULES.md` §4 |
+| 6 | Story cadence at daily feed posting | **Founder-locked at 1 Story/day/account** — 42/account, 84 combined, diagnostic only, outside the matrix. See `STORY_PROTOCOL.md` |
+
+### Two further items settled at lock, beyond the original six
+
+- **A weekly account-level Reach "secondary safeguard" was designed and then removed**, because daily Stories
+  make account-level Reach non-attributable to the feed. `MEASUREMENT_AND_RULES.md` §4.
+- **AI-generated imagery** is permitted in exactly six C4 slots as a logged nested sub-test.
+  `../active-84-post-plan/AI_IMAGERY_SUBTEST.md`.
 
 ---
 

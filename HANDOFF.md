@@ -11,8 +11,9 @@ This repository is self-contained. You do not need any Claude.ai conversation to
 1. **`PROJECT_STATE.md`** — what is true right now. The single most important file.
 2. **`DECISIONS.md`** — what was decided, and what is still open.
 3. **`WORKFLOW.md`** — how work is done here: autonomy, escalation, and the Git flow.
-4. **`experiment/README.md`** — experiment status at a glance.
-5. **`strategy/historical/CORRECTIONS_LEDGER.md`** — **read before citing anything historical.**
+4. **`experiment/active-84-post-plan/README.md`** — the **founder-locked** 84-post design.
+5. **`experiment/active-84-post-plan/GATES.md`** — **what still blocks launch.**
+6. **`strategy/historical/CORRECTIONS_LEDGER.md`** — **read before citing anything historical.**
 
 That is enough to work. Everything else is depth — and this is a sensible default, not a mandatory checklist:
 read whatever else the task needs.
@@ -27,8 +28,10 @@ read whatever else the task needs.
 - Week 0 setup is substantially done: 2FA enabled, targeted legacy cleanup executed, a minimal bio edit made
   (follower-goal line removed) and profiles then frozen.
 - **The controlled revival experiment has NOT started. Zero posts published.**
-- The active cadence is **1 feed post/day/account → 84 planned posts over 6 weeks**.
-- **The 84-post matrix does not exist yet.** Creating it is the next task.
+- The active cadence is **1 feed post/day/account → 84 feed posts over 6 weeks**, plus **84 Stories**.
+- ✅ **The 84-post matrix is designed, validated and FOUNDER-LOCKED** —
+  `experiment/active-84-post-plan/matrix_84.csv`.
+- ⚠ **Locked is not launched.** Launch is blocked on the Sourcing Gate and the Week-1 Gate.
 
 ---
 
@@ -36,14 +39,18 @@ read whatever else the task needs.
 
 | Constraint | Detail |
 |---|---|
-| **Faceless** | Neither founder appears on camera, in photographs, in video, or as the public personality behind either account. **Voiceover is not prohibited by this but is NOT approved — it needs founder sign-off** |
+| **Faceless** | Neither founder appears on camera, in photographs, in video, or as the public personality behind either account |
+| **No voiceover during the test** | Founder-locked. All 48 Reels use a uniform non-voiceover method. **Test-specific, not a permanent business ban** |
+| **No link in bio during the test** | Founder-locked. Both bios route business contact through DM |
+| **AI imagery only in 6 locked C4 slots** | Founder-locked nested sub-test. Prohibited in C1/C2/C3 and in every other slot. See `experiment/active-84-post-plan/AI_IMAGERY_SUBTEST.md` |
+| **Daily Stories, frozen** | 1/day/account, 84 combined. Diagnostic only, outside the matrix, never performance-adaptive |
 | **No replica/counterfeit advertisers** | Permanent. Also excludes bot/proxy vendors, follower-growth services, crypto/NFT-adjacent, gambling, dropship arbitrage |
 | **Zero reposts during the experiment** | Original or materially enhanced content only |
-| **Profile frozen** | Username, display name, bio, photo, link, pins, highlights, posting times — all frozen for the experiment's duration |
+| **Profile frozen** | Username, display name, bio, photo, link (none), pins, highlights, publish instant — all frozen for the experiment's duration |
 | **No paid promotion, giveaways, Collabs or advertiser outreach** | During the controlled test |
-| **No performance-based adaptation** | The matrix is frozen once started. Outliers change nothing |
+| **No performance-based adaptation** | All six weeks are frozen. Outliers change nothing |
 | **No monetization commitments** | Not before the experiment produces data |
-| **No automation built** | Claude Code's authorised scope so far is documentation only |
+| **No automation built** | No publishing tooling, dashboards or scrapers. `tools/validate_matrix.py` is a read-only checker of a committed CSV, not automation |
 
 ---
 
@@ -53,6 +60,7 @@ read whatever else the task needs.
 - Account data collection: status, demographics, geography, 90-day passive performance, historical samples
   → `evidence/`
 - The revival experiment methodology, designed and locked across four correction generations
+- **The balanced 84-post matrix — designed, validated and founder-locked** → `experiment/active-84-post-plan/`
 - 2FA on both accounts
 - Targeted removal of three UAPLG/counterfeit promotions (documented first)
 - The Week 0 profile edit — **minimal by decision**: the follower-goal line was removed from each bio and the
@@ -85,40 +93,55 @@ Three specific traps, all live if you read those documents without the ledger:
 Also superseded: the earlier six-model monetization ranking (explicitly retracted — nothing is chosen), the
 earlier four-cell naming (redefined as C1–C4), and every count sized to 4 posts/week/account.
 
+**Three further things that were designed during review and then removed before lock. Do not reintroduce them:**
+
+1. **A 1.7× "suggestive" engine-separation band.** Removed as false precision. The rule is **≥2×**, and there
+   is **no sub-2× cutoff of any kind**.
+2. **A weekly account-level Reach "secondary safeguard"** able to veto a Scenario H conclusion. Removed —
+   daily Stories make account-level Reach non-attributable to the feed. It has **no decision authority**.
+3. **Early/Late two-slot posting.** Replaced by one fixed instant, 16:00 UTC, for all 84 posts.
+
+**Also superseded: 3 Stories/week.** Stories are now **daily** by founder decision — 84 combined.
+
 ---
 
 ## 6. Immediate next task
 
-> **Create and lock a balanced 84-post matrix** — 7 feed posts/week/account, 6 posting weeks, 42 per account,
-> 84 total, controlling account × format × content-cell × posting-slot as far as integer constraints allow.
+> **Pass the Sourcing Gate**, starting with imagery rights for C2. Then the Week-1 Gate. Then, and only then,
+> the start date is instantiated as the first Monday after both gates pass.
 
-**Before you start:**
-- Read `experiment/active-84-post-plan/README.md` — the requirements.
-- Read `experiment/methodology/CADENCE_DEPENDENCY_MAP.md` — what carries forward and what must be re-derived.
-- Use `experiment/historical-48-post-design/PATCH_AND_FREEZE_48_POST_MATRIX.md` §2 as a **model of method**.
-  **Copy the method, not the numbers.**
+**The design is finished and locked. Do not redesign it.** Read
+`experiment/active-84-post-plan/GATES.md` for the exact pass criteria, and run
+`python3 tools/validate_matrix.py` if you want to confirm the matrix is intact.
 
-Then, in order: tracking sheet → topic backlog → imagery sourcing → produce all 14 Week-1 pieces and schedule
-them → launch.
+⚠ **C2 is the binding constraint, and it is different in kind from C3.** A C2 ranking needs one rights-clean
+image **per ranked item, in every format** — roughly 85–170 distinct images across its 21 posts. C3's visuals
+are self-generated charts; its constraint is research time and data-source terms of service. Older checklists
+bundle these as "C2 and C3 sourcing"; they are not the same problem.
+
+**Changing the format mix would not reduce the rights burden** — a C2 ranking needs the same per-item assets
+whether it ships as a carousel or a Reel. If the gate cannot be passed, delay launch.
 
 ---
 
 ## 7. Needs founder approval before you act
 
-- **Designing the 84-post matrix** — approved as the next task in principle, but confirm before generating it.
-- **Locking the weekly format mix** (~4 Reels + 2 Carousels + 1 Static is intended, not locked).
-- **Any voiceover use** — not covered by an existing decision.
-- **Setting a link in bio** — deferred; if wanted, it must happen before Post #1.
-- **Publishing anything at all.**
+**Settled by the Founder Lock — do NOT reopen these:** the format mix · voiceover (none during the test) · the
+start rule · link in bio (none) · AI-generated imagery (six locked C4 slots only) · Story cadence (daily) ·
+the 84-post matrix itself.
+
+**Still requires founder approval:**
+
+- **Publishing anything at all.** Launch is gated; the gates have not passed.
 - **Any monetization, pricing or advertiser contact.**
-- **Building automation, dashboards or tracking software.**
+- **Building automation, dashboards or publishing tooling.**
 - **Renaming `sneakerbong`** — deferred until after revival evidence.
 - **Git finalization of any task** — add / commit / push / PR / merge. See `WORKFLOW.md` §4.
+- **Any change to the locked matrix or the locked methodology.** The lock is a founder decision; only the
+  founders can move it.
 
 When in doubt about anything **outside this repository**, this project's default is to **document and ask**,
 not to execute. Inside an approved task, in this repository, Claude executes and reports afterwards.
-
----
 
 ## 8. Working workflow and Git safety
 
@@ -150,8 +173,9 @@ Repository-specific preservation rules:
 PROJECT_STATE.md    current truth          DECISIONS.md     what was decided
 ROADMAP.md          phases                 HANDOFF.md       this file
 WORKFLOW.md         how we work            CLAUDE.md        Claude Code entry point
-strategy/           context + research     experiment/      methodology + plans
+strategy/           context + research     experiment/      methodology + the LOCKED matrix
 evidence/           organized screenshots  archive/         pristine originals
+tools/              validate_matrix.py     experiment/active-84-post-plan/matrix_84.csv  ← the matrix
 ```
 
 **One-sentence rule:** `evidence/` and the organized documents are the working surface, `archive/` is the
