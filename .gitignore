@@ -49,3 +49,11 @@ desktop.ini
 #   canonical docs, experiment methodology, evidence/, and
 #   archive/raw-migration-source/ are all tracked and shared.
 # ─────────────────────────────────────────────────────────────
+
+# ─────────────────────────────────────────────────────────────
+# Local instantiated calendars and local-only working files.
+# The start date is NOT chosen and must never be recorded in the
+# repository (LOCK_SPECIFICATION.md §1). tools/instantiate_calendar.py
+# writes here by default; nothing in _local/ is tracked.
+# ─────────────────────────────────────────────────────────────
+/_local/

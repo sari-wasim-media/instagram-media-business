@@ -1,0 +1,258 @@
+[
+ {
+  "name": "c2_car_01_hook",
+  "size": "feed"
+ },
+ {
+  "name": "c2_car_02_method_optional",
+  "size": "feed"
+ },
+ {
+  "name": "c2_car_03_item_07",
+  "size": "feed"
+ },
+ {
+  "name": "c2_car_09_item_01",
+  "size": "feed"
+ },
+ {
+  "name": "c2_car_10_summary",
+  "size": "feed"
+ },
+ {
+  "name": "c2_static_hero_plus_6",
+  "size": "feed"
+ },
+ {
+  "name": "c2_reel_01_hook",
+  "size": "reel"
+ },
+ {
+  "name": "c2_reel_item_07_number",
+  "size": "reel"
+ },
+ {
+  "name": "c2_reel_item_07",
+  "size": "reel"
+ },
+ {
+  "name": "c2_reel_item_06_number",
+  "size": "reel"
+ },
+ {
+  "name": "c2_reel_item_06",
+  "size": "reel"
+ },
+ {
+  "name": "c2_reel_item_05_number",
+  "size": "reel"
+ },
+ {
+  "name": "c2_reel_item_05",
+  "size": "reel"
+ },
+ {
+  "name": "c2_reel_item_04_number",
+  "size": "reel"
+ },
+ {
+  "name": "c2_reel_item_04",
+  "size": "reel"
+ },
+ {
+  "name": "c2_reel_item_03_number",
+  "size": "reel"
+ },
+ {
+  "name": "c2_reel_item_03",
+  "size": "reel"
+ },
+ {
+  "name": "c2_reel_item_02_number",
+  "size": "reel"
+ },
+ {
+  "name": "c2_reel_item_02",
+  "size": "reel"
+ },
+ {
+  "name": "c2_reel_item_01_number",
+  "size": "reel"
+ },
+ {
+  "name": "c2_reel_item_01",
+  "size": "reel"
+ },
+ {
+  "name": "c2_reel_summary",
+  "size": "reel"
+ },
+ {
+  "name": "c2_reel_end",
+  "size": "reel"
+ },
+ {
+  "name": "c1_static_verdict_card",
+  "size": "feed"
+ },
+ {
+  "name": "c1_static_verdict_card_no_image",
+  "size": "feed"
+ },
+ {
+  "name": "c1_car_01_hook",
+  "size": "feed"
+ },
+ {
+  "name": "c1_car_02_the_pair",
+  "size": "feed"
+ },
+ {
+  "name": "c1_car_03_facts",
+  "size": "feed"
+ },
+ {
+  "name": "c1_car_04_verdict",
+  "size": "feed"
+ },
+ {
+  "name": "c1_car_05_why",
+  "size": "feed"
+ },
+ {
+  "name": "c1_car_06_docket",
+  "size": "feed"
+ },
+ {
+  "name": "c1_reel_01_hook",
+  "size": "reel"
+ },
+ {
+  "name": "c1_reel_02_facts",
+  "size": "reel"
+ },
+ {
+  "name": "c1_reel_03_verdict",
+  "size": "reel"
+ },
+ {
+  "name": "c1_reel_04_reason",
+  "size": "reel"
+ },
+ {
+  "name": "c3_static_move",
+  "size": "feed"
+ },
+ {
+  "name": "c3_static_spread",
+  "size": "feed"
+ },
+ {
+  "name": "c3_car_01_hook",
+  "size": "feed"
+ },
+ {
+  "name": "c3_car_02_chart",
+  "size": "feed"
+ },
+ {
+  "name": "c3_car_03_breakdown",
+  "size": "feed"
+ },
+ {
+  "name": "c3_car_04_below_retail",
+  "size": "feed"
+ },
+ {
+  "name": "c3_car_05_method_sources",
+  "size": "feed"
+ },
+ {
+  "name": "c3_reel_01_hook",
+  "size": "reel"
+ },
+ {
+  "name": "c3_reel_02_chart_draw",
+  "size": "reel"
+ },
+ {
+  "name": "c3_reel_03_data_point",
+  "size": "reel"
+ },
+ {
+  "name": "c3_reel_04_takeaway",
+  "size": "reel"
+ },
+ {
+  "name": "c4_static_two_shoes_one_verdict",
+  "size": "feed"
+ },
+ {
+  "name": "c4_static_the_receipt",
+  "size": "feed"
+ },
+ {
+  "name": "c4_static_hot_take_ticket",
+  "size": "feed"
+ },
+ {
+  "name": "c4_static_sneakerhead_math",
+  "size": "feed"
+ },
+ {
+  "name": "c4_car_group_chat_01",
+  "size": "feed"
+ },
+ {
+  "name": "c4_car_group_chat_02_punchline",
+  "size": "feed"
+ },
+ {
+  "name": "c4_reel_01_inner_monologue_hook",
+  "size": "reel"
+ },
+ {
+  "name": "c4_reel_02_inner_monologue_beat",
+  "size": "reel"
+ },
+ {
+  "name": "c4_ai_slot_static_expectation_reality",
+  "size": "feed"
+ },
+ {
+  "name": "st_mon_drop_calendar",
+  "size": "story"
+ },
+ {
+  "name": "st_tue_price_check",
+  "size": "story"
+ },
+ {
+  "name": "st_wed_the_poll_sticker_day",
+  "size": "story"
+ },
+ {
+  "name": "st_thu_desk_notes",
+  "size": "story"
+ },
+ {
+  "name": "st_fri_the_verdict",
+  "size": "story"
+ },
+ {
+  "name": "st_sat_two_shoes",
+  "size": "story"
+ },
+ {
+  "name": "st_sun_the_week",
+  "size": "story"
+ },
+ {
+  "name": "diag_reel_safe_zones",
+  "size": "reel"
+ },
+ {
+  "name": "diag_feed_safe_zones",
+  "size": "feed"
+ }
+]

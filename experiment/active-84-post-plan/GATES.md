@@ -2,6 +2,10 @@
 
 **Status: ACTIVE and BINDING. Launch is NOT authorized.**
 
+*Item-by-item status against these criteria is tracked in `../../production/gates/SOURCING_GATE_SCORECARD.md`
+and `../../production/gates/WEEK1_GATE_SCORECARD.md`. The criteria below are the lock; the scorecards are
+the record.*
+
 The methodology is founder-locked. **Publishing is not.** Both gates below must pass before Post #1, and the
 start date is instantiated only when they do: *the experiment starts on the first Monday after all required
 Week-1 and Sourcing Gates have passed* (Founder Lock, decision 3).

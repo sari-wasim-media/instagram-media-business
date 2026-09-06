@@ -85,27 +85,29 @@ Post #1, never mid-experiment.
 
 | # | Item | Status | Notes |
 |---|---|---|---|
-| 19 | Build the tracking sheet | **NOT DONE — unblocked** | The matrix is locked. Import `../experiment/active-84-post-plan/matrix_84.csv`; do not retype it. Week-1 Gate item |
+| 19 | Build the tracking sheet | **SKELETON BUILT (2026-09-06)** — not yet live | Generated from `../experiment/active-84-post-plan/matrix_84.csv` by `tools/build_tracking_sheet.py`: `experiment/tracking/posts.csv`, `account_weekly.csv`, `stories.csv`, `tracking_sheet.xlsx`. "Live" = adopted by the founders with the W0 baseline rows filled. Week-1 Gate item |
 | 20 | Adopt the post ID convention `A-W3-C2-CAR-01` | **DONE** | All 84 IDs are assigned in `matrix_84.csv` |
-| 21 | Second tab account-weekly, third tab Stories log | **NOT DONE — unblocked** | Stories log is now **84 rows** (1/day/account). Part of the tracking sheet |
-| 22 | Build the shared topic backlog with the 14-day check-out lock | **NOT DONE** | Genuinely outstanding. The blind-to-performance queue rule is specified in `../experiment/active-84-post-plan/ANTI_DUPLICATION_AND_TOPIC_SELECTION.md` §5. Week-1 Gate item |
+| 21 | Second tab account-weekly, third tab Stories log | **SKELETON BUILT (2026-09-06)** | Account-weekly: 18 rows (W0–W8 × 2). Stories log: **84 rows** with the rotation class and the sticker flag. Part of the tracking sheet |
+| 22 | Build the shared topic backlog with the 14-day check-out lock | **INSTRUMENT BUILT — EMPTY (2026-09-06)** | `production/backlog/` (queue, check-out log, idea bank) with `tools/validate_backlog.py` enforcing the queue rule, the 14-day / 10-day locks and the blind attestation. Populating it is founder work. Week-1 Gate item |
 
 ## Content readiness
 
 | # | Item | Status | Notes |
 |---|---|---|---|
 | 23 | Produce and schedule all Week-1 pieces before Week 1 starts | **NOT YET APPLICABLE** + count **SUPERSEDED** | The item says **8 pieces** (4/account). At the active cadence Week 1 requires **14** (7/account). Blocked on the matrix |
-| 24 | Build reusable templates (chart, ranking carousel, verdict card, meme layout) | **NOT YET APPLICABLE** | Depends on the locked cell set |
-| 25 | Resolve imagery sourcing for C2 and C3 | **NOT DONE** | Genuinely outstanding and does not depend on the matrix. Named as the binding constraint for C2 |
-| 26 | Write the originality rule where both founders can see it: **zero unoriginal posts** | **NOT DONE** | Trivial, outstanding. The rule itself is recorded in `../experiment/methodology/MEASUREMENT_AND_RULES.md` |
+| 24 | Build reusable templates (chart, ranking carousel, verdict card, meme layout) | **BUILT AS PROPOSALS (2026-09-06)** — awaiting founder template lock | `production/templates/` — all four house systems plus the Story frame, as specs with 64 rendered specimens and a Reel pacing reference; C2 ranked-item count proposed at 7. Locked only when the founders record it (`production/FOUNDER_REVIEW_QUEUE.md`) |
+| 25 | Resolve imagery sourcing for C2 and C3 | **DECISION RECORDED, EXECUTION NOT STARTED (2026-09-06)** | Source classes per engine and the C2 route stack are in `production/assets/`; C3 is self-generated charts with a data-source terms register. The asset bank (42 C2 images for the gate) and the C2 sustainability test remain founder work. Still the binding constraint |
+| 26 | Write the originality rule where both founders can see it: **zero unoriginal posts** | **DONE (2026-09-06)** | `production/policy/ORIGINALITY_RULE.md` — the one-page rule card |
 
 ---
 
 ## Summary
 
-**Genuinely outstanding (7), all now launch-gating:** item 19 (tracking sheet) · item 21 (sheet tabs) ·
-item 22 (topic backlog) · item 23 (Week-1 production) · item 24 (templates — **do this first**) ·
-item 25 (imagery sourcing — **the binding constraint**) · item 26 (write down the originality rule).
+**Status after the Creative System sprint (2026-09-06):** items 19 and 21 have a built skeleton; item 22 has
+its instrument (empty); item 24 is built as proposals awaiting founder lock; item 25 has its decision recorded
+and its execution (the asset bank, the sustainability test) outstanding — **still the binding constraint**;
+item 26 is done. **Genuinely outstanding:** item 23 (Week-1 production — deliberately not started) and the
+execution halves of 22 and 25. All are tracked item by item in `../production/gates/`.
 
 **New pre-launch items not in the historical 26**, created by the Founder Lock: declare the 7-day Story
 rotation and fix the sticker weekday · write the fixed AI disclosure wording · verify the AI tool's

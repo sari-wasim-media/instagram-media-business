@@ -1,0 +1,15 @@
+{
+  "_note": "Template-level constants shared by the validators and the specs. PROPOSED values become locked only when the founders record the decision in DECISIONS.md.",
+  "status": "PROPOSED — founder review required",
+  "c2_ranked_item_count": 7,
+  "c2_ranked_item_count_status": "PROPOSED template-lock value; see C2_RANKED_ITEM_COUNT_DECISION.md",
+  "reel_seconds": { "min": 20, "target_min": 30, "target_max": 45, "max": 59, "never_over": 90 },
+  "carousel_slides": { "min": 5, "max": 10 },
+  "story_sticker_weekday": "Wed",
+  "story_rotation": ["DROP CALENDAR", "PRICE CHECK", "THE POLL", "DESK NOTES", "THE VERDICT", "TWO SHOES", "THE WEEK"],
+  "verdict_scale": ["COP", "WAIT", "PASS"],
+  "c4_named_formats": ["TWO SHOES, ONE VERDICT", "THE RECEIPT", "HOT TAKE TICKET", "SNEAKERHEAD MATH", "GROUP CHAT", "EXPECTATION / REALITY", "INNER MONOLOGUE"],
+  "ai_slots": ["B-W2-C4-REE-01", "A-W2-C4-CAR-01", "B-W2-C4-STA-01", "A-W4-C4-REE-01", "B-W5-C4-CAR-01", "A-W6-C4-STA-01"],
+  "asset_classes": ["OWNED", "LICENSED_FREE", "LICENSED_PAID", "PERMISSIONED", "SELF_GENERATED", "PRESS_VERIFIED", "AI_GENERATED"],
+  "hashtags": { "min": 3, "max": 5 }
+}

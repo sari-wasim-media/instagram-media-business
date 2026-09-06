@@ -31,7 +31,11 @@ read whatever else the task needs.
 - The active cadence is **1 feed post/day/account → 84 feed posts over 6 weeks**, plus **84 Stories**.
 - ✅ **The 84-post matrix is designed, validated and FOUNDER-LOCKED** —
   `experiment/active-84-post-plan/matrix_84.csv`.
-- ⚠ **Locked is not launched.** Launch is blocked on the Sourcing Gate and the Week-1 Gate.
+- ✅ **The creative system and pre-launch instruments are built (2026-09-06) — as proposals** —
+  `production/`. Thirteen values the lock left open await founder review in
+  `production/FOUNDER_REVIEW_QUEUE.md`; the C2 ranked-item count is proposed at **7**.
+- ⚠ **Locked is not launched.** Launch is blocked on the Sourcing Gate and the Week-1 Gate. Zero Week-1
+  pieces exist, by design.
 
 ---
 
@@ -67,9 +71,16 @@ read whatever else the task needs.
   rest kept substantially unchanged. ⚠ **An earlier draft proposed rewriting both bios; the founders did not
   apply it. Do not treat that rewrite as pending work** — the profile is frozen
 - This repository migration
+- **The Creative System + Pre-Launch Foundations sprint (2026-09-06)** → `production/`: House System v1,
+  the C1–C4 and Story templates with 64 rendered specimens, the asset and rights pipeline with its research
+  record, the policy pack, the topic queue, the production rhythm and C1 ladder, the tracking-sheet skeleton,
+  the gate scorecards, and four validators/generators in `tools/`. **All proposals until the founders lock
+  them — do not rebuild them; review them.**
 
 ⚠ **Do not re-run market research.** It exists, and much of it was corrected — read the ledger rather than
-regenerating it.
+regenerating it. ⚠ **Do not re-run the rights and terms research either** — it is recorded with access
+dates in `production/assets/SOURCING_ROUTES_RESEARCH.md`; re-read a specific page only when a decision
+depends on it.
 
 ---
 
@@ -107,12 +118,16 @@ earlier four-cell naming (redefined as C1–C4), and every count sized to 4 post
 
 ## 6. Immediate next task
 
-> **Pass the Sourcing Gate**, starting with imagery rights for C2. Then the Week-1 Gate. Then, and only then,
-> the start date is instantiated as the first Monday after both gates pass.
+> **Founder review of `production/FOUNDER_REVIEW_QUEUE.md`** — 13 proposed lock values, starting with the
+> C2 ranked-item count (proposed 7). Then **execute the Sourcing Gate** along
+> `production/PRE_LAUNCH_RUNBOOK.md` (asset bank, C2 sustainability test, C3 terms clearance, AI tool
+> verification and test piece). Then the Week-1 Gate. Then, and only then, the start date is instantiated as
+> the first Monday after both gates pass.
 
-**The design is finished and locked. Do not redesign it.** Read
-`experiment/active-84-post-plan/GATES.md` for the exact pass criteria, and run
-`python3 tools/validate_matrix.py` if you want to confirm the matrix is intact.
+**The design is finished and locked. Do not redesign it. The creative system is built; do not rebuild it —
+review it.** Read `experiment/active-84-post-plan/GATES.md` for the exact pass criteria, the scorecards in
+`production/gates/` for status, and run `python3 tools/validate_matrix.py` if you want to confirm the matrix
+is intact.
 
 ⚠ **C2 is the binding constraint, and it is different in kind from C3.** A C2 ranking needs one rights-clean
 image **per ranked item, in every format** — roughly 85–170 distinct images across its 21 posts. C3's visuals
@@ -173,9 +188,11 @@ Repository-specific preservation rules:
 PROJECT_STATE.md    current truth          DECISIONS.md     what was decided
 ROADMAP.md          phases                 HANDOFF.md       this file
 WORKFLOW.md         how we work            CLAUDE.md        Claude Code entry point
-strategy/           context + research     experiment/      methodology + the LOCKED matrix
+strategy/           context + research     experiment/      methodology + the LOCKED matrix + tracking skeleton
 evidence/           organized screenshots  archive/         pristine originals
-tools/              validate_matrix.py     experiment/active-84-post-plan/matrix_84.csv  ← the matrix
+production/         creative system, asset pipeline, policies, queue, rhythm, gate scorecards (PROPOSED)
+tools/              validate_matrix.py · validate_provenance.py · validate_backlog.py · build_tracking_sheet.py · instantiate_calendar.py
+experiment/active-84-post-plan/matrix_84.csv  ← the matrix
 ```
 
 **One-sentence rule:** `evidence/` and the organized documents are the working surface, `archive/` is the

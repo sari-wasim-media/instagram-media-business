@@ -58,6 +58,15 @@ remain permanently manual.
 Claude Code's authorised scope to date is **documentation and repository migration only**. No automation, no
 dashboards, no tracking software, no publishing tooling has been built or authorised.
 
+*Clarification, 2026-09-06.* The founder-approved Creative System sprint authorised, and produced,
+**in-repository production aids**: read-only validators of committed CSVs (`tools/validate_provenance.py`,
+`tools/validate_backlog.py`), a generator of the tracking-sheet skeleton from the matrix
+(`tools/build_tracking_sheet.py`), a local calendar printer (`tools/instantiate_calendar.py`) and a specimen
+renderer (`production/templates/src/render_frames.py`). They are of the same kind as
+`tools/validate_matrix.py`: they read and write files in this repository and print. **They are not publishing
+tooling, dashboards, scrapers or automation, which remain unauthorised.** The tracking sheet itself is a
+manual spreadsheet.
+
 ---
 
 ## Platform and content policy
@@ -318,3 +327,19 @@ any business, experiment or platform decision in this register.
 ⚠ **Clarified, not changed:** `CLAUDE.md`'s "documents and asks — it does not execute" always meant execution
 *outside* the repository — publishing, automation, monetization. It was reworded to say so explicitly, because
 Workflow V1 makes Claude's in-repository execution autonomy explicit.
+
+---
+
+## Pending founder review — proposals, not decisions
+
+The Creative System + Pre-Launch Foundations sprint (2026-09-06) proposed values for everything the Founder
+Lock left to be fixed at template lock or before Day 1: House System v1 (the house templates) · the **C2
+ranked-item count (proposed 7)** · the C1 verdict scale and rubric · the Story rotation and sticker weekday
+(proposed Wednesday) · the fixed AI disclosure wording · the AI tool candidate · the source-class priority
+per engine and the residual-risk acceptance · the caption and hashtag operating form · the comment-reply
+policy · the scheduling tool and publish settings · the reserve composition · two operational readings of
+locked rules · producer alternation by format batch.
+
+**None of these is in force.** Each becomes an ACTIVE entry in this register only when Sari and Wasim record
+it. The queue, with recommendations and the reasoning behind each, is `production/FOUNDER_REVIEW_QUEUE.md`.
+Every locked decision above is unchanged by the sprint.

@@ -28,3 +28,10 @@ Four things that are easy to get wrong here:
 
 **Locked is not launched.** The design is complete; publishing is blocked on two operational gates in
 `experiment/active-84-post-plan/GATES.md`. Zero revival posts have been published.
+
+**The creative system is built — as proposals.** `production/` holds the house templates, the asset and
+rights pipeline, the policy pack, the topic queue, the operating rhythm and the gate scorecards (2026-09-06).
+Values there that the lock left open (the C2 ranked-item count, the Story rotation, the disclosure wording,
+the publish settings, …) are **proposed until the founders record them in `DECISIONS.md`** — see
+`production/FOUNDER_REVIEW_QUEUE.md`. Do not rebuild the system; review it, and do not treat a proposal as
+locked.

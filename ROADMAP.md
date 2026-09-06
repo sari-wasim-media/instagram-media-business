@@ -27,30 +27,37 @@ The GitHub migration is infrastructure. It is not the business.
   weeks, 4R/2C/1S per account per week, weeks 3–6 balanced with zero residual, one fixed 16:00 UTC publish
   instant, a six-slot C4-only AI-imagery sub-test, and daily Stories
   → `experiment/active-84-post-plan/`
+- **The Creative System + Pre-Launch Foundations sprint (2026-09-06)** — House System v1; the C1–C4 and
+  Story templates as specs with 64 rendered specimens and a Reel pacing reference; the asset-class decision,
+  the C2 route stack, the C3 terms register and the rights research record; the provenance register, audio
+  ledger, topic queue and tracking-sheet skeleton with validators; the policy pack; the production rhythm,
+  C1 ladder, reserve spec and QA checklist; both gate scorecards. **All as proposals awaiting founder lock**
+  → `production/`
 
 ## Current
 
-- **Pass the Sourcing Gate**, starting with imagery rights for C2 at volume — the binding operational
-  constraint. Includes the AI arm: naming the generation tool and verifying its output licence permits
-  commercial use. → `experiment/active-84-post-plan/GATES.md` §1
+- **Founder review of the 13 proposed lock values** — above all the C2 ranked-item count (proposed 7)
+  → `production/FOUNDER_REVIEW_QUEUE.md`
+- **Pass the Sourcing Gate** by execution: the 42-image asset bank, the two-piece C2 sustainability test,
+  the C3 data-source terms clearance, the AI tool verification and test piece
+  → `production/PRE_LAUNCH_RUNBOOK.md` steps 1–7 · `production/gates/SOURCING_GATE_SCORECARD.md`
 
-Nothing else is in flight. **The design is finished and locked; the remaining work is operational.**
+**The design is finished and locked; the creative system is built; the remaining work is founder review and
+execution.**
 
 ## Next
 
-All operational. In rough order:
+All operational. In order (`production/PRE_LAUNCH_RUNBOOK.md`):
 
-1. **Build the four house templates** — chart, ranking carousel, verdict card, meme layout — and **fix the C2
-   ranked-item count**. Everything else depends on the per-piece asset counts these produce
-2. **Resolve imagery sourcing** — owned, licensed, permissioned or self-generated. C2 is the constraint;
-   C3's constraint is research time and data-source ToS, not licensing
-3. **Build the tracking sheet** by importing `experiment/active-84-post-plan/matrix_84.csv`
-4. **Build the topic backlog** and start the blind-to-performance check-out queue
-5. **Declare the 7-day Story rotation**, fix the sticker weekday, write the fixed AI disclosure wording
-6. **Produce and schedule** the 11 non-C1 Week-1 feed pieces, the 14 Week-1 Stories and the 7-piece reserve;
-   execute the Day-2 C1 topic lock; complete Week-2 outlines
-7. **Instantiate the start date** — the first Monday after both gates pass
-8. **Launch** — only after 1–7 are complete
+1. **Lock the proposals** and record them in `DECISIONS.md`
+2. **Build the asset bank and run the C2 sustainability test** — C2 is the constraint; the route changes if
+   the test fails, never the matrix
+3. **Clear C3's data sources** in the terms register; **verify the AI tool** and produce the AI test piece
+4. **Seed the topic queue**, set up the daily C1 release watch, run the scheduling time-zone check
+5. **Produce and schedule** the 11 non-C1 Week-1 feed pieces, the 14 Week-1 Stories and the 7-piece reserve;
+   execute the Day-0 C1 topic lock for the Day-2 slot; complete Week-2 outlines; capture the Week-0 baselines
+6. **Instantiate the start date** — the first Monday after both gates pass (locally; never in the repository)
+7. **Launch** — only after 1–6 are complete
 
 *Optional at any point, not blocking:* capture post-change profile screenshots, which would convert the
 founder-confirmed bio edit into screenshot evidence. This is **not** a task to change the bios.
