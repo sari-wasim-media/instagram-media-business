@@ -66,10 +66,12 @@ SNEAKERHEAD MATH (illustrated operands), TWO SHOES with two *abstract* illustrat
 products. The prohibited-use list in `AI_IMAGERY_SUBTEST.md` §5 applies in full — no real specific product,
 no brand mark, no real person, no generative video, no reconstruction of a third-party image.
 
-The frame carries the **disclosure block** (fixed line, mono 26, outlined) and the plate label reads
-`AI-generated illustration · no real product · no brand mark`. The caption carries the identical fixed
-disclosure line. The in-app AI label is switched on when posting and never removed. Full policy, wording and
-provenance fields: `../policy/AI_IMAGERY_POLICY_PACK.md`.
+**Nothing on the artwork marks the post as AI-treated.** Disclosure is the identical fixed caption line
+(locked requirement) plus the platform AI label, switched on when posting and never removed. Adding a visible
+disclosure element to the frame would introduce a second visual difference between AI and non-AI C4 posts on
+top of the imagery itself, which is the one difference the sub-test is meant to measure. The plate labels
+in the specimens are annotations, not production elements. Full policy, wording and provenance fields:
+`../policy/AI_IMAGERY_POLICY_PACK.md`.
 
 Slot-by-format assignment is already fixed by the matrix: two Reels, two Carousels, two Statics. Recommended
 format per slot (proposal, free to change at production as long as it is one of the seven):

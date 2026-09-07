@@ -120,7 +120,10 @@ templates in either tool without licensing work. The vendored files in `fonts/` 
 | **Receipt / Chat / Ticket / Split** | C4 | Original, house-drawn UI. Never a screenshot of any real app, receipt or ticket |
 | **Sticker zone** | Story, Wednesday | Dashed accent box marking where the one interactive sticker is placed in-app |
 | **Mosaic** | Story, Sunday | Own artwork thumbnails only — no post links, no stickers |
-| **Disclosure block** | the six AI slots | Mono 26 px in a 2 px outlined box: the fixed disclosure line, on the frame as well as in the caption |
+
+There is deliberately **no AI-disclosure component**: the six AI-treated posts are disclosed in the fixed
+caption line and by the platform's AI label, never on the artwork, so their frames are visually identical to
+the other C4 frames.
 
 ---
 
@@ -133,7 +136,8 @@ templates in either tool without licensing work. The vendored files in `fonts/` 
 - Product images never carry the accent colour; the accent lives in type and rules only.
 - Every image carries a provenance ID in the tracking row (`../assets/ASSET_PIPELINE.md`). No ID, no publish.
 - In the six AI slots the plate holds an AI-generated **illustration** that depicts no real product, no brand
-  mark and no real person, and the frame carries the disclosure block. Everything else is identical.
+  mark and no real person. Everything else about the frame is identical to a non-AI C4 frame; disclosure is
+  in the caption and the platform label only.
 
 ---
 

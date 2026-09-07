@@ -18,7 +18,7 @@ Rendering needs a Chromium/Chrome binary. Set CHROME=/path/to/chrome if it is no
 found automatically. This is a local production aid, not automation: it writes
 files into the repository and touches nothing outside it.
 """
-import argparse, os, shutil, subprocess, sys, json
+import argparse, os, shutil, subprocess, sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 HTML_DIR = os.path.join(HERE, "html")
@@ -512,18 +512,22 @@ def c4_reel():
     return [("c4_reel_01_inner_monologue_hook", hook), ("c4_reel_02_inner_monologue_beat", beat)]
 
 def c4_ai_static():
+    """AI-slot specimen. The frame is the ordinary EXPECTATION / REALITY layout: nothing on the artwork marks it
+    as AI-treated. Disclosure lives in the fixed caption line and the platform AI label only, so the artwork
+    treatment stays identical to the non-AI C4 posts. The plate labels are specimen annotations, as on every
+    other frame, and are not part of the production design."""
     body = f'''<div class="content">
-  <div class="kicker">Expectation / reality · AI slot</div>
+  <div class="kicker">Expectation / reality</div>
   <h1 class="title" style="margin-top:12px;font-size:96px">The shoe rack<br>you planned vs<br>the one you have</h1>
   <div style="position:relative;margin-top:36px">
     <div class="split">
-      <div class="cell"><div class="lab">Expectation</div><div class="plate" style="width:456px;height:360px;background:linear-gradient(160deg,#243b6b,#5b7fd6)"><div class="label" style="color:#fff">AI-generated illustration · no real product · no brand mark</div></div></div>
-      <div class="cell"><div class="lab">Reality</div><div class="plate" style="width:456px;height:360px;background:linear-gradient(160deg,#6b2433,#d65b7f)"><div class="label" style="color:#fff">AI-generated illustration · no real product · no brand mark</div></div></div>
+      <div class="cell"><div class="lab">Expectation</div><div class="plate" style="width:456px;height:420px;background:linear-gradient(160deg,#243b6b,#5b7fd6)"><div class="label" style="color:#fff">Specimen: AI illustration goes here · no real product · no brand mark</div></div></div>
+      <div class="cell"><div class="lab">Reality</div><div class="plate" style="width:456px;height:420px;background:linear-gradient(160deg,#6b2433,#d65b7f)"><div class="label" style="color:#fff">Specimen: AI illustration goes here · no real product · no brand mark</div></div></div>
     </div>
   </div>
-  <div class="disclosure" style="margin-top:44px">Imagery in this post is AI-generated and illustrative. It does not depict a real product.</div>
+  <div class="reason" style="margin-top:44px;color:var(--t-ink-2)">Disclosure is in the caption (fixed line) and the platform AI label — never on the artwork.</div>
 </div>'''
-    return doc("c4 ai static", body, engine="C4", surface="ink", band_right="ONLY in the six locked C4 slots · provenance record required", counter="STATIC")
+    return doc("c4 ai static", body, engine="C4", surface="ink", band_right="AI slot specimen · identical artwork treatment to non-AI C4", counter="STATIC")
 
 frame("c4_static_two_shoes_one_verdict", "feed", c4_two_shoes())
 frame("c4_static_the_receipt", "feed", c4_receipt())
@@ -688,17 +692,18 @@ def build_motion(chrome):
     out = os.path.join(RENDER_DIR, "c2", f"C2_REEL_pacing_reference_36s.{ext}")
     # An MJPEG stream file read through image2pipe: the one input route that works on every ffmpeg build
     # tried, including Playwright's minimal one (no PNG decoder, no rawvideo demuxer, no pipe protocol).
-    import io
-    stream = os.path.join(HTML_DIR, "_c2_reel_frames.mjpeg")
-    with open(stream, "wb") as fh:
-        for nm, dur in seq:
-            buf = io.BytesIO()
-            Image.open(os.path.join(reel_dir, nm + ".png")).convert("RGB").save(buf, "JPEG", quality=92)
-            fh.write(buf.getvalue() * int(round(dur * fps)))
-    cmd = [ff, "-y", "-loglevel", "error", "-f", "image2pipe", "-c:v", "mjpeg", "-r", str(fps), "-i", stream,
-           "-pix_fmt", "yuv420p", *codec, "-r", str(fps), out]
-    subprocess.run(cmd, check=True)
-    os.remove(stream)
+    # The stream lives in a system temp directory and is removed whatever happens — never in the repository.
+    import io, tempfile
+    with tempfile.TemporaryDirectory(prefix="c2reel_") as tmp:
+        stream = os.path.join(tmp, "frames.mjpeg")
+        with open(stream, "wb") as fh:
+            for nm, dur in seq:
+                buf = io.BytesIO()
+                Image.open(os.path.join(reel_dir, nm + ".png")).convert("RGB").save(buf, "JPEG", quality=92)
+                fh.write(buf.getvalue() * int(round(dur * fps)))
+        cmd = [ff, "-y", "-loglevel", "error", "-f", "image2pipe", "-c:v", "mjpeg", "-r", str(fps), "-i", stream,
+               "-pix_fmt", "yuv420p", *codec, "-r", str(fps), out]
+        subprocess.run(cmd, check=True)
     total = sum(d for _, d in seq)
     print(f"motion reference written: {out} ({total:.1f} s, {os.path.getsize(out)//1024} KB)")
 
@@ -724,9 +729,6 @@ def main():
     print(f"{n} frame(s) {'written' if a.html_only else 'rendered'}")
     if a.motion and not a.html_only:
         build_motion(chrome)
-    manifest = [{"name": nm, "size": sz} for nm, sz, _ in FRAMES]
-    with open(os.path.join(HERE, "frames_manifest.json"), "w") as fh:
-        json.dump(manifest, fh, indent=1)
 
 if __name__ == "__main__":
     main()

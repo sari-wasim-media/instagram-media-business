@@ -35,19 +35,23 @@ and in any reserve piece.**
 
 > **Imagery in this post is AI-generated and illustrative. It does not depict a real product.**
 
-- Appears **verbatim** as the last caption line before the hashtags in all six posts, and verbatim in the
-  disclosure block on the artwork (specimen: `../templates/renders/c4/c4_ai_slot_static_expectation_reality.png`).
-- Never abbreviated, never paraphrased, never moved to a comment. The line is part of the treatment being
-  measured, so it must be identical six times.
+- Appears **verbatim** as the last caption line before the hashtags in all six posts. Never abbreviated,
+  never paraphrased, never moved to a comment. The line is part of the treatment being measured, so it must be
+  identical six times.
 - In addition: the in-app AI label is switched **on** when posting each of the six ("Add AI label" in the
   composer, as documented for Meta surfaces; the Instagram composer's exact label is to be confirmed at the
   AI test), and any label Meta applies automatically is left in place. Never strip or alter metadata to
   avoid a label.
+- **Nothing on the artwork.** The locked sub-test requires exactly these two disclosures — the fixed caption
+  line and the preserved platform label. A visible disclosure element on the frame would add a second visual
+  difference between AI and non-AI C4 posts on top of the imagery itself, so it is not part of the treatment.
+  The AI-slot specimen (`../templates/renders/c4/c4_ai_slot_static_expectation_reality.png`) is therefore an
+  ordinary C4 frame.
 
 | Founder decision | |
 |---|---|
 | Wording | ☐ as proposed · ☐ amended to: ______ |
-| On-artwork disclosure block as well as caption | ☐ yes (proposed) · ☐ caption only |
+| Placement | caption line + platform label only (per the locked sub-test; no on-artwork element) |
 | Sari / Wasim · date | ☐ / ☐ ______ |
 
 ## 4. Prohibited — even inside the six slots (locked, as a checklist)

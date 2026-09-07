@@ -9,7 +9,7 @@ Writes experiment/tracking/posts.csv           84 rows, one per feed post, measu
        experiment/tracking/account_weekly.csv  2 accounts x 9 weeks (W0 baseline, W1-W6, W7-W8 tail)
        experiment/tracking/stories.csv         84 rows, one per Story
        experiment/tracking/tracking_sheet.xlsx the same three tabs plus a README tab, with the per-reach
-                                               rate columns as formulas that divide by Reach (Viewers)
+                                               rate columns as formulas that divide by Reach
 
 The sheet is a manual instrument. Founders fill it by hand from Instagram Insights at T+7 / T+14 / T+2.
 No date is instantiated here: publish_date stays blank until the founders run tools/instantiate_calendar.py
@@ -35,13 +35,13 @@ POST_COLS = [
     "asset_ids", "audio_track_id", "sources", "c1_rubric_score", "caption_final", "alt_text_done", "hashtags",
     "reel_duration_s", "slide_count", "scheduled_at_utc", "schedule_screenshot_ref", "actual_publish_utc",
     "originality_status", "pressure_point_check",
-    # T+7 primary snapshot — Reach (Viewers) is the denominator for every rate
-    "t7_snapshot_date", "t7_age_days", "t7_reach_viewers", "t7_views", "t7_follower_reach", "t7_nonfollower_reach",
+    # T+7 primary snapshot — Reach (unique accounts) is the denominator for every rate
+    "t7_snapshot_date", "t7_age_days", "t7_reach", "t7_views", "t7_follower_reach", "t7_nonfollower_reach",
     "t7_pct_nonfollower_reach", "t7_likes", "t7_comments", "t7_sends_shares", "t7_saves", "t7_profile_visits", "t7_follows",
     "t7_avg_watch_time_s", "t7_total_watch_time_s", "t7_replays",
     "t7_likes_per_reach", "t7_comments_per_reach", "t7_sends_per_reach", "t7_saves_per_reach", "t7_profile_visits_per_reach",
     # T+14 tail snapshot — Reels only
-    "t14_snapshot_date", "t14_age_days", "t14_reach_viewers", "t14_views", "t14_nonfollower_reach", "t14_pct_nonfollower_reach",
+    "t14_snapshot_date", "t14_age_days", "t14_reach", "t14_views", "t14_nonfollower_reach", "t14_pct_nonfollower_reach",
     "t14_likes", "t14_comments", "t14_sends_shares", "t14_saves", "t14_sends_per_reach", "t14_saves_per_reach",
     # community and compliance
     "replies_made", "corrections_acknowledged", "spam_hidden", "ai_platform_label_observed",
@@ -58,7 +58,7 @@ WEEKLY_COLS = [
 STORY_COLS = [
     "story_id", "account", "account_handle", "week", "day", "weekday", "rotation_class", "sticker", "adjacent_engine",
     "scheduled_utc", "publish_date", "actual_publish_utc", "status", "producer", "asset_ids",
-    "t2_snapshot_date", "t2_age_days", "t2_reach_viewers", "t2_views", "t2_forward_taps", "t2_back_taps", "t2_exits",
+    "t2_snapshot_date", "t2_age_days", "t2_reach", "t2_views", "t2_forward_taps", "t2_back_taps", "t2_exits",
     "t2_replies", "t2_sticker_interactions", "breakout_support_used", "deviation", "notes",
 ]
 ROTATION_ENGINE = {"DROP CALENDAR": "C1", "PRICE CHECK": "C3", "THE POLL": "C2", "DESK NOTES": "", "THE VERDICT": "C1",
@@ -146,7 +146,7 @@ def write_xlsx(path, posts, weekly, stories):
         "TRACKING SHEET — 84-post controlled revival experiment (skeleton generated from matrix_84.csv)",
         "",
         "RULES THAT GOVERN THIS SHEET",
-        "1. Reach is the denominator for every rate metric. Instagram Insights now labels unique accounts 'Viewers'; record that figure in *_reach_viewers. 'Views' (plays incl. repeats) is recorded but is never a denominator and is never divided by follower count.",
+        "1. Reach is the denominator for every rate metric. Reach = the unique-accounts figure Instagram reports for the post (record it in *_reach). The UI label for that figure (Accounts reached / Viewers) is UNVERIFIED until observed per format on both real accounts at the Week-0 baseline; the label does not change the rule. Views (plays incl. repeats) is recorded but is never a denominator and is never divided by follower count.",
         "2. Snapshots at fixed ages: T+7 for every feed post, T+14 additionally for every Reel, T+2 for every Story. Record the actual age in days; if it deviates from the target by more than 48 h, mark AGE_DEVIATION in protocol_deviation.",
         "3. No blank measurement cells for any post past T+7. Never back-fill estimates.",
         "4. Weekly account-level Reach and non-follower Reach (account_weekly tab) are descriptive context only — no decision authority (Rule S).",
@@ -157,7 +157,7 @@ def write_xlsx(path, posts, weekly, stories):
         "9. The six AI slots carry ai_overlay = AI; ai_platform_label_observed is filled at T+7 for those six only.",
         "10. Account Status is checked weekly on both accounts (account_weekly tab); any category leaving green is a hard stop for that account.",
         "",
-        "Rate columns in the posts tab are formulas: =IF(reach>0, metric/reach, \"\"). They divide by Reach (Viewers) and nothing else.",
+        "Rate columns in the posts tab are formulas: =IF(reach>0, metric/reach, \"\"). They divide by Reach and nothing else.",
     ]
     for i, t in enumerate(lines, 1):
         readme.cell(row=i, column=1, value=t)
@@ -197,15 +197,15 @@ def write_xlsx(path, posts, weekly, stories):
         return ws
 
     add_sheet("posts", POST_COLS, posts, 12,
-              rate_formulas={"t7_pct_nonfollower_reach": ("t7_nonfollower_reach", "t7_reach_viewers"),
-                             "t7_likes_per_reach": ("t7_likes", "t7_reach_viewers"),
-                             "t7_comments_per_reach": ("t7_comments", "t7_reach_viewers"),
-                             "t7_sends_per_reach": ("t7_sends_shares", "t7_reach_viewers"),
-                             "t7_saves_per_reach": ("t7_saves", "t7_reach_viewers"),
-                             "t7_profile_visits_per_reach": ("t7_profile_visits", "t7_reach_viewers"),
-                             "t14_pct_nonfollower_reach": ("t14_nonfollower_reach", "t14_reach_viewers"),
-                             "t14_sends_per_reach": ("t14_sends_shares", "t14_reach_viewers"),
-                             "t14_saves_per_reach": ("t14_saves", "t14_reach_viewers")},
+              rate_formulas={"t7_pct_nonfollower_reach": ("t7_nonfollower_reach", "t7_reach"),
+                             "t7_likes_per_reach": ("t7_likes", "t7_reach"),
+                             "t7_comments_per_reach": ("t7_comments", "t7_reach"),
+                             "t7_sends_per_reach": ("t7_sends_shares", "t7_reach"),
+                             "t7_saves_per_reach": ("t7_saves", "t7_reach"),
+                             "t7_profile_visits_per_reach": ("t7_profile_visits", "t7_reach"),
+                             "t14_pct_nonfollower_reach": ("t14_nonfollower_reach", "t14_reach"),
+                             "t14_sends_per_reach": ("t14_sends_shares", "t14_reach"),
+                             "t14_saves_per_reach": ("t14_saves", "t14_reach")},
               validations={"status": STATUS_VALUES, "originality_status": ORIGINALITY_VALUES,
                            "ai_platform_label_observed": ["Y", "N", "n/a"], "alt_text_done": ["Y", "N"], "caption_final": ["Y", "N"]})
     add_sheet("account_weekly", WEEKLY_COLS, weekly, 4,

@@ -23,7 +23,8 @@ Thursday and scheduled; only C1's ladder ever forces weekend production (see `C1
 | Mon | C1 watch | Release-calendar scan (15 min, daily); any C1 lock due today | 0.5 + ladder |
 | **Tue** | Reels batch | The next week's Reels (4 per account = 8) assembled from finished layouts; audio chosen from Sound Collection at upload time and logged | 5.0 |
 | **Wed** | Carousels + Statics batch | Next week's 4 carousels and 2 statics; alt text and captions | 4.5 |
-| **Thu** | QA + scheduling + Stories | QA every piece against `PRE_PUBLISH_QA.md`; schedule the non-C1 week at 16:00 UTC; batch and schedule 14 Stories at 17:30 UTC | 3.5 |
+| **Thu** | QA + scheduling + Stories | QA every piece against `PRE_PUBLISH_QA.md`; schedule the non-C1 week at 16:00 UTC; batch the 14 Story frames; schedule the non-sticker frames where the Week-0 test proved it, otherwise post manually at 17:30 UTC | 3.5 |
+| **Wed** (every week) | Sticker Story, manual | Post THE POLL frame manually on both accounts at 17:30 UTC ± 30 min, adding the sticker in the app (scheduler support unverified — not assumed) | 0.3 |
 | **Fri** | Check-out + research | Check out C2/C3/C4 slots for the week after next (log); C3 data collection for those pieces; C2 sourcing and provenance rows; idea bank → backlog entries | 4.0 |
 | Sat–Sun | C1 ladder only | Only the C1 slots whose ladder lands on the weekend (see ladder table) | ladder |
 | Daily | Community | Replies within 24 h per `../policy/COMMENT_REPLY_POLICY.md`; C1 watch | 0.5 |

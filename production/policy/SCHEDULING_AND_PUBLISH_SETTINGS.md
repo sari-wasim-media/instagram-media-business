@@ -32,7 +32,8 @@ declared once here so they are identical on both accounts for every post.
 
 1. **Where.** Instagram's in-app scheduler (public professional accounts: reels, photos and carousels; up
    to 25 a day, **up to 30 days ahead**) or Meta Business Suite (desktop or mobile). One tool for both
-   accounts for the whole test; proposed: **Business Suite on desktop** because it also schedules Stories.
+   accounts for the whole test; proposed: **Business Suite on desktop** because Meta documents Story
+   scheduling there (sticker preservation unverified — see §4).
 2. **Time-zone check, once per account before Week 1.** Business Suite displays times in the connected
    Page's time zone; the app uses the device's. Schedule a test post for a known UTC instant, read it back in
    the scheduled-content list, and confirm the displayed time converts to 16:00 UTC. Record the offset used.
@@ -52,9 +53,17 @@ are logged. Never publish two feed posts on one account on one day.
 
 ## 4. Stories
 
-Scheduled in Meta Business Suite for **17:30 UTC** (± 30 min tolerance, actual time logged), one frame per
-account per day; sticker only on the fixed weekday. If scheduling fails, post manually inside the tolerance.
-No Facebook cross-share of Stories.
+One frame per account per day at **17:30 UTC** (± 30 min tolerance, actual time logged). Meta's help pages
+describe Story scheduling in Business Suite (desktop and mobile); **whether a scheduled Story keeps an
+interactive poll or quiz sticker is unverified** and is not assumed.
+
+- **Non-sticker days (six per week):** schedule in Business Suite where the Week-0 test (§2 step 2, repeated
+  for a Story) shows the frame publishes intact at the instant; otherwise post manually inside the tolerance.
+- **Wednesday, the sticker day: post manually** at 17:30 UTC ± 30 min, adding the poll or quiz sticker in the
+  Instagram app at posting time, on both accounts, all six weeks — unless a test on the real account, recorded
+  in the Stories tab notes, proves the chosen scheduler preserves the sticker exactly. Until that record
+  exists, manual is the procedure.
+- Never two Stories on one account on one day. No Facebook cross-share of Stories.
 
 ## 5. Daylight-saving note
 

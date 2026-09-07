@@ -20,9 +20,11 @@ assets and data never separate (`../../production/assets/ASSET_PIPELINE.md`).
 
 ## Rules that govern the sheet (locked)
 
-- **Reach is the denominator for every rate metric.** Instagram Insights now labels unique accounts
-  **"Viewers"**; record that figure in the `*_reach_viewers` columns. **Views** (plays including repeats) is
-  recorded but is never a denominator and is never divided by follower count.
+- **Reach is the denominator for every rate metric.** Reach is the unique-accounts figure Instagram reports
+  for the post; record it in the `*_reach` columns. **The label the Insights UI puts on that figure
+  ("Accounts reached" or "Viewers") is unverified until observed per format on both real accounts** at the
+  Week-0 baseline; the label does not change the rule. **Views** (plays including repeats) is recorded but is
+  never a denominator and is never divided by follower count.
 - **T+7** for every feed post · **T+14** additionally for every Reel · **T+2** for every Story. Record the
   actual age in days; a deviation of more than 48 h is flagged `AGE_DEVIATION` and excluded from the primary
   median. **Never back-fill estimates.**
@@ -37,7 +39,7 @@ assets and data never separate (`../../production/assets/ASSET_PIPELINE.md`).
 
 ## Week-0 verification still needed
 
-Before Day 1, confirm on both accounts which Insights fields Instagram exposes per format (the
-follower/non-follower split of Viewers on Reels, posts and Stories), so the columns map to real fields. If a
-field is unavailable, record exactly what is unavailable and from which date (exception protocol) — do not
-substitute.
+Before Day 1, record on both accounts, per format, the exact Insights field names shown for unique accounts
+(Reach), for plays (Views) and for the follower / non-follower split, so the columns map to real fields.
+Write the observed names into the README tab of the XLSX. If a field is unavailable, record exactly what is
+unavailable and from which date (exception protocol) — do not substitute.

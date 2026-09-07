@@ -209,7 +209,6 @@ html, body { margin: 0; padding: 0; background: #000; }
 .abs { position: absolute; }
 .arrow { font-family: var(--display); font-size: 120px; color: var(--accent); line-height: 1; }
 .rule-line { height: var(--rule); background: var(--accent); width: 160px; margin: 32px 0; }
-.disclosure { font-family: var(--mono); font-size: 26px; line-height: 1.35; padding: 18px 24px; border: 2px solid var(--t-ink-2); border-radius: 14px; color: var(--t-ink); }
 .specimen { position: absolute; right: var(--margin); font-family: var(--mono); font-size: 20px; letter-spacing: 0.08em; text-transform: uppercase;
             color: var(--down); border: 2px solid var(--down); padding: 6px 12px; border-radius: 8px; opacity: 0.85; }
 .specimen { top: calc(var(--band-top) + 12px); }

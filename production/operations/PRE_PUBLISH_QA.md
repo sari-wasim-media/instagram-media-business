@@ -55,8 +55,8 @@ a secondary subject; pressure-point pair check recorded where required (`A-W5-C2
 ☐ **C4:** one of the seven house formats; no brand-bashing by name, no replica jokes, no named private person,
 no sexual/political/drug reference; imagery self-drawn / owned / licensed.
 ☐ **AI slot (six only):** the nine prohibited-use items clear; the fixed disclosure line verbatim in the
-caption and in the on-artwork block; AI label ON; AI provenance fields complete; reviewed by the other founder;
-`ai_platform_label_observed` to be filled at T+7.
+caption; **no disclosure element on the artwork** (the frame is an ordinary C4 frame); AI label ON; AI
+provenance fields complete; reviewed by the other founder; `ai_platform_label_observed` to be filled at T+7.
 
 ## F. Stories
 

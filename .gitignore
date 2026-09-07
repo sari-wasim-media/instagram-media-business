@@ -57,3 +57,16 @@ desktop.ini
 # writes here by default; nothing in _local/ is tracked.
 # ─────────────────────────────────────────────────────────────
 /_local/
+
+# ─────────────────────────────────────────────────────────────
+# Specimen-renderer intermediates (frame sequences, concat lists,
+# MJPEG streams, manifests). Sources are src/render_frames.py; the
+# generated HTML frames and the rendered specimens in renders/ are
+# kept deliberately. Nothing else under src/ is tracked.
+# ─────────────────────────────────────────────────────────────
+production/templates/src/html/_*
+production/templates/src/_*
+production/templates/src/*.json
+*.mjpeg
+__pycache__/
+*.pyc

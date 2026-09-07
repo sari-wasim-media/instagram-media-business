@@ -57,9 +57,11 @@ Recorded in the tracking sheet's Stories tab as `sticker=Y` on every Wednesday r
 Batch the coming week's 14 frames in one sitting on the previous Thursday (see
 `../operations/PRODUCTION_RHYTHM.md`), from the same house frames. Wednesday's poll question and Friday's
 verdict may be finalised later in the week because they depend on C1 and C2 subjects, but the frame is
-prepared in the batch. Schedule in Meta Business Suite (desktop or mobile), which schedules Instagram Stories;
-if scheduling is unavailable on a given day, post manually at 17:30 UTC within the ± 30 min tolerance and log
-the actual time. Never two Stories on one account on one day.
+prepared in the batch. Non-sticker frames may be scheduled in Meta Business Suite once a Week-0 test shows a
+scheduled Story publishes intact; **Wednesday's sticker frame is posted manually** at 17:30 UTC ± 30 min with
+the poll or quiz sticker added in the app, because scheduler support for interactive stickers is unverified
+and is not assumed (`../policy/SCHEDULING_AND_PUBLISH_SETTINGS.md` §4). Log the actual time either way. Never
+two Stories on one account on one day.
 
 ## 5. Anti-duplication and originality
 

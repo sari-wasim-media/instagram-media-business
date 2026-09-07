@@ -1,4 +1,4 @@
-story_id,account,account_handle,week,day,weekday,rotation_class,sticker,adjacent_engine,scheduled_utc,publish_date,actual_publish_utc,status,producer,asset_ids,t2_snapshot_date,t2_age_days,t2_reach_viewers,t2_views,t2_forward_taps,t2_back_taps,t2_exits,t2_replies,t2_sticker_interactions,breakout_support_used,deviation,notes
+story_id,account,account_handle,week,day,weekday,rotation_class,sticker,adjacent_engine,scheduled_utc,publish_date,actual_publish_utc,status,producer,asset_ids,t2_snapshot_date,t2_age_days,t2_reach,t2_views,t2_forward_taps,t2_back_taps,t2_exits,t2_replies,t2_sticker_interactions,breakout_support_used,deviation,notes
 A-W1-D1-ST,A,thestreetwearofficial,1,D1,Mon,DROP CALENDAR,,C1,17:30,,,PLANNED,,,,,,,,,,,,,,
 A-W1-D2-ST,A,thestreetwearofficial,1,D2,Tue,PRICE CHECK,,C3,17:30,,,PLANNED,,,,,,,,,,,,,,
 A-W1-D3-ST,A,thestreetwearofficial,1,D3,Wed,THE POLL,Y,C2,17:30,,,PLANNED,,,,,,,,,,,,,,
