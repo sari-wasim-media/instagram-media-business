@@ -5,8 +5,10 @@
 a reserve piece fills a slot only for the **same engine and format**, via the exception protocol, and never
 an off-matrix slot. Building the reserve is Week-1 Gate Layer 1 item 6.
 
-**Proposed composition** — chosen so the reserve can answer the most likely Miss in each non-C1 engine and
-format, weighted toward Reels (4 of every 7 slots):
+**Composition — ACTIVE, delegated production decision (2026-09-08)**, chosen so the reserve can answer the
+most likely Miss in each non-C1 engine and format, weighted toward Reels (4 of every 7 slots). The three C3
+pieces are built from published reports and release notes (the compliant sources), which suit dateless,
+evergreen charts:
 
 | # | Reserve ID | Engine | Format | Why this one | Doubles as |
 |---|---|---|---|---|---|
@@ -19,8 +21,7 @@ format, weighted toward Reels (4 of every 7 slots):
 | 7 | `RESERVE-C4-CAR-01` | C4 | Carousel | 6 C4 carousels (GROUP CHAT — zero imagery) | — |
 
 Not covered: C2 Static (3 in the matrix), C4 Static (3). If either Misses with no reserve match, the slot
-becomes a Miss and recovers at the end of the schedule — the locked path. A founder may swap composition
-before launch (for example a C2 Static instead of the C3 Static); record the decision below.
+becomes a Miss and recovers at the end of the schedule — the locked path.
 
 ## Rules that travel with every reserve piece
 
@@ -49,9 +50,9 @@ before launch (for example a C2 Static instead of the C3 Static); record the dec
 | `RESERVE-C4-REE-01` | | | | ☐ | ☐ | | |
 | `RESERVE-C4-CAR-01` | | | | ☐ | ☐ | | |
 
-## Founder decision record
+## Decision record
 
 | | |
 |---|---|
-| Composition | ☐ as proposed · ☐ amended: ______ |
-| Sari / Wasim · date | ☐ / ☐ ______ |
+| Composition | as above |
+| Decided | 2026-09-08 — delegated production decision (Claude); founders may override before Day 1 |

@@ -6,7 +6,7 @@ holds the instruments for all four. The pipeline below is the operating procedur
 
 | File | What it is | Gate item |
 |---|---|---|
-| `SOURCE_CLASS_DECISION.md` | Which classes supply each engine, in priority order; the residual-risk acceptance | 2 |
+| `SOURCE_CLASS_DECISION.md` | Which classes supply each engine, in priority order; the accepted trademark residual (2026-09-08) | 2 |
 | `C2_SOURCING_ROUTES.md` | Routes O · F · P · X · S · B with steps, costs, throughput; the 42-image bank build | 3, 5 |
 | `C2_SUSTAINABILITY_TEST.md` | The two-piece end-to-end test protocol and record | 5 |
 | `C3_DATA_SOURCE_TOS_REGISTER.md` | Per-source terms verification register | 6 |
@@ -20,6 +20,11 @@ holds the instruments for all four. The pipeline below is the operating procedur
 
 > **No asset without a provenance record may be used in any of the 84 posts** (`GATES.md` §1.3 item 4).
 > The record is written **before** layout, not after publishing.
+
+**And one rule on top of it:** every photograph of a branded sneaker — owned, licensed or permissioned —
+carries the trademark residual the founders accepted on 2026-09-08, so every such piece is produced under the
+review's §5 nominative-use operating rule (`../TRADEMARK_RISK_REVIEW.md`) and checked against it at QA.
+Illustration, charts, typography and house UI are unaffected.
 
 ## The flow, per asset
 

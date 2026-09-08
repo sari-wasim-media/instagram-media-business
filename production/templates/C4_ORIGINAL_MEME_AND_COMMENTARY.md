@@ -5,7 +5,7 @@
 watermarked image.** Reel primary, static secondary. Distribution thesis: sends ÷ reach — memes travel by DM.
 Highest quality variance of the four engines.
 
-**Template status: PROPOSED — founder review required.** Specimens: `renders/c4/`.
+**Template status: ACTIVE — delegated production decision (2026-09-08).** Specimens: `renders/c4/`.
 
 C4 carries 21 posts: 12 Reels, 6 Carousels, 3 Statics (A: 6R/3C/1S · B: 6R/3C/2S). **Six of them are the
 AI-imagery sub-test** (`../../experiment/active-84-post-plan/AI_IMAGERY_SUBTEST.md`): `B-W2-C4-REE-01`,
@@ -53,7 +53,9 @@ venue, carry no logos, and are never screenshots.
   photographs** (the founders' own pairs; faceless product shots) → **licensed stock** (licence archived;
   see `../assets/SOURCE_CLASS_DECISION.md`). Never a reposted template, never another account's screenshot,
   never a watermarked image, never a frame from a film or show, never a celebrity photograph.
-- Plates as everywhere: white plate, no filters, no generative fill.
+- Plates as everywhere: white plate, no filters, no generative fill. Photographs of branded sneakers are produced under
+  the accepted trademark posture and its §5 operating rule (`../TRADEMARK_RISK_REVIEW.md`); the imagery-free
+  and illustrated formats remain the pressure valve.
 - Formats 2, 3 and 5 need no imagery at all, which is the deliberate pressure valve: a C4 slot can always be
   filled rights-free.
 

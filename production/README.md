@@ -9,22 +9,28 @@ production and launch**.
 **What it is not.** It changes nothing that is locked. The matrix, the format mix, the engines, the publish
 instant, the analysis windows, the measurement rules, the AI sub-test, daily Stories and the start rule all
 stand exactly as `experiment/active-84-post-plan/` states them. Where this surface fixes a value the lock
-left open (templates, the C2 count, the Story rotation, the disclosure wording, the publish settings), it
-does so as a **proposal** with a decision block, collected in `FOUNDER_REVIEW_QUEUE.md`.
+left open (templates, the C2 count, the Story rotation, the disclosure wording, the publish settings), it now
+does so as an **ACTIVE — delegated production decision** under the founders' delegation of 2026-09-08
+(`DECISIONS.md`); the founders may override any of them before Day 1.
+
+**The trademark / trade-dress posture was ACCEPTED by the founders on 2026-09-08** —
+`TRADEMARK_RISK_REVIEW.md`. Photographs of branded sneakers are produced under its §5 nominative-use
+operating rule, mandatory on every piece and checked at QA.
 
 ## Map
 
 | Path | Holds | Status |
 |---|---|---|
-| **`FOUNDER_REVIEW_QUEUE.md`** | The 13 proposed lock values, with recommendations, and five findings | **Needs founder decisions** |
+| **`TRADEMARK_RISK_REVIEW.md`** | The focused risk review, the accepted posture and the §5 operating rule | **ACCEPTED 2026-09-08** |
+| `FOUNDER_REVIEW_QUEUE.md` | The former queue, resolved: 13 items decided under delegated authority; the founder-only items listed | Resolved 2026-09-08 |
 | **`PRE_LAUNCH_RUNBOOK.md`** | The ordered founder path from here to both gates passed (≈ 60 h) | Ready |
-| `house-style/` | House System v1: `HOUSE_STYLE.md`, `tokens.json`, `house.css`, vendored OFL fonts | Proposed |
-| `templates/` | C1 · C2 (+ the ranked-item count decision) · C3 · C4 · Story specs; `template_constants.json`; the specimen renderer; **64 rendered frames** and a 36.5 s Reel pacing reference | Proposed |
-| `assets/` | Source-class decision, C2 route stack, sustainability-test protocol, C3 terms register, research record, provenance register + audio ledger (empty, with examples) | Instruments built; founder execution pending |
-| `policy/` | AI-imagery policy pack (incl. proposed disclosure wording), caption/hashtag, comment-reply, the originality rule card, scheduling and publish settings | Proposed |
+| `house-style/` | House System v1: `HOUSE_STYLE.md`, `EDITORIAL_VOICE.md`, `tokens.json`, `house.css`, vendored OFL fonts | Decided 2026-09-08 |
+| `templates/` | C1 · C2 (+ the ranked-item count decision) · C3 · C4 · Story specs; `template_constants.json`; the specimen renderer; **64 rendered frames** and a 36.5 s Reel pacing reference | Decided 2026-09-08 |
+| `assets/` | Source-class decision, C2 route stack, sustainability-test protocol, the compliant data-source register, research record, provenance register + audio ledger (empty, with examples) | Order and sources decided; trademark acceptance open; founder execution pending |
+| `policy/` | AI-imagery policy pack, caption/hashtag, comment-reply, the originality rule card, scheduling and publish settings | Decided 2026-09-08 |
 | `backlog/` | The topic queue, the check-out log, examples, the idea bank | Instrument built; empty |
-| `operations/` | Production rhythm, the C1 deadline ladder (21 slots, launch-relative), the reserve register, the pre-publish QA checklist | Ready |
-| `gates/` | Sourcing Gate and Week-1 Gate scorecards — item-by-item status after the sprint | Neither gate passed |
+| `operations/` | Production rhythm, the C1 deadline ladder (21 slots, launch-relative), the reserve register, the pre-publish QA checklist, `TOOLING.md` | Decided 2026-09-08 |
+| `gates/` | Sourcing Gate and Week-1 Gate scorecards — item-by-item status | Sourcing 5 of 12 passed; Week-1 Layer 1 2 of 11 passed |
 
 Related, outside this directory: `experiment/tracking/` (the tracking sheet skeleton: 84 post rows, 18
 account-weekly rows, 84 Story rows, XLSX with Reach-denominated formulas) and `tools/` (the validators and
@@ -51,8 +57,8 @@ generators below).
 None of this is publishing automation, a dashboard or a scraper: the scripts read and write files in this
 repository and print. Publishing, Insights capture and data collection stay manual (locked).
 
-## Proposed versus locked — the short version
+## Who decided what — the short version
 
-| Locked (do not touch) | Proposed here (needs founder lock) |
-|---|---|
-| The 84 rows · 4R/2C/1S · C1–C4 · 16:00 UTC · six weeks · W1–2 / W3–6 · no voiceover · no link · six AI slots · daily Stories at 17:30 UTC with one sticker per week · no adaptation · zero reposts · frozen profile · start rule | House System v1 · C2 count = 7 · verdict scale · Story rotation + Wednesday sticker · disclosure wording · AI tool · source-class order + risk acceptance · caption/hashtag form · comment policy · scheduling tool + settings · reserve composition · C1 queue window · producer alternation |
+| Founder-locked (do not touch) | Delegated production decisions (Claude, 2026-09-08; founders may override before Day 1) | Open — founders only |
+|---|---|---|
+| The 84 rows · 4R/2C/1S · C1–C4 · 16:00 UTC · six weeks · W1–2 / W3–6 · no voiceover · no link · six AI slots · daily Stories at 17:30 UTC with one sticker per week · no adaptation · zero reposts · frozen profile · start rule · **and from 2026-09-08:** the delegation itself · the editorial-desk brand posture · the conservative data-source posture · tool autonomy without spending | House System v1 + editorial voice · C2 count = 7 · verdict scale · Story rotation + Wednesday sticker · disclosure line and placement · AI tool (Firefly) · source-class order · compliant data sources · caption/hashtag form · comment policy · scheduling tool + settings · reserve composition · queue-rule readings · producer allocation · production tooling | Firefly licence verification, account and any paid plan · any paid stock · Git finalization (the trademark posture was answered on 2026-09-08: ACCEPT) |

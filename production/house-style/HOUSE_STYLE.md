@@ -1,8 +1,10 @@
 # House System v1 — the visual and motion language for all 84 posts
 
-**Status: PROPOSED TEMPLATE-LOCK VALUES — founder review required before Day 1.** House templates are a
-held-fixed production variable (`LOCK_SPECIFICATION.md` §1 item 17), so once the founders confirm this system
-it is frozen for the six posting weeks. Nothing here changes the matrix, the methodology or any locked decision.
+**Status: ACTIVE — delegated production decision (2026-09-08).** Decided by Claude under the founders'
+delegated production authority (`DECISIONS.md`); the founders may override it before Day 1. House templates
+are a held-fixed production variable (`LOCK_SPECIFICATION.md` §1 item 17), so the system is frozen for the
+six posting weeks. Nothing here changes the matrix, the methodology or any locked decision. The voice that
+goes with it: `EDITORIAL_VOICE.md`.
 
 **One system, both accounts.** `ANTI_DUPLICATION_AND_TOPIC_SELECTION.md` §4 *requires* the identical house
 template, palette and typography on both accounts. The only variable that differs between accounts is the
@@ -38,7 +40,7 @@ the specimen renderer) · `fonts/` (vendored under the SIL Open Font License). S
 
 | Use | Canvas | Ratio | Notes |
 |---|---|---|---|
-| Feed static, carousel slide | **1080 × 1350** | 4:5 | The largest feed footprint. Keep essential content inside y = 135…1215 (the 1:1 crop) |
+| Feed static, carousel slide | **1080 × 1350** | 4:5 | The largest feed footprint. Keep essential content inside y = 135…1215 (the 1:1 crop). The profile grid's taller tile trims ≈ 34 px from each side of a 4:5 image; the 72 px margin covers it |
 | Reel | **1080 × 1920** | 9:16 | 30 fps. UI safe zones: top 250 px, bottom 420 px, right 130 px, left 60 px |
 | Reel cover | the hook frame | — | The profile grid shows a 4:5 crop of the cover: keep the cover title inside y = 285…1635 |
 | Story | **1080 × 1920** | 9:16 | Safe zones: top 250 px, bottom 260 px, sides 60 px. One frame per day |

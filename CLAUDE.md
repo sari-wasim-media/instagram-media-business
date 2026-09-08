@@ -29,9 +29,13 @@ Four things that are easy to get wrong here:
 **Locked is not launched.** The design is complete; publishing is blocked on two operational gates in
 `experiment/active-84-post-plan/GATES.md`. Zero revival posts have been published.
 
-**The creative system is built — as proposals.** `production/` holds the house templates, the asset and
-rights pipeline, the policy pack, the topic queue, the operating rhythm and the gate scorecards (2026-09-06).
-Values there that the lock left open (the C2 ranked-item count, the Story rotation, the disclosure wording,
-the publish settings, …) are **proposed until the founders record them in `DECISIONS.md`** — see
-`production/FOUNDER_REVIEW_QUEUE.md`. Do not rebuild the system; review it, and do not treat a proposal as
-locked.
+**The creative system is built and decided.** `production/` holds the house templates, the asset and rights
+pipeline, the policy pack, the topic queue, the operating rhythm, the tooling and the gate scorecards. On
+2026-09-08 the founders **delegated production-level decisions to Claude** (`WORKFLOW.md` §2a, bounded: no
+change to a Founder Lock, the matrix, the methodology or a decision rule; no new material risk; no spending;
+no acceptance of paid licences or external terms; no irreversible external action; no unauthorised
+publishing). The former review-queue values are recorded in `DECISIONS.md` as **ACTIVE — delegated
+production decision** — never present them as founder-selected. Do not rebuild the system and do not send
+specialist details back to the founders. **The trademark / trade-dress posture was accepted on 2026-09-08**
+(`production/TRADEMARK_RISK_REVIEW.md`): photographs of branded sneakers are produced under its §5
+nominative-use operating rule, mandatory on every piece, and its §3 re-review triggers stand.

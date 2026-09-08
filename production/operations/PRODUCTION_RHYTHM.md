@@ -1,9 +1,9 @@
 # Production rhythm — how 14 feed posts and 14 Stories a week get made, on time, by two people
 
-**Status: PROPOSED operating procedure.** It implements the locked constraints — one post per account per
-day at 16:00 UTC, the check-out deadlines, the C1 ladder, the ≥ 7-piece buffer, the 7-piece reserve, the
-weekly review with no strategy discussion — and changes none of them. Estimates come from the declared
-budgets in `../templates/README.md`; replace them with measured times after Week 1.
+**Status: ACTIVE — delegated production decision (2026-09-08).** It implements the locked constraints —
+one post per account per day at 16:00 UTC, the check-out deadlines, the C1 ladder, the ≥ 7-piece buffer, the
+7-piece reserve, the weekly review with no strategy discussion — and changes none of them. Estimates come
+from the declared budgets in `../templates/README.md`; replace them with measured times after Week 1.
 
 ## 1. The two clocks
 

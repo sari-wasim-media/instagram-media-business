@@ -11,8 +11,17 @@ who did **not** produce the piece.
 Every pixel traces to "us", "licensed — archived", "permitted — archived" or "AI, in one of the six slots".
 ☐ **Provenance.** Every image has an `AST-nnnn` row; the ID is in the filename and the tracking row; no ID
 used on any other piece; `python3 tools/validate_provenance.py` is clean.
-☐ **Facts.** Every price, date, name and figure verified against a named source recorded in the tracking row.
-No number without a source; no source, no number.
+☐ **Facts.** Every price, date, name and figure verified against a named source recorded in the tracking row,
+and every source is a compliant one (`../assets/C3_DATA_SOURCE_TOS_REGISTER.md`: release notes, press
+releases, published reports; never a marketplace page). No number without a source; no source, no number.
+☐ **Nominative-use rule** (`../TRADEMARK_RISK_REVIEW.md` §5): brand and model names used only as needed to
+identify the subject, written as the brand writes them, in the house type; no third-party mark as the desk's
+own identifier (bands, stamps, covers, series names); no standalone logo, logo crop, wordmark graphic or
+brand-coloured framing — the mark appears only as it naturally appears on the whole product; no @-mention of
+a brand or retailer account, no collaborator or product tag, no "official", "partner", "sent to us" or
+thanks to a brand; editorial context obvious (engine label, verdict / ranking / reading, sources); the piece
+does not read as a single-brand showcase without an editorial reason. The posture was accepted by the
+founders on 2026-09-08; this rule is what the acceptance rests on, so a piece that fails it does not publish.
 ☐ **Template.** The correct house template, engine accent, bands, handle for the right account; nothing
 below 24 px; safe zones respected (Reel/Story rulers in `../templates/renders/diagnostics/`).
 ☐ **Check-out.** The subject was checked out by the queue rule, inside its deadline, logged with
@@ -21,7 +30,7 @@ below 24 px; safe zones respected (Reel/Story rulers in `../templates/renders/di
 account within 14 days or on this account within the within-account windows; consecutive same-format pieces
 use disjoint subject sets.
 ☐ **Caption** per `../policy/CAPTION_AND_HASHTAG_POLICY.md`: hook ≤ 100 chars · body · source line where
-required · 3–5 tags from the policy · no CTA, no link, no mention, no location · alt text on every image.
+required · 3–5 tags from the policy · no CTA, no link, no @-mention, no location · alt text on every image.
 ☐ **No engagement bait** on artwork or caption; no giveaway, contest, sponsor, retailer or affiliate language.
 ☐ **Faceless.** No founder, no face, no identifying personal detail anywhere in the frame or caption.
 ☐ **Publish settings** per `../policy/SCHEDULING_AND_PUBLISH_SETTINGS.md`: 16:00 UTC · Facebook share OFF ·

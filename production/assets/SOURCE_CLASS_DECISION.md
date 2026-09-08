@@ -1,8 +1,10 @@
 # Asset-class decision — which source classes supply each engine, in priority order
 
-**Sourcing Gate item 2.** Status: **RECORDED AS A PROPOSAL — founder confirmation required**, because it
-carries a residual-risk acceptance (§4) that is the founders' call. Research basis:
-`SOURCING_ROUTES_RESEARCH.md` (accessed 2026-09-05).
+**Sourcing Gate item 2 — PASSED 2026-09-08.** The priority order is **ACTIVE — delegated production
+decision (2026-09-08)**, re-evaluated against the trademark review; the residual-risk acceptance in §4 is
+**ACTIVE — founder decision, ACCEPTED 2026-09-08** (`../TRADEMARK_RISK_REVIEW.md`). Photographs of branded
+sneakers may be used under the review's §5 nominative-use operating rule, which is mandatory on every piece.
+Research basis: `SOURCING_ROUTES_RESEARCH.md` (accessed 2026-09-05).
 
 The acceptable classes are locked (`GATES.md` §1.2): owned · licensed · permissioned · self-generated ·
 brand/retailer press assets only where terms explicitly permit editorial social use, verified per brand and
@@ -41,19 +43,23 @@ permission · anything from another Instagram account · anything with a third-p
 
 ### C2 — Rankings & Tier Lists
 
-1. `OWNED` — the founders' and their circle's pairs, shot on the plate. Zero rights risk beyond the trademark
-   residual every sneaker photograph carries. Highest effort per image; build the library early.
-2. `LICENSED_FREE` — Unsplash and Pexels, with the licence text archived per asset and a positive,
-   non-endorsing, editorial context (the licence excludes the *trademark* in frame, not the photograph).
-   Covers icons and general releases well; covers niche colorways poorly.
-3. `LICENSED_PAID` — Adobe Stock Standard for gaps, single credits, never editorial-only assets. Budget-
-   limited (US$29.99 buys ~10 images), so a gap-filler, not a route.
+1. `OWNED` — the founders' and their circle's pairs, shot on the plate. No third-party copyright to clear;
+   carries only the trademark residual every sneaker photograph carries. Highest effort per image; build the
+   library early.
+2. `LICENSED_FREE` — Unsplash and Pexels, with the licence text archived per asset, **narrowed** (trademark
+   review §6): only photographs in which the product is the subject in a neutral context; no brand
+   advertising imagery, no store or event scenes with brand signage as the subject, nothing that could depict
+   counterfeit product, no people. The licence excludes the *trademark* in frame, not the photograph. Covers
+   icons and general releases well; covers niche colorways poorly.
+3. `LICENSED_PAID` — Adobe Stock Standard for gaps, single credits, never editorial-only assets.
+   **Every purchase needs founder approval** (no spending authority); a gap-filler, not a route.
 4. `PERMISSIONED` — written permission from collectors and photographers for specific images. Slow, but the
    originality rules explicitly recognise licensing agreements and creator permissions. Never with on-post
    promotion of the grantor during the experiment (no Collabs, no advertiser adjacency).
 5. `SELF_GENERATED` illustration — the colour-blocked house silhouette (`C2_SOURCING_ROUTES.md` route S).
-   Always available; makes a specific colorway recognisable without any photograph. The guaranteed fallback
-   that means no C2 slot can fail for rights reasons.
+   Always available; makes a specific colorway recognisable without any photograph. The always-on fallback,
+   so no C2 slot is missed for want of a clearable photograph; it reduces the trade-dress residual rather than
+   removing it (review §7).
 6. `PRESS_VERIFIED` — brand by brand, as for C1.
 
 ### C3 — Market & Price Intelligence
@@ -85,16 +91,19 @@ permission · anything from another Instagram account · anything with a third-p
 The C2 mix is a planning assumption; the two-piece sustainability test (`C2_SUSTAINABILITY_TEST.md`) measures
 the real one and is the only thing that can pass the gate.
 
-## 4. The residual risk the founders must accept or decline
+## 4. The residual risk — ACCEPTED by the founders, 2026-09-08
 
 Every photograph of a branded sneaker — owned, licensed or permissioned — shows a trademark and a protected
 trade dress. Copyright is cleared by ownership or licence; the trademark is not "cleared" by anyone and is
-handled by **nominative, editorial, non-endorsing use**: the product is depicted to be discussed, ranked or
-reviewed; no post implies the brand sponsors it; no brand mark is made the subject; no product is depicted to
-sell a competing product. This is the posture every sneaker media account operates under. The illustration
-route (S) reduces but does not remove it (trade dress).
+handled by **nominative, editorial, non-endorsing use** under the operating rule in the review: the product
+is named and shown only as needed to discuss, rank or review it; no third-party mark serves as the desk's own
+identifier; no decorative logos or branded framing; nothing implies sponsorship, partnership, authorisation
+or endorsement; the editorial context is obvious on every piece. The focused review — with the U.S. and
+Israeli legal positions, a calibrated risk table, the rule, and the single recommendation
+(**ACCEPT**, an operational risk recommendation, not a guarantee of legal immunity) — is
+`../TRADEMARK_RISK_REVIEW.md`.
 
-☐ Sari · ☐ Wasim — *we understand this residual and accept it for the experiment* · date ______
-
-If the founders decline it, the C2 route stack collapses to `SELF_GENERATED` illustration + `OWNED` only;
-record that here and re-plan the 147 images before the sustainability test.
+**The founders accepted it on 2026-09-08.** §2 applies as written, Sourcing Gate item 2 passes, and the
+42-image bank build proceeds on routes O and F with the review's §5 nominative-use operating rule mandatory
+on every piece and checked at QA. The review's §3 re-review triggers stand; §7 of the review records the
+illustration-only fallback if one is ever hit.

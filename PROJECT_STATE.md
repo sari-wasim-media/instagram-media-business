@@ -1,4 +1,4 @@
-# Project State — as of 2026-09-06
+# Project State — as of 2026-09-08
 
 The operational source of truth. If another document disagrees with this one, this one wins — except
 `DECISIONS.md`, which is authoritative on what was decided, and `WORKFLOW.md`, which is canonical on how work
@@ -9,13 +9,24 @@ matrix, the format mix, the AI-imagery sub-test, daily Stories, the no-voiceover
 restrictions, and the start rule. Nothing about the accounts or the evidence changed. **Zero posts published;
 launch remains gated.**
 
-**2026-09-06: the Creative System + Pre-Launch Foundations sprint is complete, as proposals.** The house
+**2026-09-06: the Creative System + Pre-Launch Foundations sprint is complete.** The house
 creative system for C1–C4 and Stories, the asset and rights pipeline, the policy pack, the topic queue, the
 operating rhythm, the tracking-sheet skeleton and the two gate scorecards now exist in **`production/`**.
-Thirteen values the lock left open (templates, the C2 ranked-item count — proposed **7** — the Story
-rotation, the disclosure wording, the publish settings, and more) are **proposed and await founder review**:
-`production/FOUNDER_REVIEW_QUEUE.md`. Nothing locked changed. **Zero Week-1 pieces exist, by design; launch
-remains gated.**
+Nothing locked changed. **Zero Week-1 pieces exist, by design; launch remains gated.**
+
+**2026-09-08: founder decision pulse.** Sari and Wasim **delegated production-level decision authority** to
+Claude (bounded: no change to a Founder Lock, the matrix, the methodology or a decision rule; no new material
+risk; no spending; no acceptance of paid licences or external terms; no irreversible external action; no
+unauthorised publishing), approved the **faceless, opinionated editorial media desk** brand posture, adopted
+a **conservative data-source posture** (a source whose terms do not clearly permit the use is not used), and
+granted **tool-selection autonomy without spending authority**. Under that delegation the thirteen former
+review-queue items are now **decided as delegated production decisions** (`DECISIONS.md`): House System v1
+and the editorial voice, the **C2 ranked-item count of 7**, the C1 verdict rubric, the Story rotation with
+the Wednesday sticker, the AI disclosure line, Adobe Firefly as the AI tool, the source-class order, the
+compliant data sources, the caption, comment and scheduling policies, the reserve, the queue readings, the
+production rhythm and the tooling. **The trademark / trade-dress posture was ACCEPTED on 2026-09-08**
+(`production/TRADEMARK_RISK_REVIEW.md`): photographs of branded sneakers are produced under its §5
+nominative-use operating rule, mandatory on every piece, with the §3 re-review triggers standing.
 
 ---
 
@@ -28,15 +39,14 @@ remains gated.**
 
 ## Current phase
 
-**Pre-launch, design complete, creative system built.** Week 0 setup is substantially complete, the matrix
-is locked, and the production surface is built as proposals; the controlled revival experiment has **not
-started**.
+**Pre-launch, design complete, creative system decided.** Week 0 setup is substantially complete, the matrix
+is locked, and the production surface is decided under delegated authority; the controlled revival
+experiment has **not started**.
 
-**The blocker is now founder review and execution, not design.** The binding items are: locking the 13
-proposed values (`production/FOUNDER_REVIEW_QUEUE.md`), building the asset bank and running the C2
-sustainability test, clearing C3's data sources, verifying the AI tool, and then Week-1 production. The
-ordered path with hours is `production/PRE_LAUNCH_RUNBOOK.md`; the item-by-item status is in
-`production/gates/`.
+**The blocker is now execution, not design, review or a founder answer.** The binding items are: building
+the asset bank and running the C2 sustainability test, verifying the AI tool's licence, producing the AI test
+piece, and then Week-1 production. The ordered path with hours is `production/PRE_LAUNCH_RUNBOOK.md`; the
+item-by-item status is in `production/gates/`.
 
 ---
 
@@ -110,7 +120,8 @@ The 2.6M Reel is **ceiling evidence only** and predates current originality enfo
 | Minimal bio edit — follower-goal line removed on both accounts | **Complete** — founder-confirmed | Pre-change state: `evidence/profile-baseline/` |
 | GitHub repository migration | **Complete** — this repository | — |
 | **Workflow V1 — canonical working workflow adopted** | **Complete** (2026-09-04) | `WORKFLOW.md` |
-| **Creative System + Pre-Launch Foundations sprint** — house system, templates and specimens, asset pipeline, policy pack, queue, rhythm, tracking skeleton, gate scorecards | **Complete as proposals** (2026-09-06) — awaiting founder lock | `production/` |
+| **Creative System + Pre-Launch Foundations sprint** — house system, templates and specimens, asset pipeline, policy pack, queue, rhythm, tracking skeleton, gate scorecards | **Complete** (2026-09-06); decided as delegated production decisions (2026-09-08) | `production/` |
+| **Founder decision pulse** — delegated production authority, editorial-desk brand posture, conservative data-source posture, tool autonomy without spending; the trademark posture raised with a recommendation | **Complete** (2026-09-08) — one decision open | `DECISIONS.md`, `production/TRADEMARK_RISK_REVIEW.md` |
 
 ### Legacy cleanup — precise scope
 
@@ -227,8 +238,8 @@ project document states this incorrectly; see `strategy/historical/CORRECTIONS_L
 
 C1 Release & Verdict Desk · C2 Rankings & Tier Lists · C3 Market & Price Intelligence · C4 Original Meme &
 Commentary. **Locked, 21 posts each pooled** (12 Reels / 6 Carousels / 3 Statics). No topics checked out.
-House templates for all four (and for Stories) exist as **proposals** in `production/templates/` — see
-`experiment/content/`.
+House templates for all four (and for Stories) are **decided** in `production/templates/` (delegated
+production decisions, 2026-09-08) — see `experiment/content/`.
 
 ---
 
@@ -236,26 +247,26 @@ House templates for all four (and for Stories) exist as **proposals** in `produc
 
 | # | Item | Status (2026-09-06) |
 |---|---|---|
-| 1 | **Founder review of the 13 proposed lock values** — House System v1, C2 ranked-item count (proposed 7), verdict scale, Story rotation and sticker weekday, AI disclosure wording, AI tool, source-class order, caption/hashtag form, comment policy, publish settings, reserve composition, two operational readings, producer alternation | **OPEN** — `production/FOUNDER_REVIEW_QUEUE.md` |
-| 2 | **Pass the Sourcing Gate**, including the AI arm — imagery rights for C2 at volume is the binding constraint | **NOT PASSED** — templates, decision, routes, register, validator and test protocol built; the 42-image bank, the sustainability test, the C3 terms clearance and the AI verification are founder execution — `production/gates/SOURCING_GATE_SCORECARD.md` |
-| 3 | Build the four house templates and fix the C2 ranked-item count | **BUILT AS PROPOSALS** — awaiting lock |
+| 1 | The trademark / trade-dress posture on photographs of branded sneakers; plus the founder actions of verifying Adobe Firefly's terms and approving any paid plan | **POSTURE ACCEPTED 2026-09-08** — `production/TRADEMARK_RISK_REVIEW.md` (§5 rule mandatory at QA); Firefly verification remains founder work — `production/FOUNDER_REVIEW_QUEUE.md` §B |
+| 2 | **Pass the Sourcing Gate**, including the AI arm — imagery rights for C2 at volume is the binding constraint | **5 of 12 PASSED** (templates and count; the asset-class decision, closed by the 2026-09-08 acceptance; data sources; C4 source; no-relaxation) — the 42-image bank, the sustainability test, the AI licence verification and the AI test piece are founder execution — `production/gates/SOURCING_GATE_SCORECARD.md` |
+| 3 | Build the four house templates and fix the C2 ranked-item count | **DONE** — delegated production decisions 2026-09-08 (count = 7) |
 | 4 | Build the tracking sheet by importing the matrix | **SKELETON BUILT** — `experiment/tracking/`; live once adopted with W0 rows |
 | 5 | Build the topic backlog and start the blind-to-performance check-out queue | **INSTRUMENT BUILT, EMPTY** — `production/backlog/` |
-| 6 | Declare the 7-day Story rotation and fix the sticker weekday | **PROPOSED** (Wednesday) |
-| 7 | Write the fixed AI disclosure wording | **PROPOSED** |
+| 6 | Declare the 7-day Story rotation and fix the sticker weekday | **DONE** — delegated production decision 2026-09-08 (Wednesday) |
+| 7 | Write the fixed AI disclosure wording | **DONE** — delegated production decision 2026-09-08 |
 | 8 | Produce and schedule all 11 non-C1 Week-1 feed pieces, the 14 Week-1 Stories and the 7-piece reserve; execute the Day-2 C1 topic lock; complete Week-2 outlines | **NOT STARTED, BY DESIGN** — the sprint stopped before Week-1 production |
 | 9 | **Pass the Week-1 Gate**, then instantiate the start date as the first Monday after both gates pass | **NOT PASSED** — `production/gates/WEEK1_GATE_SCORECARD.md` |
 | 10 | Launch — only after 1–9 are complete | Gated |
 
 Details and exact pass criteria: `experiment/active-84-post-plan/GATES.md`. The ordered founder path with
-hours: `production/PRE_LAUNCH_RUNBOOK.md` (≈ 60 founder-hours to launch-ready).
+hours: `production/PRE_LAUNCH_RUNBOOK.md` (≈ 55 founder-hours to launch-ready).
 
 **Two findings from the sprint's research (2026-09-05) that shape execution, neither reopening a lock:**
 brand press imagery is not usable by default (most newsroom terms read grant personal, non-commercial use
 only — C1 is designed to work without a product photo, C2 relies on owned, free-licence and illustrated
-imagery); and several marketplaces' terms restrict even manual copying of prices, so C3's default sources
-are published reports and brand release notes until a founder clears a marketplace in
-`production/assets/C3_DATA_SOURCE_TOS_REGISTER.md`.
+imagery); and marketplace terms do not clearly permit copying prices — under the founders' conservative
+data-source posture (2026-09-08) every marketplace is excluded and C3 runs on published reports and brand
+release notes (`production/assets/C3_DATA_SOURCE_TOS_REGISTER.md`).
 
 *Optional, not blocking:* capture post-change profile screenshots to convert the founder-confirmed bio edit
 into screenshot evidence. **This is not a task to rewrite the bios** — the minimal edit is complete.
@@ -268,10 +279,9 @@ checklist items a later decision superseded.
 
 ## Immediate next task
 
-> **Review and lock the 13 proposed values in `production/FOUNDER_REVIEW_QUEUE.md`** — above all the C2
-> ranked-item count (proposed 7, which sets the C2 image requirement at 147 across its 21 posts and 42 for
-> the Sourcing Gate bank). Then execute the Sourcing Gate per `production/PRE_LAUNCH_RUNBOOK.md`: build the
-> bank, run the two-piece C2 sustainability test, clear C3's sources, verify the AI tool.
+> **Verify Adobe Firefly's terms**, then execute the Sourcing Gate per `production/PRE_LAUNCH_RUNBOOK.md`:
+> build the 42-image bank on routes O and F under the accepted trademark posture and its §5 rule, run the
+> two-piece C2 sustainability test, produce the AI test piece.
 
 Then the Week-1 Gate. Exact criteria: `experiment/active-84-post-plan/GATES.md`; status: `production/gates/`.
 

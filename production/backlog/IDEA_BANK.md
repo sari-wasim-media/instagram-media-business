@@ -25,18 +25,21 @@ free-licence stock (route F), and silhouettes in the house illustration library 
 | Collab silhouettes ranked by how good the *non-collab* version is | value, availability | avoids hype-only items |
 | Tier list: white sneakers by how well they age | materials, cleaning, price | owned pairs |
 
-## C3 — Market & Price Intelligence (one dataset each; sources per the ToS register)
+## C3 — Market & Price Intelligence (one dataset each; sources: published reports and release notes only)
 
-| Question (`subject_key: claim:…`) | Chart | Source class |
+| Question (`subject_key: claim:…`) | Chart | Compliant source |
 |---|---|---|
-| How did resale on one iconic retro move over 12 months? | MOVE | published report series or a CLEARED marketplace |
-| Retail vs resale for this month's general releases: which trade below list? | SPREAD / BELOW RETAIL | release-note retail + CLEARED resale source |
-| What share of a marketplace's top sellers is each brand, this quarter vs last? | SHARE | published market report |
-| The price of the "same" shoe across four retailers this week | SPREAD | retailer list prices (facts on the seller's page; see register row 3) |
-| How much did a re-release compress the resale price of the original? | MOVE | report or CLEARED source |
-| What a general release does to a hyped pair's resale (before/after) | MOVE | same |
-| Which sizes carry the premium on one model (size band comparison) | SPREAD | CLEARED marketplace only |
-| Retail price inflation on one silhouette across five years of release notes | MOVE | brand release notes (route 1 of the register) |
+| Retail price inflation on one silhouette across five years of release notes | MOVE | brand release notes (register row 1) |
+| What a brand's own release notes say it charged for the same model, year by year, across three brands | SPREAD | release notes |
+| How did resale on one iconic retro move, as a published report states it? | MOVE | a report series (row 2) |
+| What share of a marketplace's top sellers is each brand, this half vs last, per the marketplace's own published report? | SHARE | published market report |
+| Retail vs report-stated resale for last quarter's biggest releases | SPREAD | release-note retail + report resale |
+| Which of last year's releases a published report says now trade under retail | BELOW RETAIL | only a report that states the figures |
+| How many general releases versus limited releases one brand announced this season (counted from its release notes) | SHARE | release notes |
+| Adult vs grade-school vs kids pricing tiers across this season's announced drops | SPREAD | release notes |
+
+Not in the bank any more: anything that needs live marketplace prices (size-band premiums, "this week's
+asks", cross-retailer live pricing). Those sources are excluded under the conservative posture.
 
 ## C4 — Original Meme & Commentary (in the seven house formats)
 

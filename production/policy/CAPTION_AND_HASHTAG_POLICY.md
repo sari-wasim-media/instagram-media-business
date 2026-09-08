@@ -1,10 +1,11 @@
 # Caption, hashtag and alt-text policy — one policy, both accounts, all 84 posts
 
-**Status: PROPOSED — founder confirmation required.** The hashtag policy is a held-fixed production
-variable already locked in outline (`LOCK_SPECIFICATION.md` §1 item 17: *3–5 topically specific tags in the
-caption, no follow-bait or generic reach tags*). This document gives it the exact operating form, and fixes
-the caption architecture and the alt-text rule alongside it. Platform fact that binds: Instagram now
-allows **at most 5 tags on a post** — a sixth stops the caption/comment posting.
+**Status: ACTIVE — delegated production decision (2026-09-08).** The hashtag policy is a held-fixed
+production variable already founder-locked in outline (`LOCK_SPECIFICATION.md` §1 item 17: *3–5 topically
+specific tags in the caption, no follow-bait or generic reach tags*). This document gives it the exact
+operating form, and fixes the caption architecture and the alt-text rule alongside it, under the founders'
+delegated production authority. Platform fact that binds: Instagram now allows **at most 5 tags on a post** —
+a sixth stops the caption/comment posting.
 
 ## 1. Caption architecture — every post, in this order
 
@@ -19,7 +20,9 @@ allows **at most 5 tags on a post** — a sixth stops the caption/comment postin
 
 Nothing else: no "link in bio" (locked: no link), no "DM us", no retailer links or codes, no calls for
 likes, follows, saves, comments or tags, no "part 2 coming", no giveaways, no @-mentions of brands, stores
-or people (a mention is an outreach signal and a variable), no location tag.
+or people (an @-mention is an association signal and a variable — naming a product by brand and model in
+plain text is required and is the protected nominative use, `../TRADEMARK_RISK_REVIEW.md` §5), no location
+tag.
 
 Voice: the desk's — declarative, specific, sentence case, no exclamation marks, British or American spelling
 chosen once and kept (proposed: **American**, matching the audience's largest country).
@@ -49,11 +52,11 @@ stuffing, no "image of". Written at production, checked at QA. Identical practic
 Captions ≤ 900 characters including tags (well inside the platform limit, above the fold for the hook).
 Line breaks between sections. Numbers written as they appear on the artwork.
 
-## 5. Founder decision record
+## 5. Decision record
 
 | | |
 |---|---|
-| Caption architecture and prohibitions | ☐ as proposed · ☐ amended |
-| Fixed category and community tags | ☐ as proposed · ☐ amended: ______ |
-| Spelling | ☐ American (proposed) · ☐ British |
-| Sari / Wasim · date | ☐ / ☐ ______ |
+| Caption architecture and prohibitions | as above |
+| Fixed category and community tags | as above |
+| Spelling | American (the audience's largest country; one house style on both accounts) |
+| Decided | 2026-09-08 — delegated production decision (Claude); founders may override before Day 1 |

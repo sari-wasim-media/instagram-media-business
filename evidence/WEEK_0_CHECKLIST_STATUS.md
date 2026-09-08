@@ -95,19 +95,20 @@ Post #1, never mid-experiment.
 | # | Item | Status | Notes |
 |---|---|---|---|
 | 23 | Produce and schedule all Week-1 pieces before Week 1 starts | **NOT YET APPLICABLE** + count **SUPERSEDED** | The item says **8 pieces** (4/account). At the active cadence Week 1 requires **14** (7/account). Blocked on the matrix |
-| 24 | Build reusable templates (chart, ranking carousel, verdict card, meme layout) | **BUILT AS PROPOSALS (2026-09-06)** — awaiting founder template lock | `production/templates/` — all four house systems plus the Story frame, as specs with 64 rendered specimens and a Reel pacing reference; C2 ranked-item count proposed at 7. Locked only when the founders record it (`production/FOUNDER_REVIEW_QUEUE.md`) |
-| 25 | Resolve imagery sourcing for C2 and C3 | **DECISION RECORDED, EXECUTION NOT STARTED (2026-09-06)** | Source classes per engine and the C2 route stack are in `production/assets/`; C3 is self-generated charts with a data-source terms register. The asset bank (42 C2 images for the gate) and the C2 sustainability test remain founder work. Still the binding constraint |
+| 24 | Build reusable templates (chart, ranking carousel, verdict card, meme layout) | **DONE (2026-09-08)** — delegated production decisions | `production/templates/` — all four house systems plus the Story frame, as specs with 64 rendered specimens and a Reel pacing reference; C2 ranked-item count 7. Recorded in `DECISIONS.md`; founders may override before Day 1 |
+| 25 | Resolve imagery sourcing for C2 and C3 | **DECIDED; EXECUTION NOT STARTED (2026-09-08)** | Source-class order per engine and the C2 route stack are decided (`production/assets/`); C3 sources are settled under the conservative data-source posture (published reports and release notes only); the trademark posture was **accepted on 2026-09-08** (`production/TRADEMARK_RISK_REVIEW.md`), so product photography runs under its §5 rule. The asset bank (42 C2 images for the gate) and the C2 sustainability test remain founder work. Still the binding constraint |
 | 26 | Write the originality rule where both founders can see it: **zero unoriginal posts** | **DONE (2026-09-06)** | `production/policy/ORIGINALITY_RULE.md` — the one-page rule card |
 
 ---
 
 ## Summary
 
-**Status after the Creative System sprint (2026-09-06):** items 19 and 21 have a built skeleton; item 22 has
-its instrument (empty); item 24 is built as proposals awaiting founder lock; item 25 has its decision recorded
-and its execution (the asset bank, the sustainability test) outstanding — **still the binding constraint**;
-item 26 is done. **Genuinely outstanding:** item 23 (Week-1 production — deliberately not started) and the
-execution halves of 22 and 25. All are tracked item by item in `../production/gates/`.
+**Status after the Creative System sprint (2026-09-06) and the decision pulse (2026-09-08):** items 19 and
+21 have a built skeleton; item 22 has its instrument (empty); item 24 is done (delegated production
+decisions); item 25 is decided except the founders' trademark answer, with its execution (the asset bank,
+the sustainability test) outstanding — **still the binding constraint**; item 26 is done. **Genuinely
+outstanding:** item 23 (Week-1 production — deliberately not started) and the execution halves of 22 and 25.
+All are tracked item by item in `../production/gates/`.
 
 **New pre-launch items not in the historical 26**, created by the Founder Lock: declare the 7-day Story
 rotation and fix the sticker weekday · write the fixed AI disclosure wording · verify the AI tool's

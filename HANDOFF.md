@@ -31,9 +31,13 @@ read whatever else the task needs.
 - The active cadence is **1 feed post/day/account → 84 feed posts over 6 weeks**, plus **84 Stories**.
 - ✅ **The 84-post matrix is designed, validated and FOUNDER-LOCKED** —
   `experiment/active-84-post-plan/matrix_84.csv`.
-- ✅ **The creative system and pre-launch instruments are built (2026-09-06) — as proposals** —
-  `production/`. Thirteen values the lock left open await founder review in
-  `production/FOUNDER_REVIEW_QUEUE.md`; the C2 ranked-item count is proposed at **7**.
+- ✅ **The creative system and pre-launch instruments are built (2026-09-06) and decided (2026-09-08)** —
+  `production/`. The founders delegated production-level authority to Claude on 2026-09-08; the former
+  review-queue items are **ACTIVE — delegated production decisions** in `DECISIONS.md` (C2 ranked-item
+  count **7**, Wednesday sticker, Firefly, and the rest). Founders may override before Day 1.
+- ✅ **The trademark / trade-dress posture is ACCEPTED** (2026-09-08) —
+  `production/TRADEMARK_RISK_REVIEW.md`. Photographs of branded sneakers are produced under its §5
+  nominative-use operating rule, mandatory on every piece; its §3 re-review triggers stand.
 - ⚠ **Locked is not launched.** Launch is blocked on the Sourcing Gate and the Week-1 Gate. Zero Week-1
   pieces exist, by design.
 
@@ -74,8 +78,8 @@ read whatever else the task needs.
 - **The Creative System + Pre-Launch Foundations sprint (2026-09-06)** → `production/`: House System v1,
   the C1–C4 and Story templates with 64 rendered specimens, the asset and rights pipeline with its research
   record, the policy pack, the topic queue, the production rhythm and C1 ladder, the tracking-sheet skeleton,
-  the gate scorecards, and four validators/generators in `tools/`. **All proposals until the founders lock
-  them — do not rebuild them; review them.**
+  the gate scorecards, and four validators/generators in `tools/`. **Decided under delegated authority on
+  2026-09-08 — do not rebuild them and do not reopen them unless a founder asks.**
 
 ⚠ **Do not re-run market research.** It exists, and much of it was corrected — read the ledger rather than
 regenerating it. ⚠ **Do not re-run the rights and terms research either** — it is recorded with access
@@ -118,16 +122,15 @@ earlier four-cell naming (redefined as C1–C4), and every count sized to 4 post
 
 ## 6. Immediate next task
 
-> **Founder review of `production/FOUNDER_REVIEW_QUEUE.md`** — 13 proposed lock values, starting with the
-> C2 ranked-item count (proposed 7). Then **execute the Sourcing Gate** along
-> `production/PRE_LAUNCH_RUNBOOK.md` (asset bank, C2 sustainability test, C3 terms clearance, AI tool
-> verification and test piece). Then the Week-1 Gate. Then, and only then, the start date is instantiated as
-> the first Monday after both gates pass.
+> **The founders verify Adobe Firefly's terms.** Then **execute the Sourcing Gate** along
+> `production/PRE_LAUNCH_RUNBOOK.md` (asset bank on the accepted routes, C2 sustainability test, AI test
+> piece). Then the Week-1 Gate. Then, and only then, the start date is
+> instantiated as the first Monday after both gates pass.
 
-**The design is finished and locked. Do not redesign it. The creative system is built; do not rebuild it —
-review it.** Read `experiment/active-84-post-plan/GATES.md` for the exact pass criteria, the scorecards in
-`production/gates/` for status, and run `python3 tools/validate_matrix.py` if you want to confirm the matrix
-is intact.
+**The design is finished and locked. Do not redesign it. The creative system is built and decided; do not
+rebuild it and do not re-open the delegated decisions unless a founder asks.** Read
+`experiment/active-84-post-plan/GATES.md` for the exact pass criteria, the scorecards in `production/gates/`
+for status, and run `python3 tools/validate_matrix.py` if you want to confirm the matrix is intact.
 
 ⚠ **C2 is the binding constraint, and it is different in kind from C3.** A C2 ranking needs one rights-clean
 image **per ranked item, in every format** — roughly 85–170 distinct images across its 21 posts. C3's visuals
@@ -145,9 +148,16 @@ whether it ships as a carousel or a Reel. If the gate cannot be passed, delay la
 start rule · link in bio (none) · AI-generated imagery (six locked C4 slots only) · Story cadence (daily) ·
 the 84-post matrix itself.
 
+**Delegated to Claude since 2026-09-08 (`WORKFLOW.md` §2a):** production-level decisions — creative
+system, visual and production design, sourcing implementation, platform operating details, workflow,
+template and content mechanics, operational policies, tooling selection, queue / reserve / scheduling
+details. Recorded as **ACTIVE — delegated production decision**; do not send these back to the founders.
+
 **Still requires founder approval:**
 
 - **Publishing anything at all.** Launch is gated; the gates have not passed.
+- **Spending money, paid subscriptions or licences, paid stock, or accepting external terms on the
+  founders' behalf** (tool selection is delegated; purchase is not).
 - **Any monetization, pricing or advertiser contact.**
 - **Building automation, dashboards or publishing tooling.**
 - **Renaming `sneakerbong`** — deferred until after revival evidence.
@@ -190,7 +200,7 @@ ROADMAP.md          phases                 HANDOFF.md       this file
 WORKFLOW.md         how we work            CLAUDE.md        Claude Code entry point
 strategy/           context + research     experiment/      methodology + the LOCKED matrix + tracking skeleton
 evidence/           organized screenshots  archive/         pristine originals
-production/         creative system, asset pipeline, policies, queue, rhythm, gate scorecards (PROPOSED)
+production/         creative system, asset pipeline, policies, queue, rhythm, tooling, gate scorecards (delegated decisions; trademark posture accepted 2026-09-08: TRADEMARK_RISK_REVIEW.md)
 tools/              validate_matrix.py · validate_provenance.py · validate_backlog.py · build_tracking_sheet.py · instantiate_calendar.py
 experiment/active-84-post-plan/matrix_84.csv  ← the matrix
 ```

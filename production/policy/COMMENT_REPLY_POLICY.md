@@ -1,8 +1,9 @@
 # Comment-reply policy — one declared policy, applied identically on both accounts
 
-**Status: PROPOSED — founder confirmation required.** Comment-reply policy is a frozen variable
-(`LOCK_SPECIFICATION.md` §1 item 16–17) that must be declared before Post #1. Consistency matters more than
-the level: the same policy, the same effort, both accounts, all six weeks.
+**Status: ACTIVE — delegated production decision (2026-09-08).** Comment-reply policy is a frozen variable
+(`LOCK_SPECIFICATION.md` §1 item 16–17) that must be declared before Post #1; it is declared here under the
+founders' delegated production authority. Consistency matters more than the level: the same policy, the
+same effort, both accounts, all six weeks.
 
 ## The policy
 
@@ -30,9 +31,9 @@ review; do not raise it mid-test.
 
 Per post in the tracking row: replies made (count), corrections acknowledged (Y/N), spam hidden (count).
 
-## Founder decision record
+## Decision record
 
 | | |
 |---|---|
-| Policy | ☐ as proposed · ☐ amended: ______ |
-| Sari / Wasim · date | ☐ / ☐ ______ |
+| Policy | as above |
+| Decided | 2026-09-08 — delegated production decision (Claude); founders may override before Day 1 |

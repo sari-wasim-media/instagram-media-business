@@ -2,8 +2,11 @@
 
 **Week-1 Gate item 10:** *definition, prohibited-use list, fixed disclosure wording, provenance fields, and
 the six locked slot IDs recorded in the tracking sheet.* The sub-test itself is founder-locked
-(`../../experiment/active-84-post-plan/AI_IMAGERY_SUBTEST.md`); this pack operationalises it. **One item in it
-is a proposal that needs a founder decision: the disclosure wording (§3).**
+(`../../experiment/active-84-post-plan/AI_IMAGERY_SUBTEST.md`); this pack operationalises it. **The disclosure
+wording and placement (§3) and the tool selection (§5) are decided under the founders' delegated production
+authority (2026-09-08), which completes the pack.** What stays with the founders: verifying the tool's
+current terms, creating the account, and approving any paid plan (Sourcing Gate item 9; no spending
+authority).
 
 ## 1. Definition (locked, restated for the production desk)
 
@@ -31,7 +34,7 @@ Recorded in `matrix_84.csv` (`ai_overlay = AI`), in the tracking sheet's `ai_ove
 `tools/validate_provenance.py`. **Zero AI imagery in Week 1, in C1/C2/C3, in any other C4 slot, in any Story,
 and in any reserve piece.**
 
-## 3. The fixed disclosure line — PROPOSED wording
+## 3. The fixed disclosure line — decided (delegated production decision, 2026-09-08)
 
 > **Imagery in this post is AI-generated and illustrative. It does not depict a real product.**
 
@@ -48,11 +51,11 @@ and in any reserve piece.**
   The AI-slot specimen (`../templates/renders/c4/c4_ai_slot_static_expectation_reality.png`) is therefore an
   ordinary C4 frame.
 
-| Founder decision | |
+| Decision record | |
 |---|---|
-| Wording | ☐ as proposed · ☐ amended to: ______ |
+| Wording | the line above, verbatim, six times |
 | Placement | caption line + platform label only (per the locked sub-test; no on-artwork element) |
-| Sari / Wasim · date | ☐ / ☐ ______ |
+| Decided | 2026-09-08 — delegated production decision (Claude); inside the locked sub-test, which requires an identical fixed caption line and a preserved platform label. Founders may override the wording before Day 1 |
 
 ## 4. Prohibited — even inside the six slots (locked, as a checklist)
 
@@ -77,13 +80,16 @@ market data.
 - **Review** by the *other* founder before use: inspect for accidental swoosh-like curves, stripe patterns,
   wordmark-like text, recognisable silhouettes of a specific model, and faces. Anything doubtful is
   regenerated; nothing is "fixed" by generative editing of a real photograph.
-- **Tool.** Recommended candidate: **Adobe Firefly** — Adobe states its models are "commercially safe" and
+- **Tool — decided: Adobe Firefly** (web), on its free tier first (delegated production decision under the
+  founders' tool-selection autonomy, 2026-09-08). Adobe states its models are "commercially safe" and
   attaches Content Credentials (C2PA), which is what lets Instagram's "AI info" label appear automatically —
-  the disclosed version of the treatment the sub-test wants measured. Alternate: Google Gemini (SynthID; C2PA
-  on its pro image model). Midjourney adds no provenance metadata and needs a paid plan; free tiers of
-  Ideogram and Leonardo make images public or retain rights. **`GATES.md` §1.4 item 9 requires the founders
-  themselves to verify the chosen tool's output licence** and record tool + version + plan + date in
-  `../assets/SOURCING_ROUTES_RESEARCH.md` §6 and in every asset row.
+  the disclosed version of the treatment the sub-test wants measured. Alternate if Firefly's free allowance
+  or output proves unsuitable at the test piece: Google Gemini (SynthID; C2PA on its pro image model).
+  Rejected: Midjourney (no provenance metadata, paid only), Ideogram and Leonardo free tiers (images public
+  or rights retained). **Selection is not purchase and not verification:** `GATES.md` §1.4 item 9 requires
+  the founders themselves to read the tool's current output-licence terms, create the account, and record
+  tool + version + plan + date in `../assets/SOURCING_ROUTES_RESEARCH.md` §6 and in every asset row; a paid
+  plan needs founder approval (`../operations/TOOLING.md`).
 - **Never** feed a third-party photograph, a brand image or another account's post into a generator.
 
 ## 6. Provenance fields for every AI asset (locked list, as register columns)

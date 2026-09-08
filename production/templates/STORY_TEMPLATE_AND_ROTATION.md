@@ -1,11 +1,11 @@
 # Story template, 7-day rotation and the interactive-sticker weekday
 
-**Status: PROPOSED — founder review required.** The Story *protocol* is locked
+**Status: ACTIVE — delegated production decision (2026-09-08).** The Story *protocol* is founder-locked
 (`../../experiment/methodology/STORY_PROTOCOL.md`): one frame per account per day at 17:30 UTC ± 30 min,
 a fixed 7-day rotation predeclared before Week 1 and identical on both accounts, exactly one interactive
-sticker per account per week on a fixed weekday, T+2 snapshots, diagnostic only. What was **not** yet
-declared — the content classes in the rotation, the sticker weekday and the frame template — is proposed
-here. Specimens: `renders/story/`.
+sticker per account per week on a fixed weekday, T+2 snapshots, diagnostic only. The content classes in the
+rotation, the sticker weekday (**Wednesday**) and the frame template are declared here under the founders'
+delegated production authority and are frozen for the six weeks. Specimens: `renders/story/`.
 
 ---
 
@@ -29,7 +29,7 @@ that day's single Story, and is logged.
 | **Mon** | **DROP CALENDAR** | C1 · blue | This week's *confirmed* drops as rows (day · product · price). Three to five rows | — |
 | **Tue** | **PRICE CHECK** | C3 · green | One number: a resale or spread figure with basis and "as of" date | — |
 | **Wed** | **THE POLL** | C2 · yellow | A two-option "settle it" question in the house split layout with the **poll sticker** placed in the marked zone | **Poll (or quiz)** |
-| **Thu** | **DESK NOTES** | neutral · paper accent | An editorial note: how we rank, a correction, a method line, a reader question answered in text | — |
+| **Thu** | **DESK NOTES** | neutral · paper accent | An editorial note: how we rank, a correction, a method line (at least once in the run: the desk's independence line — independent · unsponsored · nothing sent to us; `../TRADEMARK_RISK_REVIEW.md` §5 rule 4), a reader question answered in text | — |
 | **Fri** | **THE VERDICT** | C1 · blue | One stamp — COP / WAIT / PASS — on the weekend's drop, one line of reasoning | — |
 | **Sat** | **TWO SHOES** | C4 · pink | The C4 split format, one ruling, two owned/licensed/self-drawn plates | — |
 | **Sun** | **THE WEEK** | neutral | A mosaic of the week's own artwork thumbnails (no links) and a one-line "next week" | — |
@@ -76,11 +76,12 @@ T+2 snapshot per Story: viewers (accounts reached) · views · forward taps · b
 sticker interactions (Wednesday only) · actual publish time · deviations. Weekly Story roll-up per account.
 Missing data is logged `STORY_DATA_MISSING` and never back-filled. Stories gate nothing.
 
-## 7. Founder decision record
+## 7. Decision record
 
 | | |
 |---|---|
-| Rotation | ☐ as proposed · ☐ amended: ______ |
-| Sticker weekday | ☐ Wednesday (proposed) · ☐ other: ______ |
-| Sticker type | ☐ poll by default, quiz allowed (proposed) · ☐ poll only |
-| Sari / Wasim | ☐ / ☐ · date ______ |
+| Rotation | the seven classes above |
+| Sticker weekday | **Wednesday** |
+| Sticker type | poll by default, quiz allowed on the same frame |
+| Decided | 2026-09-08 — delegated production decision (Claude); founders may override before Day 1 |
+| Tuesday PRICE CHECK data | a figure already sourced for a C3 piece from a compliant source (`../assets/C3_DATA_SOURCE_TOS_REGISTER.md`) |

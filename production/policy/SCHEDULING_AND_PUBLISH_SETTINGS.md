@@ -1,9 +1,10 @@
 # Scheduling procedure and publish settings — held fixed for all 84 posts and 84 Stories
 
-**Status: PROPOSED — founder confirmation required.** The publish instant (16:00 UTC), the scheduling rule
-(all posts scheduled in advance) and the manual-fallback alternation are locked (`LOCK_SPECIFICATION.md`
-§3). The per-post settings below are the composer toggles that would otherwise vary silently; they are
-declared once here so they are identical on both accounts for every post.
+**Status: ACTIVE — delegated production decision (2026-09-08).** The publish instant (16:00 UTC), the
+scheduling rule (all posts scheduled in advance) and the manual-fallback alternation are founder-locked
+(`LOCK_SPECIFICATION.md` §3). The per-post settings below are the composer toggles that would otherwise vary
+silently; they are declared once here, under the founders' delegated production authority, so they are
+identical on both accounts for every post.
 
 ## 1. The publish settings — every feed post
 
@@ -72,10 +73,10 @@ The instant is UTC and does not move. Local wall-clock conversions change on **2
 the time-zone check (§2 step 2) in the week of any transition. `tools/instantiate_calendar.py` flags whether
 the six weeks straddle either date once a start Monday is given.
 
-## 6. Founder decision record
+## 6. Decision record
 
 | | |
 |---|---|
-| Scheduling tool | ☐ Business Suite desktop (proposed) · ☐ Instagram app · ☐ other |
-| Settings table | ☐ as proposed · ☐ amended: ______ |
-| Sari / Wasim · date | ☐ / ☐ ______ |
+| Scheduling tool | Meta Business Suite, desktop (Instagram in-app scheduling as the fallback) |
+| Settings table | as above |
+| Decided | 2026-09-08 — delegated production decision (Claude); founders may override before Day 1 |

@@ -6,13 +6,20 @@ primary, animated-chart Reel secondary. Most research-heavy (~90 min/piece). Key
 profile visits ÷ reach. **Data sourcing rule: manual collection from public pages and published reports;
 check terms of service before any collection; no scraper during the experiment.**
 
-**Template status: PROPOSED — founder review required.** Specimens: `renders/c3/`.
+**Template status: ACTIVE — delegated production decision (2026-09-08).** Specimens: `renders/c3/`.
 
 C3 carries 21 posts: 12 Reels, 6 Carousels, 3 Statics (A: 6R/3C/1S · B: 6R/3C/2S). Its visuals are
 self-generated, so its rights burden is **zero**; its constraints are research time and the terms of the
-sources it reads — see `../assets/C3_DATA_SOURCE_TOS_REGISTER.md`, which records a real problem: several
-marketplaces' terms restrict even manual copying of their prices. The template is built so a C3 piece can be
-made from sources that permit it.
+sources it reads. Under the founders' conservative data-source posture (2026-09-08) the sources are
+**published reports and brand release notes only** — live marketplace data is excluded
+(`../assets/C3_DATA_SOURCE_TOS_REGISTER.md`). The template is built so every C3 piece can be made from those.
+
+| Chart type | Compliant basis |
+|---|---|
+| MOVE | A report's price series, or a brand's own price history across its release notes |
+| SPREAD | Release-note retail against report-stated resale |
+| BELOW RETAIL | Only where a published report states the figures |
+| SHARE | Report data (brand share, top sellers) |
 
 ---
 
@@ -44,9 +51,10 @@ tracking row with its source.
 | `sources[]` | Named; terms checked and recorded in the ToS register |
 | `caveats` | Snapshot, sample size, anything a fair reader should know |
 
-**Manual collection means:** a founder opens the public page, reads the figure, types it into the data sheet
-with the date. No browser extension, no export, no script, no bulk download. **If a source's terms prohibit
-copying its figures, it is not a source** — regardless of how public the page looks.
+**Manual collection means:** a founder opens the published report or release note, reads the figure, types
+it into the data sheet with the publisher, title and date. No browser extension, no export, no script, no
+bulk download. **If a source's terms do not clearly permit the use, it is not a source** — regardless of how
+public the page looks (founder posture, 2026-09-08).
 
 ## 3. Static — the data card
 
@@ -93,12 +101,13 @@ the numbers and the method line.
 
 - One data sheet per piece (a tab in the founders' working spreadsheet, not the repository): source · URL or
   report · figure · date · collector. The tracking row links to it by name.
-- Allowed source classes, in priority order — see `../assets/C3_DATA_SOURCE_TOS_REGISTER.md`: **(1) published
-  reports and press releases** (they exist to be cited; cite them by name and date); **(2) brand and retailer
-  list prices** (public facts on the seller's own page); **(3) marketplaces whose terms were read and permit
-  manual, non-automated reading and republication of derived figures**, recorded per source; **(4) nothing
-  else**. StockX-, GOAT- and Flight-Club-style terms that reach "manual means" are **founder-verify-before-
-  use**, not defaults.
+- Allowed sources — the founders' conservative data-source posture (2026-09-08), operationalised in
+  `../assets/C3_DATA_SOURCE_TOS_REGISTER.md`: **(1) brand press releases and newsroom release notes** and
+  **(2) published market reports and data press releases**. Nothing else. Brand and retailer product pages
+  confirm a release-note price but are not cited; **live marketplace pages (StockX, GOAT, Flight Club, Stadium
+  Goods, eBay, Grailed, KLEKT, Laced) are not used**, manually or otherwise, because their terms do not
+  clearly permit it. A figure that exists only in an excluded source is not used; the piece is written
+  without it or the subject changes.
 - Sample honesty: state the size band and window; if fewer than 5 sales underlie a median, say so or do not
   publish the number.
 - Collect in one sitting per piece and date-stamp the sheet; a piece is not re-collected after check-out.

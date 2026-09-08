@@ -1,54 +1,51 @@
-# Founder review queue — proposed lock values from the Creative System sprint
+# Founder review queue — resolved under delegated authority (2026-09-08)
 
-**Every item below is a proposal.** None is a decision until Sari and Wasim record it (each document carries
-its own decision block, and `DECISIONS.md` gets the entry). Nothing here reopens a founder-locked decision;
-each item fills a value the lock left to be fixed at template lock or before Day 1.
+**What happened to this queue.** On 2026-09-08 the founders delegated production-level decision authority to
+Claude (`DECISIONS.md`, "Founder decision pulse — 2026-09-08") with the instruction not to return specialist
+details to them. Every item that was a matter of expert implementation has been **re-evaluated once under
+that rule and decided**, recorded as **ACTIVE — delegated production decision** in `DECISIONS.md` and in the
+document that carries it. The founders may override any of them before Day 1.
 
-**Recommended review order:** items 1–4 (they gate production), then 5–9, then 10–13.
+**What remains for the founders** is only what the delegation excludes: material risk, money, the acceptance
+of external terms, and Git finalization.
 
-| # | Proposed lock value | Recommendation | Reasoning and decision block |
+## A. Decided under delegated authority (13 items, plus two new ones)
+
+| # | Item | Decision | Changed from the earlier proposal? | Where |
+|---|---|---|---|---|
+| 1 | House System v1 | Locked as the house template set | Added the 3:4 grid-tile note and the editorial-voice layer | `house-style/HOUSE_STYLE.md`, `house-style/EDITORIAL_VOICE.md` |
+| 2 | C2 ranked-item count | **7** | No — re-scored; 7 still wins on the eight criteria | `templates/C2_RANKED_ITEM_COUNT_DECISION.md` |
+| 3 | C1 verdict scale and rubric | COP · WAIT · PASS, four criteria 0–2, one-step override | **Yes** — resale outlook scores 1 and says so when no compliant resale data exists, because the conservative data posture removes most live resale figures | `templates/C1_RELEASE_VERDICT_DESK.md` §1 |
+| 4 | Story rotation and sticker weekday | The seven classes as proposed; **Wednesday**; poll default, quiz allowed | Wednesday's frame posted manually until scheduler sticker support is proven (from the cleanup pass) | `templates/STORY_TEMPLATE_AND_ROTATION.md` |
+| 5 | AI disclosure line and placement | The line as proposed; caption + platform label only; nothing on the artwork | No (already corrected in the cleanup pass) | `policy/AI_IMAGERY_POLICY_PACK.md` §3 |
+| 6 | AI generation tool | **Adobe Firefly**, free tier first; alternate Gemini | Selection is decided; **licence verification, account creation and any paid plan stay with the founders** (Sourcing Gate item 9; no spending authority) | `policy/AI_IMAGERY_POLICY_PACK.md` §5, `operations/TOOLING.md` |
+| 7a | Source-class priority per engine | The order as proposed, with route F narrowed and route B PUMA-only | **Yes** — narrowed per the trademark review; product photographs of branded sneakers run under the accepted posture and its §5 rule (B1, closed 2026-09-08) | `assets/SOURCE_CLASS_DECISION.md` |
+| 8 | Caption and hashtag operating form | As proposed; American spelling | No | `policy/CAPTION_AND_HASHTAG_POLICY.md` |
+| 9 | Comment-reply policy | As proposed (24 h, ≤ 15 replies, like all, hide spam, no pins) | No | `policy/COMMENT_REPLY_POLICY.md` |
+| 10 | Scheduling tool and publish settings | Business Suite desktop; settings as proposed; Wednesday Story manual | No | `policy/SCHEDULING_AND_PUBLISH_SETTINGS.md` |
+| 11 | Reserve composition | C2 R+C · C3 R+C+S · C4 R+C | No — C3's three reserve pieces are buildable from published reports under the conservative posture | `operations/RESERVE_REGISTER.md` |
+| 12 | Queue-rule operational readings | C1 window 7 d before / 10 d after; C2 theme = subject, #1 pick secondary | No | `backlog/README.md` §2 |
+| 13 | Producer allocation and rhythm | Alternate by format batch, never by account; the weekly rhythm | No | `operations/PRODUCTION_RHYTHM.md` |
+| new | Compliant data sources | Press releases, published reports and release notes only; marketplaces excluded | Operationalises the founders' conservative posture | `assets/C3_DATA_SOURCE_TOS_REGISTER.md` |
+| new | Production tooling | Figma · CapCut desktop (no library content) · Business Suite · Sound Collection · house renderer; free tiers only | New | `operations/TOOLING.md` |
+
+## B. True founder decisions and actions — the only items left
+
+| # | Item | Why it is the founders' | Where |
 |---|---|---|---|
-| 1 | **House System v1** — canvases, bands, palette, type, components, motion grammar, audio rule | Approve as the frozen house template set | `house-style/HOUSE_STYLE.md`; specimens in `templates/renders/` |
-| 2 | **C2 ranked-item count = 7** in every C2 piece, every format | **7** (runner-up 8; 5 rejected) | `templates/C2_RANKED_ITEM_COUNT_DECISION.md` — the eight-criterion comparison; 147 images total, 42 for the gate |
-| 3 | **C1 verdict scale COP · WAIT · PASS** with the four-criterion rubric (0–8), one-step override allowed | Approve | `templates/C1_RELEASE_VERDICT_DESK.md` §1 |
-| 4 | **Story rotation** (Mon DROP CALENDAR · Tue PRICE CHECK · Wed THE POLL · Thu DESK NOTES · Fri THE VERDICT · Sat TWO SHOES · Sun THE WEEK) and **sticker weekday = Wednesday**, poll by default, quiz allowed | Approve | `templates/STORY_TEMPLATE_AND_ROTATION.md` §2–§3, §7 |
-| 5 | **Fixed AI disclosure line:** "Imagery in this post is AI-generated and illustrative. It does not depict a real product." — as the caption line the locked sub-test requires, with the platform AI label preserved; **no disclosure element on the artwork** (it would add a second visual difference between AI and non-AI C4 posts) | Approve the wording; placement is caption + platform label only | `policy/AI_IMAGERY_POLICY_PACK.md` §3 |
-| 6 | **AI tool candidate: Adobe Firefly** (alternate: Gemini) — the founders must verify the licence themselves (gate item 9) | Verify Firefly first | `policy/AI_IMAGERY_POLICY_PACK.md` §5; `assets/SOURCING_ROUTES_RESEARCH.md` §6 |
-| 7 | **Source-class priority per engine** and the **residual trademark-risk acceptance** for product photography | Approve the order; sign the acceptance | `assets/SOURCE_CLASS_DECISION.md` §2, §4 |
-| 8 | **Caption architecture and hashtag operating form** (3–5 tags: 2–3 subject + 1 fixed category + ≤ 1 community; ban list; alt text always; American spelling) | Approve | `policy/CAPTION_AND_HASHTAG_POLICY.md` |
-| 9 | **Comment-reply policy** (24 h window, substantive comments, cap 15/post, like all, hide spam, no pins, no DM outreach) | Approve | `policy/COMMENT_REPLY_POLICY.md` |
-| 10 | **Scheduling tool and publish settings** (Business Suite desktop; Reels share-to-feed ON; Facebook share OFF; no Trial; no location/tags; AI label ON for six only). Interactive-sticker Story scheduling is **unverified**: Wednesday's poll Story is posted manually at 17:30 UTC ± 30 min unless a test proves the scheduler preserves the sticker | Approve | `policy/SCHEDULING_AND_PUBLISH_SETTINGS.md` |
-| 11 | **Reserve composition** (C2 Reel + Caro, C3 Reel + Caro + Stat, C4 Reel + Caro) | Approve | `operations/RESERVE_REGISTER.md` |
-| 12 | **Two operational readings of locked rules:** the C1 queue window (news ≤ 7 d before or release ≤ 10 d after publish) and C2's subject handling (theme = subject; #1 pick logged as secondary subject) | Approve | `backlog/README.md` §2; `templates/C2_RANKINGS_AND_TIER_LISTS.md` §7 |
-| 13 | **Producer alternation by format batch, never by account** | Approve | `operations/PRODUCTION_RHYTHM.md` §4 |
+| ~~B1~~ | **Trademark / trade-dress residual-risk posture** — **CLOSED: ACCEPTED 2026-09-08** | Material legal/platform risk; the founders asked for a recommendation and reserved the choice | `TRADEMARK_RISK_REVIEW.md` §9 — accepted, §5 rule mandatory, §3 triggers standing |
+| B2 | Adobe Firefly: read and verify the current terms, create the account, record tool · version · plan · date; approve a paid plan only if the free allowance proves too small | Acceptance of external terms; possible spend; Sourcing Gate item 9 names the founders | `policy/AI_IMAGERY_POLICY_PACK.md` §5 |
+| B3 | Any paid stock credits (route P), if ever needed | Spend | `assets/C2_SOURCING_ROUTES.md` |
+| B4 | Git finalization of the task branch | `WORKFLOW.md` §4 | — |
 
-## Findings surfaced for the founders (no locked decision needs reopening)
+Everything else in the pre-launch path is founder **execution** of decided instruments (bank build,
+sustainability test, AI test piece, baselines, backlog seeding), listed in `PRE_LAUNCH_RUNBOOK.md`.
 
-1. **Brand press imagery is not usable by default.** Of the newsroom terms read on 2026-09-05, only PUMA's
-   media hub states an editorial clearance; Nike, adidas, ASICS, HOKA, Vans and Crocs grant personal,
-   non-commercial use only. The gate already conditioned press assets on verified terms; the practical
-   consequence is that C1 must work without a product photo (it now does) and C2 must rely on owned, free-
-   licence and illustrated imagery.
-2. **C3's "manual collection from public marketplace pages" needs the terms check the locked rule already
-   demands — and several terms fail it.** StockX and Flight Club snippets reach manual copying; Stadium
-   Goods restricts to personal, non-commercial use. C3's default sources are published reports and brand
-   release notes until a founder clears a marketplace row in the register.
-3. **Instagram Insights field naming is unverified.** The help pages read on 2026-09-05 describe "Views" and
-   "Viewers"; whether the Insights screens on these two accounts show "Viewers", "Accounts reached" or both,
-   per format, has not been observed. **Reach (unique accounts) remains the canonical denominator whatever
-   the label says.** The tracking sheet's columns are named `*_reach`; the Week-0 baseline capture records the
-   actual field names per format on both accounts before Day 1.
-4. **The platform hashtag cap is now 5**, which matches the locked 3–5 policy exactly.
-5. **Only Meta's Sound Collection is cleared for business accounts**; CapCut's "commercial" sounds are
-   cleared for CapCut/TikTok only. The locked audio rule ("licensed or royalty-free") is satisfied by using
-   Sound Collection at upload and nothing else.
+## Findings recorded during the sprint (unchanged)
 
-## After approval
-
-Record each accepted item in `DECISIONS.md` (ACTIVE · template lock), tick the decision blocks, and move the
-scorecards in `gates/` forward. Then the founder work in `PRE_LAUNCH_RUNBOOK.md` begins.
-
-## Git
-
-This sprint's work sits on the task branch `claude/instagram-creative-system-sprint-74ibb0`. Per
-`WORKFLOW.md` §4, opening the pull request and merging to `main` wait for the active founder's approval.
+1. Brand press imagery is not usable by default (only PUMA's media hub states an editorial clearance).
+2. Marketplace terms do not clearly permit copying prices — now moot: the founders' conservative posture
+   excludes them.
+3. Instagram Insights field naming is unverified; Reach stays the denominator.
+4. The platform hashtag cap is 5, matching the locked 3–5 policy.
+5. Only Meta's Sound Collection is cleared for business accounts.

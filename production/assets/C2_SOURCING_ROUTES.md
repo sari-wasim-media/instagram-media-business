@@ -11,13 +11,15 @@ throughput, so the founders can run the sustainability test against a real proce
 |---|---|---|---|---|---|
 | **O · Owned photography** | `OWNED` | ~$0 after a one-off setup (backdrop, tape, phone) | 4–6 min once the rig exists | The pairs the founders and their circle own or can borrow — build the inventory list first | Any colorway physically at hand |
 | **F · Free-licence stock** | `LICENSED_FREE` | $0 | 5–8 min (search, licence archive, download, plate) | Thousands of sneaker photos on Unsplash/Pexels; specific colorways patchy | Icons, general releases, lifestyle shots |
-| **P · Paid stock** | `LICENSED_PAID` | ~$3 per image on a 10-credit plan | 5 min | Budget-limited: use for ≤ 10 gaps | Specific models missing from F |
+| **P · Paid stock** | `LICENSED_PAID` | ~$3 per image on a 10-credit plan — **founder approval per purchase** | 5 min | Budget-limited: use for ≤ 10 gaps | Specific models missing from F |
 | **X · Permissioned** | `PERMISSIONED` | $0; a message and a wait | 15 min + the reply | Slow; ask early, in batches | Niche colorways owned by collectors |
 | **S · Self-generated illustration** | `SELF_GENERATED` | $0 | 3–5 min per colorway once the silhouette library exists (≈ 5 h to build 15 silhouettes) | Unlimited | Any colorway — as a recognisable colour-blocked silhouette |
 | **B · Brand press, verified** | `PRESS_VERIFIED` | $0 | 10 min first time per brand (read and archive terms), 3 min per asset after | Only brands with permissive, archived terms (PUMA so far) | New releases from those brands |
 
-**Recommended primary for the experiment: O + F, with S as the always-on fallback and P/X/B as gap-fillers.**
-The sustainability test decides whether that holds.
+**Primary for the experiment (ACTIVE — delegated production decision, 2026-09-08): O + F, with S as the
+always-on fallback and X/B as gap-fillers; P only with founder approval per purchase.** Routes O, F, X, P
+and B all produce photographs of branded sneakers and therefore run **under the accepted trademark posture
+and its §5 operating rule** (`../TRADEMARK_RISK_REVIEW.md`, ACCEPTED 2026-09-08); route S is unaffected by it. The sustainability test decides whether the primary holds.
 
 ## Route O — owned photography, the rig
 
@@ -45,8 +47,11 @@ Unsplash and Pexels licences permit commercial use and exclude the trademark in 
 guidance says positive, non-endorsing, editorial use is likely fine. The discipline that makes route F
 defensible:
 
-1. Search by model and colorway; prefer clean product-on-background frames; never a photo that includes a
-   person's face (faceless account, and model releases are not guaranteed).
+1. Search by model and colorway; take only frames in which **the product is the subject in a neutral
+   context**: no brand advertising imagery, no store or event scenes with brand signage as the subject,
+   nothing that could depict counterfeit product, no people at all (the account is faceless and model releases
+   cannot be relied on). The trademark review narrows this route to exactly these frames
+   (`../TRADEMARK_RISK_REVIEW.md` §6).
 2. **Archive the licence**: save the licence page as PDF/screenshot with the date, and the photo's own page
    URL, into the local asset store; record both in the provenance row.
 3. Record the photographer's name and, although not required by either licence, credit in the caption when

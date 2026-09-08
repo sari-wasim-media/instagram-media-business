@@ -97,15 +97,17 @@ C3's visuals are **self-generated charts**; its constraints are research time an
 service, not image licensing. Older checklists bundle these as "C2 and C3" sourcing; they are not the same
 problem. See `../active-84-post-plan/GATES.md` §1.
 
-## House templates and the production surface — built 2026-09-06, awaiting founder lock
+## House templates and the production surface — built 2026-09-06, decided 2026-09-08
 
-The house creative system for all four engines and for Stories now exists as specifications and rendered
-specimens in **`../../production/templates/`**, on the house style in `../../production/house-style/`.
-Each engine has a fixed production language: C1 the verdict card / Reel / carousel with a COP · WAIT · PASS
-rubric and an imagery-optional design; C2 the ranking carousel / Reel / static at a **proposed ranked-item
-count of 7**; C3 four fixed chart types on self-generated data cards; C4 seven originated named formats with
-the AI-slot treatment. All of it is **proposed** until the founders lock it
-(`../../production/FOUNDER_REVIEW_QUEUE.md`).
+The house creative system for all four engines and for Stories exists as specifications and rendered
+specimens in **`../../production/templates/`**, on the house style and editorial voice in
+`../../production/house-style/`. Each engine has a fixed production language: C1 the verdict card / Reel /
+carousel with a COP · WAIT · PASS rubric and an imagery-optional design; C2 the ranking carousel / Reel /
+static at a **ranked-item count of 7**; C3 four fixed chart types on self-generated data cards from
+published reports and release notes; C4 seven originated named formats with the AI-slot treatment. All of it
+is **ACTIVE — delegated production decision** under the founders' delegation of 2026-09-08 (`DECISIONS.md`);
+the founders may override before Day 1. Photographs of branded sneakers wait on the founders' answer to
+`../../production/TRADEMARK_RISK_REVIEW.md`.
 
 ## Still not done
 

@@ -1,13 +1,14 @@
 # C2 ranked-item count — proposed template-lock value
 
-**Status: PROPOSED — FOUNDER REVIEW REQUIRED.** This is the one genuine non-matrix lever the Sourcing Gate
-names (`GATES.md` §1.1), and the lock specification requires it to be fixed at template lock
-(`LOCK_SPECIFICATION.md` §1 item 17). Once the founders confirm a value it is frozen for all 21 C2 posts in
-every format.
+**Status: ACTIVE — delegated production decision (2026-09-08): 7.** This is the one genuine non-matrix lever
+the Sourcing Gate names (`GATES.md` §1.1), and the lock specification requires it to be fixed at template lock
+(`LOCK_SPECIFICATION.md` §1 item 17). Decided by Claude under the founders' delegated production authority
+after re-scoring the candidates; the founders may override it before Day 1. Frozen for all 21 C2 posts in
+every format. The comparison below is the record of why.
 
-## Recommendation
+## Decision
 
-> **Fix the C2 ranked-item count at 7 — in every C2 piece, in every format, for all six weeks.**
+> **The C2 ranked-item count is 7 — in every C2 piece, in every format, for all six weeks.**
 
 Runner-up: 8. Rejected: 5 and 6 (thin), 9 and 10 (impossible inside the locked carousel band with a hook and a
 summary slide).
@@ -103,13 +104,11 @@ scores are in the second table.
 - Sustainability test (`../assets/C2_SUSTAINABILITY_TEST.md`): two pieces at 7 items each, inside the declared
   budgets in `C2_RANKINGS_AND_TIER_LISTS.md` §8.
 
-## Founder decision record
+## Decision record
 
 | | |
 |---|---|
-| Decision | ☐ 7 (recommended) · ☐ 8 · ☐ 6 · ☐ other: __ |
-| Sari | ☐ approved · date ______ |
-| Wasim | ☐ approved · date ______ |
-| Recorded in `DECISIONS.md` as | "C2 ranked-item count — ACTIVE (template lock)" |
-
-Until this row is filled in, the count is a proposal and no C2 piece may be produced for a matrix slot.
+| Value | **7** |
+| Decided | 2026-09-08 — delegated production decision (Claude, under the founders' delegation of the same date) |
+| Recorded in `DECISIONS.md` as | "C2 ranked-item count — ACTIVE — delegated production decision" |
+| Founder override | Open until Day 1; any change re-sizes the bank (21 × N images) and the Reel timing |

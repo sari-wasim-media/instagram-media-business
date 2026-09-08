@@ -4,8 +4,9 @@
 slide, summary slide. Carousel primary, Reel secondary. Distribution thesis: saves and repeat views. Key
 metrics: saves ÷ reach, profile visits ÷ reach. Binding constraint: imagery rights.
 
-**Template status: PROPOSED — founder review required.** Ranked-item count: **7** (proposed lock value; see
-`C2_RANKED_ITEM_COUNT_DECISION.md`). Specimens: `renders/c2/`.
+**Template status: ACTIVE — delegated production decision (2026-09-08).** Ranked-item count: **7**
+(`C2_RANKED_ITEM_COUNT_DECISION.md`). Product photographs of branded sneakers are produced under
+the accepted trademark posture and its §5 operating rule (`../TRADEMARK_RISK_REVIEW.md`). Specimens: `renders/c2/`.
 
 C2 carries 21 posts: 12 Reels, 6 Carousels, 3 Statics. Per account: 6 Reels, 3 Carousels; A holds 2 Statics,
 B holds 1. Every one of them ranks exactly 7 items and consumes exactly 7 rights-clean images.
@@ -90,7 +91,7 @@ Bottom band carries `Ranked by`. The caption carries the list in text.
   available.
 - Every image has a provenance record before layout; the asset ID goes in the filename and the tracking row.
 
-## 7. Anti-duplication handling specific to C2 (proposed operationalisation)
+## 7. Anti-duplication handling specific to C2 (operationalisation — ACTIVE, delegated production decision 2026-09-08)
 
 - The **subject** checked out for a C2 piece is its theme (e.g. "under-$200 sneakers that look expensive").
   The **#1 item** is additionally logged as a secondary subject so the 14-day cross-account subject rule can be

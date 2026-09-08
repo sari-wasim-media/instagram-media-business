@@ -135,9 +135,13 @@ vendored in `../house-style/fonts/`.
 | Engagement bait: the creators FAQ tells creators to avoid "clickbait, engagement bait, or which promotes a contest or giveaway"; Meta's definition: posts that explicitly request votes, shares, comments, tags, likes | creators.instagram.com/faq, transparency.meta.com |
 | Sound Collection: royalty-free, commercial use allowed | help.instagram.com/402084904469945 |
 
-## 9. Pages the founders must read directly (could not be fetched here)
+## 9. Pages that could not be fetched here
 
 StockX terms · GOAT terms · Grailed terms · Flight Club terms · New Balance terms · Converse terms · Reebok
 newsroom and terms · On terms · Shutterstock licence · Canva Content License and AI terms · OpenAI terms ·
 Midjourney terms · Leonardo terms · Adobe Firefly FAQ (free-tier watermark) · Meta Sound Collection terms
-(login wall) · Instagram's own "Add AI label" composer help article.
+(login wall) · Instagram's own "Add AI label" composer help article · Instagram Help "Trademark" page.
+
+*Since the founders' conservative data-source posture (2026-09-08), the marketplace and unfetched-brand rows
+no longer need reading: a source whose terms do not clearly permit the use is simply not used. The one page
+the founders still read themselves is **Adobe Firefly's current terms** (Sourcing Gate item 9).*

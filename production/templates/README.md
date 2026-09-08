@@ -1,14 +1,15 @@
 # House templates — C1 · C2 · C3 · C4 · Story
 
-**Status: BUILT AS SPECIFICATIONS AND SPECIMENS — PROPOSED, founder review required before template lock.**
-House templates are a held-fixed production variable; the founders confirm them once, then they are frozen
-for the six posting weeks. Nothing here alters the matrix or the methodology.
+**Status: ACTIVE — delegated production decisions (2026-09-08).** House System v1, the C2 ranked-item count
+of 7, the C1 verdict scale, the Story rotation with the Wednesday sticker and the AI disclosure line are
+decided under the founders' delegated production authority and are frozen for the six posting weeks; the
+founders may override any of them before Day 1. Nothing here alters the matrix or the methodology.
 
 | File | What it is |
 |---|---|
 | `C1_RELEASE_VERDICT_DESK.md` | Verdict card, Reel, carousel; the COP / WAIT / PASS rubric; the research sheet; the ladder applied |
 | `C2_RANKINGS_AND_TIER_LISTS.md` | The ranking carousel, Reel and static; copy and imagery rules; anti-duplication handling |
-| **`C2_RANKED_ITEM_COUNT_DECISION.md`** | **The proposed template-lock value (7) with the full comparison — needs a founder decision** |
+| `C2_RANKED_ITEM_COUNT_DECISION.md` | The decided value (7) with the full comparison that produced it |
 | `C3_MARKET_AND_PRICE_INTELLIGENCE.md` | Four chart types, the data card, carousel, animated-chart Reel, research discipline |
 | `C4_ORIGINAL_MEME_AND_COMMENTARY.md` | Seven named originated formats; the AI-slot treatment |
 | `STORY_TEMPLATE_AND_ROTATION.md` | The Story frame, the proposed 7-day rotation, the proposed sticker weekday |

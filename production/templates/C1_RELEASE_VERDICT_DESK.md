@@ -5,7 +5,9 @@ of news breaking — price and sizing breakdowns in the house layout, ranked "th
 wait for the sale" verdicts. Reel primary, static secondary, carousel occasional. Key metrics: non-follower
 reach share, comments ÷ reach. Production target ~40 min per piece once templated.
 
-**Template status: PROPOSED — founder review required.** Specimens: `renders/c1/`.
+**Template status: ACTIVE — delegated production decision (2026-09-08).** The verdict scale and rubric in
+§1 are decided under that authority; the founders' brand-posture decision names COP / WAIT / PASS as usable
+where Claude concludes it is the strongest implementation, and it is. Specimens: `renders/c1/`.
 
 C1 carries 21 posts: 12 Reels, 6 Carousels, 3 Statics (A: 6R/3C/2S · B: 6R/3C/1S). Every C1 slot runs the
 locked deadline ladder — topic lock T−48 h, production complete T−24 h, scheduled T−12 h — so the template's
@@ -36,7 +38,9 @@ deliberation.
 
 Total **6–8 → COP** · **3–5 → WAIT** (wait for the sale, the restock or the resale dip) · **0–2 → PASS**. The
 score is recorded in the tracking row. A founder may override the arithmetic by one step with a one-line
-reason in the row; never by two.
+reason in the row; never by two. **When no compliant resale data exists for the comparable** (the usual case
+under the conservative data-source posture), score resale outlook **1** and write "no published resale data"
+in the row — the verdict then rests on the three criteria the desk can verify.
 
 ## 2. The piece, as data — the research sheet
 
@@ -57,9 +61,11 @@ verified against a named source before production completes (T−24 h).
 | `sources[]` | Brand release note / product page / retailer listing, with date accessed |
 | `asset_id` (optional) | Provenance record for the product image, if any |
 
-Source checklist for the row: the brand's own release note or product page for name, date, price, sizes and
-materials; the named retailer page for "where" and raffle mechanics; C3 data or the tracking sheet's own
-earlier C3 rows for resale comparables. Never a rumour account, never a screenshot of another account.
+Source checklist for the row (conservative data-source posture, 2026-09-08 —
+`../assets/C3_DATA_SOURCE_TOS_REGISTER.md`): the brand's release note or press release for name, date, price,
+sizes, materials and where sold; the seller's own public announcement for raffle mechanics; a product page
+only to confirm that the release-note price still stands; published reports for resale comparables. Never a
+marketplace listing, never a rumour account, never another account's post as a source (a lead at most).
 
 ## 3. Static — the verdict card
 

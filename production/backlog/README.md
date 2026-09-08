@@ -24,9 +24,9 @@ be populated once the start Monday is known.
 2. **Check-out.** The founder filling a slot takes the **top eligible item** — no choosing:
    - **C2, C3, C4: strict FIFO** by entry timestamp among OPEN items of that engine.
    - **C1: nearest confirmed date** to the slot's publish instant among items whose date falls inside the
-     slot's window, ties by entry timestamp. *Proposed operational window (not a locked value): news broken
-     up to 7 days before publish, or a release up to 10 days after.* This makes "eligible" testable without
-     changing the locked rule.
+     slot's window, ties by entry timestamp. *Operational window (ACTIVE — delegated production decision,
+     2026-09-08): news broken up to 7 days before publish, or a release up to 10 days after.* This makes
+     "eligible" testable without changing the locked rule.
 3. **Deadlines**, from the slot's 16:00 UTC instant: C1 T−48 h · C3 T−7 d · C2 and C4 T−10 d. Earlier is
    always allowed.
 4. **Log** every check-out: `checkout_id · timestamp · slot · account · engine · entry_id · rule ·

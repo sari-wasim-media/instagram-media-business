@@ -31,28 +31,33 @@ The GitHub migration is infrastructure. It is not the business.
   Story templates as specs with 64 rendered specimens and a Reel pacing reference; the asset-class decision,
   the C2 route stack, the C3 terms register and the rights research record; the provenance register, audio
   ledger, topic queue and tracking-sheet skeleton with validators; the policy pack; the production rhythm,
-  C1 ladder, reserve spec and QA checklist; both gate scorecards. **All as proposals awaiting founder lock**
-  → `production/`
+  C1 ladder, reserve spec and QA checklist; both gate scorecards. **Decided as delegated production decisions
+  on 2026-09-08** → `production/`
+
+- **The founder decision pulse (2026-09-08)** — delegated production authority to Claude (bounded), the
+  faceless opinionated editorial-desk brand posture, the conservative data-source posture, tool-selection
+  autonomy without spending. The thirteen former review-queue items decided as delegated production
+  decisions → `DECISIONS.md`
 
 ## Current
 
-- **Founder review of the 13 proposed lock values** — above all the C2 ranked-item count (proposed 7)
-  → `production/FOUNDER_REVIEW_QUEUE.md`
+- **Trademark / trade-dress posture: ACCEPTED 2026-09-08**
+  → `production/TRADEMARK_RISK_REVIEW.md`; the §5 operating rule is mandatory at QA
 - **Pass the Sourcing Gate** by execution: the 42-image asset bank, the two-piece C2 sustainability test,
-  the C3 data-source terms clearance, the AI tool verification and test piece
-  → `production/PRE_LAUNCH_RUNBOOK.md` steps 1–7 · `production/gates/SOURCING_GATE_SCORECARD.md`
+  the AI tool licence verification (founder) and the AI test piece
+  → `production/PRE_LAUNCH_RUNBOOK.md` · `production/gates/SOURCING_GATE_SCORECARD.md` (5 of 12 passed)
 
-**The design is finished and locked; the creative system is built; the remaining work is founder review and
-execution.**
+**The design is finished and locked; the creative system is built and decided; the remaining work is one
+founder answer and execution.**
 
 ## Next
 
 All operational. In order (`production/PRE_LAUNCH_RUNBOOK.md`):
 
-1. **Lock the proposals** and record them in `DECISIONS.md`
+1. **Answer the trademark question**; verify Adobe Firefly's terms (any paid plan is a founder approval)
 2. **Build the asset bank and run the C2 sustainability test** — C2 is the constraint; the route changes if
    the test fails, never the matrix
-3. **Clear C3's data sources** in the terms register; **verify the AI tool** and produce the AI test piece
+3. **Produce the AI test piece** against the nine-item checklist
 4. **Seed the topic queue**, set up the daily C1 release watch, run the scheduling time-zone check
 5. **Produce and schedule** the 11 non-C1 Week-1 feed pieces, the 14 Week-1 Stories and the 7-piece reserve;
    execute the Day-0 C1 topic lock for the Day-2 slot; complete Week-2 outlines; capture the Week-0 baselines

@@ -1,8 +1,8 @@
 {
-  "_note": "Template-level constants shared by the validators and the specs. PROPOSED values become locked only when the founders record the decision in DECISIONS.md.",
-  "status": "PROPOSED — founder review required",
+  "_note": "Template-level constants shared by the validators and the specs. Recorded in DECISIONS.md as delegated production decisions (2026-09-08); the founders may override before Day 1.",
+  "status": "ACTIVE — delegated production decision 2026-09-08",
   "c2_ranked_item_count": 7,
-  "c2_ranked_item_count_status": "PROPOSED template-lock value; see C2_RANKED_ITEM_COUNT_DECISION.md",
+  "c2_ranked_item_count_status": "ACTIVE — delegated production decision 2026-09-08; see C2_RANKED_ITEM_COUNT_DECISION.md",
   "reel_seconds": { "min": 20, "target_min": 30, "target_max": 45, "max": 59, "never_over": 90 },
   "carousel_slides": { "min": 5, "max": 10 },
   "story_sticker_weekday": "Wed",
