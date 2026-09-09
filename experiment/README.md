@@ -20,8 +20,11 @@
 | `active-84-post-plan/` | ✅ **LOCKED** | The matrix, the lock specification, the AI sub-test, anti-duplication, the exception protocol, and **the launch gates** |
 | `methodology/` | ✅ **LOCKED** | Measurement framework and decision rules · Story protocol · the cadence dependency record |
 | `historical-48-post-design/` | ⚠ **SUPERSEDED** | The full 48-post design chain. **Do not execute** |
-| `tracking/` | Blocked on production | Tracking sheet — schema defined, sheet not built |
-| `content/` | Reference | The C1–C4 content engines. No topics or creatives designed |
+| `tracking/` | Skeleton built | Tracking sheet — 84 post rows, 18 account-weekly rows, 84 Story rows and an XLSX, generated from the matrix; not yet live |
+| `content/` | Reference | The C1–C4 content engines. House templates are decided in `../production/templates/` (delegated production decisions, 2026-09-08); no topics checked out, no creatives produced |
+
+The pre-launch execution surface — house creative system, asset and rights pipeline, policy pack, topic
+queue, operating rhythm and the two gate scorecards — lives in **`../production/`**.
 
 ## If you are picking this up cold
 

@@ -4,9 +4,11 @@ Founder decisions and their status. **This file is authoritative on what was dec
 
 | Status | Meaning |
 |---|---|
-| **ACTIVE** | In force now |
+| **ACTIVE** | In force now — a founder decision |
+| **ACTIVE — delegated production decision** | In force now — decided by Claude under the founders' delegated production authority of 2026-09-08, inside its escalation boundaries. Not a founder-selected value; the founders may override any of them |
 | **SUPERSEDED** | Was in force; replaced by a later decision |
 | **DEFERRED** | Deliberately not decided yet |
+| **OPEN — founder decision pending** | Raised with a recommendation; only the founders can close it |
 | **HISTORICAL** | A fact about the past that shapes current constraints |
 
 ⚠ **Historical AI analysis is not a decision.** The recovered strategy documents contain recommendations.
@@ -57,6 +59,15 @@ remain permanently manual.
 ### No business implementation through Claude Code yet — **ACTIVE**
 Claude Code's authorised scope to date is **documentation and repository migration only**. No automation, no
 dashboards, no tracking software, no publishing tooling has been built or authorised.
+
+*Clarification, 2026-09-06.* The founder-approved Creative System sprint authorised, and produced,
+**in-repository production aids**: read-only validators of committed CSVs (`tools/validate_provenance.py`,
+`tools/validate_backlog.py`), a generator of the tracking-sheet skeleton from the matrix
+(`tools/build_tracking_sheet.py`), a local calendar printer (`tools/instantiate_calendar.py`) and a specimen
+renderer (`production/templates/src/render_frames.py`). They are of the same kind as
+`tools/validate_matrix.py`: they read and write files in this repository and print. **They are not publishing
+tooling, dashboards, scrapers or automation, which remain unauthorised.** The tracking sheet itself is a
+manual spreadsheet.
 
 ---
 
@@ -318,3 +329,109 @@ any business, experiment or platform decision in this register.
 ⚠ **Clarified, not changed:** `CLAUDE.md`'s "documents and asks — it does not execute" always meant execution
 *outside* the repository — publishing, automation, monetization. It was reworded to say so explicitly, because
 Workflow V1 makes Claude's in-repository execution autonomy explicit.
+
+---
+
+## Founder decision pulse — 2026-09-08
+
+Five decisions taken by Sari and Wasim after the Creative System + Pre-Launch Foundations sprint, delivered
+through the active founder. They change no Founder Lock, no matrix value and no methodology rule.
+
+### Delegated production authority — **ACTIVE** (Founder decision, 2026-09-08)
+The founders explicitly delegate **production-level decision authority** for the controlled revival
+experiment to Claude. Claude may independently decide and lock professional choices in: the creative system ·
+visual design · production design · sourcing implementation · platform operating details · workflow ·
+content-production mechanics · template mechanics · operational policies · tooling recommendations · queue,
+reserve and scheduling implementation details — without returning small or specialist decisions to the
+founders.
+
+**The delegation is bounded.** Claude must still escalate anything that: changes an existing Founder Lock ·
+changes the 84-post matrix or the methodology · changes an experimental decision rule · creates a material
+new business, legal, platform or account risk · requires spending money · requires accepting a paid
+subscription or licence · requires an irreversible external action · requires publishing, scheduling,
+outreach or account changes that are not already authorised · creates a genuine contradiction in the canon.
+Within those boundaries Claude uses its judgement and does not manufacture founder decisions where expert
+implementation judgement is sufficient. Decisions taken under this authority are recorded in this register
+as **ACTIVE — delegated production decision**, never as founder-selected values.
+
+**Rationale (founders'):** to remove founder review burden from specialist details — fonts, item counts,
+Story weekdays, reply caps, reserve composition, batching, caption mechanics, scheduling toggles — that do
+not concern founder preference, material risk, money, irreversible commitment or a Founder Lock.
+
+**Effect on `WORKFLOW.md`:** refines the escalation rule in §3; recorded there as §2a.
+
+### Public brand posture: a faceless, opinionated editorial media desk — **ACTIVE** (Founder decision, 2026-09-08)
+During the controlled experiment both accounts operate as a **faceless, opinionated editorial media desk**:
+not a founder-personality brand, not a neutral repost page, not a generic news aggregator. The accounts have a
+clear editorial voice, issue opinions, rankings and verdicts, may use concepts such as COP / WAIT / PASS where
+Claude concludes they are the strongest implementation, and remain inside **one shared professional production
+system** on both accounts for experimental control. Claude holds authority to optimise the detailed visual and
+editorial implementation of that posture. The frozen profile variables (bio, display name, photo) are
+unchanged by this decision. Implementation: `production/house-style/EDITORIAL_VOICE.md`.
+
+### Trademark / trade-dress risk posture — **ACTIVE** (Founder decision, 2026-09-08)
+The founders asked for an expert recommendation before choosing the legal posture on depicting real branded
+sneakers in editorial content, and reserved the choice; Claude was not permitted to accept the residual risk
+on their behalf. Claude's focused review — U.S. and Israeli positions, a calibrated likelihood-and-severity
+table, and a single recommendation of **ACCEPT** — is `production/TRADEMARK_RISK_REVIEW.md`.
+**The founders ACCEPTED on 2026-09-08.** The experiment runs on an editorial, nominative, non-endorsing
+posture: rights-cleared photographs of branded sneakers may be used to identify the product being ranked,
+reviewed or reported on, with the review's §5 nominative-use operating rule **mandatory on every piece** and
+enforced at pre-publish QA. The §3 re-review triggers stand — any IP notice or brand contact, any
+monetisation or sponsorship, any new imagery route, and the rest — and each one stops product photography of
+the affected brand until the posture is reviewed again. This is an accepted operational risk position, not
+legal advice and not a guarantee of legal immunity.
+
+### Conservative data-source posture — **ACTIVE** (Founder decision, 2026-09-08)
+For C3 and any other factual or data sourcing during the controlled experiment: **if the applicable terms of
+service or usage terms do not clearly permit the intended use, the source is not used** — a cleared
+alternative is chosen instead. A slightly narrower data set is preferred over ambiguous or restrictive source
+terms. Claude operationalises this rule and chooses the compliant sources. Operationalised in
+`production/assets/C3_DATA_SOURCE_TOS_REGISTER.md` (marketplace listing data excluded; press releases,
+published reports and brand release notes are the sources) and in the C1 and C3 templates.
+
+### Tool-selection autonomy without spending authority — **ACTIVE** (Founder decision, 2026-09-08)
+Claude may independently choose and recommend the AI generation tool, stock provider, production software,
+design workflow, technical utilities, sourcing routes and other production tooling. **Selection is not
+purchase authorisation.** Any paid subscription, paid licence, paid stock purchase, external financial
+commitment, or irreversible acceptance of external terms on behalf of the founders requires explicit founder
+approval before execution. Decisions: `production/operations/TOOLING.md`.
+
+---
+
+## Delegated production decisions — 2026-09-08
+
+Decided by Claude under the delegated production authority above, on the same day, after re-evaluating each
+earlier proposal rather than mechanically confirming it. Each is **ACTIVE — delegated production decision**;
+each is a held-fixed production variable for the six posting weeks; none is a founder-selected value; the
+founders may override any of them before Day 1.
+
+| Decision | Value | Where |
+|---|---|---|
+| **House System v1** | The house visual and motion language — canvases and safe zones, bands, palette with one accent per engine, Bebas Neue / Inter / IBM Plex Mono, the component set, plate treatment, Reel beat grammar, Sound Collection audio rule — for all 84 posts and 84 Stories on both accounts; only the handle differs between accounts | `production/house-style/HOUSE_STYLE.md` |
+| **Editorial voice** | The desk voice implementing the approved brand posture: declarative, sourced, verdict-led, no founder persona, no engagement bait | `production/house-style/EDITORIAL_VOICE.md` |
+| **C2 ranked-item count** | **7** items in every C2 piece, every format; 147 images across the experiment, 42 for the gate bank | `production/templates/C2_RANKED_ITEM_COUNT_DECISION.md` |
+| **C1 verdict scale and rubric** | COP · WAIT · PASS on four criteria scored 0–2 (6–8 / 3–5 / 0–2), score logged; one-step override with a written reason; resale outlook scored 1 (neutral) and stated as such when no compliant resale data exists | `production/templates/C1_RELEASE_VERDICT_DESK.md` §1 |
+| **Story rotation and sticker** | Mon DROP CALENDAR · Tue PRICE CHECK · Wed THE POLL · Thu DESK NOTES · Fri THE VERDICT · Sat TWO SHOES · Sun THE WEEK; sticker weekday **Wednesday**, poll by default, quiz allowed; Wednesday posted manually until scheduler sticker support is proven | `production/templates/STORY_TEMPLATE_AND_ROTATION.md` |
+| **AI disclosure line and placement** | "Imagery in this post is AI-generated and illustrative. It does not depict a real product." — verbatim as the last caption line before the hashtags in all six AI posts, platform AI label on; **nothing on the artwork** | `production/policy/AI_IMAGERY_POLICY_PACK.md` §3 |
+| **AI generation tool** | **Adobe Firefly** (web), free tier first; alternate Google Gemini. Licence verification, account creation and any paid plan are founder actions (Sourcing Gate item 9; no spending authority) | `production/policy/AI_IMAGERY_POLICY_PACK.md` §5, `production/operations/TOOLING.md` |
+| **Source-class priority per engine** | C1: self-generated → owned → licensed → verified press · C2: owned → licensed free → self-generated illustration → permissioned → licensed paid (founder-approved spend) → verified press · C3: self-generated only · C4: self-generated → owned → licensed → AI in the six slots. Product photography of branded sneakers runs under the accepted trademark posture and its §5 operating rule (2026-09-08) | `production/assets/SOURCE_CLASS_DECISION.md` |
+| **Compliant data sources** | Press releases, published reports and brand release notes are the sources; marketplace listing pages, aggregators and secondary reporting are not; product pages confirm only | `production/assets/C3_DATA_SOURCE_TOS_REGISTER.md` |
+| **Caption and hashtag form** | Hook · body · source line · AI line (six posts) · 3–5 tags (2–3 subject + 1 fixed category + ≤ 1 community; ban list); alt text always; American spelling; no CTA, link, mention, location | `production/policy/CAPTION_AND_HASHTAG_POLICY.md` |
+| **Comment-reply policy** | Substantive comments answered within 24 h, ≤ 15 replies per post, like all non-spam, hide spam, no pins, no DM outreach, identical on both accounts | `production/policy/COMMENT_REPLY_POLICY.md` |
+| **Scheduling tool and publish settings** | Meta Business Suite (desktop) for feed posts; Reels share-to-feed ON; Facebook sharing OFF; never Trial; no location, people, collaborator or product tags; AI label ON for the six only; Sound Collection audio; Wednesday Story manual | `production/policy/SCHEDULING_AND_PUBLISH_SETTINGS.md` |
+| **Reserve composition** | C2 Reel + Carousel · C3 Reel + Carousel + Static · C4 Reel + Carousel; the two C2 pieces double as the sustainability test | `production/operations/RESERVE_REGISTER.md` |
+| **Queue-rule operational readings** | C1 eligibility window: news broken ≤ 7 days before or release ≤ 10 days after the publish instant; C2 subject = the theme, #1 pick logged as a secondary subject | `production/backlog/README.md` §2, `production/templates/C2_RANKINGS_AND_TIER_LISTS.md` §7 |
+| **Producer allocation and rhythm** | Producers alternate by format batch, never by account; Friday check-outs two weeks ahead; Tue Reels, Wed carousels and statics, Thu QA and scheduling, Mon weekly review | `production/operations/PRODUCTION_RHYTHM.md` |
+| **Production tooling** | Figma (free) for stills; CapCut desktop (free) for Reel assembly with no CapCut library content; Meta Business Suite; Instagram Sound Collection; the house renderer for frames; free tiers only | `production/operations/TOOLING.md` |
+
+---
+
+## Pending founder decisions and actions
+
+- **AI tool licence verification and account** — read Adobe Firefly's current terms, record tool, version,
+  plan and date (Sourcing Gate item 9); any paid plan needs founder approval.
+- **Any paid stock credits** (route P) — founder approval before purchase.
+- **Git finalization** of the task branch — `WORKFLOW.md` §4.
+
+Every locked decision above is unchanged.

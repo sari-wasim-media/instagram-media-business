@@ -45,7 +45,10 @@ A controlled revival experiment is designed to answer that before any monetizati
 | Start date | **Not chosen.** The first Monday after both launch gates pass |
 
 **What still blocks launch:** the Sourcing Gate (imagery rights for C2 at volume, plus the AI arm) and the
-two-layer Week-1 Gate. See `experiment/active-84-post-plan/GATES.md`.
+two-layer Week-1 Gate. See `experiment/active-84-post-plan/GATES.md` for the criteria and
+`production/gates/` for the item-by-item status. The creative system that produces the posts is built and
+decided; one founder answer (the trademark posture) and execution remain — the ordered path to launch-ready
+is `production/PRE_LAUNCH_RUNBOOK.md`.
 
 An earlier 48-post matrix was fully designed and locked, then **superseded before launch** when the founders
 increased cadence. It is preserved as historical methodology and must not be executed.
@@ -68,8 +71,9 @@ increased cadence. It is preserved as historical methodology and must not be exe
 | Path | What it holds |
 |---|---|
 | `experiment/active-84-post-plan/` | **The locked matrix (`matrix_84.csv`), lock spec, AI sub-test, gates** |
-| `experiment/` | Methodology, content engines, tracking, and the superseded 48-post design |
-| `tools/` | `validate_matrix.py` — re-derives every locked balance property from the matrix |
+| `experiment/` | Methodology, content engines, the tracking-sheet skeleton, and the superseded 48-post design |
+| **`production/`** | **The creative system and pre-launch operating surface:** house style and editorial voice, C1–C4 and Story templates with rendered specimens, asset and rights pipeline, policy pack, topic queue, production rhythm, tooling, gate scorecards — **decided as delegated production decisions (2026-09-08)**; the trademark posture accepted the same day in `production/TRADEMARK_RISK_REVIEW.md` |
+| `tools/` | `validate_matrix.py` (the matrix's checker) · `validate_provenance.py` · `validate_backlog.py` · `build_tracking_sheet.py` · `instantiate_calendar.py` |
 | `strategy/` | Business context and the recovered research chain |
 | `evidence/` | 42 organized screenshots — account status, demographics, performance, cleanup, profiles |
 | `archive/raw-migration-source/` | Both migration packages, pristine and unmodified |

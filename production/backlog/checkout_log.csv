@@ -1,0 +1,1 @@
+checkout_id,checkout_timestamp_utc,slot_id,account,engine,entry_id,rule_applied,queue_position_at_checkout,eligible_count_at_checkout,performance_data_referenced,checked_out_by,notes

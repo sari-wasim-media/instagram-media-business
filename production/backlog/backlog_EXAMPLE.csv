@@ -1,0 +1,5 @@
+entry_id,entry_timestamp_utc,engine,subject,subject_key,secondary_subjects,thesis,news_or_release_date,source_of_date,status,added_by,notes
+BL-0001,2026-12-20T10:00Z,C2,"7 sneakers under $200 that still look expensive",theme:under-200-looks-expensive,model:runner-550/sea-salt,"cheap can look expensive if the shape is right",,,USED,SM,"example"
+BL-0002,2026-12-20T10:05Z,C2,"Every retro runner ranked by comfort per dollar",theme:retro-runner-comfort,,"comfort is the real luxury",,,USED,WK,"example"
+BL-0003,2026-12-20T10:10Z,C4,"What I say vs what I think at a drop",theme:say-vs-think-drop,,"everyone lies at a drop",,,OPEN,SM,"example"
+BL-0004,2026-12-21T09:00Z,C1,"Court 1 High 'Deep Royal' release",model:court-1-high/deep-royal,,"buy at retail not resale",2027-01-09,"brand release note 2026-09-21",OPEN,WK,"example — fictional product"

@@ -35,6 +35,22 @@ Within an approved task, Claude has **broad execution autonomy**. Claude may:
 **Use best judgment rather than interrupting.** Routine and low-risk decisions are Claude's to make and to
 report afterwards, not to ask about first.
 
+## 2a. Delegated production authority (founder decision, 2026-09-08)
+
+For the controlled revival experiment the founders have delegated **production-level decision authority** to
+Claude: the creative system, visual and production design, sourcing implementation, platform operating
+details, workflow, content-production and template mechanics, operational policies, tooling recommendations,
+and queue / reserve / scheduling implementation details. Claude decides these itself, records each as
+**ACTIVE — delegated production decision** in `DECISIONS.md`, and does not return specialist details to the
+founders.
+
+The delegation is bounded by §3 below, sharpened as follows. Claude must still escalate anything that changes
+an existing Founder Lock, the 84-post matrix, the methodology or an experimental decision rule; creates a
+material new business, legal, platform or account risk; requires spending money or accepting a paid
+subscription or licence; requires an irreversible external action; requires publishing, scheduling, outreach
+or account changes not already authorised; or creates a genuine contradiction in the canon. Tool *selection*
+is delegated; *purchase* and the acceptance of external terms on the founders' behalf are not.
+
 ## 3. Escalation rule
 
 Solve low-risk problems independently. **Stop and inform the active founder before proceeding** if something

@@ -97,8 +97,22 @@ C3's visuals are **self-generated charts**; its constraints are research time an
 service, not image licensing. Older checklists bundle these as "C2 and C3" sourcing; they are not the same
 problem. See `../active-84-post-plan/GATES.md` §1.
 
-## Not done
+## House templates and the production surface — built 2026-09-06, decided 2026-09-08
 
-No topics, no Week-1 pieces, no templates, no topic backlog and no resolved imagery-sourcing plan. The matrix
-is locked, so all of this is now **Week-1 Gate and Sourcing Gate work** rather than blocked design work. See
-`../active-84-post-plan/GATES.md`.
+The house creative system for all four engines and for Stories exists as specifications and rendered
+specimens in **`../../production/templates/`**, on the house style and editorial voice in
+`../../production/house-style/`. Each engine has a fixed production language: C1 the verdict card / Reel /
+carousel with a COP · WAIT · PASS rubric and an imagery-optional design; C2 the ranking carousel / Reel /
+static at a **ranked-item count of 7**; C3 four fixed chart types on self-generated data cards from
+published reports and release notes; C4 seven originated named formats with the AI-slot treatment. All of it
+is **ACTIVE — delegated production decision** under the founders' delegation of 2026-09-08 (`DECISIONS.md`);
+the founders may override before Day 1. Photographs of branded sneakers wait on the founders' answer to
+`../../production/TRADEMARK_RISK_REVIEW.md`.
+
+## Still not done
+
+No topics have been checked out, no Week-1 pieces exist, the asset bank is empty and the C2 sustainability
+test has not been run. The instruments for all of that — the queue, the provenance register, the sourcing
+routes, the scorecards — are in `../../production/`. The matrix is locked, so all of this is **Week-1 Gate
+and Sourcing Gate work** rather than blocked design work. See `../active-84-post-plan/GATES.md` and the
+scorecards in `../../production/gates/`.

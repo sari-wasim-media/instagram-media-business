@@ -1,0 +1,3 @@
+track_id,track_title,library,library_ref,slot_id,account,publish_date,reel_or_story,notes
+TRK-001,"Example track title",Instagram Sound Collection,"as shown in the Reels audio picker",A-W1-C2-REE-01,A,2027-01-04,REEL,"Example row — not real"
+TRK-002,"Another example",Instagram Sound Collection,"as shown in the Reels audio picker",B-W1-C3-REE-01,B,2027-01-04,REEL,"Example row — not real"
