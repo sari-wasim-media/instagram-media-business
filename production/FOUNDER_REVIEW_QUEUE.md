@@ -36,7 +36,7 @@ of external terms, and Git finalization.
 | ~~B1~~ | **Trademark / trade-dress residual-risk posture** — **CLOSED: ACCEPTED 2026-09-08** | Material legal/platform risk; the founders asked for a recommendation and reserved the choice | `TRADEMARK_RISK_REVIEW.md` §9 — accepted, §5 rule mandatory, §3 triggers standing |
 | B2 | Adobe Firefly: read and verify the current terms, create the account, record tool · version · plan · date; approve a paid plan only if the free allowance proves too small | Acceptance of external terms; possible spend; Sourcing Gate item 9 names the founders | `policy/AI_IMAGERY_POLICY_PACK.md` §5 |
 | B3 | Any paid stock credits (route P), if ever needed | Spend | `assets/C2_SOURCING_ROUTES.md` |
-| B4 | Git finalization of the task branch | `WORKFLOW.md` §4 | — |
+| B4 | Git finalization — **the task branch is committed and pushed**; the PR to `main` and the merge remain founder-approved steps | `WORKFLOW.md` §4 | — |
 
 Everything else in the pre-launch path is founder **execution** of decided instruments (bank build,
 sustainability test, AI test piece, baselines, backlog seeding), listed in `PRE_LAUNCH_RUNBOOK.md`.

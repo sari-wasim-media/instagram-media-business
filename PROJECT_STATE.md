@@ -121,7 +121,7 @@ The 2.6M Reel is **ceiling evidence only** and predates current originality enfo
 | GitHub repository migration | **Complete** — this repository | — |
 | **Workflow V1 — canonical working workflow adopted** | **Complete** (2026-09-04) | `WORKFLOW.md` |
 | **Creative System + Pre-Launch Foundations sprint** — house system, templates and specimens, asset pipeline, policy pack, queue, rhythm, tracking skeleton, gate scorecards | **Complete** (2026-09-06); decided as delegated production decisions (2026-09-08) | `production/` |
-| **Founder decision pulse** — delegated production authority, editorial-desk brand posture, conservative data-source posture, tool autonomy without spending; the trademark posture raised with a recommendation | **Complete** (2026-09-08) — one decision open | `DECISIONS.md`, `production/TRADEMARK_RISK_REVIEW.md` |
+| **Founder decision pulse** — delegated production authority, editorial-desk brand posture, conservative data-source posture, tool autonomy without spending; the trademark posture raised with a recommendation | **Complete** (2026-09-08) — all five answered; the trademark / trade-dress posture **ACCEPTED**, no decision left open | `DECISIONS.md`, `production/TRADEMARK_RISK_REVIEW.md` |
 
 ### Legacy cleanup — precise scope
 
