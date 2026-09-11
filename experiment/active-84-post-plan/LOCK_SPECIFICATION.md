@@ -103,11 +103,17 @@ local activity window under either local offset (at UTC+2, 16:00 UTC = 18:00 loc
 | Sept–Oct 2026 (DST) | **12:00 noon EDT** | **09:00 PDT** |
 | After 1 Nov 2026 | 11:00 EST | 08:00 PST |
 
-**DST provision.** Record at lock whether the six posting weeks straddle a DST transition in either zone, and
-prefer a start date that avoids it. A Monday start of 2026-09-14 ends posting on 2026-10-25 and clears the
-1 November US change; every later Monday start straddles it. If straddling is unavoidable, **log the transition
-date as a known event and do not chase it** — changing the instant mid-test would breach the frozen-variable
-rule.
+**DST provision.** Record at instantiation whether the six posting weeks straddle a DST transition in either
+zone. Under the start rule as amended on 2026-09-11 (begin as soon as the gates pass, any weekday) the date is
+set by readiness, not chosen for the calendar: any Day 1 on or after 2026-09-21 straddles the 1 November US
+change, and the gates cannot realistically pass before then. So **log the transition date as a known event
+and do not chase it** — changing the instant mid-test would breach the frozen-variable rule.
+`tools/instantiate_calendar.py` prints the straddle check.
+
+**Weekday provision.** The matrix's `day` / `weekday` columns are launch-relative positions (D1 labelled
+`Mon` … D7 labelled `Sun`). Day 1 may fall on any weekday; each position then maps to one fixed calendar
+weekday for all six weeks, so every balance property in §1 holds in calendar terms. The calendar script
+emits both the label and the real weekday.
 
 **Operational rule.** All 84 posts are **scheduled in advance**, not published manually. If a post must be
 published manually, the account published first alternates by pair number (A first on odd pairs, B first on

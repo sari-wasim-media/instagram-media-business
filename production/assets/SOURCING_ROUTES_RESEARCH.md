@@ -99,7 +99,7 @@ CapCut or Canva music into an export.
 
 | Tool | Commercial / ownership | Provenance metadata | Plan needed | Status |
 |---|---|---|---|---|
-| **Adobe Firefly** | "commercially safe"; outputs "include Content Credentials that indicate AI was used"; generative-AI guidelines prohibit content violating third-party IP | Content Credentials (C2PA) attached | Free daily generations; Standard US$9.99/mo (free-tier watermark status unverified) | V (FAQ CNF) |
+| **Adobe Firefly** | Output is "your Content" with "all rights and ownership" retained (Product Specific Terms §1, General Terms §4.2); FAQ: outputs usable "in your commercial projects"; Input must not include trademarks or aim at protected work (PST §2); indemnity applies only to CC teams/enterprise Pro Plus / Edition 4 plans (PST §8) — **full reading in `FIREFLY_TERMS_VERIFICATION.md`** | Content Credentials (C2PA); removal prohibited (PST §3.1) | Free daily generations (number unstated); Standard US$9.99/mo, 2,000 credits (free-tier watermark: not stated — observe at TEST-AI-01) | V 2026-09-11 (memo) — **founder confirmation open** |
 | OpenAI images | "you … own the Output" (S); "All generated images come with C2PA metadata" (S) | C2PA | Same terms | CNF / S |
 | Midjourney | "You own all Assets you create" (S); no free trial | No C2PA (secondary) | Paid | CNF / S |
 | Ideogram | "we do not restrict your ability to use User Output … including for commercial purposes"; free images are public | None stated | Free tier public | V |

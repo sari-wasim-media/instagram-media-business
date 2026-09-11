@@ -4,7 +4,7 @@ These are **starting ideas for the founders to accept, reject or rewrite**, in t
 expect. Nothing here is in the backlog: an idea becomes a queue entry only when a founder adds it to
 `backlog.csv` with that moment's timestamp. No fact below is verified — every product name, price and figure
 must be researched and sourced at check-out. No C1 subjects are listed: C1 items need a *confirmed* release
-date and belong to the watchlist the founders build from brand release calendars once the start Monday exists.
+date and belong to the watchlist the founders build from brand release calendars once Day 1 exists.
 
 Write rankings toward what can be shown: pairs the founders own or can borrow (route O), models common on
 free-licence stock (route F), and silhouettes in the house illustration library (route S). See

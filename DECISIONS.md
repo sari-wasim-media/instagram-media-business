@@ -210,12 +210,46 @@ completely than the superseded two-slot Early/Late scheme did. Anchored to UTC r
 the frozen variable stays frozen across any daylight-saving transition. **Early/Late is not part of this
 design.**
 
-### Start rule: no arbitrary calendar date — **ACTIVE** (Founder Lock)
-The experiment starts on the **first Monday after all required Week-1 and Sourcing Gates have passed**. No
-start date is chosen in advance, and none is recorded anywhere in this repository.
+### Start rule: begin as soon as the gates pass, on any weekday — **ACTIVE** (Founder Lock, amended 2026-09-11)
+**Decided jointly by Sari and Wasim on 2026-09-11**, replacing the first-Monday rule below.
 
-**Rationale:** a date chosen before the gates invites starting and slipping, which the design's own analysis
-identified as producing a false negative on assets that may not be testable twice.
+Once every required pre-launch gate has passed and the founders have confirmed the launch-ready state, the
+experiment begins immediately: **Day 1 is the earliest calendar day — on any weekday — whose Day-0
+requirements are met**: the `A-W1-C1-CAR-01` topic lock executed at Day 0 16:00 UTC (the day before Day 1)
+and the 11 non-C1 Week-1 pieces scheduled in-platform on their Day-1–7 dates. **There is no requirement to
+wait for a Monday.** No start date is chosen before the gates pass, and none is recorded anywhere in this
+repository. Every other gate, lock and launch restriction is unchanged.
+
+**Rationale:** the anti-slip logic of the original rule is preserved in full — the date is still never chosen
+ahead of the gates. What is removed is the up-to-six-day idle deferral to the next Monday, which bought
+nothing the design needs: every locked balance property is defined on the matrix's day positions, not on
+calendar weekdays.
+
+**Corollary, acknowledged by the founders — how the matrix reads under this rule.** `matrix_84.csv` is
+**unchanged, byte for byte**. Its `day` / `weekday` columns are **launch-relative positions**: D1 is the first
+day of each experiment week and carries the label `Mon`; D7 is the seventh and carries `Sun`. The calendar
+weekday of a slot binds only when Day 1 is instantiated, and equals the label only when Day 1 is a Monday.
+Because the six weeks are 42 consecutive days, each position D1–D7 maps to one fixed calendar weekday for the
+whole experiment, so "every engine exactly once per weekday per account in weeks 3–6" and every other locked
+balance property hold in calendar terms under any start weekday. `tools/instantiate_calendar.py` emits both
+the matrix label and the real calendar weekday.
+
+**Delegated production decision recorded alongside (Claude, 2026-09-11):** the Story rotation and the
+sticker weekday stay **calendar-keyed** — DROP CALENDAR on Monday, THE POLL with the sticker on Wednesday,
+THE WEEK on Sunday — because their content is calendar-semantic (`production/templates/STORY_TEMPLATE_AND_ROTATION.md`).
+Under a non-Monday Day 1, Week 1's Story sequence simply begins mid-rotation; every experiment week still
+carries each class exactly once and exactly one sticker per account. The Stories tab of the tracking
+skeleton therefore leaves `weekday` / `rotation_class` / `sticker` / `adjacent_engine` blank until Day 1
+exists; they are copied in from the local calendar output.
+
+### Start rule: first Monday after the gates — **SUPERSEDED 2026-09-11**
+*Kept for the record; replaced by the entry above.* The experiment starts on the **first Monday after all
+required Week-1 and Sourcing Gates have passed**. No start date is chosen in advance, and none is recorded
+anywhere in this repository.
+
+**Rationale (still valid, carried forward):** a date chosen before the gates invites starting and slipping,
+which the design's own analysis identified as producing a false negative on assets that may not be testable
+twice.
 
 ### AI-generated imagery: permitted in exactly six C4 slots — **ACTIVE** (Founder Lock)
 AI-generated imagery is **not categorically prohibited**. The founders want long-term evidence about it. It is

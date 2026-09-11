@@ -37,6 +37,13 @@ that day's single Story, and is logged.
 The rotation repeats unchanged for all six weeks on both accounts. Content differs by account and by week;
 class, order, frame and timing never do.
 
+**The rotation is keyed to the calendar weekday, not to the matrix's day position.** Day 1 may fall on any
+weekday (start rule as amended 2026-09-11), and the matrix's `Mon`–`Sun` labels are launch-relative. Monday
+is always DROP CALENDAR and Wednesday always carries the sticker, whatever the matrix label of that date. A
+non-Monday Day 1 simply enters the rotation mid-cycle; every experiment week still carries each class exactly
+once and exactly one sticker per account. The Stories tab of the tracking skeleton is therefore filled from
+`tools/instantiate_calendar.py` once Day 1 exists (delegated production decision, 2026-09-11).
+
 Why this order: the week opens with the calendar the audience needs, closes with a recap, and puts the one
 interactive frame mid-week where it neither coincides with the Monday activity peak the evidence shows for
 Account B nor with the weekend. Each class costs under 15 minutes to produce, which keeps the 14 Stories a

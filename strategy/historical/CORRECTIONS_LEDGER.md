@@ -24,8 +24,9 @@ ledger is where they live.
 | **G5** | Final Methodology Patch — Matrix Frozen | `experiment/historical-48-post-design/FINAL_METHODOLOGY_PATCH_MATRIX_FROZEN.md` |
 | **G6** | **Founder cadence decision** — 1 feed post/day/account, 84 planned posts | `DECISIONS.md` · `PROJECT_STATE.md` |
 | **G7** | **FOUNDER LOCK (2026-09-05)** — the balanced 84-post matrix, the locked format mix, daily Stories, the AI-imagery sub-test, no voiceover, no link in bio, the start rule | `DECISIONS.md` · `experiment/active-84-post-plan/` |
+| **G8** | **START-RULE AMENDMENT (2026-09-11)** — the founders replaced "first Monday after both gates pass" with "begin as soon as every gate has passed and launch-ready is confirmed — Day 1 on any weekday". The matrix is unchanged byte for byte; its Mon–Sun labels are launch-relative positions | `DECISIONS.md` (Start rule) · `experiment/active-84-post-plan/LOCK_SPECIFICATION.md` §3 |
 
-**Later beats earlier. G7 is the current locked state and beats everything before it.**
+**Later beats earlier. G7 as amended by G8 is the current locked state and beats everything before it.**
 
 G1–G5 are AI analysis. Where they state a *recommendation*, it is a recommendation — it became project policy
 only where the founders adopted it into `DECISIONS.md`.
@@ -161,6 +162,12 @@ changing an account's editorial role, or chasing a breakout post.
 | **The ≥2× comparative rule**, built at n=12 per cell | **Retained unchanged** at n=21 pooled. A proposed 1.7× "suggestive" band was **removed before lock** as false precision; there is **no sub-2× cutoff of any kind** |
 | **Scenario H handling** | A weekly account-level Reach "secondary safeguard" was designed during review and **removed before lock** — daily Stories make account-level Reach non-attributable to the feed. The per-post read is the sole decision authority. Scenario H is already cadence-robust because its non-follower-share condition is Reach-denominated |
 | **Imagery sourcing framed as "C2 and C3"** across several checklists | **They are different constraints.** C2 is image rights at volume (one rights-clean image per ranked item, in every format). C3's visuals are self-generated charts; its constraint is research time and data-source terms of service |
+
+### G7 → amended by G8 (the start rule, 2026-09-11)
+
+| What G8 changed | Current position |
+|---|---|
+| **The start rule** — G7 locked "the first Monday after all required Week-1 and Sourcing Gates have passed"; every document and tool written before 2026-09-11 says "start Monday", "Week-1 Monday" or "D1 = Monday" | **Day 1 is the earliest calendar day, on any weekday, whose Day-0 requirements are met once every gate has passed and launch-ready is confirmed. No Monday deferral.** No date is chosen before the gates; none is recorded. The matrix's `day` / `weekday` columns are **launch-relative positions** (D1 labelled `Mon`); the calendar weekday binds at instantiation. Every locked balance property holds in calendar terms under any start weekday. The Story rotation and the Wednesday sticker stay calendar-keyed. Read any pre-amendment "Monday" as "Day 1" |
 
 ---
 

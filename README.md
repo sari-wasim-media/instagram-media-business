@@ -42,7 +42,7 @@ A controlled revival experiment is designed to answer that before any monetizati
 | Publish instant | **16:00 UTC**, both accounts, all 84 posts. Held fixed, not tested |
 | Stories | **1/day/account** — 84 combined. Diagnostic only, outside the matrix |
 | AI imagery | **Exactly 6 posts, C4 only** — a logged nested sub-test |
-| Start date | **Not chosen.** The first Monday after both launch gates pass |
+| Start date | **Not chosen.** As soon as both launch gates pass and the founders confirm launch-ready — any weekday (amended 2026-09-11) |
 
 **What still blocks launch:** the Sourcing Gate (imagery rights for C2 at volume, plus the AI arm) and the
 two-layer Week-1 Gate. See `experiment/active-84-post-plan/GATES.md` for the criteria and
@@ -61,7 +61,7 @@ increased cadence. It is preserved as historical methodology and must not be exe
 |---|---|
 | **`HANDOFF.md`** | **Start here if you are a fresh Claude Code session** |
 | **`experiment/active-84-post-plan/`** | **The founder-locked 84-post design, and the gates that block launch** |
-| `PROJECT_STATE.md` | Current state as of 2026-09-05 — the operational source of truth |
+| `PROJECT_STATE.md` | Current state as of 2026-09-11 — the operational source of truth |
 | `DECISIONS.md` | Decision register: ACTIVE / SUPERSEDED / DEFERRED / HISTORICAL |
 | `WORKFLOW.md` | Workflow V1 — how the founders and Claude Code work: autonomy, escalation, Git flow |
 | `ROADMAP.md` | Completed · Current · Next · Later |

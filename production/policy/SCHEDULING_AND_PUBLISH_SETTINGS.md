@@ -71,7 +71,7 @@ interactive poll or quiz sticker is unverified** and is not assumed.
 The instant is UTC and does not move. Local wall-clock conversions change on **25 Oct 2026** (EU/UK) and
 **1 Nov 2026** (US); the founders' own zone is unnamed in the repository and may or may not shift. Re-run
 the time-zone check (§2 step 2) in the week of any transition. `tools/instantiate_calendar.py` flags whether
-the six weeks straddle either date once a start Monday is given.
+the six weeks straddle either date once Day 1 is given.
 
 ## 6. Decision record
 

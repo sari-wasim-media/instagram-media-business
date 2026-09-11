@@ -102,6 +102,32 @@ Everything else read is personal / non-commercial only. Re-read before each new 
 
 Roughly **15 hours** to a passable C2 arm of the Sourcing Gate, most of it one-off.
 
+### Shoot-day checklist — route O, printable
+
+The bank is built **before** any slot is checked out, so bank assets have no slot yet. The register and the
+validator allow that: `slot_id` stays blank until check-out; the filename must carry the asset ID.
+
+- [ ] Rig as §"Route O": seamless backdrop, window or two LED panels, phone on tripod at shoe height, lens cloth.
+- [ ] Inventory sheet open (step 1): model · colorway · owner · condition. Shoot in inventory order.
+- [ ] Per pair: profile (toe left, laced, insole flat, 80 % of frame, exposed for the white) · three-quarter ·
+      top-down. Same distance, same height, same light for every pair.
+- [ ] **Trademark §5 rule at the lens** (`../TRADEMARK_RISK_REVIEW.md`): the product is the subject in a
+      neutral context — no brand advertising material, packaging, store or event signage as the subject; no
+      person, hand or face; no counterfeit product, ever.
+- [ ] Import the same day into `assets/shoots/YYYY-MM-DD/`. Assign the next `AST-nnnn` per photograph and
+      rename the raw to `BANK__AST-nnnn.<ext>`. One photograph = one asset ID = one future piece.
+- [ ] Append one row per photograph to `provenance_register.csv`: `class=OWNED`, `engine=C2`, `slot_id` blank,
+      `source_name=Founder photograph`, `source_url_or_ref=local://shoots/YYYY-MM-DD/<raw>`,
+      `licence_or_permission=Owned by the founders`, `date_obtained`, `permitted_use=Any use by the accounts`,
+      `file_name=BANK__AST-nnnn.<ext>`, `obtained_by=<initials>`.
+- [ ] `python3 tools/validate_provenance.py` clean before leaving the session.
+- [ ] At check-out, export the plate as `<slot_id>__AST-nnnn.<ext>` into `assets/exports/<slot_id>/` and fill
+      the row's `slot_id`; the raw keeps its bank name. A pair that ranks again later gets a *different*
+      photograph with a new ID (anti-duplication rule 4).
+
+Route F on the same day: same row discipline, plus `licence_text_archived_at` pointing at the dated PDF or
+screenshot of the licence page — the validator refuses a `LICENSED_FREE` row without it.
+
 ## What would make the route fail, and what changes
 
 If the sustainability test shows that fewer than 5 of 7 items per piece can be sourced from O + F within the

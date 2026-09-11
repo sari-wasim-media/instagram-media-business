@@ -42,7 +42,7 @@ Validate the matrix at any time with `python3 tools/validate_matrix.py` from the
 | AI imagery | **Exactly 6 posts, C4 only**, 3 per account, 1 Reel + 1 Carousel + 1 Static each |
 | Voiceover | **None** for the duration of the test |
 | Link in bio | **None** for the duration of the test |
-| Start date | **Not chosen.** The first Monday after both gates pass |
+| Start date | **Not chosen.** As soon as both gates pass and the founders confirm launch-ready — any weekday, no Monday deferral (amended 2026-09-11) |
 
 ---
 
@@ -72,7 +72,8 @@ live alternative explanation for a negative result. **That hole is closed.**
 1. **Sourcing Gate** — including the AI arm. See `GATES.md` §1.
 2. **Week-1 Gate** — 11 non-C1 Week-1 pieces finished and scheduled, the D2 C1 topic locked, templates, Story
    readiness, reserve, backlog, tracking sheet. See `GATES.md` §2.
-3. Then, and only then, the start date is instantiated as the **first Monday** after both gates pass.
+3. Then, and only then, the start date is instantiated: **Day 1 is the earliest day, on any weekday, whose
+   Day-0 requirements are met** — no waiting for a Monday (start rule as amended 2026-09-11, `DECISIONS.md`).
 
 ---
 

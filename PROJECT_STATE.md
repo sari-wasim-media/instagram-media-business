@@ -1,4 +1,4 @@
-# Project State — as of 2026-09-08
+# Project State — as of 2026-09-11
 
 The operational source of truth. If another document disagrees with this one, this one wins — except
 `DECISIONS.md`, which is authoritative on what was decided, and `WORKFLOW.md`, which is canonical on how work
@@ -27,6 +27,18 @@ compliant data sources, the caption, comment and scheduling policies, the reserv
 production rhythm and the tooling. **The trademark / trade-dress posture was ACCEPTED on 2026-09-08**
 (`production/TRADEMARK_RISK_REVIEW.md`): photographs of branded sneakers are produced under its §5
 nominative-use operating rule, mandatory on every piece, with the §3 re-review triggers standing.
+
+**2026-09-11: the start rule was amended by the founders.** Sari and Wasim replaced "first Monday after both
+gates pass" with **"begin as soon as every gate has passed and launch-ready is confirmed — Day 1 is the
+earliest day, on any weekday, whose Day-0 requirements are met; no waiting for a Monday."** Every other gate,
+lock and restriction is unchanged; no date is chosen. The founders acknowledged the corollary: the matrix's
+D1–D7 / Mon–Sun columns are **launch-relative positions**, the CSV is unchanged byte for byte, and every
+locked balance property holds in calendar terms under any start weekday. The Story rotation and the Wednesday
+sticker stay calendar-keyed (delegated production decision). `tools/instantiate_calendar.py` and
+`tools/validate_backlog.py` accept any Day 1; the tracking skeleton's Stories tab leaves its calendar-bound
+columns blank until Day 1 exists. Adobe Firefly's current terms have been read and mapped to our use in
+`production/assets/FIREFLY_TERMS_VERIFICATION.md`; **the founders' confirmation, the account and the plan
+decision remain open** (Sourcing Gate item 9 is not passed). **Zero posts published; launch remains gated.**
 
 ---
 
@@ -190,7 +202,7 @@ decision changes that.
 | **AI imagery** | **Exactly 6 posts, C4 only**, 3 per account, 1 Reel + 1 Carousel + 1 Static each |
 | **Voiceover** | **None** for the duration of the test (test-specific, not a permanent ban) |
 | **Link in bio** | **None** for the duration of the test |
-| **Start date** | **Not chosen.** First Monday after both gates pass |
+| **Start date** | **Not chosen.** As soon as both gates pass and launch-ready is confirmed — any weekday, no Monday deferral (amended 2026-09-11). The matrix's Mon–Sun labels are launch-relative positions |
 | 48-post matrix | **SUPERSEDED BEFORE LAUNCH** — preserved as historical methodology |
 
 ### The 48-post history
@@ -245,9 +257,9 @@ production decisions, 2026-09-08) — see `experiment/content/`.
 
 ## Not yet done — all of it operational, none of it design
 
-| # | Item | Status (2026-09-06) |
+| # | Item | Status (2026-09-11) |
 |---|---|---|
-| 1 | The trademark / trade-dress posture on photographs of branded sneakers; plus the founder actions of verifying Adobe Firefly's terms and approving any paid plan | **POSTURE ACCEPTED 2026-09-08** — `production/TRADEMARK_RISK_REVIEW.md` (§5 rule mandatory at QA); Firefly verification remains founder work — `production/FOUNDER_REVIEW_QUEUE.md` §B |
+| 1 | The trademark / trade-dress posture on photographs of branded sneakers; plus the founder actions of verifying Adobe Firefly's terms and approving any paid plan | **POSTURE ACCEPTED 2026-09-08** — `production/TRADEMARK_RISK_REVIEW.md` (§5 rule mandatory at QA); **Firefly: terms read and mapped 2026-09-11** — `production/assets/FIREFLY_TERMS_VERIFICATION.md`; the founders' confirmation, account and plan decision remain open — `production/FOUNDER_REVIEW_QUEUE.md` §B |
 | 2 | **Pass the Sourcing Gate**, including the AI arm — imagery rights for C2 at volume is the binding constraint | **5 of 12 PASSED** (templates and count; the asset-class decision, closed by the 2026-09-08 acceptance; data sources; C4 source; no-relaxation) — the 42-image bank, the sustainability test, the AI licence verification and the AI test piece are founder execution — `production/gates/SOURCING_GATE_SCORECARD.md` |
 | 3 | Build the four house templates and fix the C2 ranked-item count | **DONE** — delegated production decisions 2026-09-08 (count = 7) |
 | 4 | Build the tracking sheet by importing the matrix | **SKELETON BUILT** — `experiment/tracking/`; live once adopted with W0 rows |
@@ -255,7 +267,7 @@ production decisions, 2026-09-08) — see `experiment/content/`.
 | 6 | Declare the 7-day Story rotation and fix the sticker weekday | **DONE** — delegated production decision 2026-09-08 (Wednesday) |
 | 7 | Write the fixed AI disclosure wording | **DONE** — delegated production decision 2026-09-08 |
 | 8 | Produce and schedule all 11 non-C1 Week-1 feed pieces, the 14 Week-1 Stories and the 7-piece reserve; execute the Day-2 C1 topic lock; complete Week-2 outlines | **NOT STARTED, BY DESIGN** — the sprint stopped before Week-1 production |
-| 9 | **Pass the Week-1 Gate**, then instantiate the start date as the first Monday after both gates pass | **NOT PASSED** — `production/gates/WEEK1_GATE_SCORECARD.md` |
+| 9 | **Pass the Week-1 Gate**, then instantiate the start date — the earliest day, on any weekday, whose Day-0 requirements are met | **NOT PASSED** — `production/gates/WEEK1_GATE_SCORECARD.md` |
 | 10 | Launch — only after 1–9 are complete | Gated |
 
 Details and exact pass criteria: `experiment/active-84-post-plan/GATES.md`. The ordered founder path with
@@ -279,7 +291,8 @@ checklist items a later decision superseded.
 
 ## Immediate next task
 
-> **Verify Adobe Firefly's terms**, then execute the Sourcing Gate per `production/PRE_LAUNCH_RUNBOOK.md`:
+> **Confirm Adobe Firefly's terms** (the reading is prepared in `production/assets/FIREFLY_TERMS_VERIFICATION.md`;
+> the confirmation and the account are yours), then execute the Sourcing Gate per `production/PRE_LAUNCH_RUNBOOK.md`:
 > build the 42-image bank on routes O and F under the accepted trademark posture and its §5 rule, run the
 > two-piece C2 sustainability test, produce the AI test piece.
 

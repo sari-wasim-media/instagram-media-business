@@ -52,7 +52,7 @@ desktop.ini
 
 # ─────────────────────────────────────────────────────────────
 # Local instantiated calendars and local-only working files.
-# The start date is NOT chosen and must never be recorded in the
+# The start date is NOT chosen (any weekday, once the gates pass) and must never be recorded in the
 # repository (LOCK_SPECIFICATION.md §1). tools/instantiate_calendar.py
 # writes here by default; nothing in _local/ is tracked.
 # ─────────────────────────────────────────────────────────────
