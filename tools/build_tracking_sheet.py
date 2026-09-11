@@ -4,7 +4,6 @@
 Usage:  python3 tools/build_tracking_sheet.py
 
 Reads  experiment/active-84-post-plan/matrix_84.csv  (never retyped — imported)
-       production/templates/template_constants.json  (Story rotation, sticker weekday)
 Writes experiment/tracking/posts.csv           84 rows, one per feed post, measurement columns blank
        experiment/tracking/account_weekly.csv  2 accounts x 9 weeks (W0 baseline, W1-W6, W7-W8 tail)
        experiment/tracking/stories.csv         84 rows, one per Story
@@ -12,18 +11,16 @@ Writes experiment/tracking/posts.csv           84 rows, one per feed post, measu
                                                rate columns as formulas that divide by Reach
 
 The sheet is a manual instrument. Founders fill it by hand from Instagram Insights at T+7 / T+14 / T+2.
-No date is instantiated here: publish_date stays blank until the founders run tools/instantiate_calendar.py
-locally and copy the dates in. Re-running this script regenerates the SKELETON only — it never overwrites a
+No date is instantiated here: publish_date (and, on the Stories tab, weekday / rotation_class / sticker /
+adjacent_engine, which are calendar-keyed) stay blank until the founders run tools/instantiate_calendar.py
+locally and copy the values in. Re-running this script regenerates the SKELETON only — it never overwrites a
 sheet that already carries data (it refuses if any measurement cell is filled).
 """
-import csv, json, os, sys
+import csv, os, sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MATRIX = os.path.join(ROOT, "experiment", "active-84-post-plan", "matrix_84.csv")
-CONSTANTS = os.path.join(ROOT, "production", "templates", "template_constants.json")
 OUT = os.path.join(ROOT, "experiment", "tracking")
-
-WEEKDAYS = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
 
 POST_COLS = [
     # identity — imported from the matrix, never edited
@@ -61,8 +58,6 @@ STORY_COLS = [
     "t2_snapshot_date", "t2_age_days", "t2_reach", "t2_views", "t2_forward_taps", "t2_back_taps", "t2_exits",
     "t2_replies", "t2_sticker_interactions", "breakout_support_used", "deviation", "notes",
 ]
-ROTATION_ENGINE = {"DROP CALENDAR": "C1", "PRICE CHECK": "C3", "THE POLL": "C2", "DESK NOTES": "", "THE VERDICT": "C1",
-                   "TWO SHOES": "C4", "THE WEEK": ""}
 STATUS_VALUES = ["PLANNED", "CHECKED_OUT", "IN_PRODUCTION", "QA_PASSED", "SCHEDULED", "PUBLISHED", "LATE", "MISS",
                  "RECOVERED", "REMOVED", "BLOCKED", "INCOMPLETE"]
 ORIGINALITY_VALUES = ["ORIGINAL", "VIOLATION_LOGGED"]
@@ -73,7 +68,7 @@ def read_matrix():
         return list(csv.DictReader(fh))
 
 
-def build_rows(matrix, consts):
+def build_rows(matrix):
     posts = []
     for r in matrix:
         row = {c: "" for c in POST_COLS}
@@ -99,16 +94,16 @@ def build_rows(matrix, consts):
                         "external_link_taps": "0 expected (no link in bio)"})
             weekly.append(row)
 
-    rotation = consts["story_rotation"]; sticker_day = consts["story_sticker_weekday"]
+    # The Story rotation and the sticker weekday are calendar-keyed, and Day 1 may fall on any weekday
+    # (start rule amended 2026-09-11). weekday / rotation_class / sticker / adjacent_engine therefore stay
+    # blank in the skeleton and are copied in from the local output of tools/instantiate_calendar.py.
     stories = []
     for acct in ("A", "B"):
         for w in range(1, 7):
             for d in range(1, 8):
-                cls = rotation[d - 1]; wd = WEEKDAYS[d - 1]
                 row = {c: "" for c in STORY_COLS}
                 row.update({"story_id": f"{acct}-W{w}-D{d}-ST", "account": acct, "account_handle": handles[acct], "week": w,
-                            "day": f"D{d}", "weekday": wd, "rotation_class": cls, "sticker": "Y" if wd == sticker_day else "",
-                            "adjacent_engine": ROTATION_ENGINE.get(cls, ""), "scheduled_utc": "17:30", "status": "PLANNED"})
+                            "day": f"D{d}", "scheduled_utc": "17:30", "status": "PLANNED"})
                 stories.append(row)
     return posts, weekly, stories
 
@@ -152,7 +147,7 @@ def write_xlsx(path, posts, weekly, stories):
         "4. Weekly account-level Reach and non-follower Reach (account_weekly tab) are descriptive context only — no decision authority (Rule S).",
         "5. Medians on weeks 3–6 are the decision statistic; maximums are ceiling evidence. Nothing in this sheet triggers any change to the schedule.",
         "6. status values: " + ", ".join(STATUS_VALUES) + ".  originality_status: " + ", ".join(ORIGINALITY_VALUES) + ".",
-        "7. The identity columns (slot_id … publish_utc) are imported from the locked matrix and are never edited. publish_date is filled from tools/instantiate_calendar.py once the start Monday exists.",
+        "7. The identity columns (slot_id … publish_utc) are imported from the locked matrix and are never edited. publish_date — and on the stories tab weekday, rotation_class, sticker and adjacent_engine — are filled from tools/instantiate_calendar.py once Day 1 exists.",
         "8. Every asset ID in asset_ids must exist in production/assets/provenance_register.csv; every checkout_id in production/backlog/checkout_log.csv.",
         "9. The six AI slots carry ai_overlay = AI; ai_platform_label_observed is filled at T+7 for those six only.",
         "10. Account Status is checked weekly on both accounts (account_weekly tab); any category leaving green is a hard stop for that account.",
@@ -219,7 +214,6 @@ def write_xlsx(path, posts, weekly, stories):
 
 
 def main():
-    consts = json.load(open(CONSTANTS))
     matrix = read_matrix()
     if len(matrix) != 84:
         sys.exit("matrix_84.csv does not have 84 rows — run tools/validate_matrix.py first")
@@ -228,7 +222,7 @@ def main():
     refuse_if_data_present(p_csv, "slot_id", POST_COLS)
     refuse_if_data_present(w_csv, "week", WEEKLY_COLS)
     refuse_if_data_present(s_csv, "story_id", STORY_COLS)
-    posts, weekly, stories = build_rows(matrix, consts)
+    posts, weekly, stories = build_rows(matrix)
     write_csv(p_csv, POST_COLS, posts); write_csv(w_csv, WEEKLY_COLS, weekly); write_csv(s_csv, STORY_COLS, stories)
     write_xlsx(os.path.join(OUT, "tracking_sheet.xlsx"), posts, weekly, stories)
     ai = sum(1 for p in posts if p["ai_overlay"] == "AI"); st = sum(1 for s in stories if s["sticker"] == "Y")

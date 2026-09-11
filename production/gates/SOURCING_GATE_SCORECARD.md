@@ -15,7 +15,7 @@ read PASSED.
 | 6 | C3 data-source ToS check per source; no scraper | **PASSED 2026-09-08** | `../assets/C3_DATA_SOURCE_TOS_REGISTER.md` operationalised under the founders' conservative data-source posture: press releases, published reports and release notes are the sources; every marketplace is excluded because its terms do not clearly permit the use; product pages confirm only | — (a row reopens only if a source publishes explicit permission) |
 | 7 | C4 imagery source confirmed; never-a-reposted-template rule in the production checklist | **PASSED 2026-09-08** | `SOURCE_CLASS_DECISION.md` §2 (self-drawn → owned → licensed → AI in six slots) as a delegated production decision; the rule in `../operations/PRE_PUBLISH_QA.md` §A and §E; seven originated house formats replace any template | Photographs of branded sneakers in C4 wait on the same ACCEPT as item 2 |
 | 8 | No gate item requires reposting, Collabs or relaxing the originality rule | **CONFIRMED BY CONSTRUCTION** | Every route in the stack is owned, licensed, permissioned or self-generated; route X forbids on-post promotion of the grantor | — |
-| 9 | AI generation tool(s) named; output licence confirmed to permit commercial use | **TOOL DECIDED — LICENCE VERIFICATION OPEN (founder)** | **Adobe Firefly** selected as a delegated production decision (states commercial safety, attaches Content Credentials), Gemini alternate; findings in `../assets/SOURCING_ROUTES_RESEARCH.md` §6 | **The founders read the tool's current terms themselves**, create the account, record tool + version + plan + date (`../policy/AI_IMAGERY_POLICY_PACK.md` §5); any paid plan is a founder approval |
+| 9 | AI generation tool(s) named; output licence confirmed to permit commercial use | **TOOL DECIDED — MEMO READY — FOUNDER CONFIRMATION OPEN** | **Adobe Firefly** selected as a delegated production decision (Gemini alternate); the current terms **read and mapped to our use on 2026-09-11** in `../assets/FIREFLY_TERMS_VERIFICATION.md` — ownership, commercial use, Input/prohibited-content rules, Content Credentials, the indemnity's non-applicability to our plan, free-tier facts — with the founder checklist | **The founders confirm the memo against the live pages**, create the account, record tool + version + plan + date (memo §4–§5; `../policy/AI_IMAGERY_POLICY_PACK.md` §5); any paid plan is a founder approval. Not passed until they do |
 | 10 | One complete AI-treated C4 piece produced end-to-end, timed | **NOT PRODUCED — PROTOCOL READY** | `../policy/AI_IMAGERY_POLICY_PACK.md` §7 (TEST-AI-01, a Reel in the shape of `B-W2-C4-REE-01`) | Produce it; log generation, review and production minutes |
 | 11 | That piece verified against the prohibited-use list, carrying the fixed disclosure, label observed | **NOT DONE — CHECKLIST AND WORDING READY** | Nine-item checklist (§4); disclosure wording proposed (§3) | Founders lock the wording; run the checklist on TEST-AI-01; observe the label |
 | 12 | No AI asset reconstructs a third-party image; none in C1/C2/C3 | **ENFORCED BY INSTRUMENT — ATTESTATION PENDING** | Validator refuses AI assets outside the six slots or in C1–C3; attestation field mandatory | Sign the attestation on TEST-AI-01 and on each of the six real assets |
@@ -26,10 +26,10 @@ read PASSED.
   acceptance of the trademark posture (`../TRADEMARK_RISK_REVIEW.md`). **Founder execution:** items 3, 4, 5 (the bank,
   the provenance rows, the sustainability test), 9 (licence verification), 10, 11, 12 (the AI test piece).
 - The binding sequence is now: **build the 42-image bank** on routes O and F under the accepted posture →
-  run the sustainability test → founders verify Firefly's terms → produce and check the AI test piece →
+  run the sustainability test → founders confirm Firefly's terms (memo ready) → produce and check the AI test piece →
   sign off.
-- Estimated founder effort to pass: **≈ 22–26 hours** (bank build ≈ 15 h, sustainability test ≈ 4 h, AI
-  verification and test piece ≈ 3 h; the ToS reading is no longer needed).
+- Estimated founder effort to pass: **≈ 22–25 hours** (bank build ≈ 15 h, sustainability test ≈ 4 h, AI
+  confirmation ≈ 0.5 h now that the reading is prepared, plus the test piece ≈ 2 h).
 
 ## Sign-off
 

@@ -2,7 +2,7 @@
 
 **Locked rule (`GATES.md` §2.3):** measured from each slot's 16:00 UTC publish instant — **T−48 h topic lock** (irreversible, from the queue, logged) · **T−24 h production complete** (every factual claim verified, QA passed) · **T−12 h scheduled** in-platform. Identical for all 21 C1 slots, all six weeks. A slot that misses T−24 h is a Miss and recovers by the exception protocol; it is never converted to evergreen.
 
-This table is generated from `matrix_84.csv` in **launch-relative days** (Day 1 = the Week-1 Monday, Day 0 = the Sunday before launch). No calendar date is recorded here — run `python3 tools/instantiate_calendar.py --start YYYY-MM-DD --print` locally once the start Monday exists to get absolute datetimes.
+This table is generated from `matrix_84.csv` in **launch-relative days** (Day 1 = the first publish day, on any weekday; Day 0 = the day before it). The weekday column is the matrix's launch-relative label, not a calendar weekday. No calendar date is recorded here — run `python3 tools/instantiate_calendar.py --start YYYY-MM-DD --print` locally once Day 1 exists to get absolute datetimes and real weekdays.
 
 | # | Slot | Wk | Day | Weekday | Format | Publish | Topic lock (T−48 h) | Production complete (T−24 h) | Scheduled by (T−12 h) | Production block (declared budget) |
 |---|---|---|---|---|---|---|---|---|---|---|

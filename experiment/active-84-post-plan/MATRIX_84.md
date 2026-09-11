@@ -15,7 +15,7 @@ Run `python3 tools/validate_matrix.py` after any change to the CSV.
 |---|---|
 | **Slot ID** | `account-week-engine-format-sequence`, the adopted convention. `REE` Reel · `CAR` Carousel · `STA` Static. Put the slot ID in the asset filename so assets and data never separate |
 | **Acct** | A = `thestreetwearofficial` · B = `sneakerbong` |
-| **Wk / Day / Weekday** | D1 = Monday … D7 = Sunday. Week 1 Day 1 is a Monday. Calendar dates bind when the start date is instantiated — see `LOCK_SPECIFICATION.md` |
+| **Wk / Day / Weekday** | **Launch-relative positions.** D1 is the first day of each experiment week and is labelled `Mon`; D7 is the seventh, labelled `Sun`. Day 1 may fall on any calendar weekday (start rule as amended 2026-09-11); the calendar weekday of every slot binds when Day 1 is instantiated and equals the label only when Day 1 is a Monday. Each position maps to one fixed calendar weekday for all six weeks, so the weekday balances below hold in calendar terms — see `LOCK_SPECIFICATION.md` §3 |
 | **Engine** | C1 Release & Verdict · C2 Rankings & Tier Lists · C3 Market & Price Intelligence · C4 Original Meme & Commentary |
 | **Format** | REEL · CARO (carousel) · STAT (static) |
 | **Time** | **16:00 UTC** for all 84 posts (= 19:00 at UTC+3). A fixed instant, not a local wall-clock time |

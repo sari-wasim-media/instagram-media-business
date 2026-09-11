@@ -7,8 +7,11 @@ and `../../production/gates/WEEK1_GATE_SCORECARD.md`. The criteria below are the
 the record.*
 
 The methodology is founder-locked. **Publishing is not.** Both gates below must pass before Post #1, and the
-start date is instantiated only when they do: *the experiment starts on the first Monday after all required
-Week-1 and Sourcing Gates have passed* (Founder Lock, decision 3).
+start date is instantiated only when they do: *once every required gate has passed and the founders have
+confirmed the launch-ready state, the experiment begins immediately — Day 1 is the earliest calendar day, on
+any weekday, whose Day-0 requirements are met. There is no requirement to wait for a Monday* (Founder Lock,
+start rule as amended 2026-09-11 — `DECISIONS.md`). The matrix's D1–D7 / Mon–Sun columns are launch-relative
+positions; the calendar weekday binds at instantiation.
 
 If a gate fails, **delay launch**. Do not relax the originality rule, and do not alter the matrix.
 
@@ -107,7 +110,9 @@ Any item missing means **do not start**.
 6. **7-piece evergreen reserve built** (no C1 reserve; no AI-treated reserve piece).
 7. All 14 Week-2 outlines complete, and the rolling-buffer rule (≥7 finished pieces banked) satisfied.
 8. **The D2 C1 topic lock executed.** `A-W1-C1-CAR-01` publishes at 16:00 UTC on Day 2, so its T−48 h deadline
-   falls at 16:00 UTC on **Day 0 — before launch**. It is a Layer-1 item.
+   falls at 16:00 UTC on **Day 0 — the day before Day 1, before launch**. It is a Layer-1 item, and it is
+   what fixes the earliest possible Day 1 under the start rule: Day 1 is the day after the Day-0 lock is
+   executed against it, whatever weekday that is.
 9. **Story readiness**: Story template built · the **7-day rotation predeclared** · the interactive-sticker
    weekday fixed · **Week 1's 14 Stories (7 per account) produced and queued or scheduled**.
 10. **AI-imagery policy pack complete**: definition, prohibited-use list, **fixed disclosure wording**,

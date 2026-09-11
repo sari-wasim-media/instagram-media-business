@@ -32,7 +32,7 @@ assets and data never separate (`../../production/assets/ASSET_PIPELINE.md`).
 - Weekly account-level Reach and non-follower Reach are **descriptive context only** — Rule S,
   `../methodology/MEASUREMENT_AND_RULES.md` §4.
 - The six AI slots carry `ai_overlay = AI`; `ai_platform_label_observed` is filled at T+7 for those six only.
-- `publish_date` stays empty until the start Monday exists; fill it from the local output of
+- `publish_date` stays empty until Day 1 exists; fill it from the local output of
   `tools/instantiate_calendar.py`. The date is never committed to the repository.
 - Every `asset_ids` entry must exist in `production/assets/provenance_register.csv`; every `checkout_id` in
   `production/backlog/checkout_log.csv`.

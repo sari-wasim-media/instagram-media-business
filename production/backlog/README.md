@@ -4,7 +4,7 @@
 for the Week-1 window.* The mechanism is founder-locked
 (`../../experiment/active-84-post-plan/ANTI_DUPLICATION_AND_TOPIC_SELECTION.md` §5). This directory is the
 instrument that runs it. **Status: BUILT, EMPTY.** The founders populate it; the Week-1 C1 watchlist can only
-be populated once the start Monday is known.
+be populated once Day 1 is known.
 
 | File | What it is |
 |---|---|

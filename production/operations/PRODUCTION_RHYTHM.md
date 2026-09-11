@@ -9,23 +9,31 @@ from the declared budgets in `../templates/README.md`; replace them with measure
 
 | Clock | Governs | Lead |
 |---|---|---|
-| **Evergreen clock** (C2, C3, C4 — 63 of 84 posts) | Check out on **Friday** for the week after next (10–16 days ahead); produce the following week; schedule by the Thursday before the publishing week | ≥ 7 days finished before publish → the buffer |
+| **Evergreen clock** (C2, C3, C4 — 63 of 84 posts) | Check out on **Friday** every slot whose publish date falls 10–16 days ahead; produce it the following week; schedule it on the Thursday before its publish date | ≥ 7 days finished before publish → the buffer |
 | **News clock** (C1 — 21 posts) | The ladder: lock T−48 h, produce by T−24 h, schedule by T−12 h. Roughly one C1 slot every two days | 48 hours |
 
-Publication weekdays are fixed by the matrix; **production days are not.** Weekend posts are produced by
+Publication days are fixed by the matrix; **production days are not.** Weekend posts are produced by
 Thursday and scheduled; only C1's ladder ever forces weekend production (see `C1_DEADLINE_LADDER.md`).
+
+**"Next week" in this document means the next seven publish days** — the 14 feed slots (both accounts) and
+14 Stories whose publish dates fall in the seven calendar days after the coming Thursday scheduling block.
+The matrix's posting weeks are launch-relative (Day 1 may fall on any weekday — start rule as amended
+2026-09-11) and need not align with calendar weeks; the grid below is a calendar-week rhythm that works
+against publish dates from the instantiated calendar, never against matrix week numbers. The Story rotation
+is calendar-keyed, so Monday is always DROP CALENDAR and Wednesday always carries the sticker, whatever the
+matrix day label says.
 
 ## 2. The standard week (posting weeks 1–6)
 
 | Day | Block | What happens | Approx. hours (both founders) |
 |---|---|---|---|
-| **Mon** | Weekly review (fixed hour, both founders) | Account Status screenshots both accounts · T+7 / T+14 / T+2 rows logged · account-weekly rows · buffer ≥ 7 confirmed · next week's pieces confirmed scheduled · deviations logged. **No strategy discussion.** | 1.0 |
+| **Mon** | Weekly review (fixed hour, both founders) | Account Status screenshots both accounts · T+7 / T+14 / T+2 rows logged · account-weekly rows · buffer ≥ 7 confirmed · the next seven publish days' pieces confirmed scheduled · deviations logged. **No strategy discussion.** | 1.0 |
 | Mon | C1 watch | Release-calendar scan (15 min, daily); any C1 lock due today | 0.5 + ladder |
-| **Tue** | Reels batch | The next week's Reels (4 per account = 8) assembled from finished layouts; audio chosen from Sound Collection at upload time and logged | 5.0 |
-| **Wed** | Carousels + Statics batch | Next week's 4 carousels and 2 statics; alt text and captions | 4.5 |
-| **Thu** | QA + scheduling + Stories | QA every piece against `PRE_PUBLISH_QA.md`; schedule the non-C1 week at 16:00 UTC; batch the 14 Story frames; schedule the non-sticker frames where the Week-0 test proved it, otherwise post manually at 17:30 UTC | 3.5 |
+| **Tue** | Reels batch | The next seven publish days' Reels (4 per account = 8) assembled from finished layouts; audio chosen from Sound Collection at upload time and logged | 5.0 |
+| **Wed** | Carousels + Statics batch | The next seven publish days' 4 carousels and 2 statics; alt text and captions | 4.5 |
+| **Thu** | QA + scheduling + Stories | QA every piece against `PRE_PUBLISH_QA.md`; schedule the next seven publish days' non-C1 slots at 16:00 UTC; batch the 14 Story frames (classes from the instantiated calendar); schedule the non-sticker frames where the Week-0 test proved it, otherwise post manually at 17:30 UTC | 3.5 |
 | **Wed** (every week) | Sticker Story, manual | Post THE POLL frame manually on both accounts at 17:30 UTC ± 30 min, adding the sticker in the app (scheduler support unverified — not assumed) | 0.3 |
-| **Fri** | Check-out + research | Check out C2/C3/C4 slots for the week after next (log); C3 data collection for those pieces; C2 sourcing and provenance rows; idea bank → backlog entries | 4.0 |
+| **Fri** | Check-out + research | Check out every C2/C3/C4 slot publishing 10–16 days ahead (log); C3 data collection for those pieces; C2 sourcing and provenance rows; idea bank → backlog entries | 4.0 |
 | Sat–Sun | C1 ladder only | Only the C1 slots whose ladder lands on the weekend (see ladder table) | ladder |
 | Daily | Community | Replies within 24 h per `../policy/COMMENT_REPLY_POLICY.md`; C1 watch | 0.5 |
 
@@ -38,11 +46,11 @@ in the tracking row (`producer` + notes) for the first two weeks and re-plan on 
 | Week | Output | Gate item |
 |---|---|---|
 | **P−2** | Templates confirmed (founder lock) · asset bank build (`../assets/C2_SOURCING_ROUTES.md`, ≈ 15 h) · sustainability test (2 C2 reserve pieces) · AI-route test piece · ToS register rows read · backlog seeded · Week-1 check-outs logged (C2/C3/C4 by the Friday ≥ 10 days before Day 1) | Sourcing Gate 1–12 |
-| **P−1** | The 11 non-C1 Week-1 pieces produced, QA'd, **scheduled**; the remaining 5 reserve pieces; Week-1's 14 Stories produced and scheduled; Week-2 outlines (14); Week-0 baselines captured; tracking sheet live; **Day-0 C1 topic lock** (`A-W1-C1-CAR-01`, Sunday 16:00 UTC) | Week-1 Gate Layer 1 |
+| **P−1** | The 11 non-C1 Week-1 pieces produced, QA'd, **scheduled**; the remaining 5 reserve pieces; Week-1's 14 Stories produced and scheduled; Week-2 outlines (14); Week-0 baselines captured; tracking sheet live; **Day-0 C1 topic lock** (`A-W1-C1-CAR-01`, the day before Day 1, 16:00 UTC) | Week-1 Gate Layer 1 |
 
-The start Monday is instantiated only after both gates pass — so P−2 and P−1 are counted backwards from a
-Monday that is chosen *when* the work above is done, not before. That is the locked start rule working as
-intended: no date, no slipping.
+Day 1 is instantiated only after both gates pass — on any weekday — so P−2 and P−1 are counted backwards
+from a *candidate* Day 1 that is chosen *when* the work above is done, not before. That is the start rule
+(as amended 2026-09-11) working as intended: no date, no slipping, and no idle days waiting for a Monday.
 
 ## 4. Producers and the account/producer separation
 
@@ -54,8 +62,8 @@ checkpoint reads the producer × account split and expects it near 50/50.
 
 ## 5. Buffer and reserve
 
-- **Buffer:** ≥ 7 finished, QA'd, rights-clean pieces banked at all times, i.e. next week's non-C1 pieces
-  done by Thursday. Below 7 at any weekly review → the Friday block goes to production before research.
+- **Buffer:** ≥ 7 finished, QA'd, rights-clean pieces banked at all times, i.e. the next seven publish days'
+  non-C1 pieces done by Thursday. Below 7 at any weekly review → the Friday block goes to production before research.
 - **Reserve:** 7 evergreen pieces (`RESERVE_REGISTER.md`), never C1, never AI-treated, used only through the
   exception protocol for the *same engine and format*, and refilled the following week.
 

@@ -122,10 +122,12 @@ earlier four-cell naming (redefined as C1–C4), and every count sized to 4 post
 
 ## 6. Immediate next task
 
-> **The founders verify Adobe Firefly's terms.** Then **execute the Sourcing Gate** along
-> `production/PRE_LAUNCH_RUNBOOK.md` (asset bank on the accepted routes, C2 sustainability test, AI test
-> piece). Then the Week-1 Gate. Then, and only then, the start date is
-> instantiated as the first Monday after both gates pass.
+> **The founders verify Adobe Firefly's terms** — the reading is prepared for them in
+> `production/assets/FIREFLY_TERMS_VERIFICATION.md`; the confirmation and the account are theirs. Then
+> **execute the Sourcing Gate** along `production/PRE_LAUNCH_RUNBOOK.md` (asset bank on the accepted routes,
+> C2 sustainability test, AI test piece). Then the Week-1 Gate. Then, and only then, the start date is
+> instantiated: **Day 1 is the earliest day, on any weekday, whose Day-0 requirements are met — no waiting
+> for a Monday** (start rule as amended 2026-09-11, `DECISIONS.md`).
 
 **The design is finished and locked. Do not redesign it. The creative system is built and decided; do not
 rebuild it and do not re-open the delegated decisions unless a founder asks.** Read
@@ -145,8 +147,9 @@ whether it ships as a carousel or a Reel. If the gate cannot be passed, delay la
 ## 7. Needs founder approval before you act
 
 **Settled by the Founder Lock — do NOT reopen these:** the format mix · voiceover (none during the test) · the
-start rule · link in bio (none) · AI-generated imagery (six locked C4 slots only) · Story cadence (daily) ·
-the 84-post matrix itself.
+start rule (as amended 2026-09-11: begin as soon as the gates pass, any weekday — the matrix's Mon–Sun
+labels are launch-relative positions) · link in bio (none) · AI-generated imagery (six locked C4 slots only) ·
+Story cadence (daily) · the 84-post matrix itself.
 
 **Delegated to Claude since 2026-09-08 (`WORKFLOW.md` §2a):** production-level decisions — creative
 system, visual and production design, sourcing implementation, platform operating details, workflow,

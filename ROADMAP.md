@@ -54,14 +54,14 @@ founder answer and execution.**
 
 All operational. In order (`production/PRE_LAUNCH_RUNBOOK.md`):
 
-1. **Answer the trademark question**; verify Adobe Firefly's terms (any paid plan is a founder approval)
+1. ~~Answer the trademark question~~ (ACCEPTED 2026-09-08); **confirm Adobe Firefly's terms** — the reading is prepared in `production/assets/FIREFLY_TERMS_VERIFICATION.md`; the confirmation, the account and any paid plan are founder actions
 2. **Build the asset bank and run the C2 sustainability test** — C2 is the constraint; the route changes if
    the test fails, never the matrix
 3. **Produce the AI test piece** against the nine-item checklist
 4. **Seed the topic queue**, set up the daily C1 release watch, run the scheduling time-zone check
 5. **Produce and schedule** the 11 non-C1 Week-1 feed pieces, the 14 Week-1 Stories and the 7-piece reserve;
    execute the Day-0 C1 topic lock for the Day-2 slot; complete Week-2 outlines; capture the Week-0 baselines
-6. **Instantiate the start date** — the first Monday after both gates pass (locally; never in the repository)
+6. **Instantiate the start date** — the earliest day, on any weekday, whose Day-0 requirements are met once both gates pass (locally; never in the repository)
 7. **Launch** — only after 1–6 are complete
 
 *Optional at any point, not blocking:* capture post-change profile screenshots, which would convert the

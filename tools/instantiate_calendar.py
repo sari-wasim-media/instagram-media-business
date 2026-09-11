@@ -1,12 +1,18 @@
 #!/usr/bin/env python3
-"""Instantiate the locked matrix onto real dates from a start Monday — LOCALLY, never into the repository.
+"""Instantiate the locked matrix onto real dates from Day 1 — LOCALLY, never into the repository.
 
 Usage:  python3 tools/instantiate_calendar.py --start YYYY-MM-DD [--out PATH] [--print]
 
-The start date is NOT chosen and must never be recorded in this repository (LOCK_SPECIFICATION.md §1, item 2;
-the start rule: first Monday after both gates pass). This script takes the date as an argument and writes to
-_local/ (gitignored) by default. Run it only once the gates have passed, or with a hypothetical Monday to see
-the shape of the calendar.
+The start date is NOT chosen and must never be recorded in this repository (LOCK_SPECIFICATION.md §1, item 2).
+Day 1 may fall on any weekday (start rule as amended 2026-09-11, DECISIONS.md). This script takes the date as
+an argument and writes to _local/ (gitignored) by default. Run it only once the gates have passed, or with a
+hypothetical date to see the shape of the calendar.
+
+The matrix's day/weekday columns are launch-relative: D1 is the first day of each experiment week and carries
+the label "Mon" whatever the calendar says. Feed rows therefore carry both `matrix_day_label` (the CSV label)
+and `weekday` (the real calendar weekday of the publish date). The Story rotation and the sticker weekday are
+calendar-keyed (STORY_TEMPLATE_AND_ROTATION.md), so Story rows are computed from the calendar weekday; every
+experiment week still contains each rotation class exactly once and exactly one sticker day per account.
 
 For every one of the 84 slots it emits: publish datetime (16:00 UTC), local conversions, the check-out deadline
 (C1 T-48h · C3 T-7d · C2/C4 T-10d), the C1 ladder (T-48h lock · T-24h production complete · T-12h scheduled),
@@ -21,6 +27,8 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MATRIX = os.path.join(ROOT, "experiment", "active-84-post-plan", "matrix_84.csv")
 CONSTANTS = os.path.join(ROOT, "production", "templates", "template_constants.json")
 WEEKDAYS = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+ROTATION_ENGINE = {"DROP CALENDAR": "C1", "PRICE CHECK": "C3", "THE POLL": "C2", "DESK NOTES": "", "THE VERDICT": "C1",
+                   "TWO SHOES": "C4", "THE WEEK": ""}
 CHECKOUT_H = {"C1": 48, "C2": 240, "C3": 168, "C4": 240}
 DST = [("EU/UK clocks change", date(2026, 10, 25)), ("US/Canada clocks change", date(2026, 11, 1))]
 
@@ -30,7 +38,7 @@ def fmt(dt): return dt.strftime("%Y-%m-%d %H:%M UTC")
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--start", required=True, help="Week-1 Monday, YYYY-MM-DD")
+    ap.add_argument("--start", required=True, help="Day 1, YYYY-MM-DD, any weekday")
     ap.add_argument("--out", default=None, help="CSV path (default _local/calendar_<start>.csv)")
     ap.add_argument("--print", action="store_true", help="print the summary and the C1 ladder")
     a = ap.parse_args()
@@ -38,8 +46,6 @@ def main():
         y, m, d = (int(x) for x in a.start.split("-")); start = date(y, m, d)
     except Exception:
         sys.exit("--start must be YYYY-MM-DD")
-    if start.weekday() != 0:
-        sys.exit(f"{start} is a {WEEKDAYS[start.weekday()]}; the experiment starts on a Monday")
     consts = json.load(open(CONSTANTS))
     with open(MATRIX, newline="") as fh:
         matrix = list(csv.DictReader(fh))
@@ -57,7 +63,8 @@ def main():
         eng, fmt_ = r["engine"], r["format"]
         row = {
             "type": "FEED", "slot_id": r["slot_id"], "account": r["account"], "handle": r["account_handle"], "week": r["week"],
-            "day_index": D, "weekday": r["weekday"], "engine": eng, "format": fmt_, "block": r["block"], "ai_overlay": r["ai_overlay"],
+            "day_index": D, "matrix_day_label": r["weekday"], "weekday": WEEKDAYS[pub_date.weekday()],
+            "engine": eng, "format": fmt_, "block": r["block"], "ai_overlay": r["ai_overlay"],
             "publish_date": pub_date.isoformat(), "publish_utc": fmt(pub),
             "publish_local_utc+3": (pub + timedelta(hours=3)).strftime("%H:%M"), "publish_local_utc+2": (pub + timedelta(hours=2)).strftime("%H:%M"),
             "checkout_deadline_utc": fmt(pub - timedelta(hours=CHECKOUT_H[eng])),
@@ -66,7 +73,7 @@ def main():
             "c1_scheduled_by_utc": fmt(pub - timedelta(hours=12)) if eng == "C1" else "",
             "production_week": "P-1 (before launch)" if int(r["week"]) == 1 else f"posting week {int(r['week']) - 1}",
             "t7_snapshot_utc": fmt(pub + timedelta(days=7)), "t14_snapshot_utc": fmt(pub + timedelta(days=14)) if fmt_ == "REEL" else "",
-            "rotation_class": "", "sticker": "",
+            "rotation_class": "", "sticker": "", "adjacent_engine": "",
         }
         rows.append(row)
     rotation, sticker_day = consts["story_rotation"], consts["story_sticker_weekday"]
@@ -75,13 +82,15 @@ def main():
             pd = start + timedelta(days=D - 1); wd = WEEKDAYS[pd.weekday()]
             st = datetime.combine(pd, datetime.min.time(), tzinfo=timezone.utc) + timedelta(hours=17, minutes=30)
             rows.append({"type": "STORY", "slot_id": f"{acct}-W{(D - 1) // 7 + 1}-D{(D - 1) % 7 + 1}-ST", "account": acct, "handle": handle,
-                         "week": (D - 1) // 7 + 1, "day_index": D, "weekday": wd, "engine": "", "format": "STORY", "block": "", "ai_overlay": "",
+                         "week": (D - 1) // 7 + 1, "day_index": D, "matrix_day_label": WEEKDAYS[(D - 1) % 7], "weekday": wd,
+                         "engine": "", "format": "STORY", "block": "", "ai_overlay": "",
                          "publish_date": pd.isoformat(), "publish_utc": fmt(st), "publish_local_utc+3": "20:30", "publish_local_utc+2": "19:30",
                          "checkout_deadline_utc": "", "c1_topic_lock_utc": "", "c1_production_complete_utc": "", "c1_scheduled_by_utc": "",
                          "production_week": "batched the Thursday before", "t7_snapshot_utc": "", "t14_snapshot_utc": "",
-                         "rotation_class": rotation[pd.weekday()], "sticker": "Y" if wd == sticker_day else ""})
+                         "rotation_class": rotation[pd.weekday()], "sticker": "Y" if wd == sticker_day else "",
+                         "adjacent_engine": ROTATION_ENGINE.get(rotation[pd.weekday()], "")})
     # milestones
-    ms = [("MILESTONE", "DAY-0 · C1 topic lock for A-W1-C1-CAR-01 (16:00 UTC, before launch)", start - timedelta(days=1)),
+    ms = [("MILESTONE", "DAY-0 · C1 topic lock for A-W1-C1-CAR-01 (16:00 UTC, the day before Day 1)", start - timedelta(days=1)),
           ("MILESTONE", "WEEK-1 GATE Layer 1 must be complete (all 11 non-C1 pieces scheduled)", start - timedelta(days=1))]
     for w in range(1, 7):
         ms.append(("MILESTONE", f"Weekly review · after posting week {w} (same day/time each week; founders fix it)", start + timedelta(days=7 * w)))
@@ -95,7 +104,10 @@ def main():
         w = csv.DictWriter(fh, fieldnames=list(rows[0].keys())); w.writeheader(); w.writerows(rows)
 
     straddle = [(n, dd) for n, dd in DST if start <= dd <= end + timedelta(days=14)]
-    print(f"Start Monday {start} · last post {end} · last Reel snapshot {end + timedelta(days=14)}")
+    print(f"Day 1 {start} ({WEEKDAYS[start.weekday()]}) · last post {end} · last Reel snapshot {end + timedelta(days=14)}")
+    if start.weekday() != 0:
+        print(f"NOTE: Day 1 is a {WEEKDAYS[start.weekday()]}. The matrix's Mon–Sun labels are launch-relative positions; "
+              f"the `weekday` column here is the real calendar weekday. Story rotation and the sticker follow the calendar.")
     print(f"Written: {os.path.relpath(out, ROOT) if out.startswith(ROOT) else out}  ({len(rows)} rows: 84 feed, 84 Story, {len(ms)} milestones)")
     if straddle:
         for n, dd in straddle:

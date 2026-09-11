@@ -4,7 +4,7 @@
 Usage:  python3 tools/validate_backlog.py [--start YYYY-MM-DD]
 
 Reads production/backlog/backlog.csv and production/backlog/checkout_log.csv.
---start is the Week-1 Monday, used ONLY to check check-out deadlines against absolute publish instants.
+--start is Day 1 (any weekday), used ONLY to check check-out deadlines against absolute publish instants.
 It is never written anywhere; without it the deadline checks are skipped and everything else still runs.
 
 Checks (ANTI_DUPLICATION_AND_TOPIC_SELECTION.md §2, §3, §5):
@@ -56,8 +56,8 @@ def d(s):
 def main():
     ap = argparse.ArgumentParser(); ap.add_argument("--start", default=None); a = ap.parse_args()
     start = d(a.start) if a.start else None
-    if a.start and (not start or start.weekday() != 0):
-        sys.exit("--start must be a Monday in YYYY-MM-DD form")
+    if a.start and not start:
+        sys.exit("--start must be Day 1 in YYYY-MM-DD form (any weekday)")
     with open(MATRIX, newline="") as fh:
         matrix = {r["slot_id"]: r for r in csv.DictReader(fh)}
     dayidx = {s: (int(r["week"]) - 1) * 7 + int(r["day"][1:]) for s, r in matrix.items()}   # 1..42
