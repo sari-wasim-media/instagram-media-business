@@ -7,14 +7,16 @@ holds the instruments for all four. The pipeline below is the operating procedur
 | File | What it is | Gate item |
 |---|---|---|
 | `SOURCE_CLASS_DECISION.md` | Which classes supply each engine, in priority order; the accepted trademark residual (2026-09-08) | 2 |
-| `C2_SOURCING_ROUTES.md` | Routes O · F · P · X · S · B with steps, costs, throughput; the 42-image bank build | 3, 5 |
-| `C2_SUSTAINABILITY_TEST.md` | The two-piece end-to-end test protocol and record | 5 |
+| `C2_SOURCING_ROUTES.md` | Routes F · X · B · P · S · O (order revised 2026-09-13 — no owned inventory) with steps, costs, throughput; the bank build, sized by the stress test | 3, 5 |
+| `C2_SUSTAINABILITY_TEST.md` | The two-piece sourcing stress test — protocol v2 with the pre-declared decision rule | 5 |
+| `c2_stress_test/` | The stress-test package: briefs, candidate and timing logs, permission template, founder instructions, results | 5 |
 | `C3_DATA_SOURCE_TOS_REGISTER.md` | Per-source terms verification register | 6 |
 | `SOURCING_ROUTES_RESEARCH.md` | The research record behind all of the above (accessed 2026-09-05) | — |
 | `provenance_register.csv` | **The register. One row per asset. Empty until the founders source the first asset** | 4 |
 | `provenance_register_EXAMPLE.csv` | Six example rows showing every class filled in correctly | — |
 | `audio_ledger.csv` (+ `_EXAMPLE`) | One row per track use; enforces the 14-day audio rules | — |
 | `../../tools/validate_provenance.py` | Validates both CSVs against the locked rules | 4 |
+| `../../tools/validate_c2_stress_test.py` | Validates the stress-test logs against the register; prints the burden summary and the decision rule's reading | 5 |
 
 ## The rule that governs everything here
 
@@ -30,7 +32,11 @@ Illustration, charts, typography and house UI are unaffected.
 
 1. **Need** — a piece in production (or the bank build) needs an image of item X.
 2. **Route** — take the first route in the engine's priority order (`SOURCE_CLASS_DECISION.md` §2) that can
-   supply X; fall through in order. C2 always ends at route S (illustration), so C2 never fails here.
+   supply X; fall through in order (C2 since 2026-09-13: F → X → B → P with approval → S; O only when a pair
+   is at hand). C2 always ends at route S (illustration), so no C2 slot fails for want of an image — but a
+   piece that is mostly illustration is reported as such, never silently normalised. **Credit is not
+   permission**: an image whose rights are not established is logged in the candidate log as UNCLEAR /
+   PENDING / BLOCKED and never receives an asset ID.
 3. **Obtain** — shoot / download / draw / generate. For licensed and press assets, **archive the licence or
    terms text** (PDF or screenshot with date) at the same moment.
 4. **Record** — append a row to `provenance_register.csv` with the next `AST-nnnn` ID: class, engine, slot or
@@ -67,6 +73,7 @@ is in progress; the committed register is the truth once the batch is done.
 
 | Bank | Needed for the Sourcing Gate | Recorded | Validated |
 |---|---|---|---|
+| C2 stress-test prototypes (`TEST-C2-CAR-01`, `TEST-C2-REE-01`) | **14** — non-publishing; count toward the 42 only if promoted to reserve | 0 | — |
 | C2 product images | **42** (4 Week-1 pieces + 2 reserve pieces × 7) | 0 | — |
 | C4 imagery (non-AI) | ≈ 6–12 | 0 | — |
 | C1 optional imagery | 0–3 | 0 | — |

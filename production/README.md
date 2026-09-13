@@ -23,10 +23,10 @@ operating rule, mandatory on every piece and checked at QA.
 |---|---|---|
 | **`TRADEMARK_RISK_REVIEW.md`** | The focused risk review, the accepted posture and the §5 operating rule | **ACCEPTED 2026-09-08** |
 | `FOUNDER_REVIEW_QUEUE.md` | The former queue, resolved: 13 items decided under delegated authority; the founder-only items listed | Resolved 2026-09-08 |
-| **`PRE_LAUNCH_RUNBOOK.md`** | The ordered founder path from here to both gates passed (≈ 60 h) | Ready |
+| **`PRE_LAUNCH_RUNBOOK.md`** | The ordered founder path from here to both gates passed (stress test first; hours measured, not estimated) | Ready |
 | `house-style/` | House System v1: `HOUSE_STYLE.md`, `EDITORIAL_VOICE.md`, `tokens.json`, `house.css`, vendored OFL fonts | Decided 2026-09-08 |
 | `templates/` | C1 · C2 (+ the ranked-item count decision) · C3 · C4 · Story specs; `template_constants.json`; the specimen renderer; **64 rendered frames** and a 36.5 s Reel pacing reference | Decided 2026-09-08 |
-| `assets/` | Source-class decision, C2 route stack, sustainability-test protocol, the compliant data-source register, research record, provenance register + audio ledger (empty, with examples) | Order and sources decided; trademark acceptance open; founder execution pending |
+| `assets/` | Source-class decision, C2 route stack (re-ranked 2026-09-13 — no owned inventory), the two-piece sourcing stress test (protocol v2 + `c2_stress_test/` package), the compliant data-source register, research record, the Firefly memo, provenance register + audio ledger (empty, with examples) | Order decided; trademark posture accepted; **stress test prepared, not run**; Firefly confirmation open |
 | `policy/` | AI-imagery policy pack, caption/hashtag, comment-reply, the originality rule card, scheduling and publish settings | Decided 2026-09-08 |
 | `backlog/` | The topic queue, the check-out log, examples, the idea bank | Instrument built; empty |
 | `operations/` | Production rhythm, the C1 deadline ladder (21 slots, launch-relative), the reserve register, the pre-publish QA checklist, `TOOLING.md` | Decided 2026-09-08 |
@@ -51,6 +51,7 @@ generators below).
 | `python3 tools/build_tracking_sheet.py` | Regenerates the tracking skeleton from the matrix (refuses to overwrite data) |
 | `python3 tools/validate_provenance.py` | Provenance register + audio ledger against the rights and 14-day rules |
 | `python3 tools/validate_backlog.py [--start YYYY-MM-DD]` | Queue rule, deadlines, anti-duplication, blind attestation |
+| `python3 tools/validate_c2_stress_test.py [--example]` | The stress-test logs against the register; burden summary; the pre-declared decision rule read out |
 | `python3 tools/instantiate_calendar.py --start YYYY-MM-DD --print` | Local calendar (writes to `_local/`, never the repo): every instant, the C1 ladder, snapshots, DST notes |
 | `python3 production/templates/src/render_frames.py [--motion]` | Re-renders the specimen frames (needs a Chromium) |
 

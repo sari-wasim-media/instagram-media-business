@@ -43,20 +43,25 @@ The GitHub migration is infrastructure. It is not the business.
 
 - **Trademark / trade-dress posture: ACCEPTED 2026-09-08**
   → `production/TRADEMARK_RISK_REVIEW.md`; the §5 operating rule is mandatory at QA
-- **Pass the Sourcing Gate** by execution: the 42-image asset bank, the two-piece C2 sustainability test,
-  the AI tool licence verification (founder) and the AI test piece
-  → `production/PRE_LAUNCH_RUNBOOK.md` · `production/gates/SOURCING_GATE_SCORECARD.md` (5 of 12 passed)
+- **Pass the Sourcing Gate** by execution — **in the corrected order (2026-09-13: the founders have no owned
+  inventory):** the AI tool licence confirmation (founder; memo ready), **the two-piece C2 sourcing stress
+  test** (prepared, not run — its verdict decides), then the 42-image bank sized by the test, then the AI
+  test piece
+  → `production/PRE_LAUNCH_RUNBOOK.md` · `production/assets/c2_stress_test/` ·
+  `production/gates/SOURCING_GATE_SCORECARD.md` (5 of 12 passed)
 
 **The design is finished and locked; the creative system is built and decided; the remaining work is one
-founder answer and execution.**
+founder confirmation, one founder-run test, and execution — unless the test says C2 cannot be sourced this
+way, in which case the finding is escalated and nothing is redesigned quietly.**
 
 ## Next
 
 All operational. In order (`production/PRE_LAUNCH_RUNBOOK.md`):
 
 1. ~~Answer the trademark question~~ (ACCEPTED 2026-09-08); **confirm Adobe Firefly's terms** — the reading is prepared in `production/assets/FIREFLY_TERMS_VERIFICATION.md`; the confirmation, the account and any paid plan are founder actions
-2. **Build the asset bank and run the C2 sustainability test** — C2 is the constraint; the route changes if
-   the test fails, never the matrix
+2. **Run the C2 sourcing stress test, then build the asset bank** — C2 is the constraint; the test runs
+   first because the routes must be proven without owned inventory; if it fails, the finding is escalated —
+   the route may change, never the matrix, the count, the originality rule or the AI slots
 3. **Produce the AI test piece** against the nine-item checklist
 4. **Seed the topic queue**, set up the daily C1 release watch, run the scheduling time-zone check
 5. **Produce and schedule** the 11 non-C1 Week-1 feed pieces, the 14 Week-1 Stories and the 7-piece reserve;

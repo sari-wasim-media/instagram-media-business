@@ -1,4 +1,4 @@
-# Project State — as of 2026-09-11
+# Project State — as of 2026-09-13
 
 The operational source of truth. If another document disagrees with this one, this one wins — except
 `DECISIONS.md`, which is authoritative on what was decided, and `WORKFLOW.md`, which is canonical on how work
@@ -40,6 +40,21 @@ columns blank until Day 1 exists. Adobe Firefly's current terms have been read a
 `production/assets/FIREFLY_TERMS_VERIFICATION.md`; **the founders' confirmation, the account and the plan
 decision remain open** (Sourcing Gate item 9 is not passed). **Zero posts published; launch remains gated.**
 
+**2026-09-13: a founder operational fact corrected the sourcing plan.** Sari and Wasim stated that they
+**do not have meaningful access to a sneaker inventory and cannot self-shoot products at scale.** The
+pre-launch plan had assumed the opposite: its primary C2 route was founder photography (a rig and a 20-pair
+shoot, ≈ 40 % of the 147 images). That assumption is withdrawn. The C2 routes are re-ranked as a delegated
+production decision — free-licence stock with an ownership check → creator permission (asked from a personal
+channel, never from the accounts) → verified press (PUMA) → paid stock with approval → house illustration →
+owned photography only when a pair is at hand — and **credit is not permission**: a public, credited or
+reposted image is never rights-clean. The **two-piece C2 sourcing stress test now runs before the bank is
+built** (protocol v2 with a pre-declared decision rule; package in `production/assets/c2_stress_test/`:
+two non-publishing prototypes, 14 image requirements, every candidate and every stage logged, a validator).
+It is **prepared, not run** — the founders execute it; if it reports NOT SUSTAINABLE the finding is
+escalated, not engineered away. No lock moved: the matrix, the count of 7, the six AI slots, the originality
+rule and the Stories protocol are unchanged; no date is chosen; nothing is scheduled. **Zero posts
+published; launch remains gated.**
+
 ---
 
 ## The headline
@@ -55,10 +70,11 @@ decision remain open** (Sourcing Gate item 9 is not passed). **Zero posts publis
 is locked, and the production surface is decided under delegated authority; the controlled revival
 experiment has **not started**.
 
-**The blocker is now execution, not design, review or a founder answer.** The binding items are: building
-the asset bank and running the C2 sustainability test, verifying the AI tool's licence, producing the AI test
-piece, and then Week-1 production. The ordered path with hours is `production/PRE_LAUNCH_RUNBOOK.md`; the
-item-by-item status is in `production/gates/`.
+**The blocker is now execution — and one open question of fact: whether C2 can be sourced without an owned
+inventory.** The binding items, in order: confirming the AI tool's licence (memo ready), **running the
+two-piece C2 sourcing stress test** (prepared), reading its verdict, then — only if it sustains — building the
+asset bank sized by its numbers, producing the AI test piece, and Week-1 production. The ordered path is
+`production/PRE_LAUNCH_RUNBOOK.md`; the item-by-item status is in `production/gates/`.
 
 ---
 
@@ -260,7 +276,7 @@ production decisions, 2026-09-08) — see `experiment/content/`.
 | # | Item | Status (2026-09-11) |
 |---|---|---|
 | 1 | The trademark / trade-dress posture on photographs of branded sneakers; plus the founder actions of verifying Adobe Firefly's terms and approving any paid plan | **POSTURE ACCEPTED 2026-09-08** — `production/TRADEMARK_RISK_REVIEW.md` (§5 rule mandatory at QA); **Firefly: terms read and mapped 2026-09-11** — `production/assets/FIREFLY_TERMS_VERIFICATION.md`; the founders' confirmation, account and plan decision remain open — `production/FOUNDER_REVIEW_QUEUE.md` §B |
-| 2 | **Pass the Sourcing Gate**, including the AI arm — imagery rights for C2 at volume is the binding constraint | **5 of 12 PASSED** (templates and count; the asset-class decision, closed by the 2026-09-08 acceptance; data sources; C4 source; no-relaxation) — the 42-image bank, the sustainability test, the AI licence verification and the AI test piece are founder execution — `production/gates/SOURCING_GATE_SCORECARD.md` |
+| 2 | **Pass the Sourcing Gate**, including the AI arm — imagery rights for C2 at volume is the binding constraint | **5 of 12 PASSED** (templates and count; the asset-class decision, closed by the 2026-09-08 acceptance; data sources; C4 source; no-relaxation). **2026-09-13: the C2 route stack was re-ranked (no owned inventory) and the two-piece stress test was re-protocolled and prepared — it now runs before the bank.** The stress test, the bank, the AI licence verification and the AI test piece are founder execution — `production/gates/SOURCING_GATE_SCORECARD.md` |
 | 3 | Build the four house templates and fix the C2 ranked-item count | **DONE** — delegated production decisions 2026-09-08 (count = 7) |
 | 4 | Build the tracking sheet by importing the matrix | **SKELETON BUILT** — `experiment/tracking/`; live once adopted with W0 rows |
 | 5 | Build the topic backlog and start the blind-to-performance check-out queue | **INSTRUMENT BUILT, EMPTY** — `production/backlog/` |
@@ -270,15 +286,17 @@ production decisions, 2026-09-08) — see `experiment/content/`.
 | 9 | **Pass the Week-1 Gate**, then instantiate the start date — the earliest day, on any weekday, whose Day-0 requirements are met | **NOT PASSED** — `production/gates/WEEK1_GATE_SCORECARD.md` |
 | 10 | Launch — only after 1–9 are complete | Gated |
 
-Details and exact pass criteria: `experiment/active-84-post-plan/GATES.md`. The ordered founder path with
-hours: `production/PRE_LAUNCH_RUNBOOK.md` (≈ 55 founder-hours to launch-ready).
+Details and exact pass criteria: `experiment/active-84-post-plan/GATES.md`. The ordered founder path:
+`production/PRE_LAUNCH_RUNBOOK.md` (the earlier "≈ 55 founder-hours" figure is withdrawn — its sourcing half
+assumed an owned inventory; the stress test measures the replacement).
 
-**Two findings from the sprint's research (2026-09-05) that shape execution, neither reopening a lock:**
-brand press imagery is not usable by default (most newsroom terms read grant personal, non-commercial use
-only — C1 is designed to work without a product photo, C2 relies on owned, free-licence and illustrated
-imagery); and marketplace terms do not clearly permit copying prices — under the founders' conservative
+**Three findings that shape execution, none reopening a lock:** brand press imagery is not usable by default
+(most newsroom terms read grant personal, non-commercial use only — C1 is designed to work without a product
+photo); marketplace terms do not clearly permit copying prices — under the founders' conservative
 data-source posture (2026-09-08) every marketplace is excluded and C3 runs on published reports and brand
-release notes (`production/assets/C3_DATA_SOURCE_TOS_REGISTER.md`).
+release notes (`production/assets/C3_DATA_SOURCE_TOS_REGISTER.md`); and (2026-09-13) **the founders have no
+owned inventory**, so C2 relies on free-licence, permissioned, verified-press and illustrated imagery — whether
+that sustains 147 images is exactly what the stress test measures.
 
 *Optional, not blocking:* capture post-change profile screenshots to convert the founder-confirmed bio edit
 into screenshot evidence. **This is not a task to rewrite the bios** — the minimal edit is complete.
@@ -291,16 +309,19 @@ checklist items a later decision superseded.
 
 ## Immediate next task
 
-> **Confirm Adobe Firefly's terms** (the reading is prepared in `production/assets/FIREFLY_TERMS_VERIFICATION.md`;
-> the confirmation and the account are yours), then execute the Sourcing Gate per `production/PRE_LAUNCH_RUNBOOK.md`:
-> build the 42-image bank on routes O and F under the accepted trademark posture and its §5 rule, run the
-> two-piece C2 sustainability test, produce the AI test piece.
+> **Confirm Adobe Firefly's terms** (the reading is prepared in `production/assets/FIREFLY_TERMS_VERIFICATION.md`,
+> dates re-checked 2026-09-13; the confirmation and the account are yours), then **run the two-piece C2
+> sourcing stress test** per `production/assets/c2_stress_test/FOUNDER_INSTRUCTIONS.md` — two non-publishing
+> prototypes, 14 image requirements, on routes F + X (+ B, S) under the accepted trademark posture, every
+> candidate and stage logged — and bring the logs back. Its pre-declared verdict decides whether the 42-image
+> bank is built (sized by the measured minutes per image) or the finding is escalated. Then the AI test piece.
 
 Then the Week-1 Gate. Exact criteria: `experiment/active-84-post-plan/GATES.md`; status: `production/gates/`.
 
 ⚠ **The design is locked; do not redesign it.** If the Sourcing Gate cannot be passed, the correct response is
-to **delay launch** — not to relax the originality rule and not to alter the matrix. Changing the format mix
-would not reduce the rights burden, because a C2 ranking needs the same per-item assets whether it ships as a
+to **delay launch** — not to relax the originality rule, not to alter the matrix, not to reduce the item
+count, not to admit AI to C2, and not to call a credited image a cleared one. Changing the format mix would
+not reduce the rights burden, because a C2 ranking needs the same per-item assets whether it ships as a
 carousel or a Reel.
 
 ---

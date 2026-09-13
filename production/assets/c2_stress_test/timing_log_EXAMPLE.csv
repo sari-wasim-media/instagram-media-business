@@ -1,0 +1,13 @@
+entry_id,piece_ref,item_no,stage,active_or_passive,started_utc,finished_utc,minutes,who,notes
+TIM-0001,TEST-C2-CAR-01,ALL,THEME,ACTIVE,2026-09-20T09:00,2026-09-20T09:08,8,SM,"Example row — brief read, item list confirmed"
+TIM-0002,TEST-C2-CAR-01,1,DISCOVERY,ACTIVE,2026-09-20T09:08,2026-09-20T09:15,7,SM,"Example — Unsplash then Pexels; 3 candidates logged"
+TIM-0003,TEST-C2-CAR-01,1,RIGHTS_VERIFY,ACTIVE,2026-09-20T09:15,2026-09-20T09:21,6,SM,"Example — licence line, reverse-image check, §6 fit"
+TIM-0004,TEST-C2-CAR-01,1,ASSET_PREP,ACTIVE,2026-09-20T09:21,2026-09-20T09:26,5,SM,"Example — download, crop to plate"
+TIM-0005,TEST-C2-CAR-01,1,PROVENANCE,ACTIVE,2026-09-20T09:26,2026-09-20T09:30,4,SM,"Example — AST-0001 row written, licence PDF archived"
+TIM-0006,TEST-C2-CAR-01,2,DISCOVERY,ACTIVE,2026-09-20T09:30,2026-09-20T09:40,10,SM,"Example — time box reached, nothing usable on F"
+TIM-0007,TEST-C2-CAR-01,2,PERMISSION_REQUEST,ACTIVE,2026-09-20T09:40,2026-09-20T09:52,12,SM,"Example — photographer found on Flickr, message sent from personal e-mail"
+TIM-0008,TEST-C2-CAR-01,2,PERMISSION_WAIT,PASSIVE,2026-09-20T09:52,2026-09-23T18:10,4938,SM,"Example — reply after ~3.4 days; passive, not counted in active totals"
+TIM-0009,TEST-C2-CAR-01,3,ILLUSTRATION,ACTIVE,2026-09-21T10:00,2026-09-21T10:14,14,SM,"Example — silhouette recoloured to the colorway"
+TIM-0010,TEST-C2-CAR-01,ALL,RESEARCH,ACTIVE,2026-09-22T09:00,2026-09-22T09:18,18,SM,"Example — ranking order and reasons; no chips"
+TIM-0011,TEST-C2-CAR-01,ALL,LAYOUT,ACTIVE,2026-09-22T09:18,2026-09-22T09:40,22,SM,"Example — 9 slides in Figma from the master"
+TIM-0012,TEST-C2-CAR-01,ALL,CAPTION_QA,ACTIVE,2026-09-22T09:40,2026-09-22T09:58,18,WK,"Example — caption, alt text, tags; QA by the other founder"

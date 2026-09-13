@@ -12,8 +12,8 @@ evergreen charts:
 
 | # | Reserve ID | Engine | Format | Why this one | Doubles as |
 |---|---|---|---|---|---|
-| 1 | `RESERVE-C2-REE-01` | C2 | Reel | 12 C2 Reels in the matrix — the most exposed cell | **Sustainability-test piece 2** |
-| 2 | `RESERVE-C2-CAR-01` | C2 | Carousel | 6 C2 carousels; the format most likely to be blocked on imagery | **Sustainability-test piece 1** |
+| 1 | `RESERVE-C2-REE-01` | C2 | Reel | 12 C2 Reels in the matrix — the most exposed cell | May be filled by promoting stress-test prototype `TEST-C2-REE-01` **after** a pass (see note) |
+| 2 | `RESERVE-C2-CAR-01` | C2 | Carousel | 6 C2 carousels; the format most likely to be blocked on imagery | May be filled by promoting stress-test prototype `TEST-C2-CAR-01` **after** a pass (see note) |
 | 3 | `RESERVE-C3-REE-01` | C3 | Reel | 12 C3 Reels; research-heavy, most likely to miss a deadline | — |
 | 4 | `RESERVE-C3-CAR-01` | C3 | Carousel | 6 C3 carousels | — |
 | 5 | `RESERVE-C3-STA-01` | C3 | Static | The one Static in the reserve: cheapest to make, and Statics are the least distribution-relevant arm | — |
@@ -22,6 +22,13 @@ evergreen charts:
 
 Not covered: C2 Static (3 in the matrix), C4 Static (3). If either Misses with no reserve match, the slot
 becomes a Miss and recovers at the end of the schedule — the locked path.
+
+**Note (2026-09-13, delegated production decision — order reversed).** The 2026-09-08 composition had the two
+C2 reserve pieces *double as* the sustainability-test pieces. Under protocol v2 the two test pieces are
+**non-publishing prototypes first**; they become these two reserve pieces only if the test's verdict allows
+it, every asset's licence or permission scope covers a later single publication, and QA passes — a separate,
+logged promotion step (`../assets/C2_SUSTAINABILITY_TEST.md` §6). If they are not promoted, both reserve
+pieces are built fresh and the prototypes' assets are retired. Composition unchanged.
 
 ## Rules that travel with every reserve piece
 

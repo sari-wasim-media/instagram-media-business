@@ -9,6 +9,11 @@ half-hour (`PRE_LAUNCH_RUNBOOK.md` step 1) is spent confirming, not searching.
 Access date for every source below: **2026-09-11**. Adobe changes these pages; re-open each one on the day
 you confirm and check the "last updated" / "effective" line against the one recorded here.
 
+*Re-check 2026-09-13 (Claude, reading only):* the three governing documents still show the same dates —
+Product Specific Terms *Effective as of April 23, 2026*; User Guidelines *Last Updated: May 15, 2026*;
+General Terms *Published October 3, 2025. Effective as of October 3, 2025*. The memo is current. Nothing
+was accepted, no account was created.
+
 ---
 
 ## 1. Which documents govern Firefly output — the chain

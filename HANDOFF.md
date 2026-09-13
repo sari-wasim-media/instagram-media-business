@@ -40,6 +40,10 @@ read whatever else the task needs.
   nominative-use operating rule, mandatory on every piece; its §3 re-review triggers stand.
 - ⚠ **Locked is not launched.** Launch is blocked on the Sourcing Gate and the Week-1 Gate. Zero Week-1
   pieces exist, by design.
+- ⚠ **2026-09-13: the founders have no owned sneaker inventory.** The C2 sourcing routes were re-ranked
+  (free-licence → permissioned → verified press → paid with approval → illustration → owned only when at
+  hand) and the **two-piece C2 sourcing stress test now runs before the bank** — prepared in
+  `production/assets/c2_stress_test/`, **not run**. Credit is not permission. No lock moved.
 
 ---
 
@@ -123,9 +127,12 @@ earlier four-cell naming (redefined as C1–C4), and every count sized to 4 post
 ## 6. Immediate next task
 
 > **The founders verify Adobe Firefly's terms** — the reading is prepared for them in
-> `production/assets/FIREFLY_TERMS_VERIFICATION.md`; the confirmation and the account are theirs. Then
-> **execute the Sourcing Gate** along `production/PRE_LAUNCH_RUNBOOK.md` (asset bank on the accepted routes,
-> C2 sustainability test, AI test piece). Then the Week-1 Gate. Then, and only then, the start date is
+> `production/assets/FIREFLY_TERMS_VERIFICATION.md` (dates re-checked 2026-09-13); the confirmation and the
+> account are theirs. Then **they run the two-piece C2 sourcing stress test** —
+> `production/assets/c2_stress_test/FOUNDER_INSTRUCTIONS.md` — and bring back the logs; its pre-declared
+> verdict (`production/assets/C2_SUSTAINABILITY_TEST.md` §5) decides whether the 42-image bank is built or the
+> finding is escalated. Then the rest of the Sourcing Gate along `production/PRE_LAUNCH_RUNBOOK.md` (bank
+> sized by the test, AI test piece). Then the Week-1 Gate. Then, and only then, the start date is
 > instantiated: **Day 1 is the earliest day, on any weekday, whose Day-0 requirements are met — no waiting
 > for a Monday** (start rule as amended 2026-09-11, `DECISIONS.md`).
 
@@ -135,9 +142,11 @@ rebuild it and do not re-open the delegated decisions unless a founder asks.** R
 for status, and run `python3 tools/validate_matrix.py` if you want to confirm the matrix is intact.
 
 ⚠ **C2 is the binding constraint, and it is different in kind from C3.** A C2 ranking needs one rights-clean
-image **per ranked item, in every format** — roughly 85–170 distinct images across its 21 posts. C3's visuals
-are self-generated charts; its constraint is research time and data-source terms of service. Older checklists
-bundle these as "C2 and C3 sourcing"; they are not the same problem.
+image **per ranked item, in every format** — 147 distinct images across its 21 posts at the decided count of
+7. C3's visuals are self-generated charts; its constraint is research time and data-source terms of service.
+Older checklists bundle these as "C2 and C3 sourcing"; they are not the same problem. **And since 2026-09-13
+none of those 147 can be planned as founder photography** — the stress test exists to find out whether the
+other routes carry the load. If it says they do not, stop and escalate; do not redesign.
 
 **Changing the format mix would not reduce the rights burden** — a C2 ranking needs the same per-item assets
 whether it ships as a carousel or a Reel. If the gate cannot be passed, delay launch.
@@ -204,7 +213,7 @@ WORKFLOW.md         how we work            CLAUDE.md        Claude Code entry po
 strategy/           context + research     experiment/      methodology + the LOCKED matrix + tracking skeleton
 evidence/           organized screenshots  archive/         pristine originals
 production/         creative system, asset pipeline, policies, queue, rhythm, tooling, gate scorecards (delegated decisions; trademark posture accepted 2026-09-08: TRADEMARK_RISK_REVIEW.md)
-tools/              validate_matrix.py · validate_provenance.py · validate_backlog.py · build_tracking_sheet.py · instantiate_calendar.py
+tools/              validate_matrix.py · validate_provenance.py · validate_backlog.py · validate_c2_stress_test.py · build_tracking_sheet.py · instantiate_calendar.py
 experiment/active-84-post-plan/matrix_84.csv  ← the matrix
 ```
 
