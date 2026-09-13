@@ -6,24 +6,28 @@ expect. Nothing here is in the backlog: an idea becomes a queue entry only when 
 must be researched and sourced at check-out. No C1 subjects are listed: C1 items need a *confirmed* release
 date and belong to the watchlist the founders build from brand release calendars once Day 1 exists.
 
-Write rankings toward what can be shown: pairs the founders own or can borrow (route O), models common on
-free-licence stock (route F), and silhouettes in the house illustration library (route S). See
-`../assets/C2_SOURCING_ROUTES.md`.
+Write rankings toward what can be shown **rights-clean without an owned inventory** (2026-09-13 — the
+founders have no meaningful access to one): models findable on free-licence stock under the route F
+discipline, colorways a photographer can be asked for in time (route X, ≥ 10 days ahead), the two brands with
+an archived press reading (route B), and silhouettes in the house illustration library (route S). A pair that
+happens to be at hand is a bonus, never a plan. See `../assets/C2_SOURCING_ROUTES.md`. The stress test
+(`../assets/c2_stress_test/`) will show which of these actually holds; rewrite the sourcing notes below from
+its results.
 
 ## C2 — Rankings & Tier Lists (7 items each)
 
 | Theme (`subject_key: theme:…`) | Ranking basis | Sourcing note |
 |---|---|---|
-| Sneakers under $200 that still look expensive | looks-per-dollar, resale within 20 % of retail | route O/F friendly |
-| Retro runners ranked by comfort per dollar | comfort, price, availability | many owned pairs likely |
+| Sneakers under $200 that still look expensive | looks-per-dollar, resale within 20 % of retail | route F friendly (icons) |
+| Retro runners ranked by comfort per dollar | comfort, price, availability | a neighbouring theme (`retro-runners-everyday-wearability`) is a stress-test prototype — disjoint items required if this one is queued within its windows |
 | The seven most re-released colorways of the decade, ranked by whether they were worth bringing back | resale premium vs retail, cultural weight | illustration route works well |
 | Best general-release pairs of the year so far | availability, price, wearability | needs current-year knowledge |
-| Every mainstream low-top ranked by how many wears it survives | durability, materials | owned pairs, worn-in photos are a feature |
-| Tier list: the "dad shoe" families, S to C | design, comfort, price | illustration route strong |
+| Every mainstream low-top ranked by how many wears it survives | durability, materials | worn-in photos would need route X (a collector's own) — otherwise F or S |
+| Tier list: the "dad shoe" families, S to C | design, comfort, price | **used as stress-test prototype `TEST-C2-REE-01`** — if queued later, disjoint items from the prototype's within the anti-duplication windows |
 | Seven pairs that lost the most value from retail, ranked | resale delta (C3 rules for the numbers) | pair with a C3 dataset |
-| The seven best pairs for a rainy city, ranked | sole, materials, price | owned or F |
+| The seven best pairs for a rainy city, ranked | sole, materials, price | F or X |
 | Collab silhouettes ranked by how good the *non-collab* version is | value, availability | avoids hype-only items |
-| Tier list: white sneakers by how well they age | materials, cleaning, price | owned pairs |
+| Tier list: white sneakers by how well they age | materials, cleaning, price | F strong (icons), aged pairs need X |
 
 ## C3 — Market & Price Intelligence (one dataset each; sources: published reports and release notes only)
 

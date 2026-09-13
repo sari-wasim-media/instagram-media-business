@@ -88,7 +88,7 @@ Bottom band carries `Ranked by`. The caption carries the list in text.
 - No brand-mark crops that make the logo the subject; the product is the subject.
 - If an item's image cannot be sourced rights-clean, the **item changes**, not the rule. The fallback for a
   specific colorway is the self-generated illustration route (`C2_SOURCING_ROUTES.md` route S), which is always
-  available.
+  available. Credit is not permission: an image found online and credited is not rights-clean.
 - Every image has a provenance record before layout; the asset ID goes in the filename and the tracking row.
 
 ## 7. Anti-duplication handling specific to C2 (operationalisation — ACTIVE, delegated production decision 2026-09-08)
@@ -110,8 +110,10 @@ Bottom band carries `Ranked by`. The caption carries the list in text.
 | Static | **7** | title block | 80 min: sourcing 42 · ranking 15 · layout 10 · caption and QA 13 |
 
 Whole experiment: 21 × 7 = **147 images**. Sourcing Gate bank (4 Week-1 pieces + 2 reserve pieces): **42**.
-The two-piece sustainability test in `../assets/C2_SUSTAINABILITY_TEST.md` measures these budgets; if either
-piece cannot be produced rights-clean inside 1.5 × its budget, the route changes, not the matrix.
+The two-piece sourcing stress test in `../assets/C2_SUSTAINABILITY_TEST.md` (protocol v2, 2026-09-13 — run
+without founder-owned inventory) measures these budgets by stage; if either piece cannot be produced
+rights-clean inside 1.5 × its budget, or C2 turns out to be illustration-led, the finding is escalated to
+the founders — the count, the matrix and the originality rule do not move.
 
 ## 9. Caption template
 

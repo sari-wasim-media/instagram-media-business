@@ -62,7 +62,8 @@ dashboards, no tracking software, no publishing tooling has been built or author
 
 *Clarification, 2026-09-06.* The founder-approved Creative System sprint authorised, and produced,
 **in-repository production aids**: read-only validators of committed CSVs (`tools/validate_provenance.py`,
-`tools/validate_backlog.py`), a generator of the tracking-sheet skeleton from the matrix
+`tools/validate_backlog.py`, and from 2026-09-13 `tools/validate_c2_stress_test.py`), a generator of the
+tracking-sheet skeleton from the matrix
 (`tools/build_tracking_sheet.py`), a local calendar printer (`tools/instantiate_calendar.py`) and a specimen
 renderer (`production/templates/src/render_frames.py`). They are of the same kind as
 `tools/validate_matrix.py`: they read and write files in this repository and print. **They are not publishing
@@ -449,22 +450,68 @@ founders may override any of them before Day 1.
 | **Story rotation and sticker** | Mon DROP CALENDAR · Tue PRICE CHECK · Wed THE POLL · Thu DESK NOTES · Fri THE VERDICT · Sat TWO SHOES · Sun THE WEEK; sticker weekday **Wednesday**, poll by default, quiz allowed; Wednesday posted manually until scheduler sticker support is proven | `production/templates/STORY_TEMPLATE_AND_ROTATION.md` |
 | **AI disclosure line and placement** | "Imagery in this post is AI-generated and illustrative. It does not depict a real product." — verbatim as the last caption line before the hashtags in all six AI posts, platform AI label on; **nothing on the artwork** | `production/policy/AI_IMAGERY_POLICY_PACK.md` §3 |
 | **AI generation tool** | **Adobe Firefly** (web), free tier first; alternate Google Gemini. Licence verification, account creation and any paid plan are founder actions (Sourcing Gate item 9; no spending authority) | `production/policy/AI_IMAGERY_POLICY_PACK.md` §5, `production/operations/TOOLING.md` |
-| **Source-class priority per engine** | C1: self-generated → owned → licensed → verified press · C2: owned → licensed free → self-generated illustration → permissioned → licensed paid (founder-approved spend) → verified press · C3: self-generated only · C4: self-generated → owned → licensed → AI in the six slots. Product photography of branded sneakers runs under the accepted trademark posture and its §5 operating rule (2026-09-08) | `production/assets/SOURCE_CLASS_DECISION.md` |
+| **Source-class priority per engine** | C1: self-generated → owned → licensed → verified press · **C2 (revised 2026-09-13): licensed free → permissioned → verified press → licensed paid (founder-approved spend) → self-generated illustration → owned (opportunistic only)** · C3: self-generated only · C4: self-generated → owned → licensed → AI in the six slots. Product photography of branded sneakers runs under the accepted trademark posture and its §5 operating rule (2026-09-08). The C2 order is provisional until the two-piece stress test reports | `production/assets/SOURCE_CLASS_DECISION.md` |
 | **Compliant data sources** | Press releases, published reports and brand release notes are the sources; marketplace listing pages, aggregators and secondary reporting are not; product pages confirm only | `production/assets/C3_DATA_SOURCE_TOS_REGISTER.md` |
 | **Caption and hashtag form** | Hook · body · source line · AI line (six posts) · 3–5 tags (2–3 subject + 1 fixed category + ≤ 1 community; ban list); alt text always; American spelling; no CTA, link, mention, location | `production/policy/CAPTION_AND_HASHTAG_POLICY.md` |
 | **Comment-reply policy** | Substantive comments answered within 24 h, ≤ 15 replies per post, like all non-spam, hide spam, no pins, no DM outreach, identical on both accounts | `production/policy/COMMENT_REPLY_POLICY.md` |
 | **Scheduling tool and publish settings** | Meta Business Suite (desktop) for feed posts; Reels share-to-feed ON; Facebook sharing OFF; never Trial; no location, people, collaborator or product tags; AI label ON for the six only; Sound Collection audio; Wednesday Story manual | `production/policy/SCHEDULING_AND_PUBLISH_SETTINGS.md` |
-| **Reserve composition** | C2 Reel + Carousel · C3 Reel + Carousel + Static · C4 Reel + Carousel; the two C2 pieces double as the sustainability test | `production/operations/RESERVE_REGISTER.md` |
+| **Reserve composition** | C2 Reel + Carousel · C3 Reel + Carousel + Static · C4 Reel + Carousel; the two C2 reserve pieces may be filled by promoting the stress-test prototypes after a pass (order reversed 2026-09-13: prototypes first) | `production/operations/RESERVE_REGISTER.md` |
 | **Queue-rule operational readings** | C1 eligibility window: news broken ≤ 7 days before or release ≤ 10 days after the publish instant; C2 subject = the theme, #1 pick logged as a secondary subject | `production/backlog/README.md` §2, `production/templates/C2_RANKINGS_AND_TIER_LISTS.md` §7 |
 | **Producer allocation and rhythm** | Producers alternate by format batch, never by account; Friday check-outs two weeks ahead; Tue Reels, Wed carousels and statics, Thu QA and scheduling, Mon weekly review | `production/operations/PRODUCTION_RHYTHM.md` |
 | **Production tooling** | Figma (free) for stills; CapCut desktop (free) for Reel assembly with no CapCut library content; Meta Business Suite; Instagram Sound Collection; the house renderer for frames; free tiers only | `production/operations/TOOLING.md` |
 
 ---
 
+---
+
+## Founder operational fact and the sourcing correction — 2026-09-13
+
+### No founder-owned sneaker inventory — **ACTIVE** · HISTORICAL FACT (founder-stated, 2026-09-13)
+Sari and Wasim **do not have meaningful access to a large sneaker inventory** and cannot realistically
+self-shoot dozens of different products. Self-shot imagery may be available occasionally; it **cannot be
+the primary or scalable sourcing route** for the C2 asset bank. This is an operational constraint, not a
+preference. It changes no Founder Lock: the matrix, the C2 ranked-item count, the format mix, the AI
+sub-test, the originality rule and every other locked value stand.
+
+### C2 sourcing routes re-ranked; the stress test comes before the bank — **ACTIVE — delegated production decision** (2026-09-13)
+Under the delegated production authority of 2026-09-08 (sourcing implementation), and because the
+2026-09-08 route order rested on an owned inventory that does not exist:
+
+- **C2 source-class order:** `LICENSED_FREE` (for the initial stress test: CC0 / public-domain-equivalent →
+  Pexels License → Unsplash License → other clearly licensed-free assets only where the requirements are
+  unambiguous and met exactly; **CC BY not used in the initial test** — founder correction on review,
+  2026-09-13 — kept in the class as a possible future route pending an attribution check; with an
+  ownership-plausibility check per candidate) → `PERMISSIONED` (the photographer's written permission, asked
+  from a founder's personal channel, never from the experiment accounts) → `PRESS_VERIFIED` (PUMA on the
+  archived reading; any further brand is a trademark-review §3 trigger) → `LICENSED_PAID` (founder approval
+  per purchase; none on file) → `SELF_GENERATED` illustration (always-on fallback; its share is reported) →
+  `OWNED` (opportunistic only). The six routes are unchanged in kind — none added, none removed — so no
+  re-review trigger fires; the trademark review's §5 rule and §6 narrowing apply unchanged.
+- **Credit is not permission.** An image that is merely public, on Instagram, on Pinterest, on a retailer
+  page, watermarked, reposted elsewhere or "creditable" is not rights-clean; it is logged UNCLEAR / PENDING /
+  BLOCKED and never receives an asset ID. Trademark posture and copyright permission are separate questions.
+- **Sequence:** the two-piece C2 sourcing stress test (protocol v2, `production/assets/C2_SUSTAINABILITY_TEST.md`,
+  package in `production/assets/c2_stress_test/`) runs **before** the 42-image bank; the bank is sized by
+  its measured minutes per image. The two pieces are **non-publishing prototypes** (`TEST-C2-CAR-01`,
+  `TEST-C2-REE-01`); they consume no slot, enter no queue, and are promoted to the two C2 reserve pieces only
+  after a pass, by a separate logged step. The verdict follows a pre-declared rule (§5 of the protocol); a
+  **NOT SUSTAINABLE** verdict is escalated to the founders, not solved by relaxing any rule.
+- The earlier bank-build plan (rig, inventory, 20-pair shoot, "≈ 15 h") and the "shift to O + S" failure
+  path are **withdrawn**; the earlier "≈ 54 founder-hours to launch-ready" figure is withdrawn with them.
+
+**Rationale:** the founders' stated constraint; the conservative sourcing posture already in force; and the
+gate's own rule that the route changes, never the matrix. Founders may override any of this before Day 1.
+
 ## Pending founder decisions and actions
 
-- **AI tool licence verification and account** — read Adobe Firefly's current terms, record tool, version,
-  plan and date (Sourcing Gate item 9); any paid plan needs founder approval.
+- **AI tool licence verification and account** — confirm Adobe Firefly's current terms against the prepared
+  memo (dates re-checked unchanged 2026-09-13), record tool, version, plan and date (Sourcing Gate item 9);
+  any paid plan needs founder approval. A confirmed licence does not make AI a C2 route.
+- **Run the two-piece C2 sourcing stress test** — founder execution per
+  `production/assets/c2_stress_test/FOUNDER_INSTRUCTIONS.md`; the permission requests are external contacts
+  only the founders can make.
+- **If the test reports WITH CONDITIONS:** a small paid-stock budget (spend), acceptance of an illustration
+  share, or a longer route X lead — founder answers.
 - **Any paid stock credits** (route P) — founder approval before purchase.
 - **Git finalization** of the task branch — `WORKFLOW.md` §4.
 
