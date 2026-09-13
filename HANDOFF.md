@@ -41,8 +41,9 @@ read whatever else the task needs.
 - ⚠ **Locked is not launched.** Launch is blocked on the Sourcing Gate and the Week-1 Gate. Zero Week-1
   pieces exist, by design.
 - ⚠ **2026-09-13: the founders have no owned sneaker inventory.** The C2 sourcing routes were re-ranked
-  (free-licence → permissioned → verified press → paid with approval → illustration → owned only when at
-  hand) and the **two-piece C2 sourcing stress test now runs before the bank** — prepared in
+  (free-licence → verified press → paid with approval → illustration → owned only when at hand; **no
+  permission outreach to creators or any third party** — founder decision the same day, route X off the
+  active path) and the **two-piece C2 sourcing stress test now runs before the bank** — prepared in
   `production/assets/c2_stress_test/`, **not run**. Credit is not permission. No lock moved.
 
 ---

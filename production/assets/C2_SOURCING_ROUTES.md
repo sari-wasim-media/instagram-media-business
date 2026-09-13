@@ -14,26 +14,34 @@ against, never the base of the bank.** The routes are the same six routes the tr
 2026-09-08 — none added, none removed — so no §3 re-review trigger fires; only their order and the
 assumed volume per route changed. The earlier order is kept at the end of this file for the record.
 
+**Second founder decision, 2026-09-13 (ACTIVE — founder decision): no permission outreach.** Sari and Wasim
+will **not** send permission requests to creators, photographers, Instagram accounts or any other third
+party in order to source content — no DMs, no e-mails, no waiting for replies, no request queue, no reliance
+on one-off approvals. **Route X (permissioned creator imagery) is removed from the active sourcing path.**
+It is not replaced by anything weaker: an image without a clear licence or an archived brand clearance is
+rejected, whatever credit could be given. The `PERMISSIONED` class stays in the register schema only because
+`GATES.md` §1.2 (locked) lists it as an acceptable class; nothing in this workflow solicits one.
+
 ## The route stack — priority order (revised 2026-09-13)
 
 | Priority | Route | Class | Per-image cost | Per-image time (planning figure — replaced by the stress test) | Throughput ceiling | Covers |
 |---|---|---|---|---|---|---|
 | **1** | **F · Free-licence stock** | `LICENSED_FREE` | $0 | 6–12 min (search, ownership-plausibility check, licence archive, download, plate) | CC0 / public domain on Wikimedia Commons and Flickr, then Pexels and Unsplash (CC BY not used in the initial test); **specific colorways patchy** | Icons, general releases, common colorways |
-| **2** | **X · Permissioned creator imagery** | `PERMISSIONED` | $0; a message and a wait | 10–15 min active + the reply (passive, days) | Slow; batch the asks ≥ 10 days before the piece is needed | Niche colorways photographed by collectors and sneaker photographers |
-| **3** | **B · Brand press, verified per brand** | `PRESS_VERIFIED` | $0 | 10 min first time per brand (read and archive the terms), 3 min per asset after | Only brands whose archived terms grant editorial use in a way that covers a social post — **PUMA** on the terms read 2026-09-05; every other brand read grants personal / non-commercial use only | New releases from those brands |
-| **4** | **P · Paid stock** | `LICENSED_PAID` | ~$3 per image on a 10-credit plan — **founder approval per purchase; no approval is on file** | 5 min | Budget-limited: a gap-filler, never a route | Specific models missing from F |
-| **5** | **S · Self-generated illustration** | `SELF_GENERATED` | $0 | 3–5 min per colorway once the silhouette library exists (≈ 5 h to build 15 silhouettes) | Unlimited | Any colorway — as a recognisable colour-blocked silhouette. The always-on fallback; its **share** is a finding the stress test reports |
-| **6** | **O · Owned photography** | `OWNED` | ~$0 | 4–6 min per photograph with a phone and a plain backdrop | **Whatever pair is physically at hand on the day — not a planning input** | Occasional |
+| **2** | **B · Brand press, verified per brand** | `PRESS_VERIFIED` | $0 | 10 min first time per brand (read and archive the terms), 3 min per asset after | Only brands whose archived terms grant editorial use in a way that covers a social post — **PUMA** on the terms read 2026-09-05; every other brand read grants personal / non-commercial use only | New releases from those brands |
+| **3** | **P · Paid stock** | `LICENSED_PAID` | ~$3 per image on a 10-credit plan — **founder approval per purchase; no approval is on file** | 5 min | Budget-limited: a gap-filler, never a route | Specific models missing from F |
+| **4** | **S · Self-generated illustration** | `SELF_GENERATED` | $0 | 3–5 min per colorway once the silhouette library exists (≈ 5 h to build 15 silhouettes) | Unlimited | Any colorway — as a recognisable colour-blocked silhouette. The always-on fallback; its **share** is a finding the stress test reports |
+| **5** | **O · Owned photography** | `OWNED` | ~$0 | 4–6 min per photograph with a phone and a plain backdrop | **Whatever pair is physically at hand on the day — not a planning input** | Occasional |
 
-**Primary for the experiment (revised 2026-09-13): F + X, with B per brand where terms are archived, S as
-the always-on fallback, P only inside a founder-approved budget, O whenever a pair is actually at hand.**
-Routes F, X, B, P and O all produce photographs of branded sneakers and therefore run **under the accepted
+**Primary for the experiment (revised 2026-09-13, second revision the same day): F, with B per brand where
+terms are archived, S as the always-on fallback, P only inside a founder-approved budget, O whenever a pair
+is actually at hand. No route X.**
+Routes F, B, P and O all produce photographs of branded sneakers and therefore run **under the accepted
 trademark posture and its §5 operating rule** (`../TRADEMARK_RISK_REVIEW.md`, ACCEPTED 2026-09-08); route S
 is unaffected by it. **The two-piece stress test (`C2_SUSTAINABILITY_TEST.md`) decides whether this primary
 holds** — it is not assumed to.
 
 **Fall-through, per item.** Take the first route that can supply the item; if it cannot inside the item's
-time box, move to the next. With no paid budget on file the practical order is **F → X → B → S**; the stress
+time box, move to the next. With no paid budget on file the practical order is **F → B → S**; the stress
 test records how many items *would have* used P, so the founders can decide whether a small paid budget is
 worth approving. An item that reaches S is a valid item; a piece that reaches S on more than two of seven
 items is a valid piece **and** a finding to report (see the test's decision rule).
@@ -49,8 +57,8 @@ turns it into a cleared image:
 - the creator "can be credited", "was credited", or "probably wouldn't mind";
 - it was "found online".
 
-An image whose rights are not established is logged as **UNCLEAR / PENDING / BLOCKED** in the candidate log
-and is never given an asset ID. The only ways an image becomes an asset are the six routes above, each with
+An image whose rights are not established is logged as **UNCLEAR / BLOCKED** in the candidate log and is
+never given an asset ID. The only ways an image becomes an asset are the five active routes above, each with
 its evidence archived (`SOURCE_CLASS_DECISION.md` §1). Trademark posture and copyright permission are separate
 questions: the accepted trademark posture does not grant copyright permission to any photograph.
 
@@ -105,46 +113,19 @@ Pixabay stays excluded for any branded product.
    could carry is a plain-text line (`Photo: <author>, CC BY <version>, via <Commons|Flickr>, cropped` — no
    URL, no @-mention) that cannot include the licence link the licence prefers. That unresolved ambiguity is
    why CC BY is excluded from the initial test; reopening it needs that check done first.
-6. **Time-box** each item at 10 minutes of search before falling through to route X or S. Log the minutes.
+6. **Time-box** each item at 10 minutes of search before falling through to route B (if the brand qualifies)
+   or route S. Log the minutes.
 
-## Route X — permissioned creator imagery
+## Route X — permissioned creator imagery: NOT ACTIVE (founder decision, 2026-09-13)
 
-The originality rules explicitly recognise licensing agreements and creator permissions; this route is the
-practical long tail for specific colorways. It is slow, so it is run in batches, early.
-
-**Who may grant permission.** Only the **photographer or rights holder** — the person who took the photograph.
-A repost page, a fan page, a "sneaker photography" aggregator, a retailer account or a brand account cannot
-grant it. Before asking, confirm the profile is a photographer's or collector's own work (their own shots,
-consistent style, no reposts). Sources of such people: Flickr sneaker photographers, Unsplash and Pexels
-contributors whose other work is not under a free licence, collectors in the founders' own circle, sneaker
-photography communities.
-
-**Who asks, and from where.** A founder, **from a personal e-mail address or personal account — never from
-`thestreetwearofficial` or `sneakerbong`.** The two experiment accounts are frozen and carry no outreach of
-any kind during the test; a permission request is not advertiser outreach or a Collab, but it must not
-touch the frozen accounts' activity either. Use the template in `c2_stress_test/PERMISSION_REQUEST_TEMPLATE.md`.
-
-**What the permission must cover** — a reply that lacks any of these is a partial permission and is followed
-up, not logged as cleared:
-
-- that the grantor **took the photograph and holds the rights**;
-- the **scope**: one feed post (Reel, carousel or static) on either of the two named accounts, within
-  **six months** of the date of permission, non-exclusive, no fee; the post may in the end not be published
-  at all (prototype and reserve use);
-- **credit**: plain-text credit in the caption if they want it (name as they give it); **no tag, no
-  @-mention, no Collab, no link** — those would breach the locked no-Collab / no-outreach rule and the caption
-  policy, so they are never offered;
-- that nothing is offered in return, and that the post is editorial and implies no endorsement by the
-  grantor or by any brand.
-
-**Archive the whole thread** (screenshot and text, dated) at `local://permissions/YYYY-MM-DD-<grantor>.pdf`
-and put that path in `licence_text_archived_at` — the validator refuses a `PERMISSIONED` row without it.
-Record the grantor's name in `source_name` and the scope in `permitted_use` / `restrictions`.
-
-**Timing rule.** Active time (finding the person, writing, logging the reply) is logged as active; the wait
-is logged as **passive** and kept separate. For the stress test a request unanswered after **7 days** falls
-through to the next route; a "yes" that arrives later is banked for a future piece. "Yes, just credit me" is
-a permission (log it, credit them). Credit given without a reply is **not**.
+The founders will not solicit permissions from creators, photographers, Instagram accounts or other third
+parties, and will not run a request queue or wait on replies. **No candidate is logged as pending a
+permission; no permission-request message exists in this repository** (the earlier template was withdrawn
+the same day it was written, before any request was sent). An image that would only be usable with a
+permission the founders are not going to ask for is logged `REJECTED`, reason `UNCLEAR_RIGHTS` (or
+`LICENCE`), and the item falls through to route B or S. Credit is not permission, and this decision does not
+make it one. The `PERMISSIONED` class remains defined in `SOURCE_CLASS_DECISION.md` §1 only because
+`GATES.md` §1.2 (locked) lists it; reopening the route would be a founder decision.
 
 ## Route B — brand press assets, per brand only
 
@@ -198,10 +179,9 @@ above. Until then the plan is a shape, not a schedule:
 |---|---|---|
 | 1 | Idea-bank themes checked against what the test showed is findable (`../backlog/IDEA_BANK.md`) | 1 h |
 | 2 | Route F pass for the items the next four themes need, ownership-plausibility checks done, licences archived | (measured min/image) × N |
-| 3 | Route X batch: permission requests sent for the long-tail items, ≥ 10 days ahead | 15 min per ask + wait |
-| 4 | Route B: PUMA page re-read and archived if a PUMA item is in scope | 10 min |
-| 5 | Silhouette library: the 8 models the themes use most | 3 h |
-| 6 | Provenance rows for all of the above; `python3 tools/validate_provenance.py` clean | 1 h |
+| 3 | Route B: PUMA page re-read and archived if a PUMA item is in scope | 10 min |
+| 4 | Silhouette library: the 8 models the themes use most | 3 h |
+| 5 | Provenance rows for all of the above; `python3 tools/validate_provenance.py` clean | 1 h |
 
 The 42 comprise 28 for the four Week-1 C2 pieces and 14 for the two C2 reserve pieces; the stress test's 14
 assets count toward the 42 **only if** the prototypes are promoted to reserve (`C2_SUSTAINABILITY_TEST.md`
@@ -212,7 +192,7 @@ figure is computed in `c2_stress_test/RESULTS.md` from measured times.
 
 The pre-declared decision rule is in `C2_SUSTAINABILITY_TEST.md` §5. In short: if the two pieces cannot be
 produced rights-clean inside 1.5 × their declared budgets, or if fewer than 5 of 7 items per piece can be
-sourced from the photographic routes (F / X / B / P / O) so that C2 becomes an illustration-led engine, or if
+sourced from the photographic routes (F / B / P / O) so that C2 becomes an illustration-led engine, or if
 the extrapolation to 21 pieces does not fit the weekly rhythm, **the finding is escalated to the founders —
 it is not solved by relaxing a rule, by reducing the item count, by admitting AI to C2, or by treating a
 credited image as cleared.** The idea bank may change (rankings are written toward what the test showed is
@@ -254,3 +234,7 @@ product at 80–90 % of plate width, on the house plate (`../templates/C2_RANKIN
 approval"; a 15-hour bank build beginning with a pair inventory, a rig and a 20-pair × 3-angle shoot; failure
 path "shift to O + S". Withdrawn on the founders' statement of 2026-09-13 that no such inventory exists. The
 classes, the evidence rules and the trademark narrowing are unchanged.
+
+*Later on 2026-09-13.* The first revision of that day made "F + X" the primary and ran route X on a
+seven-day permission window with a passive wait. Withdrawn the same day by the founders' decision not to
+solicit permissions; route X is no longer on the active path and the wait stage is gone from the test.

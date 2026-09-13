@@ -9,7 +9,9 @@ nominative-use operating rule, which is mandatory on every piece. Research basis
 
 **Revision of 2026-09-13.** The founders stated that they have no meaningful access to a sneaker inventory
 and cannot self-shoot products at scale. The C2 order below is re-ranked accordingly: `OWNED` moves from
-first to last and becomes opportunistic; `LICENSED_FREE` and `PERMISSIONED` become the primary pair. The
+first to last and becomes opportunistic; `LICENSED_FREE` becomes the primary class. **Later the same day the
+founders decided not to solicit permissions from any third party, so `PERMISSIONED` is not an active route**
+(it stays defined below because `GATES.md` §1.2 lists it). The
 classes themselves, their evidence requirements and the exclusions are unchanged, so the gate item stays
 passed and no §3 re-review trigger of the trademark review fires (no new imagery route). The C2 order is
 **provisional until the two-piece stress test** (`C2_SUSTAINABILITY_TEST.md`) reports; the test, not this
@@ -28,7 +30,7 @@ images · reposted templates. This document orders those classes per engine and 
 | `OWNED` | The founders' own photographs (faceless product shots of a pair that happens to be at hand — **not a scalable route**, 2026-09-13) | Who shot it, date, device |
 | `LICENSED_FREE` | Unsplash License · Pexels License · CC0 · CC BY (attribution in caption; **CC BY not used in the initial stress test** — founder correction 2026-09-13) | Source URL, photographer, licence name, **archived copy of the licence text**, date, attribution text if required |
 | `LICENSED_PAID` | Adobe Stock Standard (or an equivalent standard licence covering social use) — never an "editorial use only" asset | Licence reference / invoice, archived licence text, date |
-| `PERMISSIONED` | A photographer's, collector's or store's written permission for this use | The message or e-mail, archived, with date and scope |
+| `PERMISSIONED` | A photographer's, collector's or store's written permission for this use — **not an active route: the founders do not solicit permissions (founder decision, 2026-09-13)** | The message or e-mail, archived, with date and scope |
 | `PRESS_VERIFIED` | A brand press asset whose newsroom terms the founders read and archived, and which permit editorial social use | Terms URL, archived text, the clause, date read |
 | `AI_GENERATED` | Six C4 slots only | Tool and version, prompt, seed/params, attestation, reviewer, disclosure, platform label — `../policy/AI_IMAGERY_POLICY_PACK.md` |
 
@@ -63,24 +65,23 @@ permission · anything from another Instagram account · anything with a third-p
    excludes the *trademark* in frame, not the photograph. Covers icons and general releases; covers niche
    colorways poorly — the stress test measures how poorly. Never Unsplash+, never CC BY-SA, never Pixabay
    for a branded product.
-2. `PERMISSIONED` — written permission from the **photographer or rights holder** (never a repost page)
-   for specific images, asked from a founder's personal channel, never from the experiment accounts. Slow,
-   so batched and asked early; the originality rules explicitly recognise licensing agreements and creator
-   permissions. Never with on-post promotion of the grantor during the experiment (no Collabs, no tags, no
-   advertiser adjacency). **Credit is not permission**: an image is `PERMISSIONED` only with the grantor's
-   written reply archived.
-3. `PRESS_VERIFIED` — brand by brand, as for C1 (PUMA on the archived reading; any further brand is a §3
+2. `PRESS_VERIFIED` — brand by brand, as for C1 (PUMA on the archived reading; any further brand is a §3
    re-review trigger — escalate first).
-4. `LICENSED_PAID` — Adobe Stock Standard for gaps, single credits, never editorial-only assets.
+3. `LICENSED_PAID` — Adobe Stock Standard for gaps, single credits, never editorial-only assets.
    **Every purchase needs founder approval** (no spending authority; none on file); a gap-filler, not a
-   route. Items that would have used it are counted by the stress test.
-5. `SELF_GENERATED` illustration — the colour-blocked house silhouette (`C2_SOURCING_ROUTES.md` route S).
+   route. Items that would have used it are counted by the stress test (`WOULD_USE_P`).
+4. `SELF_GENERATED` illustration — the colour-blocked house silhouette (`C2_SOURCING_ROUTES.md` route S).
    Always available; makes a specific colorway recognisable without any photograph. The always-on fallback,
    so no C2 slot is missed for want of a clearable photograph; it reduces the trade-dress residual rather than
    removing it (review §7). Its share per piece is reported, not hidden.
-6. `OWNED` — **opportunistic only** (2026-09-13): a pair that is physically at hand is shot on the plate; no
+5. `OWNED` — **opportunistic only** (2026-09-13): a pair that is physically at hand is shot on the plate; no
    third-party copyright to clear, the same trademark residual as any photograph. Never a planning input;
    no inventory, no rig budget, no theme written toward pairs that are not in the room.
+
+*Not on the active path:* `PERMISSIONED` — **the founders do not send permission requests to creators,
+photographers, Instagram accounts or other third parties** (founder decision, 2026-09-13). An image usable
+only with a permission nobody will ask for is rejected (`UNCLEAR_RIGHTS`), not credited. **Credit is not
+permission.**
 
 ### C3 — Market & Price Intelligence
 

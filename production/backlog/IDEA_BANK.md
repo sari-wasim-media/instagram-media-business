@@ -8,8 +8,9 @@ date and belong to the watchlist the founders build from brand release calendars
 
 Write rankings toward what can be shown **rights-clean without an owned inventory** (2026-09-13 — the
 founders have no meaningful access to one): models findable on free-licence stock under the route F
-discipline, colorways a photographer can be asked for in time (route X, ≥ 10 days ahead), the two brands with
-an archived press reading (route B), and silhouettes in the house illustration library (route S). A pair that
+discipline, the two brands with an archived press reading (route B), and silhouettes in the house illustration
+library (route S) — never a creator's image "with credit", and no permission requests to anyone (founder
+decision, 2026-09-13). A pair that
 happens to be at hand is a bonus, never a plan. See `../assets/C2_SOURCING_ROUTES.md`. The stress test
 (`../assets/c2_stress_test/`) will show which of these actually holds; rewrite the sourcing notes below from
 its results.
@@ -22,7 +23,7 @@ its results.
 | Retro runners ranked by comfort per dollar | comfort, price, availability | a neighbouring theme (`retro-runners-everyday-wearability`) is a stress-test prototype — disjoint items required if this one is queued within its windows |
 | The seven most re-released colorways of the decade, ranked by whether they were worth bringing back | resale premium vs retail, cultural weight | illustration route works well |
 | Best general-release pairs of the year so far | availability, price, wearability | needs current-year knowledge |
-| Every mainstream low-top ranked by how many wears it survives | durability, materials | worn-in photos would need route X (a collector's own) — otherwise F or S |
+| Every mainstream low-top ranked by how many wears it survives | durability, materials | worn-in photos are unlikely on free stock — F or S; no creator outreach |
 | Tier list: the "dad shoe" families, S to C | design, comfort, price | **used as stress-test prototype `TEST-C2-REE-01`** — if queued later, disjoint items from the prototype's within the anti-duplication windows |
 | Seven pairs that lost the most value from retail, ranked | resale delta (C3 rules for the numbers) | pair with a C3 dataset |
 | The seven best pairs for a rainy city, ranked | sole, materials, price | F or X |

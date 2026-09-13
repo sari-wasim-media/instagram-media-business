@@ -450,7 +450,7 @@ founders may override any of them before Day 1.
 | **Story rotation and sticker** | Mon DROP CALENDAR · Tue PRICE CHECK · Wed THE POLL · Thu DESK NOTES · Fri THE VERDICT · Sat TWO SHOES · Sun THE WEEK; sticker weekday **Wednesday**, poll by default, quiz allowed; Wednesday posted manually until scheduler sticker support is proven | `production/templates/STORY_TEMPLATE_AND_ROTATION.md` |
 | **AI disclosure line and placement** | "Imagery in this post is AI-generated and illustrative. It does not depict a real product." — verbatim as the last caption line before the hashtags in all six AI posts, platform AI label on; **nothing on the artwork** | `production/policy/AI_IMAGERY_POLICY_PACK.md` §3 |
 | **AI generation tool** | **Adobe Firefly** (web), free tier first; alternate Google Gemini. Licence verification, account creation and any paid plan are founder actions (Sourcing Gate item 9; no spending authority) | `production/policy/AI_IMAGERY_POLICY_PACK.md` §5, `production/operations/TOOLING.md` |
-| **Source-class priority per engine** | C1: self-generated → owned → licensed → verified press · **C2 (revised 2026-09-13): licensed free → permissioned → verified press → licensed paid (founder-approved spend) → self-generated illustration → owned (opportunistic only)** · C3: self-generated only · C4: self-generated → owned → licensed → AI in the six slots. Product photography of branded sneakers runs under the accepted trademark posture and its §5 operating rule (2026-09-08). The C2 order is provisional until the two-piece stress test reports | `production/assets/SOURCE_CLASS_DECISION.md` |
+| **Source-class priority per engine** | C1: self-generated → owned → licensed → verified press · **C2 (revised 2026-09-13): licensed free → verified press → licensed paid (founder-approved spend) → self-generated illustration → owned (opportunistic only); permissioned is not an active route (founder decision, 2026-09-13: no permission outreach)** · C3: self-generated only · C4: self-generated → owned → licensed → AI in the six slots. Product photography of branded sneakers runs under the accepted trademark posture and its §5 operating rule (2026-09-08). The C2 order is provisional until the two-piece stress test reports | `production/assets/SOURCE_CLASS_DECISION.md` |
 | **Compliant data sources** | Press releases, published reports and brand release notes are the sources; marketplace listing pages, aggregators and secondary reporting are not; product pages confirm only | `production/assets/C3_DATA_SOURCE_TOS_REGISTER.md` |
 | **Caption and hashtag form** | Hook · body · source line · AI line (six posts) · 3–5 tags (2–3 subject + 1 fixed category + ≤ 1 community; ban list); alt text always; American spelling; no CTA, link, mention, location | `production/policy/CAPTION_AND_HASHTAG_POLICY.md` |
 | **Comment-reply policy** | Substantive comments answered within 24 h, ≤ 15 replies per post, like all non-spam, hide spam, no pins, no DM outreach, identical on both accounts | `production/policy/COMMENT_REPLY_POLICY.md` |
@@ -481,15 +481,14 @@ Under the delegated production authority of 2026-09-08 (sourcing implementation)
   Pexels License → Unsplash License → other clearly licensed-free assets only where the requirements are
   unambiguous and met exactly; **CC BY not used in the initial test** — founder correction on review,
   2026-09-13 — kept in the class as a possible future route pending an attribution check; with an
-  ownership-plausibility check per candidate) → `PERMISSIONED` (the photographer's written permission, asked
-  from a founder's personal channel, never from the experiment accounts) → `PRESS_VERIFIED` (PUMA on the
+  ownership-plausibility check per candidate) → `PRESS_VERIFIED` (PUMA on the
   archived reading; any further brand is a trademark-review §3 trigger) → `LICENSED_PAID` (founder approval
   per purchase; none on file) → `SELF_GENERATED` illustration (always-on fallback; its share is reported) →
   `OWNED` (opportunistic only). The six routes are unchanged in kind — none added, none removed — so no
   re-review trigger fires; the trademark review's §5 rule and §6 narrowing apply unchanged.
 - **Credit is not permission.** An image that is merely public, on Instagram, on Pinterest, on a retailer
-  page, watermarked, reposted elsewhere or "creditable" is not rights-clean; it is logged UNCLEAR / PENDING /
-  BLOCKED and never receives an asset ID. Trademark posture and copyright permission are separate questions.
+  page, watermarked, reposted elsewhere or "creditable" is not rights-clean; it is logged UNCLEAR / BLOCKED
+  and never receives an asset ID. Trademark posture and copyright permission are separate questions.
 - **Sequence:** the two-piece C2 sourcing stress test (protocol v2, `production/assets/C2_SUSTAINABILITY_TEST.md`,
   package in `production/assets/c2_stress_test/`) runs **before** the 42-image bank; the bank is sized by
   its measured minutes per image. The two pieces are **non-publishing prototypes** (`TEST-C2-CAR-01`,
@@ -502,16 +501,41 @@ Under the delegated production authority of 2026-09-08 (sourcing implementation)
 **Rationale:** the founders' stated constraint; the conservative sourcing posture already in force; and the
 gate's own rule that the route changes, never the matrix. Founders may override any of this before Day 1.
 
+### No permission outreach to creators or third parties — **ACTIVE** (Founder decision, 2026-09-13)
+**Decided by Sari and Wasim.** For the controlled experiment's sourcing, the founders **will not send
+permission requests to creators, photographers, Instagram accounts or any other third party** — no DMs, no
+e-mails, no waiting for replies, no permission-request queue, no reliance on one-off creator approvals as a
+scalable source. **Route X (permissioned creator imagery) is removed from the active sourcing path**, the
+permission-request template is withdrawn, and the stress test has no permission stage, no passive wait and
+no seven-day lapse.
+
+**What this does not mean.** It is not licence to use anything found online with a credit. Instagram reposts,
+Pinterest images, TikTok screenshots, retailer images, random web images and watermarked creator content are
+**not** an approved route and are not made one by attribution. **Credit is not permission.** An asset whose
+rights basis is not clear under the project's sourcing posture is classified unavailable / rejected. The
+`PERMISSIONED` class stays defined in the register schema only because the locked `GATES.md` §1.2 lists it
+as an acceptable class; no workflow solicits one, and reopening the route is a founder decision.
+
+**Active C2 route hierarchy after this decision** (`production/assets/C2_SOURCING_ROUTES.md`): F licensed
+free (CC0 / public domain → Pexels → Unsplash → other unambiguous free licences; CC BY not used in the initial
+test) → B verified brand / press assets where the terms clearly permit the editorial use → P paid stock only
+with founder spending approval (`WOULD_USE_P` recorded during the test) → S house illustration → O owned,
+opportunistic only. If the 14-image test cannot be completed sustainably on those routes, the verdict is NOT
+SUSTAINABLE and the next step is founder escalation — not a weaker route.
+
+**Rationale (founders'):** a deliberate operating decision — the desk does not run outreach, does not wait
+days on replies, and does not build its production on approvals it cannot repeat.
+
 ## Pending founder decisions and actions
 
 - **AI tool licence verification and account** — confirm Adobe Firefly's current terms against the prepared
   memo (dates re-checked unchanged 2026-09-13), record tool, version, plan and date (Sourcing Gate item 9);
   any paid plan needs founder approval. A confirmed licence does not make AI a C2 route.
 - **Run the two-piece C2 sourcing stress test** — founder execution per
-  `production/assets/c2_stress_test/FOUNDER_INSTRUCTIONS.md`; the permission requests are external contacts
-  only the founders can make.
-- **If the test reports WITH CONDITIONS:** a small paid-stock budget (spend), acceptance of an illustration
-  share, or a longer route X lead — founder answers.
+  `production/assets/c2_stress_test/FOUNDER_INSTRUCTIONS.md` (the founders' own sourcing minutes are what it
+  measures).
+- **If the test reports WITH CONDITIONS:** a small paid-stock budget (spend) or acceptance of an illustration
+  share — founder answers.
 - **Any paid stock credits** (route P) — founder approval before purchase.
 - **Git finalization** of the task branch — `WORKFLOW.md` §4.
 

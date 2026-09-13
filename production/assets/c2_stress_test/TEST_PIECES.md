@@ -81,7 +81,7 @@ filename (`TEST-C2-CAR-01__AST-nnnn.<ext>`).
 | 4 | adidas Ozweego | 'Core Black' | adidas | mid |
 | 5 | Hoka Bondi 8 | 'White' | Hoka (Deckers) | mid; **no press route** (Deckers terms prohibit) |
 | 6 | PUMA RS-X | 'White Black' | PUMA | **route B exercise** — PUMA Media Hub, founders confirm the wording and "media channels" on the day, archive the page |
-| 7 | Balenciaga Triple S | 'Grey' | Balenciaga | hard; free stock unlikely; the realistic route X / S case |
+| 7 | Balenciaga Triple S | 'Grey' | Balenciaga | hard; free stock unlikely; the realistic route S case |
 | alt A | Skechers D'Lites | 'White Silver' | Skechers | — |
 | alt B | ASICS Gel-Nimbus 9 | 'White Silver' | ASICS | — |
 
