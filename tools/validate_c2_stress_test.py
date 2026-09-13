@@ -5,18 +5,20 @@ Usage:  python3 tools/validate_c2_stress_test.py [--example]
 
 Reads production/assets/c2_stress_test/candidates_log.csv and timing_log.csv (the _EXAMPLE files with
 --example), production/assets/provenance_register.csv and production/templates/template_constants.json.
-Checks (from C2_SUSTAINABILITY_TEST.md v2 and C2_SOURCING_ROUTES.md, revised 2026-09-13):
+Checks (from C2_SUSTAINABILITY_TEST.md v2 and C2_SOURCING_ROUTES.md, revised 2026-09-13 — no route X: the
+founders do not solicit permissions, so there is no permission stage, no passive wait and no PENDING state):
 
-  * every candidate has an id, a known piece, an item number 1..N, a route and a known clearance status;
+  * every candidate has an id, a known piece, an item number 1..N, an ACTIVE route (F B P S O) and a known
+    clearance status; a route X candidate is refused outright;
   * a CLEARED candidate passed all three checks (trademark-rule fit, ownership plausibility, licence), carries
     an asset ID that exists in the provenance register under the same piece with the class its route implies,
-    and — for routes F / X / B / P — has its evidence archived; a route X clearance has both permission dates;
+    and — for routes F / B / P — has its evidence archived;
   * "credited" is never "cleared": a CLEARED row with a licence/ownership check blank or N fails;
-  * a REJECTED / LAPSED / SWAPPED_OUT row states its reason; at most one CLEARED candidate per item;
-  * timing rows use the fixed stage list; PERMISSION_WAIT is passive and nothing else is; minutes are numbers;
-  * summary: active minutes per piece and per stage, passive wait, cleared route mix, S share, rejections by
-    reason, swaps, usable routes, share satisfied without paid spend, would-have-used-P count, minutes per
-    cleared image, and the extrapolation formulas of C2_SUSTAINABILITY_TEST.md §7;
+  * a REJECTED / SWAPPED_OUT row states its reason; at most one CLEARED candidate per item;
+  * timing rows use the fixed stage list; every stage is active founder time; minutes are numbers;
+  * summary: minutes per piece and per stage, cleared route mix, S share, rejections by reason, swaps, usable
+    routes, share satisfied without paid spend, would-have-used-P count, minutes per cleared image, and the
+    extrapolation formulas of C2_SUSTAINABILITY_TEST.md §7;
   * the pre-declared decision rule (§5) is read out when both pieces are complete; otherwise INCOMPLETE.
 
 A passing run means the logs are complete and internally consistent. It does not mean a founder verified a
@@ -33,21 +35,20 @@ CONSTANTS = os.path.join(ROOT, "production", "templates", "template_constants.js
 CAND_COLS = ["candidate_id", "piece_ref", "item_no", "item_name", "colorway", "route", "source_name",
              "source_url_or_ref", "licence_as_displayed", "creator_or_rightsholder", "found_by", "date_checked",
              "tm_rule_fit", "ownership_plausible", "licence_ok", "attribution_required", "clearance_status",
-             "rejection_reason", "permission_requested_date", "permission_reply_date", "asset_id",
-             "evidence_archived_at", "notes"]
-TIME_COLS = ["entry_id", "piece_ref", "item_no", "stage", "active_or_passive", "started_utc", "finished_utc",
-             "minutes", "who", "notes"]
+             "rejection_reason", "asset_id", "evidence_archived_at", "notes"]
+TIME_COLS = ["entry_id", "piece_ref", "item_no", "stage", "started_utc", "finished_utc", "minutes", "who", "notes"]
 
-ROUTES = {"F": "LICENSED_FREE", "X": "PERMISSIONED", "B": "PRESS_VERIFIED", "P": "LICENSED_PAID",
-          "S": "SELF_GENERATED", "O": "OWNED"}
-PHOTOGRAPHIC = {"F", "X", "B", "P", "O"}
-EVIDENCE_REQUIRED = {"F", "X", "B", "P"}
-STATUSES = {"CANDIDATE", "CLEARED", "REJECTED", "PENDING", "UNCLEAR", "BLOCKED", "LAPSED", "SWAPPED_OUT"}
+ROUTES = {"F": "LICENSED_FREE", "B": "PRESS_VERIFIED", "P": "LICENSED_PAID", "S": "SELF_GENERATED", "O": "OWNED"}
+INACTIVE_ROUTES = {"X": "route X (permissioned creator imagery) is not active — the founders do not solicit "
+                        "permissions (founder decision, 2026-09-13); reject the candidate as UNCLEAR_RIGHTS instead"}
+PHOTOGRAPHIC = {"F", "B", "P", "O"}
+EVIDENCE_REQUIRED = {"F", "B", "P"}
+STATUSES = {"CANDIDATE", "CLEARED", "REJECTED", "UNCLEAR", "BLOCKED", "SWAPPED_OUT"}
 REASONS = {"PEOPLE", "CONTEXT", "LICENCE", "LAUNDERED", "WATERMARK", "WRONG_ITEM", "QUALITY",
-           "COUNTERFEIT_RISK", "DUPLICATE", "NO_REPLY", "DECLINED", "NOT_FOUND", "UNCLEAR_RIGHTS", "OTHER"}
-STAGES = ["THEME", "DISCOVERY", "RIGHTS_VERIFY", "PERMISSION_REQUEST", "PERMISSION_WAIT", "ASSET_PREP",
-          "PROVENANCE", "ILLUSTRATION", "RESEARCH", "LAYOUT", "REEL_ASSEMBLY", "CAPTION_QA"]
-SOURCING_STAGES = {"DISCOVERY", "RIGHTS_VERIFY", "PERMISSION_REQUEST", "ASSET_PREP", "PROVENANCE", "ILLUSTRATION"}
+           "COUNTERFEIT_RISK", "DUPLICATE", "NOT_FOUND", "UNCLEAR_RIGHTS", "OTHER"}
+STAGES = ["THEME", "DISCOVERY", "RIGHTS_VERIFY", "ASSET_PREP", "PROVENANCE", "ILLUSTRATION", "RESEARCH",
+          "LAYOUT", "REEL_ASSEMBLY", "CAPTION_QA"]
+SOURCING_STAGES = {"DISCOVERY", "RIGHTS_VERIFY", "ASSET_PREP", "PROVENANCE", "ILLUSTRATION"}
 PIECES = {"TEST-C2-CAR-01": ("Carousel", 90), "TEST-C2-REE-01": ("Reel", 115)}
 PASS_FACTOR = 1.5
 PIECES_PER_WEEK = 21 / 6.0
@@ -93,7 +94,7 @@ def main():
     if dup: fail(f"duplicate candidate_id: {dup}")
 
     cleared = defaultdict(dict)           # piece -> item_no -> row
-    rejected = Counter(); swaps = Counter(); pending = Counter(); unclear = Counter()
+    rejected = Counter(); swaps = Counter(); unclear = Counter()
     routes_used = defaultdict(Counter)    # piece -> route -> cleared count
     would_use_p = Counter()
     prescan = 0
@@ -112,8 +113,10 @@ def main():
             fail(f"{cid}: item_no must be 1..{n_items}")
         if status not in STATUSES:
             fail(f"{cid}: unknown clearance_status '{status}'"); continue
-        if status != "SWAPPED_OUT" and route not in ROUTES:
-            fail(f"{cid}: unknown route '{route}' (F X B P S O)")
+        if route in INACTIVE_ROUTES:
+            fail(f"{cid}: {INACTIVE_ROUTES[route]}")
+        elif status != "SWAPPED_OUT" and route not in ROUTES:
+            fail(f"{cid}: unknown route '{route}' (active routes: F B P S O)")
         if r.get("found_by", "").strip().upper() == "CLAUDE_PRESCAN":
             prescan += 1
         if "WOULD_USE_P" in r.get("notes", "").upper():
@@ -138,24 +141,18 @@ def main():
                 if route in ROUTES and reg.get("class", "").strip() != ROUTES[route]:
                     fail(f"{cid}: route {route} implies class {ROUTES[route]} but the register says '{reg.get('class')}'")
             if route in EVIDENCE_REQUIRED and not r.get("evidence_archived_at", "").strip():
-                fail(f"{cid}: route {route} CLEARED without evidence_archived_at (licence / permission / terms archived)")
-            if route == "X" and not (r.get("permission_requested_date", "").strip() and r.get("permission_reply_date", "").strip()):
-                fail(f"{cid}: route X CLEARED needs both permission_requested_date and permission_reply_date")
+                fail(f"{cid}: route {route} CLEARED without evidence_archived_at (licence / terms archived)")
             if item in cleared[piece]:
                 fail(f"{cid}: item {item} of {piece} already has a CLEARED candidate ({cleared[piece][item]['candidate_id']})")
             else:
                 cleared[piece][item] = r
                 routes_used[piece][route] += 1
-        elif status in ("REJECTED", "LAPSED", "SWAPPED_OUT"):
+        elif status in ("REJECTED", "SWAPPED_OUT"):
             reason = r.get("rejection_reason", "").strip().upper()
             if reason not in REASONS:
                 fail(f"{cid}: {status} needs a rejection_reason from {sorted(REASONS)}")
             if status == "SWAPPED_OUT": swaps[piece] += 1
             else: rejected[reason] += 1
-        elif status == "PENDING":
-            pending[piece] += 1
-            if not r.get("permission_requested_date", "").strip():
-                fail(f"{cid}: PENDING without permission_requested_date")
         elif status in ("UNCLEAR", "BLOCKED"):
             unclear[piece] += 1
     ok("candidate rows checked")
@@ -169,28 +166,23 @@ def main():
     tids = Counter(r["entry_id"].strip() for r in times)
     dup = [k for k, v in tids.items() if v > 1]
     if dup: fail(f"duplicate entry_id: {dup}")
-    active = defaultdict(lambda: defaultdict(float))   # piece -> stage -> minutes
-    passive = defaultdict(float)
+    active = defaultdict(lambda: defaultdict(float))   # piece -> stage -> minutes (all founder time is active)
     for r in times:
         tid = r.get("entry_id", "").strip() or "<no id>"
         piece = r.get("piece_ref", "").strip()
         stage = r.get("stage", "").strip().upper()
-        mode = r.get("active_or_passive", "").strip().upper()
         if not (piece.startswith("TEST-C2-") or piece.startswith("RESERVE-C2-")):
             fail(f"{tid}: piece_ref '{piece}' is not a TEST-C2-* / RESERVE-C2-* piece")
+        if stage in ("PERMISSION_REQUEST", "PERMISSION_WAIT"):
+            fail(f"{tid}: stage '{stage}' no longer exists — no permission outreach (founder decision, 2026-09-13)"); continue
         if stage not in STAGES:
             fail(f"{tid}: unknown stage '{stage}' ({', '.join(STAGES)})"); continue
-        if stage == "PERMISSION_WAIT" and mode != "PASSIVE":
-            fail(f"{tid}: PERMISSION_WAIT must be PASSIVE")
-        if stage != "PERMISSION_WAIT" and mode != "ACTIVE":
-            fail(f"{tid}: {stage} must be ACTIVE (only PERMISSION_WAIT is passive)")
         try:
             m = float(r.get("minutes", "").strip())
             if m < 0: raise ValueError
         except ValueError:
             fail(f"{tid}: minutes must be a non-negative number"); continue
-        if mode == "PASSIVE": passive[piece] += m
-        else: active[piece][stage] += m
+        active[piece][stage] += m
     ok("timing rows checked")
 
     # ---- summary
@@ -211,12 +203,11 @@ def main():
         limit = budget * PASS_FACTOR
         print(f"\n{piece} ({fmt}) — cleared {n}/{n_items}"
               + (" COMPLETE" if complete[piece] else " INCOMPLETE")
-              + f"; pending {pending.get(piece, 0)}; unclear/blocked {unclear.get(piece, 0)}; swaps {swaps.get(piece, 0)}")
+              + f"; unclear/blocked {unclear.get(piece, 0)}; swaps {swaps.get(piece, 0)}")
         print(f"  active minutes: {tot:.0f} / budget {budget} (pass <= {limit:.0f})"
               + ("" if tot <= limit else "  ** OVER **"))
         print("  by stage: " + ", ".join(f"{k} {act[k]:.0f}" for k in STAGES if k in act))
-        print(f"  sourcing minutes (discovery+verify+request+prep+provenance+illustration): {sourcing:.0f}")
-        print(f"  passive permission wait: {passive.get(piece, 0):.0f} min")
+        print(f"  sourcing minutes (discovery+verify+prep+provenance+illustration): {sourcing:.0f}")
         mix = ", ".join(f"{k} {v}" for k, v in sorted(routes_used[piece].items()))
         print(f"  cleared route mix: {mix or '—'}   photographic {photo}/{n}   S {s_n}/{n}")
         paid = routes_used[piece].get("P", 0)
@@ -248,7 +239,6 @@ def main():
             elif photographic_ok[piece] == 4: cond.append(f"{piece}: route S on 3/{n_items}")
             if unclear.get(piece, 0): stop.append(f"{piece}: {unclear[piece]} UNCLEAR/BLOCKED candidate(s) on record — founders confirm none was needed")
             if would_use_p.get(piece, 0): cond.append(f"{piece}: {would_use_p[piece]} item(s) would have used P (a spend decision)")
-            if passive.get(piece, 0) > 10 * 24 * 60: cond.append(f"{piece}: a permission wait exceeded the 10-day check-out lead")
         if weekly is not None:
             if weekly > 6: stop.append(f"extrapolated weekly load {weekly:.1f} h > 6 h")
             elif weekly > 4: cond.append(f"extrapolated weekly load {weekly:.1f} h is between 4 and 6 h")

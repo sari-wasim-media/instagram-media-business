@@ -37,15 +37,17 @@ of external terms, and Git finalization.
 | B2 | Adobe Firefly: **confirm** the current terms against the prepared reading (`assets/FIREFLY_TERMS_VERIFICATION.md`, 2026-09-11 — clauses quoted and mapped, checklist in §4), create the account, record tool · version · plan · date; approve a paid plan only if the free allowance proves too small | Acceptance of external terms; possible spend; Sourcing Gate item 9 names the founders | `assets/FIREFLY_TERMS_VERIFICATION.md`; `policy/AI_IMAGERY_POLICY_PACK.md` §5 |
 | B3 | Any paid stock credits (route P), if ever needed | Spend | `assets/C2_SOURCING_ROUTES.md` |
 | B4 | Git finalization — each task branch's add / commit / push / PR / merge | `WORKFLOW.md` §4 | — |
-| B5 | **Run the two-piece C2 sourcing stress test** (2026-09-13): the manual sourcing, the route X permission requests from a personal channel, the route B readings on the day, the two pieces, the logs and the results | The test measures *founder* burden and makes external contacts (permission requests) that Claude cannot make; its verdict may be a STOP the founders must hear | `assets/c2_stress_test/FOUNDER_INSTRUCTIONS.md` |
-| B6 | If the stress test reports WITH CONDITIONS: answer each condition — a small paid-stock budget (spend), acceptance of an illustration share, a longer route X lead | Spend; a material change to what C2 looks like | `assets/c2_stress_test/RESULTS.md` §6 |
+| B5 | **Run the two-piece C2 sourcing stress test** (2026-09-13): the manual sourcing on routes F, B and S, the route B readings on the day, the two pieces, the logs and the results — **no permission requests to anyone** (founder decision, 2026-09-13) | The test measures *founder* burden; its verdict may be a STOP the founders must hear | `assets/c2_stress_test/FOUNDER_INSTRUCTIONS.md` |
+| B6 | If the stress test reports WITH CONDITIONS: answer each condition — a small paid-stock budget (spend) or acceptance of an illustration share | Spend; a material change to what C2 looks like | `assets/c2_stress_test/RESULTS.md` §6 |
 
 Everything else in the pre-launch path is founder **execution** of decided instruments (the stress test,
 then the bank build sized by it, AI test piece, baselines, backlog seeding), listed in `PRE_LAUNCH_RUNBOOK.md`.
 
 **Founder fact recorded 2026-09-13:** Sari and Wasim do not have meaningful access to a sneaker inventory and
 cannot self-shoot at scale. The sourcing plan was corrected accordingly (`assets/C2_SOURCING_ROUTES.md`); the
-correction is a delegated production decision and changes no lock.
+correction is a delegated production decision and changes no lock. **Founder decision, later the same day:
+no permission outreach to creators or any third party** — route X is off the active sourcing path
+(`DECISIONS.md`).
 
 ## Findings recorded during the sprint (unchanged)
 

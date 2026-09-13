@@ -44,10 +44,13 @@ decision remain open** (Sourcing Gate item 9 is not passed). **Zero posts publis
 **do not have meaningful access to a sneaker inventory and cannot self-shoot products at scale.** The
 pre-launch plan had assumed the opposite: its primary C2 route was founder photography (a rig and a 20-pair
 shoot, ≈ 40 % of the 147 images). That assumption is withdrawn. The C2 routes are re-ranked as a delegated
-production decision — free-licence stock with an ownership check → creator permission (asked from a personal
-channel, never from the accounts) → verified press (PUMA) → paid stock with approval → house illustration →
-owned photography only when a pair is at hand — and **credit is not permission**: a public, credited or
-reposted image is never rights-clean. The **two-piece C2 sourcing stress test now runs before the bank is
+production decision — free-licence stock with an ownership check → verified press (PUMA) → paid stock with
+approval → house illustration → owned photography only when a pair is at hand — and **credit is not
+permission**: a public, credited or reposted image is never rights-clean. **Later the same day the founders
+decided not to send permission requests to creators, photographers, Instagram accounts or any third party**
+(no DMs, no e-mails, no waiting, no request queue): route X is off the active path, the permission template
+is withdrawn, and the stress test has no permission stage or seven-day wait. This does not make credited
+web images usable — an asset without a clear rights basis is rejected. The **two-piece C2 sourcing stress test now runs before the bank is
 built** (protocol v2 with a pre-declared decision rule; package in `production/assets/c2_stress_test/`:
 two non-publishing prototypes, 14 image requirements, every candidate and every stage logged, a validator).
 It is **prepared, not run** — the founders execute it; if it reports NOT SUSTAINABLE the finding is
@@ -295,7 +298,8 @@ assumed an owned inventory; the stress test measures the replacement).
 photo); marketplace terms do not clearly permit copying prices — under the founders' conservative
 data-source posture (2026-09-08) every marketplace is excluded and C3 runs on published reports and brand
 release notes (`production/assets/C3_DATA_SOURCE_TOS_REGISTER.md`); and (2026-09-13) **the founders have no
-owned inventory**, so C2 relies on free-licence, permissioned, verified-press and illustrated imagery — whether
+owned inventory** and (also 2026-09-13) **do not solicit permissions**, so C2 relies on free-licence,
+verified-press and illustrated imagery, with paid stock only on approval — whether
 that sustains 147 images is exactly what the stress test measures.
 
 *Optional, not blocking:* capture post-change profile screenshots to convert the founder-confirmed bio edit
@@ -312,7 +316,8 @@ checklist items a later decision superseded.
 > **Confirm Adobe Firefly's terms** (the reading is prepared in `production/assets/FIREFLY_TERMS_VERIFICATION.md`,
 > dates re-checked 2026-09-13; the confirmation and the account are yours), then **run the two-piece C2
 > sourcing stress test** per `production/assets/c2_stress_test/FOUNDER_INSTRUCTIONS.md` — two non-publishing
-> prototypes, 14 image requirements, on routes F + X (+ B, S) under the accepted trademark posture, every
+> prototypes, 14 image requirements, on routes F, B and S (P only as `WOULD_USE_P`; no permission outreach)
+> under the accepted trademark posture, every
 > candidate and stage logged — and bring the logs back. Its pre-declared verdict decides whether the 42-image
 > bank is built (sized by the measured minutes per image) or the finding is escalated. Then the AI test piece.
 

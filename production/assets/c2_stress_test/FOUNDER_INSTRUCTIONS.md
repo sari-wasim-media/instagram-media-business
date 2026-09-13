@@ -10,13 +10,12 @@ spends, or touches either Instagram account.
 
 | Item | Where |
 |---|---|
-| The route stack re-ranked for a desk with no owned inventory; credit-is-not-permission rule; route F discipline with the ownership-plausibility check; route X rules and scope | `../C2_SOURCING_ROUTES.md`, `../SOURCE_CLASS_DECISION.md` §2 |
+| The route stack re-ranked for a desk with no owned inventory **and no permission outreach** (both founder decisions, 2026-09-13); credit-is-not-permission rule; route F discipline with the ownership-plausibility check; route X off the active path | `../C2_SOURCING_ROUTES.md`, `../SOURCE_CLASS_DECISION.md` §2 |
 | The stress-test protocol v2 with the pre-declared decision rule | `../C2_SUSTAINABILITY_TEST.md` |
 | The two briefs — 7 items + 2 alternates each, disjoint, one PUMA and one Amer Sports item | `TEST_PIECES.md` |
 | The candidate log and the timing log (headers) with filled examples | `candidates_log.csv`, `timing_log.csv`, `*_EXAMPLE.csv` |
-| The permission-request message, the reply that counts, the record | `PERMISSION_REQUEST_TEMPLATE.md` |
 | The results template with the extrapolation and the verdict table | `RESULTS.md` |
-| A validator that refuses "cleared because credited" and prints the burden summary and the rule's reading | `tools/validate_c2_stress_test.py` |
+| A validator that refuses "cleared because credited", refuses any route X candidate, and prints the burden summary and the rule's reading | `tools/validate_c2_stress_test.py` |
 | Firefly: the three governing documents re-checked on 2026-09-13 — the dates the memo recorded on 2026-09-11 are unchanged | `../FIREFLY_TERMS_VERIFICATION.md` §1, §4 |
 | A Claude discovery **pre-scan** of the 14 items on the free-licence pool (done 2026-09-13, ≈ 6 min): four leads logged as `CANDIDATE` with `found_by = CLAUDE_PRESCAN` — all from one Wikimedia Commons CC0 contributor, two matching the brief's colorway — and ten items with nothing at model level in the CC pool. It clears nothing; the founders re-verify every lead | `PRESCAN_NOTES.md`, `candidates_log.csv` rows CND-0001–0004 |
 
@@ -47,9 +46,10 @@ Founder Lock, which this test cannot do.
    three checks) and log your verification minutes under `RIGHTS_VERIFY`. A pre-scan row never becomes
    CLEARED without a founder's check.
 
-### B3. Day 1 — route F pass and the route X batch (per item; both founders on their own piece)
+### B3. Sourcing — one sitting per piece (per item; both founders on their own piece)
 
-For each of your 7 items, in this order, time-boxed:
+There is nothing to wait for: no permission request is sent to anyone, so each piece's sourcing can be done
+start to finish in one sitting. For each of your 7 items, in this order, time-boxed:
 
 1. **DISCOVERY (≤ 10 min per item on F).** In route F's priority for the initial test: Openverse filtered
    to CC0 / public domain (Commons / Flickr) → Pexels → Unsplash. Search by model, then model + colorway,
@@ -61,9 +61,9 @@ For each of your 7 items, in this order, time-boxed:
    uploader is a photographer not an aggregator, no watermark; (c) licence line in the accept column of
    `../C2_SOURCING_ROUTES.md` route F (never Unsplash+, never BY-SA / NC / ND, and no CC BY in this test).
    Reject on doubt; log the reason.
-3. If F yields nothing inside the box: **PERMISSION_REQUEST** — find the photographer (Flickr, a contributor's
-   non-free work, your own circle), send the message in `PERMISSION_REQUEST_TEMPLATE.md` **from your personal
-   e-mail or personal account**, log `PENDING` with the date. Send all route X requests on day 1. Move on.
+3. If F yields nothing inside the box, **do not contact anyone.** No DM, no e-mail, no "would you mind if".
+   An image that would only be usable with a permission is logged `REJECTED`, reason `UNCLEAR_RIGHTS`, and
+   the item goes to route B (if the brand qualifies) or route S — or to a logged swap.
 4. PUMA item (`TEST-C2-REE-01` item 6) and Salomon item (`TEST-C2-CAR-01` item 7) — **route B check**: open
    the PUMA Media Hub terms and the Amer Sports newsroom / site terms on the day; confirm the wording recorded
    in `../SOURCING_ROUTES_RESEARCH.md` §1 still stands; decide and write down whether you read PUMA's
@@ -76,12 +76,10 @@ For each of your 7 items, in this order, time-boxed:
    class per route, evidence path), then `asset_id` and `CLEARED` on the candidate row. Run
    `python3 tools/validate_provenance.py` and `python3 tools/validate_c2_stress_test.py` before you stop.
 
-### B4. Days 2–8 — permissions, illustration, swaps
+### B4. Illustration, swaps, the routes that need a founder's word
 
-- Log each permission reply the day it arrives (`PERMISSION_REQUEST` for the active minutes; the wait is
-  `PERMISSION_WAIT`, `PASSIVE`). A reply that does not confirm they took the photograph gets one follow-up.
-- A request unanswered after 7 days: `LAPSED`, reason `NO_REPLY`; the item goes to route S — or, if you judge
-  an illustration inadequate for that item, swap to an alternate (`SWAPPED_OUT`, reason).
+- An item that F and B could not supply goes to route S — or, if you judge an illustration inadequate for
+  that item, swap to an alternate (`SWAPPED_OUT`, reason).
 - **ILLUSTRATION** (route S): the house silhouette recoloured to the colorway, no brand device, plate label
   "Illustration"; a `SELF_GENERATED` provenance row. Time it.
 - Route P: **do not buy anything.** If an item would clearly have been solved by a $3 stock credit, write
@@ -114,15 +112,15 @@ For each of your 7 items, in this order, time-boxed:
 | Evidence | File |
 |---|---|
 | Every candidate, cleared or not, with the three checks and a reason for every rejection | `candidates_log.csv` |
-| Every stage timed, active vs passive, per item where the stage is per item | `timing_log.csv` |
+| Every stage timed, per item where the stage is per item — all of it active founder time | `timing_log.csv` |
 | A provenance row for each of the (up to) 14 cleared assets, evidence paths pointing into the local store | `../provenance_register.csv` |
 | The Firefly confirmation record | `../FIREFLY_TERMS_VERIFICATION.md` §5; `../SOURCING_ROUTES_RESEARCH.md` §6 Firefly row |
 | The PUMA / Amer Sports readings on the day (wording confirmed? "media channels" read to include Instagram?) | `RESULTS.md` §3 and the candidate rows |
 | The filled results, ambiguities, producers' answers, verdict, sign-off | `RESULTS.md` |
 | Two validator runs, clean | pasted into `RESULTS.md` §5 |
 
-**Not** into the repository: the images, the licence PDFs, the permission threads, the Adobe login — all of
-that lives in the local asset store; the repository holds the record.
+**Not** into the repository: the images, the licence PDFs, the Adobe login — all of that lives in the local
+asset store; the repository holds the record.
 
 ## What Claude does after the evidence is back
 

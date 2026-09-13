@@ -12,7 +12,6 @@ nothing is scheduled or published, no date is chosen. The protocol and the pre-d
 |---|---|---|
 | `TEST_PIECES.md` | The two briefs: themes, 7 items + 2 alternates each, formats, budgets | Claude (done) |
 | `FOUNDER_INSTRUCTIONS.md` | The manual run — A (prepared) / B (founders do) / C (evidence back) — including the Firefly confirmation and the route B checks | Claude (done); founders execute |
-| `PERMISSION_REQUEST_TEMPLATE.md` | Route X: the message, the reply that counts, the record | Claude (done); founders send |
 | `candidates_log.csv` | One row per candidate image, cleared or rejected; the three checks; clearance status; reasons | Founders (Claude pre-scan rows possible, marked) |
 | `timing_log.csv` | One row per stage per item; active vs passive | Founders |
 | `RESULTS.md` | The measured table, extrapolation, ambiguities, verdict, sign-off | Founders, then Claude |
@@ -27,13 +26,16 @@ python3 tools/validate_c2_stress_test.py --example  # the filled examples
 python3 tools/validate_provenance.py                # the register, as always
 ```
 
-**Route F in this test** (founder correction, 2026-09-13): CC0 / public domain → Pexels → Unsplash → other
-unambiguous free licences; **CC BY is not used**.
+**Routes in this test** (founder decisions, 2026-09-13): F → B → S, with P recorded as `WOULD_USE_P` only and
+O only if a pair is at hand. **No route X: the founders do not send permission requests to creators,
+photographers, Instagram accounts or any third party** — the earlier template was withdrawn. Inside F: CC0 /
+public domain → Pexels → Unsplash → other unambiguous free licences; **CC BY is not used**. Credit is not
+permission.
 
 **Clearance statuses:** `CANDIDATE` (found, unverified) · `CLEARED` (three checks Y, evidence archived,
-asset ID) · `REJECTED` (reason) · `PENDING` (permission asked) · `LAPSED` (no reply in 7 days) · `UNCLEAR` /
-`BLOCKED` (rights not established — never used) · `SWAPPED_OUT` (item replaced by an alternate, reason).
+asset ID) · `REJECTED` (reason) · `UNCLEAR` / `BLOCKED` (rights not established — never used) ·
+`SWAPPED_OUT` (item replaced by an alternate, reason).
 **Rejection reasons:** `PEOPLE` · `CONTEXT` · `LICENCE` · `LAUNDERED` · `WATERMARK` · `WRONG_ITEM` ·
-`QUALITY` · `COUNTERFEIT_RISK` · `DUPLICATE` · `NO_REPLY` · `DECLINED` · `NOT_FOUND` · `UNCLEAR_RIGHTS` · `OTHER`.
-**Stages:** `THEME` · `DISCOVERY` · `RIGHTS_VERIFY` · `PERMISSION_REQUEST` · `PERMISSION_WAIT` (the only
-passive one) · `ASSET_PREP` · `PROVENANCE` · `ILLUSTRATION` · `RESEARCH` · `LAYOUT` · `REEL_ASSEMBLY` · `CAPTION_QA`.
+`QUALITY` · `COUNTERFEIT_RISK` · `DUPLICATE` · `NOT_FOUND` · `UNCLEAR_RIGHTS` · `OTHER`.
+**Stages** (all active founder time — there is no waiting stage): `THEME` · `DISCOVERY` · `RIGHTS_VERIFY` ·
+`ASSET_PREP` · `PROVENANCE` · `ILLUSTRATION` · `RESEARCH` · `LAYOUT` · `REEL_ASSEMBLY` · `CAPTION_QA`.

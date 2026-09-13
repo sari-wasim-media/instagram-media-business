@@ -14,8 +14,6 @@ Run dates: from ____ to ____ · Piece 1 producer: ____ · Piece 2 producer: ____
 | **Active minutes, total** — pass ≤ 135 / ≤ 172 | | | |
 | Discovery / search (min) | | | |
 | Rights verification (min) | | | |
-| Permission requests — active (min) | | | |
-| Permission wait — **passive** (min, reported apart) | | | |
 | Download / asset prep (min) | | | |
 | Provenance logging (min) | | | |
 | Illustration, route S (min) | | | |
@@ -41,15 +39,14 @@ Run dates: from ____ to ____ · Piece 1 producer: ____ · Piece 2 producer: ____
 |---|---|
 | Weekly C2 sourcing load = 3.5 × 7 × `m` ÷ 60 | ____ h (Friday block 4 h) |
 | 42-image bank = 42 × `m` ÷ 60 (28 × `m` if the prototypes are promoted) | ____ h |
-| 147-image experiment = 147 × `m` ÷ 60 | ____ h, plus the permission lead planned ≥ 10 days ahead |
+| 147-image experiment = 147 × `m` ÷ 60 | ____ h |
 | Measured per-piece production → replaces the declared 90 / 115 / 80 budgets | Carousel ____ · Reel ____ · Static (derived) ____ |
 
 ## 3. Terms and rights ambiguities met during the run — one line each
 
 Record each one as it happened, whether or not it was resolved. Examples of the kind of thing that belongs
 here: a PUMA "media channels" reading · a CC0 file page whose uploader's ownership is doubtful
-· an Unsplash image that looked like a brand render · a permission reply that did not say whose photograph
-it was.
+· an Unsplash image that looked like a brand render.
 
 | # | Item / candidate | The ambiguity | How it was handled | Needs counsel? |
 |---|---|---|---|---|
@@ -82,7 +79,7 @@ Validator output pasted here (the decision-rule block):
   options as `C2_SUSTAINABILITY_TEST.md` §5 lists them (delay; approve a paid budget and re-run; put an
   illustration-led C2 to the founders as a Founder-Lock question; other). The bank build does not start.
 - **WITH CONDITIONS:** each condition gets a founder answer (a spend approval in `../../operations/TOOLING.md`,
-  an explicit acceptance of the S share, a longer route X lead in the rhythm) before the bank build starts.
+  an explicit acceptance of the S share) before the bank build starts.
 - **SUSTAINABLE:** Sourcing Gate item 5 → PASSED (date) in `../../gates/SOURCING_GATE_SCORECARD.md`; the
   bank build is sized from §2; the measured minutes replace the declared budgets in the C2 template and
   `../../operations/PRODUCTION_RHYTHM.md`; the promotion-to-reserve decision (§6 of the protocol) is taken

@@ -31,7 +31,7 @@ Unsplash / Pexels grids, which this pre-scan mostly skipped, is where their minu
 | REE · 4 adidas Ozweego 'Core Black' | 0 | generic, people | No |
 | REE · 5 Hoka Bondi 8 'White' | 0 | **0 photos** | No |
 | REE · 6 PUMA RS-X 'White Black' | 0 | several "a pair of puma sneakers on a shelf" (Zakaria Issaad, Unsplash License, EXIF present) — the one opened is a PUMA **X-Ray** in a store display, so wrong item and store context | No — route B (PUMA Media Hub) |
-| REE · 7 Balenciaga Triple S 'Grey' | 0 | generic, people | No — route X or S |
+| REE · 7 Balenciaga Triple S 'Grey' | 0 | generic, people | No — route S |
 
 ## What the pre-scan says, honestly
 
@@ -43,7 +43,8 @@ Unsplash / Pexels grids, which this pre-scan mostly skipped, is where their minu
   model name returns generic sneaker photos, most with people, so the founders' 10-minute visual box per item
   is real work, not a formality.
 - The long tail (P-6000, Shadow 6000, XT-6, 993, Disruptor, Ozweego, Bondi 8, RS-X, Triple S) will therefore
-  fall to **route X (permission), route B (PUMA, Amer Sports) or route S (illustration)** unless the visual
+  fall to **route B (PUMA, Amer Sports) or route S (illustration)** — route X is not on the path (founder
+  decision, 2026-09-13) — unless the visual
   pass finds what the index cannot. That is exactly what the test is designed to measure — this note does
   not pre-empt its verdict, and it is not a finding until founder time has been spent.
 - A colorway change inside the same model is now an explicitly **logged swap** (`TEST_PIECES.md`, fixed-list
