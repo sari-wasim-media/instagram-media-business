@@ -449,7 +449,7 @@ founders may override any of them before Day 1.
 | **C1 verdict scale and rubric** | COP · WAIT · PASS on four criteria scored 0–2 (6–8 / 3–5 / 0–2), score logged; one-step override with a written reason; resale outlook scored 1 (neutral) and stated as such when no compliant resale data exists | `production/templates/C1_RELEASE_VERDICT_DESK.md` §1 |
 | **Story rotation and sticker** | Mon DROP CALENDAR · Tue PRICE CHECK · Wed THE POLL · Thu DESK NOTES · Fri THE VERDICT · Sat TWO SHOES · Sun THE WEEK; sticker weekday **Wednesday**, poll by default, quiz allowed; Wednesday posted manually until scheduler sticker support is proven | `production/templates/STORY_TEMPLATE_AND_ROTATION.md` |
 | **AI disclosure line and placement** | "Imagery in this post is AI-generated and illustrative. It does not depict a real product." — verbatim as the last caption line before the hashtags in all six AI posts, platform AI label on; **nothing on the artwork** | `production/policy/AI_IMAGERY_POLICY_PACK.md` §3 |
-| **AI generation tool** | **Adobe Firefly** (web), free tier first; alternate Google Gemini. Licence verification, account creation and any paid plan are founder actions (Sourcing Gate item 9; no spending authority) | `production/policy/AI_IMAGERY_POLICY_PACK.md` §5, `production/operations/TOOLING.md` |
+| **AI generation tool** | **Adobe Firefly** (web), free tier first; alternate Google Gemini. Licence verification, account creation and any paid plan are founder actions (Sourcing Gate item 9; no spending authority) — **licence confirmed by Wasim 2026-10-07, free tier only** (founder decision below) | `production/policy/AI_IMAGERY_POLICY_PACK.md` §5, `production/operations/TOOLING.md` |
 | **Source-class priority per engine** | C1: self-generated → owned → licensed → verified press · **C2 (revised 2026-09-13): licensed free → verified press → licensed paid (founder-approved spend) → self-generated illustration → owned (opportunistic only); permissioned is not an active route (founder decision, 2026-09-13: no permission outreach)** · C3: self-generated only · C4: self-generated → owned → licensed → AI in the six slots. Product photography of branded sneakers runs under the accepted trademark posture and its §5 operating rule (2026-09-08). The C2 order is provisional until the two-piece stress test reports | `production/assets/SOURCE_CLASS_DECISION.md` |
 | **Compliant data sources** | Press releases, published reports and brand release notes are the sources; marketplace listing pages, aggregators and secondary reporting are not; product pages confirm only | `production/assets/C3_DATA_SOURCE_TOS_REGISTER.md` |
 | **Caption and hashtag form** | Hook · body · source line · AI line (six posts) · 3–5 tags (2–3 subject + 1 fixed category + ≤ 1 community; ban list); alt text always; American spelling; no CTA, link, mention, location | `production/policy/CAPTION_AND_HASHTAG_POLICY.md` |
@@ -526,11 +526,38 @@ SUSTAINABLE and the next step is founder escalation — not a weaker route.
 **Rationale (founders'):** a deliberate operating decision — the desk does not run outreach, does not wait
 days on replies, and does not build its production on approvals it cannot repeat.
 
+## Founder confirmation — Adobe Firefly terms (Sourcing Gate item 9) — 2026-10-07
+
+### Adobe Firefly terms confirmed; free route only — **ACTIVE** (Founder decision, 2026-10-07)
+**Confirmed by Wasim (active founder).** Wasim confirmed the Adobe Firefly terms and rules prepared in
+`production/assets/FIREFLY_TERMS_VERIFICATION.md`, re-checked against the live Adobe pages, whose dates read
+unchanged: Generative AI Product Specific Terms *Effective as of April 23, 2026*; Generative AI User
+Guidelines *Last Updated May 15, 2026*; General Terms of Use *Published / Effective October 3, 2025*. Output
+is our Content; commercial use is permitted as the memo describes; the Input / prohibited-content rules match
+the project guardrails; Content Credentials must not be removed; Adobe's indemnity does **not** apply to the
+free / individual route we use. **Sourcing Gate item 9 is PASSED 2026-10-07.**
+
+Conditions confirmed with it:
+
+- **Adobe Firefly on the free route only.** No paid Firefly plan is approved, then or at any earlier point;
+  a paid plan remains a separate founder spending decision.
+- **No Firefly Gallery / Community use; no Adobe Stock submission.**
+- **Content Credentials are never removed or altered.**
+- **Prompts never use** brand names, real sneaker model names, logos, real people, or third-party images or
+  other protected material without rights.
+- **AI stays confined to the six locked C4 slots plus TEST-AI-01**; AI remains prohibited in C1, C2 and C3.
+
+**Recorded with care:** the account is a **pre-existing founder Adobe ID** on which Firefly generation had
+already been used; its creation date is **not established from evidence** and is not recorded as a date.
+The model is recorded as the **Adobe-native Firefly image model**; the exact in-app version is captured in
+`ai_tool_version` at TEST-AI-01, and no partner model inside the Firefly app is part of the route. No lock,
+matrix row, methodology rule or decision rule moved.
+
 ## Pending founder decisions and actions
 
-- **AI tool licence verification and account** — confirm Adobe Firefly's current terms against the prepared
-  memo (dates re-checked unchanged 2026-09-13), record tool, version, plan and date (Sourcing Gate item 9);
-  any paid plan needs founder approval. A confirmed licence does not make AI a C2 route.
+- ~~**AI tool licence verification and account**~~ — **done 2026-10-07** (Wasim; free tier only; Sourcing
+  Gate item 9 passed). Any paid Firefly plan still needs founder approval. A confirmed licence does not make
+  AI a C2 route.
 - **Run the two-piece C2 sourcing stress test** — founder execution per
   `production/assets/c2_stress_test/FOUNDER_INSTRUCTIONS.md` (the founders' own sourcing minutes are what it
   measures).

@@ -45,6 +45,11 @@ read whatever else the task needs.
   permission outreach to creators or any third party** — founder decision the same day, route X off the
   active path) and the **two-piece C2 sourcing stress test now runs before the bank** — prepared in
   `production/assets/c2_stress_test/`, **not run**. Credit is not permission. No lock moved.
+- ✅ **2026-10-07: Adobe Firefly founder-confirmed (Wasim) — Sourcing Gate item 9 PASSED** (6 of 12).
+  **Free tier only, no paid plan**; no Gallery / Community, no Adobe Stock; Content Credentials never
+  removed; no brand, real model name, logo, person or unlicensed material in prompts; AI only in the six C4
+  slots plus TEST-AI-01. Pre-existing Adobe ID — **creation date not established**; exact model version is
+  logged at TEST-AI-01 — `production/assets/FIREFLY_TERMS_VERIFICATION.md` §5.
 
 ---
 
@@ -127,9 +132,9 @@ earlier four-cell naming (redefined as C1–C4), and every count sized to 4 post
 
 ## 6. Immediate next task
 
-> **The founders verify Adobe Firefly's terms** — the reading is prepared for them in
-> `production/assets/FIREFLY_TERMS_VERIFICATION.md` (dates re-checked 2026-09-13); the confirmation and the
-> account are theirs. Then **they run the two-piece C2 sourcing stress test** —
+> ~~The founders verify Adobe Firefly's terms~~ — **done 2026-10-07** (Wasim; free tier only; Sourcing Gate
+> item 9 passed — `production/assets/FIREFLY_TERMS_VERIFICATION.md` §5). **Next, and the real blocker: the
+> founders run the two-piece C2 sourcing stress test** —
 > `production/assets/c2_stress_test/FOUNDER_INSTRUCTIONS.md` — and bring back the logs; its pre-declared
 > verdict (`production/assets/C2_SUSTAINABILITY_TEST.md` §5) decides whether the 42-image bank is built or the
 > finding is escalated. Then the rest of the Sourcing Gate along `production/PRE_LAUNCH_RUNBOOK.md` (bank

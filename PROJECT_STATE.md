@@ -1,4 +1,4 @@
-# Project State — as of 2026-09-13
+# Project State — as of 2026-10-07
 
 The operational source of truth. If another document disagrees with this one, this one wins — except
 `DECISIONS.md`, which is authoritative on what was decided, and `WORKFLOW.md`, which is canonical on how work
@@ -38,7 +38,7 @@ sticker stay calendar-keyed (delegated production decision). `tools/instantiate_
 `tools/validate_backlog.py` accept any Day 1; the tracking skeleton's Stories tab leaves its calendar-bound
 columns blank until Day 1 exists. Adobe Firefly's current terms have been read and mapped to our use in
 `production/assets/FIREFLY_TERMS_VERIFICATION.md`; **the founders' confirmation, the account and the plan
-decision remain open** (Sourcing Gate item 9 is not passed). **Zero posts published; launch remains gated.**
+decision remain open** (Sourcing Gate item 9 is not passed) — *closed 2026-10-07, below*. **Zero posts published; launch remains gated.**
 
 **2026-09-13: a founder operational fact corrected the sourcing plan.** Sari and Wasim stated that they
 **do not have meaningful access to a sneaker inventory and cannot self-shoot products at scale.** The
@@ -58,6 +58,18 @@ escalated, not engineered away. No lock moved: the matrix, the count of 7, the s
 rule and the Stories protocol are unchanged; no date is chosen; nothing is scheduled. **Zero posts
 published; launch remains gated.**
 
+**2026-10-07: Adobe Firefly founder-confirmed — Sourcing Gate item 9 PASSED.** Wasim confirmed the Firefly
+terms memo against the live Adobe pages (document dates unchanged: April 23, 2026 · May 15, 2026 ·
+October 3, 2025) and approved **Firefly on the free route only — no paid plan**, no Gallery / Community use,
+no Adobe Stock submission, Content Credentials never removed or altered, and no brand names, real sneaker
+model names, logos, real people or unlicensed third-party material in any prompt (`DECISIONS.md`;
+`production/assets/FIREFLY_TERMS_VERIFICATION.md` §5). The account is a **pre-existing founder Adobe ID —
+creation date not established**; the model is recorded as the Adobe-native Firefly image model, its exact
+version to be logged at TEST-AI-01. **AI stays in the six locked C4 slots plus TEST-AI-01; C1–C3 remain
+AI-free.** Six of twelve Sourcing Gate items are now passed. The next real blocker is the **two-piece C2
+sourcing stress test**, still prepared and not run. No lock moved. **Zero posts published; launch remains
+gated.**
+
 ---
 
 ## The headline
@@ -74,8 +86,8 @@ is locked, and the production surface is decided under delegated authority; the 
 experiment has **not started**.
 
 **The blocker is now execution — and one open question of fact: whether C2 can be sourced without an owned
-inventory.** The binding items, in order: confirming the AI tool's licence (memo ready), **running the
-two-piece C2 sourcing stress test** (prepared), reading its verdict, then — only if it sustains — building the
+inventory.** The AI tool's licence is confirmed (2026-10-07). The binding items, in order: **running the
+two-piece C2 sourcing stress test** (prepared, not run), reading its verdict, then — only if it sustains — building the
 asset bank sized by its numbers, producing the AI test piece, and Week-1 production. The ordered path is
 `production/PRE_LAUNCH_RUNBOOK.md`; the item-by-item status is in `production/gates/`.
 
@@ -276,10 +288,10 @@ production decisions, 2026-09-08) — see `experiment/content/`.
 
 ## Not yet done — all of it operational, none of it design
 
-| # | Item | Status (2026-09-11) |
+| # | Item | Status (2026-10-07) |
 |---|---|---|
-| 1 | The trademark / trade-dress posture on photographs of branded sneakers; plus the founder actions of verifying Adobe Firefly's terms and approving any paid plan | **POSTURE ACCEPTED 2026-09-08** — `production/TRADEMARK_RISK_REVIEW.md` (§5 rule mandatory at QA); **Firefly: terms read and mapped 2026-09-11** — `production/assets/FIREFLY_TERMS_VERIFICATION.md`; the founders' confirmation, account and plan decision remain open — `production/FOUNDER_REVIEW_QUEUE.md` §B |
-| 2 | **Pass the Sourcing Gate**, including the AI arm — imagery rights for C2 at volume is the binding constraint | **5 of 12 PASSED** (templates and count; the asset-class decision, closed by the 2026-09-08 acceptance; data sources; C4 source; no-relaxation). **2026-09-13: the C2 route stack was re-ranked (no owned inventory) and the two-piece stress test was re-protocolled and prepared — it now runs before the bank.** The stress test, the bank, the AI licence verification and the AI test piece are founder execution — `production/gates/SOURCING_GATE_SCORECARD.md` |
+| 1 | The trademark / trade-dress posture on photographs of branded sneakers; plus the founder actions of verifying Adobe Firefly's terms and approving any paid plan | **POSTURE ACCEPTED 2026-09-08** — `production/TRADEMARK_RISK_REVIEW.md` (§5 rule mandatory at QA); **Firefly: CONFIRMED 2026-10-07 by Wasim** — free tier only, no paid plan; pre-existing Adobe ID (creation date not established) — `production/assets/FIREFLY_TERMS_VERIFICATION.md` §5 |
+| 2 | **Pass the Sourcing Gate**, including the AI arm — imagery rights for C2 at volume is the binding constraint | **6 of 12 PASSED** (templates and count; the asset-class decision, closed by the 2026-09-08 acceptance; data sources; C4 source; no-relaxation; **item 9, the Firefly licence, 2026-10-07**). **2026-09-13: the C2 route stack was re-ranked (no owned inventory) and the two-piece stress test was re-protocolled and prepared — it now runs before the bank.** The stress test, the bank and the AI test piece are founder execution — `production/gates/SOURCING_GATE_SCORECARD.md` |
 | 3 | Build the four house templates and fix the C2 ranked-item count | **DONE** — delegated production decisions 2026-09-08 (count = 7) |
 | 4 | Build the tracking sheet by importing the matrix | **SKELETON BUILT** — `experiment/tracking/`; live once adopted with W0 rows |
 | 5 | Build the topic backlog and start the blind-to-performance check-out queue | **INSTRUMENT BUILT, EMPTY** — `production/backlog/` |
@@ -313,12 +325,11 @@ checklist items a later decision superseded.
 
 ## Immediate next task
 
-> **Confirm Adobe Firefly's terms** (the reading is prepared in `production/assets/FIREFLY_TERMS_VERIFICATION.md`,
-> dates re-checked 2026-09-13; the confirmation and the account are yours), then **run the two-piece C2
-> sourcing stress test** per `production/assets/c2_stress_test/FOUNDER_INSTRUCTIONS.md` — two non-publishing
-> prototypes, 14 image requirements, on routes F, B and S (P only as `WOULD_USE_P`; no permission outreach)
-> under the accepted trademark posture, every
-> candidate and stage logged — and bring the logs back. Its pre-declared verdict decides whether the 42-image
+> ~~Confirm Adobe Firefly's terms~~ — **done 2026-10-07** (Wasim; free tier only; Sourcing Gate item 9
+> passed). **Next: run the two-piece C2 sourcing stress test** per
+> `production/assets/c2_stress_test/FOUNDER_INSTRUCTIONS.md` — two non-publishing prototypes, 14 image
+> requirements, on routes F, B and S (P only as `WOULD_USE_P`; no permission outreach) under the accepted
+> trademark posture, every candidate and stage logged — and bring the logs back. Its pre-declared verdict decides whether the 42-image
 > bank is built (sized by the measured minutes per image) or the finding is escalated. Then the AI test piece.
 
 Then the Week-1 Gate. Exact criteria: `experiment/active-84-post-plan/GATES.md`; status: `production/gates/`.

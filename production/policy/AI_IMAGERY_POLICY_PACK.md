@@ -6,7 +6,8 @@ the six locked slot IDs recorded in the tracking sheet.* The sub-test itself is 
 wording and placement (§3) and the tool selection (§5) are decided under the founders' delegated production
 authority (2026-09-08), which completes the pack.** What stays with the founders: verifying the tool's
 current terms, creating the account, and approving any paid plan (Sourcing Gate item 9; no spending
-authority).
+authority). **Item 9 closed 2026-10-07:** Wasim confirmed Firefly's terms, free tier only, no paid plan
+(`../assets/FIREFLY_TERMS_VERIFICATION.md` §5).
 
 ## 1. Definition (locked, restated for the production desk)
 
@@ -89,7 +90,10 @@ market data.
   or rights retained). **Selection is not purchase and not verification:** `GATES.md` §1.4 item 9 requires
   the founders themselves to read the tool's current output-licence terms, create the account, and record
   tool + version + plan + date in `../assets/SOURCING_ROUTES_RESEARCH.md` §6 and in every asset row; a paid
-  plan needs founder approval (`../operations/TOOLING.md`).
+  plan needs founder approval (`../operations/TOOLING.md`). **Confirmed 2026-10-07 (Wasim):** free tier only;
+  Adobe-native Firefly image model — the exact in-app version goes in `ai_tool_version` from TEST-AI-01 on;
+  partner models offered inside the Firefly app are not part of the route; no Gallery / Community, no Adobe
+  Stock submission; Content Credentials never removed or altered.
 - **Never** feed a third-party photograph, a brand image or another account's post into a generator.
 
 ## 6. Provenance fields for every AI asset (locked list, as register columns)

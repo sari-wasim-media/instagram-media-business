@@ -99,7 +99,7 @@ CapCut or Canva music into an export.
 
 | Tool | Commercial / ownership | Provenance metadata | Plan needed | Status |
 |---|---|---|---|---|
-| **Adobe Firefly** | Output is "your Content" with "all rights and ownership" retained (Product Specific Terms §1, General Terms §4.2); FAQ: outputs usable "in your commercial projects"; Input must not include trademarks or aim at protected work (PST §2); indemnity applies only to CC teams/enterprise Pro Plus / Edition 4 plans (PST §8) — **full reading in `FIREFLY_TERMS_VERIFICATION.md`** | Content Credentials (C2PA); removal prohibited (PST §3.1) | Free daily generations (number unstated); Standard US$9.99/mo, 2,000 credits (free-tier watermark: not stated — observe at TEST-AI-01) | V 2026-09-11 (memo); document dates re-checked unchanged 2026-09-13 — **founder confirmation open** (tool · version · plan · date to be recorded here by the founders) |
+| **Adobe Firefly** | Output is "your Content" with "all rights and ownership" retained (Product Specific Terms §1, General Terms §4.2); FAQ: outputs usable "in your commercial projects"; Input must not include trademarks or aim at protected work (PST §2); indemnity applies only to CC teams/enterprise Pro Plus / Edition 4 plans (PST §8) — **full reading in `FIREFLY_TERMS_VERIFICATION.md`** | Content Credentials (C2PA); removal prohibited (PST §3.1) | Free daily generations (number unstated); Standard US$9.99/mo, 2,000 credits (free-tier watermark: not stated — observe at TEST-AI-01) | V 2026-09-11 (memo); document dates re-checked unchanged 2026-09-13 — **FOUNDER-CONFIRMED 2026-10-07 (Wasim)**: tool Adobe Firefly · Adobe-native Firefly image model (exact in-app version not fixed at item 9; logged at TEST-AI-01) · **free tier only, no paid plan** · pre-existing Adobe ID, creation date not established · document dates seen unchanged (Apr 23 2026 / May 15 2026 / Oct 3 2025) — memo §5 |
 | OpenAI images | "you … own the Output" (S); "All generated images come with C2PA metadata" (S) | C2PA | Same terms | CNF / S |
 | Midjourney | "You own all Assets you create" (S); no free trial | No C2PA (secondary) | Paid | CNF / S |
 | Ideogram | "we do not restrict your ability to use User Output … including for commercial purposes"; free images are public | None stated | Free tier public | V |
@@ -111,7 +111,8 @@ CapCut or Canva music into an export.
 **Reading:** Adobe Firefly is the recommended candidate — it states commercial safety in text and attaches
 Content Credentials, which is what makes Instagram's "AI info" label appear automatically, which is the
 treatment the sub-test wants measured. Gemini is the alternate. Both are **candidates**: `GATES.md` §1.4 item
-9 requires the founders to verify the output licence themselves.
+9 requires the founders to verify the output licence themselves. *Firefly's licence was founder-confirmed on
+2026-10-07 (Sourcing Gate item 9 PASSED); Gemini remains an unread alternate.*
 
 ## 7. Fonts
 
@@ -144,4 +145,5 @@ Midjourney terms · Leonardo terms · Adobe Firefly FAQ (free-tier watermark) ·
 
 *Since the founders' conservative data-source posture (2026-09-08), the marketplace and unfetched-brand rows
 no longer need reading: a source whose terms do not clearly permit the use is simply not used. The one page
-the founders still read themselves is **Adobe Firefly's current terms** (Sourcing Gate item 9).*
+the founders still read themselves is **Adobe Firefly's current terms** (Sourcing Gate item 9) — confirmed
+by Wasim on 2026-10-07.*
