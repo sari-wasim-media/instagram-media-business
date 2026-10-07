@@ -21,7 +21,10 @@ spends, or touches either Instagram account.
 
 ## B. What Sari and Wasim must do — in this order
 
-### B1. Firefly terms confirmation (≈ 30 min, one founder) — Sourcing Gate item 9
+### B1. Firefly terms confirmation (≈ 30 min, one founder) — Sourcing Gate item 9 — ✅ DONE 2026-10-07
+
+**Closed:** Wasim confirmed the memo on 2026-10-07 — free tier only, no paid plan; the record is
+`../FIREFLY_TERMS_VERIFICATION.md` §5. Nothing below remains to do for B1; it is kept as the record of the step.
 
 Follow `../FIREFLY_TERMS_VERIFICATION.md` §4 exactly. In short: open the three documents (§1) on the day;
 check each "effective" / "last updated" line against §1 (as of 2026-09-13 they read *April 23, 2026* ·

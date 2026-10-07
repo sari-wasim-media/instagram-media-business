@@ -81,7 +81,8 @@ reposted templates.
 ### 1.4 AI arm of the Sourcing Gate
 
 9. **Generation tool(s) named**, and their output licence **confirmed to permit commercial use**.
-   ⚠ *This is a factual verification the founders must perform. It is NOT done.*
+   ⚠ *This is a factual verification the founders must perform.* — *Performed 2026-10-07 (Wasim, Adobe
+   Firefly, free tier only); status and record in the Sourcing Gate scorecard.*
 10. **One complete AI-treated C4 piece produced end-to-end** as the AI-route sustainability test, with elapsed
     production time and compliance-review time recorded.
 11. That piece verified against the full prohibited-use list in `AI_IMAGERY_SUBTEST.md` §5, carrying the fixed

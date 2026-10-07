@@ -1,8 +1,10 @@
 # Adobe Firefly — terms verification, prepared for the founders (Sourcing Gate item 9)
 
-**Status: MEMO READY — founder confirmation OPEN. Sourcing Gate item 9 is NOT passed.**
-Prepared by Claude on 2026-09-11 under delegated production authority as *reading*, not *acceptance*: no account
-was created, no terms were accepted, nothing was generated. `GATES.md` §1.4 item 9 and `WORKFLOW.md` §2a keep
+**Status: FOUNDER-CONFIRMED 2026-10-07 (Wasim) — Sourcing Gate item 9 PASSED.** Route: Adobe Firefly,
+**free tier only**; no paid plan approved. The confirmation record is §5; the conditions Wasim confirmed with
+it are §5.1.
+Prepared by Claude on 2026-09-11 under delegated production authority as *reading*, not *acceptance*: Claude
+created no account, accepted no terms and generated nothing. `GATES.md` §1.4 item 9 and `WORKFLOW.md` §2a keep
 the confirmation, the account and any plan decision with Sari and Wasim. This memo exists so that the founders'
 half-hour (`PRE_LAUNCH_RUNBOOK.md` step 1) is spent confirming, not searching.
 
@@ -13,6 +15,9 @@ you confirm and check the "last updated" / "effective" line against the one reco
 Product Specific Terms *Effective as of April 23, 2026*; User Guidelines *Last Updated: May 15, 2026*;
 General Terms *Published October 3, 2025. Effective as of October 3, 2025*. The memo is current. Nothing
 was accepted, no account was created.
+
+*Founder confirmation 2026-10-07 (Wasim):* the memo was confirmed against the live Adobe pages; the three
+documents still show the same dates as above. See §5.
 
 ---
 
@@ -125,44 +130,64 @@ Everything the sub-test needs is present in the terms as read on 2026-09-11, wit
 
 ---
 
-## 4. Founder checklist — closes Sourcing Gate item 9
+## 4. Founder checklist — closes Sourcing Gate item 9 (CLOSED 2026-10-07, Wasim)
 
 Founder action; ~30 minutes; nothing here is Claude's to do.
 
-- [ ] Open the three governing documents (§1) on the day of confirmation. Check each "last updated" /
+- [x] Open the three governing documents (§1) on the day of confirmation. Check each "last updated" /
       "effective" line against §1. If any has changed, note the new date here and re-read the changed
-      sections before ticking the rest.
-- [ ] Confirm each line of §2.1 (ownership and commercial use) reads as quoted.
-- [ ] Confirm §2.2 (Input and prohibited content) reads as quoted, and that the policy pack's prompt rule is
+      sections before ticking the rest. *— 2026-10-07: all three unchanged (§5).*
+- [x] Confirm each line of §2.1 (ownership and commercial use) reads as quoted.
+- [x] Confirm §2.2 (Input and prohibited content) reads as quoted, and that the policy pack's prompt rule is
       understood: **no brand, model, logo, wordmark or person in any prompt**.
-- [ ] Confirm §2.3 (Content Credentials must not be removed) reads as quoted.
-- [ ] Confirm §2.5: you have read that the indemnity does not apply to our plan, and that the General Terms
+- [x] Confirm §2.3 (Content Credentials must not be removed) reads as quoted.
+- [x] Confirm §2.5: you have read that the indemnity does not apply to our plan, and that the General Terms
       indemnity runs from us to Adobe.
-- [ ] Create the Adobe ID / Firefly account as a founder (**an external terms acceptance — founder only**).
+- [x] Create the Adobe ID / Firefly account as a founder (**an external terms acceptance — founder only**).
       Do not join the Firefly gallery or community; do not submit anything to Adobe Stock.
-- [ ] Record in `SOURCING_ROUTES_RESEARCH.md` §6 (Firefly row) and in this file's §5:
+      *— Satisfied by a **pre-existing** founder Adobe ID on which Firefly generation had already been used;
+      no account was created for this step and its creation date is not established (§5, deviations).*
+- [x] Record in `SOURCING_ROUTES_RESEARCH.md` §6 (Firefly row) and in this file's §5:
       **tool · model version shown in the app · plan (free / Standard / …) · date of account creation ·
       date of confirmation · the "effective" dates of the three documents as seen that day.**
-- [ ] Decide the plan: start on the free tier (delegated decision already recorded). **Any paid plan is a
+- [x] Decide the plan: start on the free tier (delegated decision already recorded). **Any paid plan is a
       founder spending approval** — take it only if the free allowance fails at the test piece.
-- [ ] Update `production/gates/SOURCING_GATE_SCORECARD.md` item 9 to **PASSED <date>** and sign the AI-arm
+      *— Free tier only; no paid plan approved.*
+- [x] Update `production/gates/SOURCING_GATE_SCORECARD.md` item 9 to **PASSED <date>** and sign the AI-arm
       row. Then proceed to TEST-AI-01 (`AI_IMAGERY_POLICY_PACK.md` §7), recording at that step: watermark
       observed Y/N · Content Credential present on the exported file Y/N (contentcredentials.org/verify) ·
       free generations available per day as shown.
+      *— Item 9 is PASSED 2026-10-07. The AI-arm sign-off row covers items 9–12 and stays unsigned until
+      TEST-AI-01 closes 10–12.*
 
-## 5. Confirmation record (founders fill in)
+## 5. Confirmation record
 
 | Field | Value |
 |---|---|
-| Confirmed by | |
-| Confirmation date | |
-| Adobe ID created (date) | |
-| Plan | |
-| Firefly model version shown in app | |
-| Product Specific Terms effective date seen | |
-| User Guidelines last-updated date seen | |
-| General Terms effective date seen | |
-| Deviations from this memo | |
+| Confirmed by | **Wasim** (active founder) |
+| Confirmation date | **2026-10-07** |
+| Adobe ID created (date) | **Pre-existing Adobe ID — creation date not established from evidence.** Not created for this step; Firefly generation had already been used successfully on it by the founder before the confirmation |
+| Plan | **Free tier / current free access only. No paid Firefly plan approved**, then or at any earlier point |
+| Firefly model version shown in app | **Adobe-native Firefly image model** — exact in-app version **not fixed at item 9**; logged precisely in `ai_tool_version` at TEST-AI-01 and on every AI asset row. No partner (non-Adobe) model offered inside the Firefly app is part of this route |
+| Product Specific Terms effective date seen | *Effective as of April 23, 2026* (unchanged from §1) |
+| User Guidelines last-updated date seen | *Last Updated May 15, 2026* (unchanged from §1) |
+| General Terms effective date seen | *Published October 3, 2025; Effective as of October 3, 2025* (unchanged from §1) |
+| Deviations from this memo | (1) **Account:** the §4 "create the Adobe ID" step was met by a pre-existing founder account; its creation date is unknown and is deliberately not recorded as a date. (2) **Model version:** recorded at the level of "Adobe-native Firefly image model"; the exact version string is not evidenced at item 9 and is not invented — it is captured at TEST-AI-01. (3) **Earlier use:** generations made on the account before this confirmation are exploration, not project assets — none receives an asset ID or appears in any piece; TEST-AI-01 starts from new, logged prompts. (4) **Free allowance:** because Firefly was already used, the free credit allocation window (§2.6) may have started before this date; the allowance actually available is observed at TEST-AI-01, as planned. No clause of §2 read differently |
+
+### 5.1 Conditions confirmed with item 9 (Wasim, 2026-10-07)
+
+1. The terms and rules in §1–§3, re-checked against the live Adobe pages, are confirmed: Output is our
+   Content; commercial use is permitted as described in §2.1; the Input / prohibited-content rules match the
+   project guardrails; Content Credentials must not be removed; **Adobe's indemnity does not apply** to the
+   free / individual route we use.
+2. **Adobe Firefly, free route only.** No paid Firefly plan is approved. A paid plan remains a separate
+   founder spending decision.
+3. **No Firefly Gallery / Community use. No Adobe Stock submission.**
+4. **Content Credentials are never removed or altered.**
+5. **Prompts never use** brand names, real sneaker model names, logos, real people, or third-party images
+   or other protected material without rights.
+6. **AI stays confined to the six locked C4 slots plus TEST-AI-01.** AI remains prohibited in C1, C2 and C3.
+   This confirmation changes no lock and opens no route for C2.
 
 ---
 

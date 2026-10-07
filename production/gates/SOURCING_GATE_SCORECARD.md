@@ -15,24 +15,25 @@ read PASSED.
 | 6 | C3 data-source ToS check per source; no scraper | **PASSED 2026-09-08** | `../assets/C3_DATA_SOURCE_TOS_REGISTER.md` operationalised under the founders' conservative data-source posture: press releases, published reports and release notes are the sources; every marketplace is excluded because its terms do not clearly permit the use; product pages confirm only | — (a row reopens only if a source publishes explicit permission) |
 | 7 | C4 imagery source confirmed; never-a-reposted-template rule in the production checklist | **PASSED 2026-09-08** | `SOURCE_CLASS_DECISION.md` §2 (self-drawn → owned → licensed → AI in six slots) as a delegated production decision; the rule in `../operations/PRE_PUBLISH_QA.md` §A and §E; seven originated house formats replace any template | Photographs of branded sneakers in C4 wait on the same ACCEPT as item 2 |
 | 8 | No gate item requires reposting, Collabs or relaxing the originality rule | **CONFIRMED BY CONSTRUCTION** | Every active route in the stack is owned, licensed, verified-press or self-generated; no permission outreach at all (founder decision, 2026-09-13) — so no grantor exists to promote | — |
-| 9 | AI generation tool(s) named; output licence confirmed to permit commercial use | **TOOL DECIDED — MEMO READY (re-checked 2026-09-13) — FOUNDER CONFIRMATION OPEN** | **Adobe Firefly** selected as a delegated production decision (Gemini alternate); the current terms **read and mapped to our use on 2026-09-11** in `../assets/FIREFLY_TERMS_VERIFICATION.md` — ownership, commercial use, Input/prohibited-content rules, Content Credentials, the indemnity's non-applicability to our plan, free-tier facts — with the founder checklist; the three documents' dates re-checked unchanged on 2026-09-13 | **The founders confirm the memo against the live pages**, create the account, record tool + version + plan + date (memo §4–§5; `../policy/AI_IMAGERY_POLICY_PACK.md` §5); any paid plan is a founder approval. Not passed until they do. A confirmed licence changes nothing for C2: AI stays in the six C4 slots |
+| 9 | AI generation tool(s) named; output licence confirmed to permit commercial use | **PASSED 2026-10-07** | **Adobe Firefly** selected as a delegated production decision (Gemini alternate); the current terms read and mapped to our use on 2026-09-11 in `../assets/FIREFLY_TERMS_VERIFICATION.md` (dates re-checked 2026-09-13); **confirmed by Wasim on 2026-10-07** against the live pages — ownership, commercial use, Input/prohibited-content rules, Content Credentials, the indemnity's non-applicability to our route — and recorded in the memo §5: **free tier only, no paid plan**; Adobe-native Firefly image model (exact version logged at TEST-AI-01); pre-existing Adobe ID, creation date not established; no Gallery/Community, no Adobe Stock | — (a paid plan would be a separate founder spending approval; the confirmed licence changes nothing for C2: AI stays in the six C4 slots plus TEST-AI-01) |
 | 10 | One complete AI-treated C4 piece produced end-to-end, timed | **NOT PRODUCED — PROTOCOL READY** | `../policy/AI_IMAGERY_POLICY_PACK.md` §7 (TEST-AI-01, a Reel in the shape of `B-W2-C4-REE-01`) | Produce it; log generation, review and production minutes |
 | 11 | That piece verified against the prohibited-use list, carrying the fixed disclosure, label observed | **NOT DONE — CHECKLIST AND WORDING READY** | Nine-item checklist (§4); disclosure wording proposed (§3) | Founders lock the wording; run the checklist on TEST-AI-01; observe the label |
 | 12 | No AI asset reconstructs a third-party image; none in C1/C2/C3 | **ENFORCED BY INSTRUMENT — ATTESTATION PENDING** | Validator refuses AI assets outside the six slots or in C1–C3; attestation field mandatory | Sign the attestation on TEST-AI-01 and on each of the six real assets |
 
 ## Reading the scorecard
 
-- **Passed on 2026-09-08:** items 1, 2, 6, 7 and 8 (five of twelve) — item 2 closed by the founders'
-  acceptance of the trademark posture (`../TRADEMARK_RISK_REVIEW.md`). **Founder execution:** items 3, 4, 5 (the bank,
-  the provenance rows, the sustainability test), 9 (licence verification), 10, 11, 12 (the AI test piece).
-- The binding sequence (revised 2026-09-13, after the founders stated they have no owned inventory): founders
-  confirm Firefly's terms (memo ready, dates re-checked) → **run the two-piece stress test on routes F, B
+- **Passed on 2026-09-08:** items 1, 2, 6, 7 and 8 — item 2 closed by the founders'
+  acceptance of the trademark posture (`../TRADEMARK_RISK_REVIEW.md`). **Passed on 2026-10-07:** item 9
+  (Firefly licence confirmed by Wasim; free tier only). **Six of twelve passed. Founder execution remaining:**
+  items 3, 4, 5 (the bank, the provenance rows, the sustainability test), 10, 11, 12 (the AI test piece).
+- The binding sequence (revised 2026-09-13, after the founders stated they have no owned inventory): ~~founders
+  confirm Firefly's terms~~ (**done 2026-10-07**) → **run the two-piece stress test on routes F, B
   and S (P as `WOULD_USE_P` only; no route X — the founders do not solicit permissions)** → read the
   pre-declared verdict → **only if it sustains**, build the 42-image bank sized by the
   measured minutes per image → produce and check the AI test piece → sign off. **If the test returns NOT
   SUSTAINABLE, the gate stops there and the finding is escalated** — the design is not adjusted to pass.
 - Estimated founder effort to pass: **no longer estimated in advance.** The stress test measures it; the
-  AI confirmation (≈ 0.5 h) and the test piece (≈ 2 h) stand.
+  test piece (≈ 2 h) stands. The AI confirmation is done.
 
 ## Sign-off
 

@@ -44,21 +44,21 @@ The GitHub migration is infrastructure. It is not the business.
 - **Trademark / trade-dress posture: ACCEPTED 2026-09-08**
   → `production/TRADEMARK_RISK_REVIEW.md`; the §5 operating rule is mandatory at QA
 - **Pass the Sourcing Gate** by execution — **in the corrected order (2026-09-13: the founders have no owned
-  inventory):** the AI tool licence confirmation (founder; memo ready), **the two-piece C2 sourcing stress
-  test** (prepared, not run — its verdict decides), then the 42-image bank sized by the test, then the AI
+  inventory):** ~~the AI tool licence confirmation~~ (**done 2026-10-07** — Wasim; Firefly, free tier only),
+  **the two-piece C2 sourcing stress test** (prepared, not run — its verdict decides), then the 42-image bank sized by the test, then the AI
   test piece
   → `production/PRE_LAUNCH_RUNBOOK.md` · `production/assets/c2_stress_test/` ·
-  `production/gates/SOURCING_GATE_SCORECARD.md` (5 of 12 passed)
+  `production/gates/SOURCING_GATE_SCORECARD.md` (6 of 12 passed)
 
 **The design is finished and locked; the creative system is built and decided; the remaining work is one
-founder confirmation, one founder-run test, and execution — unless the test says C2 cannot be sourced this
+founder-run test and execution — unless the test says C2 cannot be sourced this
 way, in which case the finding is escalated and nothing is redesigned quietly.**
 
 ## Next
 
 All operational. In order (`production/PRE_LAUNCH_RUNBOOK.md`):
 
-1. ~~Answer the trademark question~~ (ACCEPTED 2026-09-08); **confirm Adobe Firefly's terms** — the reading is prepared in `production/assets/FIREFLY_TERMS_VERIFICATION.md`; the confirmation, the account and any paid plan are founder actions
+1. ~~Answer the trademark question~~ (ACCEPTED 2026-09-08); ~~confirm Adobe Firefly's terms~~ (**CONFIRMED 2026-10-07** by Wasim — free tier only, no paid plan; `production/assets/FIREFLY_TERMS_VERIFICATION.md` §5)
 2. **Run the C2 sourcing stress test, then build the asset bank** — C2 is the constraint; the test runs
    first because the routes must be proven without owned inventory; if it fails, the finding is escalated —
    the route may change, never the matrix, the count, the originality rule or the AI slots
