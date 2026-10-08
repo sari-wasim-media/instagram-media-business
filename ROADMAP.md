@@ -39,7 +39,21 @@ The GitHub migration is infrastructure. It is not the business.
   autonomy without spending. The thirteen former review-queue items decided as delegated production
   decisions → `DECISIONS.md`
 
-## Current
+## Current — Agile Revival (founder decision, 2026-10-08)
+
+The 84-post controlled experiment was **superseded before launch** (zero posts published). Active now:
+
+1. **Launch** — the first revival post on each account (target 2026-10-09), from `production/launch/`,
+   after the founders capture the Week-0 baselines and approve the quality.
+2. **Publish → measure → learn → adapt** — post consistently at a quality bar, track every post
+   (`production/tracking/`), read at ~48 h and 7 d, review weekly, and let evidence shape topics, formats
+   and cadence.
+3. **Build the pipeline as you go** — rights-clean C2 imagery, C3 datasets and C1 release coverage are
+   built continuously, not as a pre-launch bank.
+
+The "Current" and "Next" lists below are the pre-2026-10-08 plan, kept as history.
+
+## Current (pre-2026-10-08, superseded)
 
 - **Trademark / trade-dress posture: ACCEPTED 2026-09-08**
   → `production/TRADEMARK_RISK_REVIEW.md`; the §5 operating rule is mandatory at QA

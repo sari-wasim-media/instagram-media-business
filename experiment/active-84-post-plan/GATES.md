@@ -1,5 +1,7 @@
 # Launch Gates — Week-1 Gate and Sourcing Gate
 
+> **⚠ SUPERSEDED BEFORE LAUNCH — 2026-10-08.** The founders replaced the 84-post controlled experiment with **Agile Revival** before any post was published (`DECISIONS.md`, "Agile Revival"). This document is preserved unchanged as historical methodology; it no longer schedules, gates or delays publishing.
+
 **Status: ACTIVE and BINDING. Launch is NOT authorized.**
 
 *Item-by-item status against these criteria is tracked in `../../production/gates/SOURCING_GATE_SCORECARD.md`

@@ -1,0 +1,86 @@
+{
+ "piece_id": "B-LAUNCH-01-C4-REEL",
+ "account": "B",
+ "engine": "C4",
+ "format": "REEL",
+ "css": ".chat .bubble{font-size:44px} .chat{gap:28px} .sys{align-self:center;font-family:var(--mono);font-size:34px;letter-spacing:.04em;color:var(--t-ink);background:var(--ink-2);border:3px solid var(--accent);border-radius:999px;padding:22px 40px;margin-top:40px}.dim .bubble{opacity:.35}",
+ "frames": [
+  {
+   "name": "01_hook",
+   "surface": "ink",
+   "duration": 3.0,
+   "band_right": "Commentary \u00b7 group chat",
+   "body": "<div class='content'><div class='kicker'>Group chat \u00b7 a field study</div><h1 class='hook xl'>Every<br>sneaker<br>group chat,<br>every month</h1></div>"
+  },
+  {
+   "name": "02_chat_a1",
+   "surface": "ink",
+   "duration": 2.8,
+   "band_right": "Day 1",
+   "body": "<div class='content'><div class='kicker'>Day 1 \u00b7 the announcement</div><div class='chat' style='margin-top:40px'><div class='bubble me in' style='--d:0s'><span class='who'>you</span>Officially done buying shoes. Saving money from today.</div></div></div>"
+  },
+  {
+   "name": "02_chat_a2",
+   "surface": "ink",
+   "duration": 2.4,
+   "band_right": "Day 1",
+   "body": "<div class='content'><div class='kicker'>Day 1 \u00b7 the announcement</div><div class='chat' style='margin-top:40px'><div class='bubble me'><span class='who'>you</span>Officially done buying shoes. Saving money from today.</div><div class='bubble them in' style='--d:0s'><span class='who'>the enabler</span>proud of you fr</div></div></div>"
+  },
+  {
+   "name": "02_chat_a3",
+   "surface": "ink",
+   "duration": 2.6,
+   "band_right": "Day 1",
+   "body": "<div class='content'><div class='kicker'>Day 1 \u00b7 the announcement</div><div class='chat' style='margin-top:40px'><div class='bubble me'><span class='who'>you</span>Officially done buying shoes. Saving money from today.</div><div class='bubble them'><span class='who'>the enabler</span>proud of you fr</div><div class='bubble them in' style='--d:0s'><span class='who'>the realist</span>screenshotting this</div></div></div>"
+  },
+  {
+   "name": "03_chat_b1",
+   "surface": "ink",
+   "duration": 3.0,
+   "band_right": "Day 3",
+   "body": "<div class='content'><div class='kicker'>Day 3 \u00b7 same chat</div><div class='chat' style='margin-top:40px'><div class='bubble me in' style='--d:0s'><span class='who'>you</span>ok hear me out</div></div></div>"
+  },
+  {
+   "name": "03_chat_b2",
+   "surface": "ink",
+   "duration": 2.4,
+   "band_right": "Day 3",
+   "body": "<div class='content'><div class='kicker'>Day 3 \u00b7 same chat</div><div class='chat' style='margin-top:40px'><div class='bubble me'><span class='who'>you</span>ok hear me out</div><div class='bubble them in' style='--d:0s'><span class='who'>the realist</span>it's been 3 days</div></div></div>"
+  },
+  {
+   "name": "03_chat_b3",
+   "surface": "ink",
+   "duration": 2.8,
+   "band_right": "Day 3",
+   "body": "<div class='content'><div class='kicker'>Day 3 \u00b7 same chat</div><div class='chat' style='margin-top:40px'><div class='bubble me'><span class='who'>you</span>ok hear me out</div><div class='bubble them'><span class='who'>the realist</span>it's been 3 days</div><div class='bubble me in' style='--d:0s'><span class='who'>you</span>it's a restock. restocks don't count</div></div></div>"
+  },
+  {
+   "name": "03_chat_b4",
+   "surface": "ink",
+   "duration": 2.4,
+   "band_right": "Day 3",
+   "body": "<div class='content'><div class='kicker'>Day 3 \u00b7 same chat</div><div class='chat' style='margin-top:40px'><div class='bubble me'><span class='who'>you</span>ok hear me out</div><div class='bubble them'><span class='who'>the realist</span>it's been 3 days</div><div class='bubble me'><span class='who'>you</span>it's a restock. restocks don't count</div><div class='bubble them in' style='--d:0s'><span class='who'>the enabler</span>what size</div></div></div>"
+  },
+  {
+   "name": "03_chat_b5",
+   "surface": "ink",
+   "duration": 3.2,
+   "band_right": "Day 3",
+   "body": "<div class='content'><div class='kicker'>Day 3 \u00b7 same chat</div><div class='chat' style='margin-top:40px'><div class='bubble me'><span class='who'>you</span>ok hear me out</div><div class='bubble them'><span class='who'>the realist</span>it's been 3 days</div><div class='bubble me'><span class='who'>you</span>it's a restock. restocks don't count</div><div class='bubble them'><span class='who'>the enabler</span>what size</div><div class='bubble me in' style='--d:0s'><span class='who'>you</span>two pairs. one to wear, one to keep clean</div></div></div>"
+  },
+  {
+   "name": "04_punchline",
+   "surface": "ink",
+   "duration": 4.5,
+   "band_right": "Day 3",
+   "body": "<div class='content'><div class='kicker'>Day 3 \u00b7 same chat</div><div class='chat dim' style='margin-top:40px'><div class='bubble them'><span class='who'>the enabler</span>what size</div><div class='bubble me'><span class='who'>you</span>two pairs. one to wear, one to keep clean</div><div class='sys in' style='--d:0.25s'>Savings Account left the chat</div></div><h1 class='title in' style='--d:0.9s;margin-top:72px'>Every.<br>Single.<br>Month.</h1></div>"
+  },
+  {
+   "name": "05_end",
+   "surface": "ink",
+   "duration": 1.5,
+   "band_right": "",
+   "body": "<div class='content' style='display:flex;flex-direction:column;justify-content:center'><div class='kicker'>The commentary desk</div><h2 class='title' style='margin-top:24px'>Original.<br>Every day.</h2></div>"
+  }
+ ]
+}

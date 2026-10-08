@@ -11,6 +11,12 @@ Founder decisions and their status. **This file is authoritative on what was dec
 | **OPEN — founder decision pending** | Raised with a recommendation; only the founders can close it |
 | **HISTORICAL** | A fact about the past that shapes current constraints |
 
+⚠ **2026-10-08 — AGILE REVIVAL supersedes the 84-post controlled experiment, BEFORE LAUNCH.** Zero posts
+had been published under it. Every entry below marked "(Founder Lock)", "FOUNDER-LOCKED" or scoped to "the
+controlled experiment / test" is **SUPERSEDED BEFORE LAUNCH** and preserved as historical methodology —
+except the rules listed as *retained* in the [Agile Revival section](#agile-revival--founder-decision-2026-10-08).
+Read that section first.
+
 ⚠ **Historical AI analysis is not a decision.** The recovered strategy documents contain recommendations.
 A recommendation appears here only where the founders adopted it. Where a decision originated as an advisory
 recommendation, that is stated.
@@ -553,17 +559,94 @@ The model is recorded as the **Adobe-native Firefly image model**; the exact in-
 `ai_tool_version` at TEST-AI-01, and no partner model inside the Firefly app is part of the route. No lock,
 matrix row, methodology rule or decision rule moved.
 
+## Agile Revival — founder decision, 2026-10-08
+
+### Launch Fast-Track — **SUPERSEDED the same day** (Founder decision, 2026-10-08, Wasim)
+Earlier on 2026-10-08 Wasim decided that Claude executes all pre-launch work and the C2 stress test that can
+reasonably be automated, measuring the real Claude-assisted workflow, with no change to the matrix, Founder
+Locks, sourcing/rights rules or gate outputs. Under it, Claude established that the locked T−10 d check-out
+rule made Day 1 = 2026-10-09 impossible (earliest 2026-10-18). Before any of that plan was executed it was
+superseded by the decision below. Two clarifications Wasim gave under it carry forward: **Claude writes
+captions, scripts, alt text and research** (the AI sub-test's "founders' own writing" line was a scope note),
+and **work-in-progress commits may be pushed to the task branch** (never to `main` without approval).
+
+### Agile Revival replaces the controlled experiment as the active plan — **ACTIVE** (Founder decision, 2026-10-08, Wasim, active founder)
+Because **zero revival posts were published**, the founders superseded the 84-post controlled revival
+experiment as the execution plan before Post #1. It was designed, validated and locked, then superseded
+before launch; it **neither ran nor failed**. Its documents (`experiment/active-84-post-plan/`,
+`experiment/methodology/`) are preserved verbatim as historical methodology.
+
+**The objective now:** launch fast, publish high-quality original content, measure real performance, and
+adapt continuously — *publish → measure → learn → adapt → repeat*. Performance data **may** influence future
+content. Content need not be predetermined before launch.
+
+**Superseded — no longer binding and never launch blockers:** the 84-row matrix as a publishing schedule;
+21 posts per engine; the 4R/2C/1S weekly mix; the T−48 h / T−7 d / T−10 d check-out deadlines and the
+FIFO queue rule; the no-performance-driven-adaptation and no-virality-follow-up rules; the fixed 16:00 UTC
+instant as a lock; daily Stories as a lock; the six-slot AI sub-test as an experimental treatment; the
+Sourcing Gate and Week-1 Gate as launch gates (42-image C2 bank, all 11 non-C1 Week-1 pieces, 14 Week-1
+Stories, the 7-piece reserve, 14 Week-2 outlines, the Day-0 lock); the C2 stress test as a precondition of
+publishing; the frozen-experiment analysis rules (W3–6 window, ≥2× engine rule). These remain available as
+operational tools where useful — they may not delay the first high-quality posts.
+
+**Unlocked but unchanged:** profile variables, link in bio, voiceover and the publish time were frozen only
+for the test. Nothing about the profiles changes without a founder decision; the accounts stay faceless.
+
+**Retained — non-negotiable:**
+
+- Original content only; **zero reposted feed content**; no third-party file, watermark or reposted template.
+- **Credit is not permission.** No Instagram, Pinterest, TikTok, retailer, random-web or watermarked imagery.
+  Every external asset has a defensible rights basis and a provenance row (`production/assets/`).
+- The **conservative data-source posture** (2026-09-08) and the C3 data-source register.
+- **No permission outreach** (2026-09-13) unless the founders change it.
+- **No spending, paid asset, subscription or service** without founder approval.
+- **AI imagery:** only clearly illustrative / fictional / commentary creative that cannot be mistaken for a
+  real specific product or factual evidence; never a real sneaker model being reviewed, ranked or released;
+  never laundering a third-party image; no real-person likeness; disclosed where appropriate (the fixed
+  line in `production/policy/AI_IMAGERY_POLICY_PACK.md` §3 plus the platform label). Adobe Firefly on the free
+  route stays the confirmed tool (2026-10-07).
+- The **trademark / nominative-use posture** and its §5 rule (`production/TRADEMARK_RISK_REVIEW.md`).
+- **Account Status monitoring**; any category leaving green stops publishing on that account.
+- No replica/counterfeit advertisers, no monetization or advertiser contact, no paid promotion — without a
+  founder decision.
+- **Quality beats cadence:** a piece that is not good enough is not published.
+- Publishing remains a founder action; Claude prepares, the founders publish.
+
+**C1–C4** remain content categories and analysis labels, not quotas. Claude may vary their frequency, add a
+strong adjacent angle that fits the brand, pick the strongest format per subject and adapt hooks, pacing,
+design and mix from evidence. The house creative system is the starting system and may evolve on evidence.
+
+**Measurement:** a practical learning loop replaces the frozen-experiment analysis — every post tracked
+(account, publish time, format, category/angle, topic, Reach, Views, likes, comments, saves, shares, profile
+activity, follows, non-follower share), read at fixed ages and reviewed on a rolling basis
+(`production/tracking/LEARNING_LOOP.md`).
+
+**Claude's role:** delegated production authority (2026-09-08) now covers topics, formats, angles, workflow
+and sequencing, using judgement and observed performance. Claude does everything it reasonably can —
+research, sourcing, rights verification, writing, rendering, captions, Stories, analytics structure — and
+batches founder-only actions (account access, publishing, screenshots, spending, external terms).
+
+### Delegated production decisions under Agile Revival — **ACTIVE — delegated production decision** (2026-10-08)
+
+| Decision | Value | Where |
+|---|---|---|
+| Default publish time | **16:00 UTC** (19:00 Israel until 24 Oct, 18:00 after; 12:00 ET) — the evidenced evening window; adjustable on evidence | `production/tracking/LEARNING_LOOP.md` |
+| First-post selection | Strongest revival potential (non-follower reach, sends/saves/comments) × rights certainty × production quality; one strong post per account, not a matrix slot | `production/launch/LAUNCH_PLAN.md` |
+| Production renderer | House HTML/CSS → Chromium → PNG; ffmpeg → H.264 MP4 Reels (canon-approved alternative to Figma/CapCut) | `production/templates/src/render_piece.py` |
+| Learning tracker | One row per post, snapshots at ~48 h and 7 d, weekly rolling review | `production/tracking/` |
+
 ## Pending founder decisions and actions
 
 - ~~**AI tool licence verification and account**~~ — **done 2026-10-07** (Wasim; free tier only; Sourcing
   Gate item 9 passed). Any paid Firefly plan still needs founder approval. A confirmed licence does not make
   AI a C2 route.
-- **Run the two-piece C2 sourcing stress test** — founder execution per
-  `production/assets/c2_stress_test/FOUNDER_INSTRUCTIONS.md` (the founders' own sourcing minutes are what it
-  measures).
-- **If the test reports WITH CONDITIONS:** a small paid-stock budget (spend) or acceptance of an illustration
-  share — founder answers.
-- **Any paid stock credits** (route P) — founder approval before purchase.
+- ~~**Run the two-piece C2 sourcing stress test**~~ — no longer a launch precondition (Agile Revival,
+  2026-10-08); its package stays available as a sourcing-burden instrument.
+- **Review the launch package and publish the first posts** — founders (`production/launch/`).
+- **Baseline capture** before Post #1: Account Status (five categories) and the audience snapshot on both
+  accounts — founders.
+- **Any paid stock credits or paid tool** — founder approval before purchase.
 - **Git finalization** of the task branch — `WORKFLOW.md` §4.
 
-Every locked decision above is unchanged.
+The experiment Founder Locks above are superseded before launch (Agile Revival, 2026-10-08); the retained
+rules listed there are unchanged.

@@ -20,7 +20,15 @@ read whatever else the task needs.
 
 ---
 
-## 2. Current state in six lines
+## 2. Current state
+
+> **▶ 2026-10-08 — AGILE REVIVAL is the active plan.** Zero posts had been published, so the founders
+> superseded the 84-post controlled experiment **before launch**: publish → measure → learn → adapt. The
+> gates no longer block launch; C1–C4 are categories, not quotas; performance may shape future content. The
+> target is the first revival posts on **2026-10-09**, one strong post per account, from the launch package
+> in `production/launch/`. The rights, originality, AI-safety, trademark and Account Status rules are
+> **unchanged and strict** — see `DECISIONS.md` "Agile Revival". The bullets below describe the state up to
+> 2026-10-07 and are kept as history; where they call the matrix or the gates binding, they are superseded.
 
 - Two dormant Instagram accounts, `thestreetwearofficial` (~23.9K) and `sneakerbong` (~20.8K), being revived
   as a faceless sneaker/streetwear media business by two 50/50 founders, Sari and Wasim.
@@ -54,6 +62,15 @@ read whatever else the task needs.
 ---
 
 ## 3. Hard constraints — do not violate
+
+> **Since 2026-10-08 (Agile Revival):** the experiment-only rows below — no voiceover, no link in bio, AI only
+> in six C4 slots, daily Stories frozen, profile frozen, no performance-based adaptation — are **superseded
+> before launch** (nothing about the profiles changes without a founder decision). Still binding: faceless;
+> no replica/counterfeit advertisers; zero reposts and original content only; credit is not permission;
+> rights basis and provenance for every external asset; no deceptive AI imagery and no real-person
+> likeness; no paid promotion, giveaways, Collabs or advertiser outreach and no monetization without a
+> founder decision; no automation against Instagram (Claude never publishes or schedules); Account Status
+> monitoring.
 
 | Constraint | Detail |
 |---|---|
@@ -131,6 +148,12 @@ earlier four-cell naming (redefined as C1–C4), and every count sized to 4 post
 ---
 
 ## 6. Immediate next task
+
+> **▶ 2026-10-08 (Agile Revival):** the founders review the launch package in `production/launch/` and,
+> if it is good enough, publish the first post on each account (target 2026-10-09, 16:00 UTC by default),
+> after capturing the Week-0 baselines listed there. From then on: track every post in
+> `production/tracking/`, read it at ~48 h and 7 d, and let the rolling review shape the next topics. The
+> text below is the pre-2026-10-08 plan, kept as history.
 
 > ~~The founders verify Adobe Firefly's terms~~ — **done 2026-10-07** (Wasim; free tier only; Sourcing Gate
 > item 9 passed — `production/assets/FIREFLY_TERMS_VERIFICATION.md` §5). **Next, and the real blocker: the

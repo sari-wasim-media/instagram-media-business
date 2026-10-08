@@ -1,5 +1,7 @@
 # The Locked 84-Post Execution Matrix
 
+> **⚠ SUPERSEDED BEFORE LAUNCH — 2026-10-08.** The founders replaced the 84-post controlled experiment with **Agile Revival** before any post was published (`DECISIONS.md`, "Agile Revival"). This document is preserved unchanged as historical methodology; it no longer schedules, gates or delays publishing.
+
 **Status: FOUNDER-LOCKED.** Approved jointly by Sari and Wasim. Frozen for the duration of the controlled
 revival experiment. No row may be added, removed, reassigned or reordered.
 

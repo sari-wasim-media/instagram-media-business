@@ -1,5 +1,7 @@
 # Active 84-Post Plan — FOUNDER-LOCKED
 
+> **⚠ SUPERSEDED BEFORE LAUNCH — 2026-10-08.** The founders replaced the 84-post controlled experiment with **Agile Revival** before any post was published (`DECISIONS.md`, "Agile Revival"). This document is preserved unchanged as historical methodology; it no longer schedules, gates or delays publishing.
+
 # ✅ THE 84-POST MATRIX IS DESIGNED, VALIDATED AND FOUNDER-LOCKED.
 
 Approved jointly by Sari and Wasim. This directory holds the active, locked execution design for the

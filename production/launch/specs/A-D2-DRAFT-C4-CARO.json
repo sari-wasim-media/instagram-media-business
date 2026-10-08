@@ -1,0 +1,43 @@
+{
+ "piece_id": "A-D2-DRAFT-C4-CARO",
+ "account": "A",
+ "engine": "C4",
+ "format": "CARO",
+ "frames": [
+  {
+   "name": "01_hook",
+   "surface": "ink",
+   "band_right": "Format: the receipt",
+   "counter": "1/5",
+   "body": "<div class='content'><div class='kicker'>The receipt \u00b7 swipe</div><h1 class='hook' style='margin-top:40px'>The true<br>cost of a<br>\u201cfree\u201d<br>raffle</h1></div>"
+  },
+  {
+   "name": "02_receipt",
+   "surface": "ink",
+   "band_right": "Format: the receipt",
+   "counter": "2/5",
+   "body": "<div class='content' style='display:flex;align-items:center'><div class='receipt' style='width:100%'><h3>THE RAFFLE SEASON</h3><div class='line'><span>Raffle entries \u00d7 14</span><span>$0.00</span></div><div class='line'><span>\u201cConsolation\u201d pair while waiting</span><span>$120.00</span></div><div class='line'><span>Shipping on the consolation pair</span><span>$15.00</span></div><div class='line'><span>Second pair, \u201cjust in case\u201d</span><span>$140.00</span></div><div class='line'><span>Cleaning kit for pairs you won't wear</span><span>$24.00</span></div><div class='line'><span>Raffle wins</span><span>0</span></div></div></div>"
+  },
+  {
+   "name": "03_total",
+   "surface": "ink",
+   "band_right": "Format: the receipt",
+   "counter": "3/5",
+   "body": "<div class='content' style='display:flex;align-items:center'><div class='receipt' style='width:100%'><h3>TOTAL</h3><div class='line total'><span>Spent on a free raffle</span><span>$299.00</span></div><div class='line'><span>Pairs you actually wanted</span><span>0</span></div><div class='fine'>THANK YOU FOR PLAYING</div></div></div>"
+  },
+  {
+   "name": "04_line",
+   "surface": "ink",
+   "band_right": "Format: the receipt",
+   "counter": "4/5",
+   "body": "<div class='content'><div class='kicker'>The moral</div><h1 class='hook l' style='margin-top:40px'>Entering<br>is free.<br>Losing is<br>$299.</h1></div>"
+  },
+  {
+   "name": "05_end",
+   "surface": "ink",
+   "band_right": "",
+   "counter": "5/5",
+   "body": "<div class='content' style='display:flex;flex-direction:column;justify-content:center'><div class='kicker'>The commentary desk</div><h2 class='title' style='margin-top:24px'>Original.<br>Every day.</h2></div>"
+  }
+ ]
+}

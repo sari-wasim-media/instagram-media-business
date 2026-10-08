@@ -1,5 +1,7 @@
 # Sourcing Gate — scorecard
 
+> **⚠ NO LONGER A LAUNCH GATE — 2026-10-08.** Under **Agile Revival** (`DECISIONS.md`) these gates do not block publishing; the record below is kept as history and as an optional operational checklist. The retained rights, originality and AI-safety rules still apply to every post.
+
 Canonical criteria: `../../experiment/active-84-post-plan/GATES.md` §1. **Gate status: NOT PASSED.** This
 scorecard records what the Creative System sprint built for each item and exactly what remains, which is
 founder execution in every case. Update the status column as items close; the gate passes when all twelve

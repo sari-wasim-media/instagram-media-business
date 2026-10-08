@@ -1,8 +1,32 @@
-# Project State — as of 2026-10-07
+# Project State — as of 2026-10-08
 
 The operational source of truth. If another document disagrees with this one, this one wins — except
 `DECISIONS.md`, which is authoritative on what was decided, and `WORKFLOW.md`, which is canonical on how work
 is done in this repository.
+
+## ▶ CURRENT STATE — AGILE REVIVAL (founder decision, 2026-10-08)
+
+**The 84-post controlled experiment was superseded before launch.** Zero revival posts had been published, so
+Sari and Wasim replaced it as the execution plan with **Agile Revival: publish → measure → learn → adapt →
+repeat** (`DECISIONS.md`, "Agile Revival"). The experiment was designed and locked but never ran — it did not
+fail. Everything below this block is the dated history up to that decision, preserved as written; read it
+as history, not as the active plan.
+
+| | |
+|---|---|
+| Active plan | **Agile Revival** — high-quality original posts, launched fast, measured per post, content adapted on evidence |
+| Launch target | **First revival posts 2026-10-09** — one strong feed post per account, if the founders judge the package good enough. Quality beats cadence |
+| Launch package | `production/launch/` — the first posts, their Stories, captions, rights/provenance summary, upload steps, baseline checklist, days 2–4 pipeline (media files are delivered to the founders, not committed) |
+| Gates | The Sourcing Gate and Week-1 Gate **no longer block launch**; their scorecards are historical |
+| Content system | C1–C4 are categories and analysis labels, not quotas; the house creative system is the starting system and may evolve on evidence |
+| Non-negotiable | Originality, zero reposts, credit ≠ permission, rights basis + provenance for every external asset, conservative data sources, no outreach, no spending without approval, no deceptive AI imagery, trademark §5 rule, Account Status monitoring, quality over cadence |
+| Measurement | `production/tracking/` — every post tracked; reads at ~48 h and 7 d; rolling weekly review |
+| Publishing | A founder action. Claude prepares; the founders review and publish |
+| Posts published | **0** as of 2026-10-08 |
+
+---
+
+## History up to 2026-10-07 (preserved)
 
 ⚠ **2026-09-05: the 84-post controlled revival design is FOUNDER-LOCKED.** Sari and Wasim jointly approved the
 matrix, the format mix, the AI-imagery sub-test, daily Stories, the no-voiceover and no-link-in-bio

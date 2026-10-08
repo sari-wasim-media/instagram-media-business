@@ -1,0 +1,21 @@
+{
+ "piece_id": "A-LAUNCH-01-STORY",
+ "account": "A",
+ "engine": "C1",
+ "format": "STORY",
+ "band_left": "Story \u00b7 The verdict",
+ "frames": [
+  {
+   "name": "poll",
+   "surface": "ink",
+   "band_right": "New on the desk today",
+   "body": "<div class='content'><div class='kicker'>Drops tomorrow</div><h1 class='hook' style='font-size:156px'>Air Jordan 1<br><span class='accent'>\u201cRoyal\u201d</span><br>at $185.</h1><div class='sub'>The desk says wait. You?</div><div style='height:260px;margin-top:64px'></div></div>"
+  },
+  {
+   "name": "poll_GUIDE_do_not_post",
+   "surface": "ink",
+   "band_right": "New on the desk today",
+   "body": "<div class='content'><div class='kicker'>Drops tomorrow</div><h1 class='hook' style='font-size:156px'>Air Jordan 1<br><span class='accent'>\u201cRoyal\u201d</span><br>at $185.</h1><div class='sub'>The desk says wait. You?</div><div class='sticker-zone' style='margin-top:64px;padding:72px 32px'>Poll sticker here<br><br>Cop at retail / Wait</div></div>"
+  }
+ ]
+}

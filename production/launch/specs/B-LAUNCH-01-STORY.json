@@ -1,0 +1,21 @@
+{
+ "piece_id": "B-LAUNCH-01-STORY",
+ "account": "B",
+ "engine": "C4",
+ "format": "STORY",
+ "band_left": "Story \u00b7 The poll",
+ "frames": [
+  {
+   "name": "poll",
+   "surface": "ink",
+   "band_right": "New on the desk today",
+   "body": "<div class='content'><div class='kicker'>Settle it</div><h1 class='hook' style='font-size:150px'>Have you<br>ever \u201cquit\u201d<br>buying<br>sneakers?</h1><div class='sub'>Today's Reel is about the group chat. This one is about you.</div><div style='height:260px;margin-top:64px'></div></div>"
+  },
+  {
+   "name": "poll_GUIDE_do_not_post",
+   "surface": "ink",
+   "band_right": "New on the desk today",
+   "body": "<div class='content'><div class='kicker'>Settle it</div><h1 class='hook' style='font-size:150px'>Have you<br>ever \u201cquit\u201d<br>buying<br>sneakers?</h1><div class='sub'>Today's Reel is about the group chat. This one is about you.</div><div class='sticker-zone' style='margin-top:64px;padding:72px 32px'>Poll sticker here<br><br>Yes \u00b7 for 3 days &nbsp;/&nbsp; Never</div></div>"
+  }
+ ]
+}

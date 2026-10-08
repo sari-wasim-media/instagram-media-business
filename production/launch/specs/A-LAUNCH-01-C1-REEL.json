@@ -1,0 +1,86 @@
+{
+ "piece_id": "A-LAUNCH-01-C1-REEL",
+ "account": "A",
+ "engine": "C1",
+ "format": "REEL",
+ "css": ".row .n{font-size:34px;width:170px} .row .t.s{font-size:92px} .row{padding:34px 0}.fact{padding:30px 0} .fact .k{font-size:30px} .fact .v.mono{font-size:72px} .content .facts .v{font-size:84px !important}.content .title.m{font-size:96px}",
+ "frames": [
+  {
+   "name": "01_hook",
+   "surface": "ink",
+   "duration": 3.0,
+   "band_right": "Facts: Nike SNKRS listing \u00b7 verified in tracking row",
+   "body": "<div class='content'><div class='kicker'>Verdict \u00b7 drops Saturday</div><h1 class='hook xl'>Air<br>Jordan 1<br><span class='accent'>\u201cRoyal\u201d</span></h1><div class='sub'>Cop, wait, or pass? 30 seconds.</div></div>"
+  },
+  {
+   "name": "02_facts_1",
+   "surface": "ink",
+   "duration": 2.5,
+   "band_right": "Facts: Nike SNKRS listing \u00b7 verified in tracking row",
+   "body": "<div class='content'><div class='kicker'>The facts</div><h2 class='title m' style='margin-top:16px'>Air Jordan 1 High OG</h2><div class='facts' style='grid-template-columns:1fr;gap:8px;margin-top:40px'><div class='fact in'><div class='k'>Release</div><div class='v mono'>Sat 10 Oct</div></div></div></div>"
+  },
+  {
+   "name": "02_facts_2",
+   "surface": "ink",
+   "duration": 2.5,
+   "band_right": "Facts: Nike SNKRS listing \u00b7 verified in tracking row",
+   "body": "<div class='content'><div class='kicker'>The facts</div><h2 class='title m' style='margin-top:16px'>Air Jordan 1 High OG</h2><div class='facts' style='grid-template-columns:1fr;gap:8px;margin-top:40px'><div class='fact'><div class='k'>Release</div><div class='v mono'>Sat 10 Oct</div></div><div class='fact in'><div class='k'>Retail</div><div class='v mono'>$185</div></div></div></div>"
+  },
+  {
+   "name": "02_facts_3",
+   "surface": "ink",
+   "duration": 2.5,
+   "band_right": "Facts: Nike SNKRS listing \u00b7 verified in tracking row",
+   "body": "<div class='content'><div class='kicker'>The facts</div><h2 class='title m' style='margin-top:16px'>Air Jordan 1 High OG</h2><div class='facts' style='grid-template-columns:1fr;gap:8px;margin-top:40px'><div class='fact'><div class='k'>Release</div><div class='v mono'>Sat 10 Oct</div></div><div class='fact'><div class='k'>Retail</div><div class='v mono'>$185</div></div><div class='fact in'><div class='k'>Colorway</div><div class='v' style='font-size:56px'>Black / Game Royal / White</div></div></div></div>"
+  },
+  {
+   "name": "02_facts_4",
+   "surface": "ink",
+   "duration": 2.5,
+   "band_right": "Facts: Nike SNKRS listing \u00b7 verified in tracking row",
+   "body": "<div class='content'><div class='kicker'>The facts</div><h2 class='title m' style='margin-top:16px'>Air Jordan 1 High OG</h2><div class='facts' style='grid-template-columns:1fr;gap:8px;margin-top:40px'><div class='fact'><div class='k'>Release</div><div class='v mono'>Sat 10 Oct</div></div><div class='fact'><div class='k'>Retail</div><div class='v mono'>$185</div></div><div class='fact'><div class='k'>Colorway</div><div class='v' style='font-size:56px'>Black / Game Royal / White</div></div><div class='fact in'><div class='k'>Where</div><div class='v' style='font-size:56px'>SNKRS + Jordan retailers</div></div></div></div>"
+  },
+  {
+   "name": "03_verdict",
+   "surface": "ink",
+   "duration": 3.0,
+   "band_right": "Score 5/8 \u00b7 resale: no published data",
+   "body": "<div class='content'><div class='kicker'>The call</div><div style='margin-top:120px;text-align:center'><span class='stamp wait pop' style='font-size:220px'>Wait</span></div><h2 class='title m in' style='--d:.4s;margin-top:120px'>Retail only.<br>Miss it? Don't pay resale.</h2></div>"
+  },
+  {
+   "name": "04_reason_1",
+   "surface": "ink",
+   "duration": 3.0,
+   "band_right": "Reason 1/3",
+   "body": "<div class='content'><div class='kicker'>Why \u00b7 1/3</div><h1 class='hook l in' style='margin-top:32px'>The 1985<br>original</h1><div class='reason in' style='--d:.3s;margin-top:40px;color:var(--t-ink-2)'>The OG colorway, in the standard High OG shape.</div></div>"
+  },
+  {
+   "name": "04_reason_2",
+   "surface": "ink",
+   "duration": 3.0,
+   "band_right": "Reason 2/3",
+   "body": "<div class='content'><div class='kicker'>Why \u00b7 2/3</div><h1 class='hook l in' style='margin-top:32px'>$185 is<br>fair</h1><div class='reason in' style='--d:.3s;margin-top:40px;color:var(--t-ink-2)'>Fair for leather High OG. Not a steal.</div></div>"
+  },
+  {
+   "name": "04_reason_3",
+   "surface": "ink",
+   "duration": 3.0,
+   "band_right": "Reason 3/3",
+   "body": "<div class='content'><div class='kicker'>Why \u00b7 3/3</div><h1 class='hook l in' style='margin-top:32px'>Wide<br>release</h1><div class='reason in' style='--d:.3s;margin-top:40px;color:var(--t-ink-2)'>SNKRS plus Jordan retailers. Chasing is optional.</div></div>"
+  },
+  {
+   "name": "05_docket",
+   "surface": "ink",
+   "duration": 4.0,
+   "band_right": "Facts: Nike SNKRS listing \u00b7 verified in tracking row",
+   "body": "<div class='content'><div class='kicker'>The docket</div><div class='rows' style='margin-top:32px'><div class='row in'><div class='n'>WHEN</div><div class='t s'>Sat 10 Oct</div></div><div class='row in' style='--d:.15s'><div class='n'>COST</div><div class='t s'>$185</div></div><div class='row in' style='--d:.3s'><div class='n'>HOW</div><div class='t s'>SNKRS + retailers</div></div><div class='row in' style='--d:.45s'><div class='n'>CALL</div><div class='t s' style='color:var(--hold)'>Wait</div></div></div></div>"
+  },
+  {
+   "name": "06_end",
+   "surface": "ink",
+   "duration": 1.5,
+   "band_right": "",
+   "body": "<div class='content' style='display:flex;flex-direction:column;justify-content:center'><div class='kicker'>The release desk</div><h2 class='title' style='margin-top:24px'>Next drop,<br>same desk.</h2></div>"
+  }
+ ]
+}

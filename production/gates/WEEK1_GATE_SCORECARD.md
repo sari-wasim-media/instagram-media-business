@@ -1,5 +1,7 @@
 # Week-1 Gate — scorecard
 
+> **⚠ NO LONGER A LAUNCH GATE — 2026-10-08.** Under **Agile Revival** (`DECISIONS.md`) these gates do not block publishing; the record below is kept as history and as an optional operational checklist. The retained rights, originality and AI-safety rules still apply to every post.
+
 Canonical criteria: `../../experiment/active-84-post-plan/GATES.md` §2. **Gate status: NOT PASSED. Zero
 Week-1 pieces exist, by design — this sprint stops before Week-1 production.** The scorecard records what
 each item now has behind it and what remains. Day 1 is instantiated only after this gate and the Sourcing

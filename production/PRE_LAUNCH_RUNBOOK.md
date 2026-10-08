@@ -1,5 +1,7 @@
 # Pre-launch runbook — the founders' path from here to a passed pair of gates
 
+> **⚠ NO LONGER A LAUNCH GATE — 2026-10-08.** Under **Agile Revival** (`DECISIONS.md`) these gates do not block publishing; the record below is kept as history and as an optional operational checklist. The retained rights, originality and AI-safety rules still apply to every post.
+
 Ordered, with rough hours. Everything below is founder execution; the instruments it uses are already in this
 directory. **Nothing here publishes anything.** A *candidate* Day 1 is used from step 9; the real Day 1 is
 instantiated only at step 13 — the earliest day, on any weekday, whose Day-0 requirements are met (start rule
