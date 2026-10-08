@@ -51,7 +51,7 @@
    "surface": "ink",
    "duration": 1.5,
    "band_right": "",
-   "body": "<div class='content' style='display:flex;flex-direction:column;justify-content:center'><div class='kicker'>The commentary desk</div><h2 class='title' style='margin-top:24px'>Original.<br>Every day.</h2></div>"
+   "body": "<div class='content' style='display:flex;flex-direction:column;justify-content:center'><div class='kicker'>The commentary desk</div><h2 class='title' style='margin-top:24px'>Original,<br>or nothing.</h2></div>"
   }
  ]
 }
